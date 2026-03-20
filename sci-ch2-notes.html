@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Acids, Bases and Salts | Smart Study</title>
+    <style>
+        :root {
+            --bg-dark: #050a14;
+            --card-bg: #0d1b2a;
+            --header-bg: #1b263b;
+            --accent-gold: #ffca28;
+            --neon-blue: #00e5ff;
+            --text-light: #e0e1dd;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        /* FIXED STICKY HEADER */
+        .sticky-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--header-bg);
+            border-bottom: 4px solid var(--accent-gold);
+            z-index: 10000;
+            text-align: center;
+            padding: 12px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+        }
+
+        /* UPDATED BACK BUTTON */
+        .back-btn {
+            position: absolute;
+            left: 15px;
+            top: 18px;
+            color: var(--accent-gold);
+            text-decoration: none;
+            border: 2px solid var(--accent-gold);
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-weight: 900;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .back-btn:active { background: var(--accent-gold); color: #000; }
+
+        .header-title { margin: 0; color: #fff; font-size: 1.5rem; font-weight: 900; }
+        .header-sub { color: var(--accent-gold); font-size: 0.75rem; letter-spacing: 5px; display: block; font-weight: bold; }
+
+        .main-content {
+            padding: 20px;
+            max-width: 950px;
+            margin: 110px auto 40px auto; 
+        }
+
+        .mega-card {
+            background: var(--card-bg);
+            border-radius: 25px;
+            padding: 35px;
+            margin-bottom: 50px;
+            border-left: 12px solid var(--accent-gold);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .topic-header {
+            color: var(--accent-gold);
+            font-size: 1.8rem;
+            font-weight: 800;
+            border-bottom: 3px solid #334155;
+            padding-bottom: 12px;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .highlight { color: var(--neon-blue); font-weight: bold; }
+
+        .equation-glow {
+            background: #000;
+            padding: 25px;
+            border-radius: 18px;
+            border: 1px solid var(--neon-blue);
+            color: var(--neon-blue);
+            font-family: 'Consolas', monospace;
+            margin: 25px 0;
+            font-size: 1.15rem;
+            box-shadow: inset 0 0 20px rgba(0,229,255,0.15);
+            overflow-x: auto;
+        }
+
+        .topper-note {
+            background: rgba(255, 202, 40, 0.1);
+            border: 1px solid var(--accent-gold);
+            padding: 20px;
+            border-radius: 15px;
+            color: var(--accent-gold);
+            margin: 25px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: #162435;
+        }
+        th, td { padding: 18px; border: 1px solid #415a77; text-align: left; }
+        th { background: var(--accent-gold); color: #000; font-weight: 900; }
+
+        .danger-box {
+            border: 2px dashed #ff4d4d;
+            background: rgba(255, 77, 77, 0.08);
+            padding: 25px;
+            border-radius: 20px;
+            color: #ff4d4d;
+            margin: 40px 0;
+        }
+
+        h3 { color: var(--neon-blue); margin-top: 30px; font-size: 1.4rem; }
+        ul li { margin-bottom: 12px; }
+    </style>
+</head>
+<body>
+
+    <div class="sticky-nav">
+        <a href="sci-chapters.html" class="back-btn">← BACK</a>
+        <h1 class="header-title">SMART STUDY</h1>
+        <span class="header-sub">FOR TOPPERS</span>
+    </div>
+
+    <div class="main-content">
+        <h2 style="text-align:center; color:var(--neon-blue); font-size:2.6rem; margin-bottom: 50px;">
+            CHAPTER 02: ACIDS, BASES AND SALTS<br>
+            <span style="color:#fff; font-size: 0.9rem; letter-spacing: 2px; opacity: 0.8;">EXTREME DETAILED THEORY NOTES</span>
+        </h2>
+
+        <div class="mega-card">
+            <span class="topic-header">1. Detailed Nature of Acids</span>
+            <p>Acids are chemical substances that taste <span class="highlight">sour</span> and change blue litmus to <span style="color:#ff4d4d">red</span>. They release <span class="highlight">H+ ions</span> in aqueous solutions.</p>
+            
+            <h3>Hydronium Ion Concept:</h3>
+            <p>Since $H^+$ ions cannot exist independently, they combine with water to form <span class="highlight">Hydronium ions ($H_3O^+$)</span>.</p>
+            <div class="equation-glow">HCl(aq) + H₂O(l) → H₃O⁺(aq) + Cl⁻(aq)</div>
+
+            <h3>Key Classifications:</h3>
+            <ul>
+                <li><b>Strong Acids:</b> Completely ionize in water (e.g., $HCl, H_2SO_4$).</li>
+                <li><b>Weak Acids:</b> Partially ionize in water (e.g., $CH_3COOH$, Citric acid).</li>
+                <li><b>Organic Acids:</b> Naturally occurring (Lactic acid in curd).</li>
+            </ul>
+        </div>
+
+        <div class="mega-card" style="border-left-color: var(--neon-blue);">
+            <span class="topic-header" style="color: var(--neon-blue);">2. Detailed Nature of Bases</span>
+            <p>Bases are <span class="highlight">bitter</span> and feel <span class="highlight">soapy</span>. They turn red litmus <span style="color:var(--neon-blue)">blue</span> and release <span class="highlight">OH- ions</span>.</p>
+            <div class="equation-glow">NaOH(s) + H₂O(l) → Na⁺(aq) + OH⁻(aq)</div>
+            <p><b>Alkalis:</b> Bases that are soluble in water are specifically called Alkalis.</p>
+        </div>
+
+        <div class="mega-card">
+            <span class="topic-header">3. Indicator Reactions Guide</span>
+            <table>
+                <tr><th>Indicator</th><th>Acidic</th><th>Basic</th></tr>
+                <tr><td>Litmus Paper</td><td>Red</td><td>Blue</td></tr>
+                <tr><td>Phenolphthalein</td><td>Colorless</td><td>Pink</td></tr>
+                <tr><td>Methyl Orange</td><td>Red</td><td>Yellow</td></tr>
+                <tr><td>Vanilla/Onion</td><td>Odor stays</td><td>Odor vanishes</td></tr>
+            </table>
+        </div>
+
+        <div class="mega-card" style="border-left-color: #ff4d4d;">
+            <span class="topic-header" style="color: #ff4d4d;">4. Important Chemical Reactions</span>
+            <h3>I. Acid + Metal:</h3>
+            <div class="equation-glow">Zn + H₂SO₄ → ZnSO₄ + H₂ ↑</div>
+            <p><b>Hydrogen Test:</b> Burns with a characteristic <b>POP sound</b>.</p>
+
+            <h3>II. Neutralization:</h3>
+            <div class="equation-glow">Acid + Base → Salt + Water<br>HCl + NaOH → NaCl + H₂O</div>
+
+            <div class="danger-box">
+                <b>⚠️ SAFETY FIRST:</b> Always add <b>Acid to Water</b>. Never the other way around!
+            </div>
+        </div>
+
+        <div class="mega-card" style="border-left-color: #4caf50;">
+            <span class="topic-header" style="color: #4caf50;">5. pH Scale in Everyday Life</span>
+            <p>The pH scale ranges from 0-14. 7 is Neutral.</p>
+            <div class="topper-note">
+                1. <b>Stomach:</b> Uses HCl for digestion. Antacids cure acidity.<br>
+                2. <b>Tooth Decay:</b> Starts if mouth pH < 5.5.<br>
+                3. <b>Bee Sting:</b> Inject methanoic acid (use Baking Soda to neutralize).
+            </div>
+        </div>
+
+        <div class="mega-card" style="border-left-color: #ffffff;">
+            <span class="topic-header" style="color: #ffffff;">6. Commercial Salts Formulas</span>
+            <p><b>1. Bleaching Powder:</b> $CaOCl_2$ (Disinfectant).</p>
+            <p><b>2. Baking Soda:</b> $NaHCO_3$ (Cooking & Antacid).</p>
+            <p><b>3. Washing Soda:</b> $Na_2CO_3 \cdot 10H_2O$ (Hardness removal).</p>
+            <p><b>4. Plaster of Paris:</b> $CaSO_4 \cdot \frac{1}{2}H_2O$ (Fractured bones).</p>
+        </div>
+<style>
+    .quiz-container-topper { width: 100%; background: #0d1b2a; border: 3px solid #00e5ff; border-radius: 25px; padding: 25px; margin-top: 50px; box-shadow: 0 0 30px rgba(0, 229, 255, 0.4); box-sizing: border-box; }
+    .q-box-item { background: #050a14; border: 1px solid #1b263b; padding: 20px; border-radius: 20px; margin-bottom: 35px; transition: 0.5s; }
+    .q-box-item:hover { border-color: #ffca28; box-shadow: 0 0 35px rgba(255, 202, 40, 0.3); }
+    .q-heading { color: #ffca28; font-size: 1.3rem; font-weight: 900; display: block; margin-bottom: 15px; }
+    .opt-label { display: block; padding: 12px; background: #162435; margin: 8px 0; border-radius: 12px; color: #e0e1dd; border: 1px solid #334155; }
+    .action-btn { width: 100%; padding: 15px; background: transparent; border: 2px solid #00e5ff; color: #00e5ff; border-radius: 15px; font-weight: 900; cursor: pointer; text-transform: uppercase; margin-top: 10px; transition: 0.3s; }
+    .ans-box-hide { display: none; margin-top: 15px; padding: 12px; background: rgba(0, 229, 255, 0.1); border-left: 6px solid #00e5ff; color: #00e5ff; font-weight: bold; font-size: 1.1rem; text-align: center; border-radius: 10px; }
+</style>
+
+<div class="quiz-container-topper" id="topper-quiz">
+    <h2 style="text-align:center; color:#00e5ff; font-size:1.8rem; text-shadow: 0 0 15px #00e5ff; margin-bottom: 40px;">PART B: 25 TOPPER CHALLENGE MCQs</h2>
+    <script>
+        const mcqs_25 = [
+            {q: "pH of a neutral solution is?", a: "7", o: ["5", "7", "9", "11"]},
+            {q: "Gas evolved with Acid + Metal?", a: "Hydrogen", o: ["Oxygen", "CO2", "Hydrogen", "N2"]},
+            {q: "Formula of Bleaching Powder?", a: "CaOCl2", o: ["CaCl2", "CaOCl2", "CaCO3", "Ca(OH)2"]},
+            {q: "Acid present in Tamarind?", a: "Tartaric Acid", o: ["Oxalic", "Citric", "Tartaric", "Acetic"]},
+            {q: "Nature of Non-metal oxides?", a: "Acidic", o: ["Basic", "Acidic", "Neutral", "Amphoteric"]},
+            {q: "Phenolphthalein in Base?", a: "Pink", o: ["Red", "Pink", "Colorless", "Yellow"]},
+            {q: "Sodium Carbonate is which salt?", a: "Basic Salt", o: ["Acidic", "Basic Salt", "Neutral", "Double"]},
+            {q: "Tooth decay starts at pH?", a: "Below 5.5", o: ["Above 7", "Below 5.5", "7.0", "8.0"]},
+            {q: "Baking Soda formula?", a: "NaHCO3", o: ["Na2CO3", "NaHCO3", "NaOH", "NaCl"]},
+            {q: "Olfactory indicator example?", a: "Onion", o: ["Litmus", "Turmeric", "Onion", "Petunia"]},
+            {q: "pH of pure water?", a: "7", o: ["0", "14", "7", "1"]},
+            {q: "P.O.P is made from?", a: "Gypsum", o: ["Lime", "Gypsum", "Baking Soda", "Clay"]},
+            {q: "Acid in Vinegar?", a: "Acetic Acid", o: ["Lactic", "Acetic", "Citric", "Formic"]},
+            {q: "pH of Acid Rain?", a: "Below 5.6", o: ["7.0", "Below 5.6", "6.5", "8.2"]},
+            {q: "Bases turn Red Litmus to?", a: "Blue", o: ["Yellow", "Red", "Blue", "Pink"]},
+            {q: "P.O.P chemical name?", a: "Calcium Sulphate Hemihydrate", o: ["Dihydrate", "Hemihydrate", "Monohydrate", "Anhydrous"]},
+            {q: "Acid in our stomach?", a: "HCl", o: ["H2SO4", "HNO3", "HCl", "CH3COOH"]},
+            {q: "Milk of Magnesia is an?", a: "Antacid", o: ["Acid", "Antacid", "Salt", "Indicator"]},
+            {q: "Acid + Water reaction is?", a: "Exothermic", o: ["Endothermic", "Exothermic", "Neutral", "Slow"]},
+            {q: "Nettle sting acid?", a: "Methanoic Acid", o: ["Citric", "Methanoic", "Lactic", "Oxalic"]},
+            {q: "Washing soda water molecules?", a: "10", o: ["2", "5", "7", "10"]},
+            {q: "Which gas turns lime water milky?", a: "CO2", o: ["H2", "O2", "CO2", "N2"]},
+            {q: "Blue Vitriol formula?", a: "CuSO4.5H2O", o: ["CuSO4.2H2O", "CuSO4.5H2O", "CuSO4.7H2O", "NaCl"]},
+            {q: "Acid + Base gives?", a: "Salt + Water", o: ["Gas", "Salt + Water", "Metal", "Alcohol"]},
+            {q: "Salt for water hardness?", a: "Washing Soda", o: ["Baking Soda", "Washing Soda", "P.O.P", "Salt"]}
+        ];
+
+        const mainCont = document.getElementById('topper-quiz');
+        mcqs_25.forEach((item, i) => {
+            const card = document.createElement('div');
+            card.className = 'q-box-item';
+            card.innerHTML = `
+                <span class="q-heading">Q${i+1}. ${item.q}</span>
+                ${item.o.map(opt => `<span class="opt-label">${opt}</span>`).join('')}
+                <button class="action-btn" onclick="masterToggle(this)">Show Answer</button>
+                <div class="ans-box-hide">✨ Correct Answer: ${item.a}</div>
+            `;
+            mainCont.appendChild(card);
+        });
+
+        function masterToggle(btn) {
+            const ansBox = btn.nextElementSibling;
+            if (ansBox.style.display === "block") {
+                ansBox.style.display = "none";
+                btn.innerText = "Show Answer";
+                btn.style.color = "#00e5ff";
+                btn.style.borderColor = "#00e5ff";
+            } else {
+                ansBox.style.display = "block";
+                btn.innerText = "Hide Answer";
+                btn.style.color = "#ff4444";
+                btn.style.borderColor = "#ff4444";
+            }
+        }
+    </script>
+</div>
+<style>
+    .quiz-container-v3 { width: 100%; background: #0d1b2a; border: 3px solid #00e5ff; border-radius: 25px; padding: 25px; margin-top: 30px; box-shadow: 0 0 30px rgba(0, 229, 255, 0.4); box-sizing: border-box; }
+    .q-card-v3 { background: #050a14; border: 1px solid #1b263b; padding: 20px; border-radius: 20px; margin-bottom: 35px; transition: 0.5s; }
+    .q-card-v3:hover { border-color: #ffca28; box-shadow: 0 0 35px rgba(255, 202, 40, 0.3); }
+    .q-title-v3 { color: #ffca28; font-size: 1.3rem; font-weight: 900; display: block; margin-bottom: 15px; }
+    .opt-v3 { display: block; padding: 12px; background: #162435; margin: 8px 0; border-radius: 12px; color: #e0e1dd; border: 1px solid #334155; }
+    .toggle-btn-v3 { width: 100%; padding: 15px; background: transparent; border: 2px solid #00e5ff; color: #00e5ff; border-radius: 15px; font-weight: 900; cursor: pointer; text-transform: uppercase; margin-top: 10px; transition: 0.3s; }
+    .ans-reveal-v3 { display: none; margin-top: 15px; padding: 12px; background: rgba(0, 229, 255, 0.1); border-left: 6px solid #00e5ff; color: #00e5ff; font-weight: bold; font-size: 1.1rem; text-align: center; border-radius: 10px; }
+</style>
+
+<div class="quiz-container-v3" id="quiz-part-3">
+    <h2 style="text-align:center; color:#ffca28; font-size:1.8rem; text-shadow: 0 0 15px rgba(255,202,40,0.4); margin-bottom: 40px;">PART C: ADVANCED MCQs (26-50)</h2>
+    <script>
+        const extraMcqs = [
+            {q: "Which acid is present in Tomato?", a: "Oxalic Acid", o: ["Acetic Acid", "Citric Acid", "Oxalic Acid", "Tartaric Acid"]},
+            {q: "What is the pH of human blood?", a: "7.4", o: ["6.5", "7.0", "7.4", "8.2"]},
+            {q: "Sodium Hydroxide is produced by which process?", a: "Chlor-alkali process", o: ["Haber process", "Chlor-alkali process", "Contact process", "Solvay process"]},
+            {q: "Which of the following is a strong base?", a: "NaOH", o: ["NH4OH", "NaOH", "Mg(OH)2", "Ca(OH)2"]},
+            {q: "Reaction of Acid with Carbonates gives which gas?", a: "CO2", o: ["H2", "O2", "CO2", "N2"]},
+            {q: "What is the common name of CaOCl2?", a: "Bleaching Powder", o: ["Washing Soda", "Baking Soda", "Bleaching Powder", "Gypsum"]},
+            {q: "Which indicator is used in the form of strips?", a: "Litmus", o: ["Methyl Orange", "Phenolphthalein", "Litmus", "Turmeric"]},
+            {q: "pH of basic solution is always?", a: "More than 7", o: ["Less than 7", "7", "More than 7", "0"]},
+            {q: "Which substance is used to make toys and statues?", a: "Plaster of Paris", o: ["Baking Soda", "Bleaching Powder", "Plaster of Paris", "Washing Soda"]},
+            {q: "The acid in an ant sting is?", a: "Methanoic Acid", o: ["Ethanoic Acid", "Methanoic Acid", "Lactic Acid", "Oxalic Acid"]},
+            {q: "Chemical formula of Caustic Soda?", a: "NaOH", o: ["NaOH", "KOH", "Ca(OH)2", "Mg(OH)2"]},
+            {q: "Which salt is used in Soda-acid fire extinguishers?", a: "Sodium Hydrogen Carbonate", o: ["Sodium Carbonate", "Sodium Chloride", "Sodium Hydrogen Carbonate", "Calcium Carbonate"]},
+            {q: "A solution turns yellow in turmeric. The solution is?", a: "Acidic or Neutral", o: ["Basic", "Acidic or Neutral", "Highly Basic", "None"]},
+            {q: "Water molecules in Gypsum are?", a: "2", o: ["1/2", "2", "5", "10"]},
+            {q: "Common name of Sodium Carbonate Decahydrate?", a: "Washing Soda", o: ["Baking Soda", "Washing Soda", "Bleaching Powder", "P.O.P"]},
+            {q: "Which gas is used for bleaching wood pulp?", a: "Chlorine", o: ["Hydrogen", "Chlorine", "Oxygen", "CO2"]},
+            {q: "What happens when an acid is mixed with water?", a: "Concentration of H3O+ increases", o: ["Concentration of H3O+ increases", "Concentration of H3O+ decreases", "No change", "pH becomes 14"]},
+            {q: "The pH of Gastric juice is?", a: "1.2", o: ["1.2", "7.0", "8.2", "14"]},
+            {q: "Which of the following is a natural indicator?", a: "Turmeric", o: ["Methyl Orange", "Turmeric", "Phenolphthalein", "All of these"]},
+            {q: "Alkali is a base which is?", a: "Soluble in water", o: ["Insoluble in water", "Soluble in water", "Highly acidic", "Neutral"]},
+            {q: "Which acid is present in curd?", a: "Lactic Acid", o: ["Citric Acid", "Lactic Acid", "Oxalic Acid", "Tartaric Acid"]},
+            {q: "Nature of egg shell is?", a: "Basic", o: ["Acidic", "Basic", "Neutral", "Amphoteric"]},
+            {q: "pH scale was given by?", a: "Sorensen", o: ["Newton", "Sorensen", "Dalton", "Mendeleev"]},
+            {q: "Which one is used as an antacid?", a: "Milk of Magnesia", o: ["Sodium Chloride", "Milk of Magnesia", "Hydrochloric Acid", "Sulphuric Acid"]},
+            {q: "Which chemical is used to remove permanent hardness of water?", a: "Washing Soda", o: ["Baking Soda", "Washing Soda", "Bleaching Powder", "NaCl"]}
+        ];
+
+        const part3 = document.getElementById('quiz-part-3');
+        extraMcqs.forEach((item, i) => {
+            const card = document.createElement('div');
+            card.className = 'q-card-v3';
+            card.innerHTML = `
+                <span class="q-title-v3">Q${i+26}. ${item.q}</span>
+                ${item.o.map(opt => `<span class="opt-v3">${opt}</span>`).join('')}
+                <button class="toggle-btn-v3" onclick="togglePart3(this)">Show Answer</button>
+                <div class="ans-reveal-v3">✨ Correct Answer: ${item.a}</div>
+            `;
+            part3.appendChild(card);
+        });
+
+        function togglePart3(btn) {
+            const box = btn.nextElementSibling;
+            if (box.style.display === "block") {
+                box.style.display = "none";
+                btn.innerText = "Show Answer";
+                btn.style.color = "#00e5ff";
+                btn.style.borderColor = "#00e5ff";
+            } else {
+                box.style.display = "block";
+                btn.innerText = "Hide Answer";
+                btn.style.color = "#ff4444";
+                btn.style.borderColor = "#ff4444";
+            }
+        }
+    </script>
+</div>
+<style>
+    .long-q-wrapper { width: 100%; background: #0d1b2a; border: 3px solid #ffca28; border-radius: 25px; padding: 25px; margin-top: 50px; box-shadow: 0 0 30px rgba(255, 202, 40, 0.2); box-sizing: border-box; }
+    .long-card { background: #050a14; border: 1px solid #1b263b; padding: 25px; border-radius: 20px; margin-bottom: 40px; transition: 0.5s; }
+    .long-card:hover { border-color: #00e5ff; box-shadow: 0 0 35px rgba(0, 229, 255, 0.2); }
+    .long-title { color: #ffca28; font-size: 1.4rem; font-weight: 900; display: block; margin-bottom: 15px; border-bottom: 1px dashed #334155; padding-bottom: 10px; }
+    .long-btn { width: 100%; padding: 15px; background: transparent; border: 2px solid #ffca28; color: #ffca28; border-radius: 15px; font-weight: 900; cursor: pointer; text-transform: uppercase; margin-top: 15px; transition: 0.3s; }
+    .long-ans { display: none; margin-top: 20px; padding: 20px; background: rgba(255, 202, 40, 0.05); border-left: 6px solid #ffca28; color: #e0e1dd; line-height: 1.6; border-radius: 10px; font-size: 1.1rem; }
+    .highlight { color: #00e5ff; font-weight: bold; }
+</style>
+
+<div class="long-q-wrapper" id="long-questions-container">
+    <h2 style="text-align:center; color:#ffca28; font-size:2rem; text-shadow: 0 0 15px #ffca28; margin-bottom: 50px;">SECTION D: CHAPTER 2 LONG QUESTIONS</h2>
+
+    <div class="long-card">
+        <span class="long-title">Q1. Explain the Chlor-Alkali process with chemical equation and uses of its products.</span>
+        <button class="long-btn" onclick="toggleL(this)">Show Answer</button>
+        <div class="long-ans">
+            <span class="highlight">Process:</span> When electricity is passed through brine (NaCl solution), it decomposes into NaOH, Chlorine, and Hydrogen.<br><br>
+            <span class="highlight">Equation:</span> 2NaCl + 2H2O → 2NaOH + Cl2 + H2<br><br>
+            <span class="highlight">Uses:</span> H2 (Fuel), Cl2 (Water treatment), NaOH (Soap making).
+        </div>
+    </div>
+
+    <div class="long-card">
+        <span class="long-title">Q2. What is P.O.P? How is it prepared? Why store it in moisture-proof containers?</span>
+        <button class="long-btn" onclick="toggleL(this)">Show Answer</button>
+        <div class="long-ans">
+            <span class="highlight">Definition:</span> Calcium Sulphate Hemihydrate (CaSO4.1/2H2O).<br><br>
+            <span class="highlight">Preparation:</span> By heating Gypsum at 373K.<br><br>
+            <span class="highlight">Moisture Warning:</span> It reacts with water to form hard Gypsum again, making it useless for construction or medical use.
+        </div>
+    </div>
+
+    <div class="long-card">
+        <span class="long-title">Q3. Describe the importance of pH in digestive system and tooth decay.</span>
+        <button class="long-btn" onclick="toggleL(this)">Show Answer</button>
+        <div class="long-ans">
+            <span class="highlight">Digestion:</span> Stomach produces HCl (pH 1.2). Excess acid causes pain, cured by Antacids.<br><br>
+            <span class="highlight">Tooth Decay:</span> Starts when mouth pH falls below 5.5. Bacteria produce acid from sugar, which corrodes enamel.
+        </div>
+    </div>
+
+    <div class="long-card">
+        <span class="long-title">Q4. How are Baking Soda and Washing Soda prepared? Give one use each.</span>
+        <button class="long-btn" onclick="toggleL(this)">Show Answer</button>
+        <div class="long-ans">
+            <span class="highlight">Baking Soda (NaHCO3):</span> Prepared by Solvay process using NaCl, NH3, and CO2. Use: For making crispy food.<br><br>
+            <span class="highlight">Washing Soda (Na2CO3.10H2O):</span> Obtained by heating baking soda and recrystallization. Use: Removing permanent hardness of water.
+        </div>
+    </div>
+
+    <script>
+        function toggleL(btn) {
+            const ans = btn.nextElementSibling;
+            if (ans.style.display === "block") {
+                ans.style.display = "none";
+                btn.innerText = "Show Answer";
+                btn.style.color = "#ffca28";
+                btn.style.borderColor = "#ffca28";
+            } else {
+                ans.style.display = "block";
+                btn.innerText = "Hide Answer";
+                btn.style.color = "#ff4444";
+                btn.style.borderColor = "#ff4444";
+            }
+        }
+    </script>
+</div>
+<style>
+    /* Style same rakha hai taaki design na bigde */
+    .long-q-v4 { width: 100%; background: #0d1b2a; border: 3px solid #ffca28; border-radius: 25px; padding: 25px; margin-top: 30px; box-shadow: 0 0 30px rgba(255, 202, 40, 0.2); box-sizing: border-box; }
+    .card-v4 { background: #050a14; border: 1px solid #1b263b; padding: 25px; border-radius: 20px; margin-bottom: 40px; transition: 0.5s; }
+    .card-v4:hover { border-color: #00e5ff; box-shadow: 0 0 35px rgba(0, 229, 255, 0.2); }
+    .title-v4 { color: #ffca28; font-size: 1.4rem; font-weight: 900; display: block; margin-bottom: 15px; border-bottom: 1px dashed #334155; padding-bottom: 10px; }
+    .btn-v4 { width: 100%; padding: 15px; background: transparent; border: 2px solid #ffca28; color: #ffca28; border-radius: 15px; font-weight: 900; cursor: pointer; text-transform: uppercase; margin-top: 15px; transition: 0.3s; }
+    .ans-v4 { display: none; margin-top: 20px; padding: 20px; background: rgba(255, 202, 40, 0.05); border-left: 6px solid #ffca28; color: #e0e1dd; line-height: 1.6; border-radius: 10px; font-size: 1.1rem; }
+    .neon-txt { color: #00e5ff; font-weight: bold; }
+</style>
+
+<div class="long-q-v4" id="long-questions-part2">
+    <div class="card-v4">
+        <span class="title-v4">Q5. What is a neutralization reaction? Give two examples from daily life.</span>
+        <button class="btn-v4" onclick="toggleV4(this)">Show Answer</button>
+        <div class="ans-v4">
+            <span class="neon-txt">Definition:</span> A reaction in which an acid and a base react to form salt and water is called a neutralization reaction.<br><br>
+            <span class="neon-txt">Equation:</span> NaOH + HCl → NaCl + H2O<br><br>
+            <span class="neon-txt">Daily Life Examples:</span><br>
+            1. <span class="neon-txt">Antacids:</span> Taking Milk of Magnesia to neutralize excess stomach acid.<br>
+            2. <span class="neon-txt">Ant Sting:</span> Rubbing baking soda on an ant bite to neutralize the methanoic acid.
+        </div>
+    </div>
+
+    <div class="card-v4">
+        <span class="title-v4">Q6. Explain the concept of Water of Crystallisation with an example.</span>
+        <button class="btn-v4" onclick="toggleV4(this)">Show Answer</button>
+        <div class="ans-v4">
+            <span class="neon-txt">Concept:</span> It is the fixed number of water molecules present in one formula unit of a salt. It gives shape and sometimes color to crystals.<br><br>
+            <span class="neon-txt">Example:</span> Copper Sulphate crystals (CuSO4.5H2O) are blue due to 5 molecules of water. When heated, they lose water and turn white.<br><br>
+            <span class="neon-txt">Other Examples:</span> Washing soda (10H2O) and Gypsum (2H2O).
+        </div>
+    </div>
+
+    <div class="card-v4">
+        <span class="title-v4">Q7. Why do HCl, HNO3, etc., show acidic characters in aqueous solutions while alcohol and glucose do not?</span>
+        <button class="btn-v4" onclick="toggleV4(this)">Show Answer</button>
+        <div class="ans-v4">
+            <span class="neon-txt">Reason:</span> Acidic character depends on the production of Hydrogen ions (H+) in water. HCl and HNO3 dissociate completely in water to release H+ ions.<br><br>
+            <span class="neon-txt">Alcohol/Glucose:</span> Although they contain hydrogen, they do not ionize or release H+ ions in water. Since there are no free ions, they do not show acidic properties or conduct electricity.
+        </div>
+    </div>
+
+    <div class="card-v4">
+        <span class="title-v4">Q8. How does the concentration of Hydronium ions (H3O+) change when a solution of an acid is diluted?</span>
+        <button class="btn-v4" onclick="toggleV4(this)">Show Answer</button>
+        <div class="ans-v4">
+            <span class="neon-txt">Dilution:</span> Mixing an acid with water is called dilution. It is an highly <span class="neon-txt">exothermic</span> process.<br><br>
+            <span class="neon-txt">Effect on H3O+:</span> On dilution, the number of hydronium ions (H3O+) per unit volume <span class="neon-txt">decreases</span>. This results in an increase in the pH value of the solution (making it less acidic).
+        </div>
+    </div>
+
+    <script>
+        function toggleV4(btn) {
+            const box = btn.nextElementSibling;
+            if (box.style.display === "block") {
+                box.style.display = "none";
+                btn.innerText = "Show Answer";
+                btn.style.color = "#ffca28";
+                btn.style.borderColor = "#ffca28";
+            } else {
+                box.style.display = "block";
+                btn.innerText = "Hide Answer";
+                btn.style.color = "#ff4444";
+                btn.style.borderColor = "#ff4444";
+            }
+        }
+    </script>
+</div>
+
+    </div>
+</body>
+</html>

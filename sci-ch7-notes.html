@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Chapter 7 | Smart Study Toppers</title>
+    <style>
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        html, body { 
+            background-color: #000b00; /* Deep Jungle Black-Green */
+            margin: 0; padding: 0; 
+            width: 100%; overflow-x: hidden;
+            font-family: 'Arial', sans-serif; color: #ffffff;
+        }
+
+        /* FIXED HEADER - Scroll karne par upar hi rahega */
+        .header-top { 
+            display: flex; justify-content: space-between; align-items: center; 
+            padding: 20px; background: #002200; 
+            border-bottom: 3px solid #00ff88; /* Neon Emerald */
+            position: fixed; top: 0; width: 100%; z-index: 9999;
+            box-shadow: 0 5px 25px rgba(0, 255, 136, 0.6);
+        }
+
+        .back-btn { 
+            text-decoration: none; color: #00ff88; 
+            font-weight: 900; font-size: 0.9rem; 
+            border: 2px solid #00ff88; 
+            padding: 10px 20px; border-radius: 12px; 
+            box-shadow: 0 0 15px #00ff88;
+            background: rgba(0, 255, 136, 0.1);
+        }
+
+        .smart-tag { 
+            color: #ffffff; font-weight: 900; font-size: 1rem; 
+            text-align: right; line-height: 1.2; 
+            text-shadow: 0 0 10px #00ff88;
+        }
+        .smart-tag span { color: #00ff88; }
+
+        /* MAIN CONTENT - Margin top for Fixed Header */
+        .main-content { margin-top: 120px; padding: 0 15px 50px 15px; }
+
+        .ch-title {
+            text-align: center; color: #00ff88; 
+            font-size: 2.2rem; font-weight: 900; margin-bottom: 40px; 
+            text-transform: uppercase;
+            text-shadow: 0 0 20px #00ff88, 2px 2px #000;
+        }
+
+        /* NOTES CARDS - HEAVY DESIGN */
+        .note-card { 
+            background: linear-gradient(145deg, #001a00, #002e1a);
+            border-radius: 20px; padding: 25px; 
+            margin-bottom: 30px; 
+            border: 2px solid #00ff88; 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 255, 136, 0.2);
+        }
+
+        .section-tag { 
+            background: #00ff88; color: #000; 
+            padding: 5px 15px; border-radius: 5px; 
+            font-weight: 800; font-size: 0.75rem; 
+            display: inline-block; margin-bottom: 15px;
+            box-shadow: 0 0 10px #00ff88;
+        }
+
+        .topic-h2 { 
+            color: #00ff88; font-size: 1.3rem; 
+            font-weight: 900; margin-bottom: 15px; 
+            border-bottom: 1px solid rgba(0, 255, 136, 0.3);
+            padding-bottom: 8px;
+        }
+
+        .point-box {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid #00ff88;
+            padding: 12px; margin: 10px 0;
+            border-radius: 0 10px 10px 0;
+            font-size: 0.9rem; line-height: 1.6;
+        }
+
+        b { color: #00ff88; text-shadow: 0 0 5px rgba(0, 255, 136, 0.5); }
+        
+        /* SCROLL INDICATOR */
+        .scroll-tip {
+            text-align: center; color: #888; font-size: 0.8rem;
+            margin-bottom: 20px; animation: bounce 2s infinite;
+        }
+        @keyframes bounce { 0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 40% {transform: translateY(-5px);} 60% {transform: translateY(-3px);} }
+    </style>
+</head>
+<body>
+
+    <div class="header-top">
+        <a href="sci-chapters.html" class="back-btn">BACK</a>
+        <div class="smart-tag">SMART STUDY<br><span>FOR TOPPERS</span></div>
+    </div>
+
+    <div class="main-content">
+        <h1 class="ch-title">HOW DO ORGANISMS<br>REPRODUCE?</h1>
+        <p class="scroll-tip">↓↓ SCROLL FOR FULL 10+ PAGE NOTES ↓↓</p>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 1</span>
+            <div class="topic-h2">Importance of Reproduction</div>
+            <div class="point-box">
+                <b>Definition:</b> Reproduction is the process by which living organisms produce new individuals of their own kind.
+            </div>
+            <div class="point-box">
+                <b>Significance:</b> It is not necessary for survival of an individual, but <u>essential for the survival of the species</u>. It ensures continuity of life on Earth.
+            </div>
+            <div class="point-box">
+                <b>DNA Copying:</b> The basic event in reproduction is the creation of a DNA copy. Cells use chemical reactions to build copies of their DNA.
+            </div>
+        </div>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 2</span>
+            <div class="topic-h2">The Role of Variation</div>
+            <div class="point-box">
+                DNA copying is not 100% accurate. These small inaccuracies lead to <b>Variations</b>.
+            </div>
+            <div class="point-box">
+                <b>Why Variation is Useful?</b> If a population is suited to a particular niche and that niche changes (e.g., temperature rise), variations help some individuals survive. Thus, variation is the <u>basis of evolution</u>.
+            </div>
+        </div>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 3</span>
+            <div class="topic-h2">Asexual Reproduction - I</div>
+            <div class="point-box">
+                <b>1. Fission:</b> Binary fission (Amoeba) and Multiple fission (Plasmodium).
+            </div>
+            <div class="point-box">
+                <b>2. Fragmentation:</b> Simply breaking into pieces. Ex: <u>Spirogyra</u>.
+            </div>
+            <div class="point-box">
+                <b>3. Regeneration:</b> Ability to grow full organism from cut body parts. Ex: <u>Planaria</u> and Hydra.
+            </div>
+        </div>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 4</span>
+            <div class="topic-h2">Asexual Reproduction - II</div>
+            <div class="point-box">
+                <b>4. Budding:</b> A small outgrowth (bud) develops. Ex: <u>Hydra</u> and Yeast.
+            </div>
+            <div class="point-box">
+                <b>5. Spore Formation:</b> Tiny spores in sporangia grow into new plants. Ex: <u>Rhizopus</u> (Bread mould).
+            </div>
+            <div class="point-box">
+                <b>6. Vegetative Propagation:</b> New plants from roots, stems, or leaves. 
+                <br>• Stem: Potato, Ginger. <br>• Leaf: <u>Bryophyllum</u>.
+            </div>
+        </div>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 5</span>
+            <div class="topic-h2">Sexual Reproduction Logic</div>
+            <div class="point-box">
+                It involves two parents. It creates <b>Maximum Variation</b> because it combines DNA from two different individuals.
+            </div>
+            <div class="point-box">
+                <b>Germ Cells:</b> To keep chromosome number constant, specialized cells called gametes (half DNA) are formed via meiosis.
+            </div>
+        </div>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 6</span>
+            <div class="topic-h2">Reproduction in Flowers</div>
+            <div class="point-box">
+                <b>Parts:</b> Sepals, Petals, Stamen (Male - Anther & Filament), Carpel (Female - Stigma, Style, Ovary).
+            </div>
+            <div class="point-box">
+                <b>Pollination:</b> Transfer of pollen from anther to stigma. 
+                <br>• Self-pollination <br>• Cross-pollination.
+            </div>
+            <div class="point-box">
+                <b>Fertilization:</b> Pollen tube grows to ovary → Male germ cell fuses with Female egg → <b>Zygote</b> is formed.
+            </div>
+        </div>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 7</span>
+            <div class="topic-h2">Male Reproductive System</div>
+            <div class="point-box">
+                <b>Testes:</b> Produce Sperms and <u>Testosterone</u>. Located in Scrotum (lower temp for sperm production).
+            </div>
+            <div class="point-box">
+                <b>Vas Deferens:</b> Carries sperms. <br><b>Glands:</b> Prostate & Seminal vesicles provide nutrition and fluid medium.
+            </div>
+        </div>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 8</span>
+            <div class="topic-h2">Female Reproductive System</div>
+            <div class="point-box">
+                <b>Ovaries:</b> Produce Eggs and <u>Estrogen/Progesterone</u>. 
+            </div>
+            <div class="point-box">
+                <b>Fallopian Tube (Oviduct):</b> Site of fertilization. <br><b>Uterus:</b> Site of embryo development.
+            </div>
+        </div>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 9</span>
+            <div class="topic-h2">What if Egg is not Fertilized?</div>
+            <div class="point-box">
+                If fertilization doesn't occur, the thick lining of the uterus breaks down and comes out as blood and mucus. This cycle is called <b>Menstruation</b> (roughly every 28 days).
+            </div>
+            <div class="point-box">
+                <b>Placenta:</b> If fertilized, this special tissue provides nutrition (glucose/oxygen) from mother to embryo.
+            </div>
+        </div>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 10</span>
+            <div class="topic-h2">Reproductive Health & Methods</div>
+            <div class="point-box">
+                <b>STDs:</b> Viral (Warts, HIV-AIDS) and Bacterial (Gonorrhoea, Syphilis).
+            </div>
+            <div class="point-box">
+                <b>Contraceptive Methods:</b> <br>1. Barrier (Condoms) <br>2. Chemical (Oral pills) <br>3. IUCD (Copper-T) <br>4. Surgical (Vasectomy in males, Tubectomy in females).
+            </div>
+        </div>
+
+    </div>
+        <div id="ch7-mcq-section">
+            <script>
+                const ch7Mcqs = [
+                    { q: "Q1. The ability of an organism to produce new individuals is called:", o: ["Respiration", "Reproduction", "Excretion", "Digestion"], a: "Reproduction" },
+                    { q: "Q2. DNA copying is necessary because it leads to:", o: ["No change", "Variations", "Death of cell", "Protein loss"], a: "Variations" },
+                    { q: "Q3. Amoeba reproduces by which method?", o: ["Budding", "Fragmentation", "Binary Fission", "Regeneration"], a: "Binary Fission" },
+                    { q: "Q4. Which organism shows multiple fission?", o: ["Amoeba", "Plasmodium", "Hydra", "Planaria"], a: "Plasmodium" },
+                    { q: "Q5. Spirogyra reproduces by:", o: ["Fission", "Regeneration", "Fragmentation", "Budding"], a: "Fragmentation" },
+                    { q: "Q6. Ability of a lost body part to grow into a full organism is:", o: ["Fragmentation", "Regeneration", "Budding", "Fission"], a: "Regeneration" },
+                    { q: "Q7. Vegetative propagation in Bryophyllum takes place through:", o: ["Stem", "Root", "Leaf", "Flower"], a: "Leaf" },
+                    { q: "Q8. Rhizopus reproduces through:", o: ["Budding", "Spore formation", "Fission", "Regeneration"], a: "Spore formation" },
+                    { q: "Q9. The male gamete in flowering plants is found in:", o: ["Ovary", "Pollen grain", "Stigma", "Sepals"], a: "Pollen grain" },
+                    { q: "Q10. Which part of the flower becomes the fruit after fertilization?", o: ["Stigma", "Style", "Ovary", "Ovule"], a: "Ovary" },
+                    { q: "Q11. The fusion of male and female gametes is called:", o: ["Pollination", "Fertilization", "Fission", "Grafting"], a: "Fertilization" },
+                    { q: "Q12. In humans, fertilization takes place in:", o: ["Uterus", "Ovary", "Fallopian tube", "Vagina"], a: "Fallopian tube" },
+                    { q: "Q13. The embryo gets nutrition from the mother's blood through:", o: ["Oviduct", "Placenta", "Ureter", "Cervix"], a: "Placenta" },
+                    { q: "Q14. Menstruation usually lasts for:", o: ["2-8 days", "10-15 days", "1 day", "20 days"], a: "2-8 days" },
+                    { q: "Q15. Which of these is a bacterial STD?", o: ["HIV-AIDS", "Warts", "Gonorrhoea", "Hepatitis"], a: "Gonorrhoea" },
+                    { q: "Q16. IUCD stands for:", o: ["Intra Uterine Contraceptive Device", "Internal Uterine Device", "Intra Urethral Device", "None"], a: "Intra Uterine Contraceptive Device" },
+                    { q: "Q17. Surgery to block Vas Deferens in males is:", o: ["Tubectomy", "Vasectomy", "C-section", "Dialysis"], a: "Vasectomy" },
+                    { q: "Q18. The period of adolescence when reproductive organs become functional is:", o: ["Menopause", "Puberty", "Gestation", "Lactation"], a: "Puberty" },
+                    { q: "Q19. Yeast reproduces by:", o: ["Binary fission", "Budding", "Spores", "Fragmentation"], a: "Budding" },
+                    { q: "Q20. The part of the seed that contains stored food is:", o: ["Plumule", "Radicle", "Cotyledon", "Seed coat"], a: "Cotyledon" },
+                    { q: "Q21. Testosterone is secreted by:", o: ["Ovary", "Testes", "Pancreas", "Pituitary"], a: "Testes" },
+                    { q: "Q22. Unicellular organisms generally reproduce by:", o: ["Asexual methods", "Sexual methods", "Both", "None"], a: "Asexual methods" },
+                    { q: "Q23. The site of implantation of the embryo is:", o: ["Ovary", "Uterus", "Cervix", "Fallopian tube"], a: "Uterus" },
+                    { q: "Q24. A flower having both stamen and carpel is:", o: ["Unisexual", "Bisexual", "Asexual", "None"], a: "Bisexual" },
+                    { q: "Q25. Variation is beneficial for the:", o: ["Individual", "Species", "Both", "None"], a: "Species" }
+                ];
+
+                document.write(ch7Mcqs.map((item, index) => `
+                    <div class="note-card" style="border: 2px solid #00ff88; background: #001a00; margin-bottom: 25px;">
+                        <span class="section-tag" style="background: #00ff88; color: #000;">MCQ ${index + 1}</span>
+                        <div class="topic-h2" style="color: #00ff88; font-size: 1rem;">${item.q}</div>
+                        <div style="display: grid; gap: 8px; margin-top: 15px;">
+                            ${item.o.map(opt => `<div style="border: 1px solid rgba(0,255,136,0.3); padding: 10px; border-radius: 10px; font-size: 0.85rem; color: #fff;">${opt}</div>`).join('')}
+                        </div>
+                        <button onclick="toggleCh7Ans(this)" style="width: 140px; height: 44px; margin-top: 20px; background: transparent; border: 2px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; font-size: 0.75rem; cursor: pointer;">SHOW ANSWER</button>
+                        <div style="display: none; margin-top: 12px; color: #00ff88; font-weight: bold; font-size: 0.9rem; padding: 10px; border-left: 3px solid #00ff88; background: rgba(0,255,136,0.1);">Correct: ${item.a}</div>
+                    </div>
+                `).join(''));
+
+                function toggleCh7Ans(btn) {
+                    const ans = btn.nextElementSibling;
+                    if (ans.style.display === "block") {
+                        ans.style.display = "none";
+                        btn.innerText = "SHOW ANSWER";
+                    } else {
+                        ans.style.display = "block";
+                        btn.innerText = "HIDE ANSWER";
+                    }
+                }
+            </script>
+        </div>
+        <div id="ch7-mcq-set2">
+            <script>
+                const mcqSet2 = [
+                    { q: "Q26. Which of the following is a contraceptive method used by females?", o: ["Vasectomy", "Tubectomy", "Condom", "Both B and C"], a: "Tubectomy" },
+                    { q: "Q27. The ability of a cell to divide into many cells during reproduction in Plasmodium is called:", o: ["Binary fission", "Budding", "Multiple fission", "Reduction division"], a: "Multiple fission" },
+                    { q: "Q28. The part of the flower which contains the ovules is:", o: ["Stigma", "Style", "Ovary", "Anther"], a: "Ovary" },
+                    { q: "Q29. Which of the following is NOT a viral STD?", o: ["Warts", "HIV-AIDS", "Syphilis", "None of these"], a: "Syphilis" },
+                    { q: "Q30. In Rhizopus, tubular thread-like structures bearing sporangia at their tips are:", o: ["Filaments", "Hyphae", "Rhizoids", "Roots"], a: "Hyphae" },
+                    { q: "Q31. The embryo in humans gets nutrition from mother's blood through:", o: ["Uterus", "Placenta", "Fallopian tube", "Cervix"], a: "Placenta" },
+                    { q: "Q32. Vegetative propagation refers to formation of new plants from:", o: ["Stem, roots and flowers", "Stem, roots and leaves", "Stem, flowers and fruits", "Stem, leaves and flowers"], a: "Stem, roots and leaves" },
+                    { q: "Q33. Which gland in the male reproductive system provides nutrition to the sperm?", o: ["Prostate gland", "Seminal vesicle", "Both A and B", "Thyroid"], a: "Both A and B" },
+                    { q: "Q34. The process of release of an egg from the ovary is called:", o: ["Fertilization", "Ovulation", "Menstruation", "Implantation"], a: "Ovulation" },
+                    { q: "Q35. A feature of reproduction that is common to Amoeba, Spirogyra and Yeast is that:", o: ["They reproduce asexually", "They are all unicellular", "They reproduce only sexually", "They are all multicellular"], a: "They reproduce asexually" },
+                    { q: "Q36. Length of pollen tube depends on the distance between:", o: ["Pollen grain and upper surface of stigma", "Pollen grain on stigma and female germ cell", "Anthen and Stigma", "Upper surface of stigma and lower part of style"], a: "Pollen grain on stigma and female germ cell" },
+                    { q: "Q37. The number of chromosomes in human ovum is:", o: ["23 pairs", "23", "46", "22"], a: "23" },
+                    { q: "Q38. In which part of the human female reproductive system does fertilization occur?", o: ["Cervix", "Vagina", "Uterus", "Fallopian tube"], a: "Fallopian tube" },
+                    { q: "Q39. Spirogyra reproduces by:", o: ["Fragmentation", "Regeneration", "Fission", "Budding"], a: "Fragmentation" },
+                    { q: "Q40. After fertilization, the zygote divides to form:", o: ["Seed", "Embryo", "Fruit", "Spore"], a: "Embryo" },
+                    { q: "Q41. Which of these is a copper-releasing IUD?", o: ["Copper-T", "Oral pill", "Condom", "Diaphragm"], a: "Copper-T" },
+                    { q: "Q42. Reproduction is essential for living organisms in order to:", o: ["Keep the individual alive", "Maintain growth", "Maintain the species", "Fulfil energy requirement"], a: "Maintain the species" },
+                    { q: "Q43. The two oviducts in the human female unite into an elastic bag-like structure known as:", o: ["Vagina", "Uterus", "Cervix", "Ovary"], a: "Uterus" },
+                    { q: "Q44. Which among the following is a unicellular organism?", o: ["Amoeba", "Hydra", "Planaria", "Spirogyra"], a: "Amoeba" },
+                    { q: "Q45. Bryophyllum can be propagated vegetatively by its:", o: ["Stem", "Leaf", "Root", "Flower"], a: "Leaf" },
+                    { q: "Q46. The period during adolescence when reproductive tissues begin to mature is:", o: ["Adulthood", "Puberty", "Germination", "Propagation"], a: "Puberty" },
+                    { q: "Q47. Which of the following is a bisexual flower?", o: ["Papaya", "Watermelon", "Hibiscus", "Cucumber"], a: "Hibiscus" },
+                    { q: "Q48. The male reproductive part of a flower is:", o: ["Carpel", "Stamen", "Petal", "Sepal"], a: "Stamen" },
+                    { q: "Q49. Pomotion of variation is a characteristic of:", o: ["Sexual reproduction", "Asexual reproduction", "Vegetative propagation", "Binary fission"], a: "Sexual reproduction" },
+                    { q: "Q50. Which part of the seed contains stored food?", o: ["Radicle", "Plumule", "Cotyledon", "Seed coat"], a: "Cotyledon" }
+                ];
+
+                document.write(mcqSet2.map((item, index) => `
+                    <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                        <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">MCQ ${index + 26}</span>
+                        <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">${item.q}</div>
+                        <div style="display: grid; gap: 8px; margin-top: 15px;">
+                            ${item.o.map(opt => `<div style="background: rgba(0, 255, 136, 0.05); border: 1px solid #00331a; padding: 12px; border-radius: 12px; color: #e0e1dd; font-size: 0.9rem;">${opt}</div>`).join('')}
+                        </div>
+                        <button onclick="toggleAns(this)" style="width: 140px; height: 44px; margin-top: 20px; background: transparent; border: 2px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                        <div style="display: none; margin-top: 15px; padding: 12px; background: rgba(0, 255, 136, 0.1); border-left: 4px solid #00ff88; color: #00ff88; font-weight: bold; font-size: 0.9rem;">Correct: ${item.a}</div>
+                    </div>
+                `).join(''));
+
+                function toggleAns(btn) {
+                    const ans = btn.nextElementSibling;
+                    if (ans.style.display === "block") {
+                        ans.style.display = "none";
+                        btn.innerText = "SHOW ANSWER";
+                    } else {
+                        ans.style.display = "block";
+                        btn.innerText = "HIDE ANSWER";
+                    }
+                }
+            </script>
+        </div>
+        <div id="ch7-mcq-hardest-set">
+            <script>
+                const hardestSet = [
+                    { q: "Q51. What is the correct sequence of events during sexual reproduction in plants?", o: ["Pollination, Fertilization, Embryo, Seedling", "Fertilization, Pollination, Seedling, Embryo", "Seedling, Embryo, Fertilization, Pollination", "Pollination, Embryo, Fertilization, Seedling"], a: "Pollination, Fertilization, Embryo, Seedling" },
+                    { q: "Q52. During which stage of the cell cycle does DNA copying occur?", o: ["Prophase", "Interphase", "Cytokinesis", "Telophase"], a: "Interphase" },
+                    { q: "Q53. Which part of the seed provides nutrition to the developing embryo?", o: ["Radicle", "Plumule", "Endosperm/Cotyledon", "Seed coat"], a: "Endosperm/Cotyledon" },
+                    { q: "Q54. Why do multi-cellular organisms like humans not reproduce through fragmentation?", o: ["They have simple body design", "Cells are organized into tissues/organs", "They lack DNA", "They only reproduce sexually"], a: "Cells are organized into tissues/organs" },
+                    { q: "Q55. In the list of organisms given below, those that reproduce by the asexual method are: (i) Banana, (ii) Yak, (iii) Yeast, (iv) Amoeba", o: ["(ii) and (iv)", "(i), (iii) and (iv)", "(i) and (iv)", "(ii), (iii) and (iv)"], a: "(i), (iii) and (iv)" },
+                    { q: "Q56. The number of chromosomes in a human zygote is:", o: ["23", "46", "44", "21"], a: "46" },
+                    { q: "Q57. A slice of bread was kept in a moist dark place. After a few days, a cottony growth appeared. This is due to:", o: ["Yeast", "Rhizopus", "Hydra", "Planaria"], a: "Rhizopus" },
+                    { q: "Q58. Which of the following is an example of 'Regeneration' but NOT 'Reproduction' in a biological sense?", o: ["Planaria cutting", "Tail of a lizard", "Hydra budding", "Amoeba fission"], a: "Tail of a lizard" },
+                    { q: "Q59. The ratio of number of chromosomes in a human zygote and a human sperm is:", o: ["2:1", "1:2", "1:1", "1:4"], a: "2:1" },
+                    { q: "Q60. Which of the following events does NOT occur after fertilization in a flower?", o: ["Zygote divides", "Ovule develops a coat", "Petals and sepals fall off", "Pollen tube grows into style"], a: "Pollen tube grows into style" },
+                    { q: "Q61. If a woman is using a Copper-T, it will NOT help in protecting her from:", o: ["Pregnancy", "HIV-AIDS", "Implantation", "Fertilization"], a: "HIV-AIDS" },
+                    { q: "Q62. The production of male germ cells (sperms) requires a temperature lower than body temperature. This is provided by:", o: ["Prostate gland", "Scrotum", "Vas deferens", "Urethra"], a: "Scrotum" },
+                    { q: "Q63. What happens if the fallopian tubes are blocked surgically?", o: ["Ovulation stops", "Fertilization cannot occur", "Menstruation stops", "Sperms are not produced"], a: "Fertilization cannot occur" },
+                    { q: "Q64. In Bryophyllum, the buds produced in the notches of leaves fall off to grow into new plants. This is an example of:", o: ["Natural vegetative propagation", "Artificial vegetative propagation", "Fragmentation", "Budding"], a: "Natural vegetative propagation" },
+                    { q: "Q65. The presence of which structure ensures that the embryo receives oxygen from the mother?", o: ["Amniotic fluid", "Placenta", "Umbilical cord", "Cervix"], a: "Placenta" },
+                    { q: "Q66. When a cell reproduces, what is the most basic event that takes place?", o: ["Division of nucleus", "Creation of a DNA copy", "Growth of cytoplasm", "Formation of cell wall"], a: "Creation of a DNA copy" },
+                    { q: "Q67. Which of these is a protozoan that reproduces by multiple fission?", o: ["Amoeba", "Leishmania", "Plasmodium", "Paramecium"], a: "Plasmodium" },
+                    { q: "Q68. The length of the pollen tube is determined by the distance from:", o: ["Stigma to Style", "Stigma to Ovary", "Anther to Stigma", "Style to Ovule"], a: "Stigma to Ovary" },
+                    { q: "Q69. Which hormone is responsible for the changes seen in girls at the time of puberty?", o: ["Testosterone", "Estrogen", "Adrenaline", "Insulin"], a: "Estrogen" },
+                    { q: "Q70. During menstruation, what exactly is shed from the body?", o: ["The unfertilized egg only", "Lining of the uterus and blood", "Ovary tissue", "Amniotic fluid"], a: "Lining of the uterus and blood" },
+                    { q: "Q71. Binary fission in Leishmania occurs in a definite orientation because of:", o: ["Presence of flagellum", "Simple body design", "Presence of pseudopodia", "Cell wall"], a: "Presence of flagellum" },
+                    { q: "Q72. Which of the following is a result of excessive DNA copying inaccuracies?", o: ["Better survival", "Cell death", "Identical offspring", "No change"], a: "Cell death" },
+                    { q: "Q73. The part of the flower that often attracts insects for pollination is:", o: ["Sepals", "Petals", "Stamen", "Carpel"], a: "Petals" },
+                    { q: "Q74. Surgical method of contraception in males is called:", o: ["Tubectomy", "Vasectomy", "IUD", "Condom"], a: "Vasectomy" },
+                    { q: "Q75. What is the function of the 'Plumule' in a germinating seed?", o: ["Gives rise to root", "Gives rise to shoot", "Stores food", "Protects seed"], a: "Gives rise to shoot" }
+                ];
+
+                document.write(hardestSet.map((item, index) => `
+                    <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                        <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD MCQ ${index + 51}</span>
+                        <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">${item.q}</div>
+                        <div style="display: grid; gap: 8px; margin-top: 15px;">
+                            ${item.o.map(opt => `<div style="background: rgba(0, 255, 136, 0.05); border: 1px solid #00331a; padding: 12px; border-radius: 12px; color: #e0e1dd; font-size: 0.9rem;">${opt}</div>`).join('')}
+                        </div>
+                        <button onclick="toggleAns(this)" style="width: 140px; height: 44px; margin-top: 20px; background: transparent; border: 2px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                        <div style="display: none; margin-top: 15px; padding: 12px; background: rgba(0, 255, 136, 0.1); border-left: 4px solid #00ff88; color: #00ff88; font-weight: bold; font-size: 0.9rem;">Correct: ${item.a}</div>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+        <div id="ch7-mcq-final-set">
+            <script>
+                const finalSet = [
+                    { q: "Q76. Which part of the flower develops into a fruit after fertilization?", o: ["Ovule", "Ovary", "Stigma", "Style"], a: "Ovary" },
+                    { q: "Q77. What is the main advantage of sexual reproduction over asexual reproduction?", o: ["Slower process", "Less energy required", "Greater genetic variation", "Large number of offspring"], a: "Greater genetic variation" },
+                    { q: "Q78. In which of the following organisms does budding take place?", o: ["Amoeba", "Hydra", "Plasmodium", "Leishmania"], a: "Hydra" },
+                    { q: "Q79. The common passage for both sperms and urine in human males is:", o: ["Ureter", "Vas deferens", "Urethra", "Bladder"], a: "Urethra" },
+                    { q: "Q80. Which of the following is an example of an artificial vegetative propagation?", o: ["Layering", "Grafting", "Cutting", "All of these"], a: "All of these" },
+                    { q: "Q81. The sticky part of the carpel that receives pollen grains is:", o: ["Style", "Stigma", "Ovary", "Anther"], a: "Stigma" },
+                    { q: "Q82. At the time of enterance into the ovule, the pollen tube has:", o: ["One male gamete", "Two male gametes", "Three male gametes", "Four male gametes"], a: "Two male gametes" },
+                    { q: "Q83. Which of the following is a female accessory duct?", o: ["Vagina", "Uterus", "Fallopian tube", "All of these"], a: "All of these" },
+                    { q: "Q84. The method of reproduction in bread mould (Rhizopus) is:", o: ["Budding", "Spore formation", "Fragmentation", "Fission"], a: "Spore formation" },
+                    { q: "Q85. In a potato, new plants grow from:", o: ["Roots", "Leaves", "Eyes (Buds on stem)", "Flowers"], a: "Eyes (Buds on stem)" },
+                    { q: "Q86. Syngamy refers to the fusion of:", o: ["Two male gametes", "Male and female gametes", "Two female gametes", "Pollen and Stigma"], a: "Male and female gametes" },
+                    { q: "Q87. Which hormone regulates the menstrual cycle in females?", o: ["Insulin", "Estrogen", "Thyroxine", "Adrenaline"], a: "Estrogen" },
+                    { q: "Q88. An organism which can reproduce by two or more asexual methods is:", o: ["Amoeba", "Hydra", "Planaria", "Yeast"], a: "Hydra" },
+                    { q: "Q89. The male gamete in flowering plants is produced inside the:", o: ["Anther", "Ovary", "Stigma", "Sepal"], a: "Anther" },
+                    { q: "Q90. Contraceptive pills work by preventing:", o: ["Fertilization", "Ovulation", "Implantation", "Sperm production"], a: "Ovulation" },
+                    { q: "Q91. Regeneration is commonly observed in:", o: ["Planaria", "Hydra", "Both A and B", "Amoeba"], a: "Both A and B" },
+                    { q: "Q92. The process of fusion of male and female gametes is called:", o: ["Pollination", "Fertilization", "Germination", "Menstruation"], a: "Fertilization" },
+                    { q: "Q93. Which of the following is a sexually transmitted bacterial disease?", o: ["AIDS", "Gonorrhoea", "Warts", "Hepatitis"], a: "Gonorrhoea" },
+                    { q: "Q94. The structure that protects the seed in its early stages is:", o: ["Seed coat", "Cotyledon", "Radicle", "Plumule"], a: "Seed coat" },
+                    { q: "Q95. Multiple fission is the characteristic feature of:", o: ["Amoeba", "Plasmodium", "Hydra", "Leishmania"], a: "Plasmodium" },
+                    { q: "Q96. After fertilization, the ovule develops into a:", o: ["Fruit", "Seed", "Embryo", "Flower"], a: "Seed" },
+                    { q: "Q97. The sequence of reproductive stages seen in plants is:", o: ["Gametes, Zygote, Embryo, Seed", "Zygote, Gametes, Embryo, Seed", "Seed, Embryo, Zygote, Gametes", "Gametes, Embryo, Zygote, Seed"], a: "Gametes, Zygote, Embryo, Seed" },
+                    { q: "Q98. During germination, the part that grows upwards to form the shoot is:", o: ["Radicle", "Plumule", "Cotyledon", "Micropyle"], a: "Plumule" },
+                    { q: "Q99. IUCD stands for:", o: ["Intra Uterine Contraceptive Device", "Internal Uterine Control Device", "Intra Urogenital Contraceptive Device", "None"], a: "Intra Uterine Contraceptive Device" },
+                    { q: "Q100. The primary sex organ in human females is:", o: ["Uterus", "Ovary", "Fallopian tube", "Vagina"], a: "Ovary" }
+                ];
+
+                document.write(finalSet.map((item, index) => `
+                    <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                        <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">MCQ ${index + 76}</span>
+                        <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">${item.q}</div>
+                        <div style="display: grid; gap: 8px; margin-top: 15px;">
+                            ${item.o.map(opt => `<div style="background: rgba(0, 255, 136, 0.05); border: 1px solid #00331a; padding: 12px; border-radius: 12px; color: #e0e1dd; font-size: 0.9rem;">${opt}</div>`).join('')}
+                        </div>
+                        <button onclick="toggleAns(this)" style="width: 140px; height: 44px; margin-top: 20px; background: transparent; border: 2px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                        <div style="display: none; margin-top: 15px; padding: 12px; background: rgba(0, 255, 136, 0.1); border-left: 4px solid #00ff88; color: #00ff88; font-weight: bold; font-size: 0.9rem;">Correct: ${item.a}</div>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+        <div id="ch7-long-questions-part1">
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q1</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">Why is DNA copying an essential part of the process of reproduction?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(0, 255, 136, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> DNA contains information for the inheritance of features from parents to next generation. <br>1. It ensures that the offspring has the same body design as the parents. <br>2. It creates the biochemical machinery of the cell. <br>3. Small inaccuracies during copying lead to <b>variations</b>, which are the basis for evolution.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q2</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">How does binary fission differ from multiple fission? Give examples.</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(0, 255, 136, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    1. <b>Binary Fission:</b> The parent cell divides into two equal daughter cells. Occurs during favorable conditions. Ex: <u>Amoeba</u>, Leishmania.<br>
+                    2. <b>Multiple Fission:</b> The parent cell divides into many daughter cells simultaneously inside a cyst. Occurs during unfavorable conditions. Ex: <u>Plasmodium</u>.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q3</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">What are the advantages of vegetative propagation?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(0, 255, 136, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    1. Plants can bear flowers and fruits <b>earlier</b> than those produced from seeds.<br>
+                    2. It allows the propagation of plants that have <b>lost the capacity to produce seeds</b> (e.g., banana, jasmine, rose).<br>
+                    3. All plants produced are <b>genetically similar</b> to the parent plant, preserving desirable traits.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q4</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">Why is variation beneficial to the species but not necessarily for the individual?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(0, 255, 136, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> For an <b>individual</b>, a drastic variation might not suit its current environment, leading to its death. <br>However, for a <b>species</b>, if the environment changes suddenly (e.g., global warming), variations ensure that at least some individuals survive and continue the species' existence. Thus, variation is the key to long-term survival of a species.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q5</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">Differentiate between Self-pollination and Cross-pollination.</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(0, 255, 136, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    1. <b>Self-pollination:</b> Transfer of pollen from anther to stigma of the <u>same flower</u> or another flower of the same plant. No external agent is usually required.<br>
+                    2. <b>Cross-pollination:</b> Transfer of pollen from anther of one flower to stigma of a flower on <u>another plant</u> of the same species. External agents like wind, water, or insects are required.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            // Is script ko ek hi baar rakhna file mein
+            function toggleLong(btn) {
+                const ans = btn.nextElementSibling;
+                if (ans.style.display === "block") {
+                    ans.style.display = "none";
+                    btn.innerText = "SHOW ANSWER";
+                } else {
+                    ans.style.display = "block";
+                    btn.innerText = "HIDE ANSWER";
+                }
+            }
+        </script>
+        <div id="ch7-long-questions-part2">
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q6</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">Explain the process of fertilization in a flowering plant with the help of a diagram description.</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2.5px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(0, 255, 136, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> <br>1. After pollen lands on the <b>Stigma</b>, it germinates and grows a <b>Pollen Tube</b> through the style.<br>2. The pollen tube carries two male gametes to the <b>Ovary</b> and enters the ovule.<br>3. One male gamete fuses with the female egg cell to form a <b>Zygote</b> (Fertilization).<br>4. After fertilization, the zygote divides to form an embryo, the ovule becomes a seed, and the ovary ripens into a fruit.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q7</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">What are the changes seen in girls and boys at the time of puberty?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2.5px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(0, 255, 136, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> Puberty brings secondary sexual characteristics due to hormones:<br>
+                    <b>Common:</b> Thick hair growth in armpits and genital areas, oily skin, and appearance of pimples.<br>
+                    <b>In Girls:</b> Breast size begins to increase, darkening of nipple skin, and beginning of <b>menstrual cycle</b>.<br>
+                    <b>In Boys:</b> Growth of facial hair (beard/moustaches), deepening/cracking of voice, and penis occasionally begins to become enlarged and erect.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q8</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">What is the role of Seminal Vesicles and Prostate Gland in the male reproductive system?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2.5px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(0, 255, 136, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> Along the path of the vas deferens, glands like the prostate and seminal vesicles add their secretions so that:<br>
+                    1. The sperms are now in a <b>fluid medium</b> which makes their transport easier.<br>
+                    2. This fluid provides <b>nutrition</b> (fructose, calcium, and enzymes) to the sperms, helping them stay active and motile for fertilization.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q9</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">Explain the process of Menstruation. Why does it occur?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2.5px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(0, 255, 136, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> <br>1. Every month, the ovary releases one egg and the uterus prepares itself to receive a fertilized egg by making its lining thick and spongy.<br>2. If the egg is <b>not fertilized</b>, this lining is no longer needed.<br>3. So, the lining slowly breaks and comes out through the vagina as blood and mucus.<br>4. This cycle takes place roughly every month and is known as menstruation, lasting for about 2 to 8 days.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q10</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">What are the different methods of contraception? Why is family planning important?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2.5px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(0, 255, 136, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> Contraceptive methods include:<br>
+                    1. <b>Barrier Methods:</b> Condoms or diaphragms (prevent sperm meeting egg).<br>
+                    2. <b>Chemical Methods:</b> Oral pills (change hormonal balance to stop egg release).<br>
+                    3. <b>IUCDs:</b> Copper-T (placed in uterus to prevent implantation).<br>
+                    4. <b>Surgical Methods:</b> Vasectomy (males) and Tubectomy (females).<br><br>
+                    <b>Importance:</b> It prevents unwanted pregnancies, controls population growth, and protects the mother's health by ensuring proper gaps between children.</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="ch7-long-questions-hardest">
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q11</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">Explain the structure and function of the Placenta in human females. Why is it considered a temporary endocrine gland?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(0, 255, 136, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    1. <b>Structure:</b> It is a disc-like tissue embedded in the uterine wall. It contains villi on the embryo's side and blood spaces on the mother's side.<br>
+                    2. <b>Function:</b> It provides a large surface area for <b>glucose and oxygen</b> to pass from mother to embryo, and for <b>waste products</b> (CO2/urea) to be removed from embryo to mother's blood.<br>
+                    3. <b>Endocrine Role:</b> It is called 'temporary' because it is only present during pregnancy and secretes hormones like <u>hCG, Estrogen, and Progesterone</u> to maintain the pregnancy.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q12</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">How does the chromosome number remain constant in organisms that reproduce sexually? Explain the process.</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2.5px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(0, 255, 136, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> If each generation simply combined DNA from two parents, the DNA amount would double every time. To prevent this:<br>
+                    1. Special cells called <b>Germ-cells</b> (gametes) are formed in reproductive organs through a process called <b>Meiosis</b>.<br>
+                    2. Meiosis reduces the number of chromosomes to <b>half (n)</b>. For example, in humans, 46 becomes 23.<br>
+                    3. When a male gamete (23) fuses with a female gamete (23) during fertilization, the resulting <b>Zygote</b> restores the original number (23+23=46).</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q13</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">Describe the triple fusion and double fertilization process in angiosperms. Why is it called 'Double' fertilization?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2.5px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(0, 255, 136, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> In flowering plants, the pollen tube releases <b>two</b> male gametes into the embryo sac:<br>
+                    1. <b>Syngamy:</b> The 1st male gamete fuses with the <u>Egg cell</u> to form a Zygote (2n).<br>
+                    2. <b>Triple Fusion:</b> The 2nd male gamete fuses with <u>two polar nuclei</u> to form the primary endosperm nucleus (3n).<br>
+                    3. <b>Double Fertilization:</b> Since fertilization occurs <u>twice</u> in the same embryo sac (Syngamy + Triple Fusion), it is called Double Fertilization.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q14</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">Contrast the role of 'Testes' and 'Ovaries' as both reproductive organs and endocrine glands.</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(0, 255, 136, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    1. <b>Testes (Male):</b> <br>• Reproductive: Produce Sperms. <br>• Endocrine: Secretes <u>Testosterone</u> (controls puberty changes and sperm production).<br>
+                    2. <b>Ovaries (Female):</b> <br>• Reproductive: Produce Eggs (Ova). <br>• Endocrine: Secretes <u>Estrogen and Progesterone</u> (controls menstrual cycle, puberty changes, and pregnancy maintenance).</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="ch7-long-questions-extreme">
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q15</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">Compare and contrast the process of 'Regeneration' and 'Fragmentation'. Why can't all organisms show regeneration?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(0, 255, 136, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    1. <b>Fragmentation:</b> Occurs in multi-cellular organisms with simple body design (e.g., Spirogyra). The body simply breaks into pieces, and each piece grows into a new individual.<br>
+                    2. <b>Regeneration:</b> Occurs in organisms with specialized cells (e.g., Planaria). If the organism is cut, specialized cells proliferate and make new tissues.<br>
+                    3. <b>Why not all?</b> Complex organisms (like humans) have highly differentiated tissues and organs. Their cells have lost the 'totipotency' (ability to form any cell type), so they can only repair tissues but not regrow whole organs or bodies.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q16</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">Trace the path of sperm from the testes to the exterior. Mention the role of each structure involved.</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(0, 255, 136, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    1. <b>Testes:</b> Production of sperms.<br>
+                    2. <b>Epididymis:</b> Temporary storage and maturation of sperms.<br>
+                    3. <b>Vas Deferens:</b> Long tube that carries sperms upward towards the abdomen.<br>
+                    4. <b>Glands (Prostate/Seminal Vesicles):</b> Add fluid and nutrients to form <b>Semen</b>.<br>
+                    5. <b>Urethra:</b> Common duct for semen and urine to travel to the outside.<br>
+                    6. <b>Penis:</b> External organ that delivers sperms into the female reproductive tract.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q17</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">What is 'Tissue Culture'? Explain the steps involved and its significance in modern agriculture.</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(0, 255, 136, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> Tissue culture is an artificial vegetative propagation method.<br>
+                    1. <b>Steps:</b> Small tissue/cells are removed from the growing tip → Placed in artificial medium to form a mass of cells (<b>Callus</b>) → Transferred to medium containing hormones for growth and differentiation → Plantlets are placed in soil.<br>
+                    2. <b>Significance:</b> Many plants can be grown from one parent in disease-free conditions. Extremely useful for ornamental plants and orchids.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #00ff88; background: #001a00; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);">
+                <span class="page-label" style="background: #00ff88; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q18</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #00ff88;">Explain how the sexual mode of reproduction leads to greater diversity and evolution compared to asexual reproduction.</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00ff88; color: #00ff88; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(0, 255, 136, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    1. In asexual reproduction, DNA copying is the only source of variation (very limited).<br>
+                    2. In sexual reproduction, <b>two different DNA patterns</b> combine from two different parents.<br>
+                    3. Each new generation is a unique combination of traits, leading to <b>accumulated variations</b> over many generations.<br>
+                    4. This high diversity allows the species to adapt to changing environments, which is the driving force behind <b>Natural Selection</b> and Evolution.</p>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Chapter 6: Control and Coordination</title>
+    <style>
+        /* Screen Lock - No Shake */
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        html, body { 
+            background-color: #0a0e1a; margin: 0; padding: 0; 
+            width: 100%; overflow-x: hidden;
+            font-family: 'Arial', sans-serif; color: #ffffff;
+        }
+
+        /* Header - Exact as Screenshot */
+        .header-top { 
+            display: flex; justify-content: space-between; align-items: center; 
+            padding: 25px 20px; background: #0a0e1a; 
+            border-bottom: 2px solid #00f2ff; position: sticky; top: 0; z-index: 1000;
+        }
+        .back-btn { 
+            text-decoration: none; color: #00f2ff; font-weight: 900; 
+            font-size: 0.9rem; border: 2px solid #00f2ff; 
+            padding: 8px 20px; border-radius: 10px;
+        }
+        .smart-tag { 
+            color: #ffca28; font-weight: 900; font-size: 1rem; 
+            text-align: right; line-height: 1.2; letter-spacing: 0.5px;
+        }
+
+        /* Chapter Title - Neon Cyan Glow */
+        .ch-title {
+            text-align: center; color: #00f2ff; font-size: 3rem; 
+            font-weight: 900; margin: 60px 0; text-transform: uppercase;
+            text-shadow: 0 0 20px #00f2ff; line-height: 1.1;
+        }
+
+        .container { padding: 0 18px 60px 18px; width: 100%; }
+
+        /* The Mega Box Design */
+        .mega-card { 
+            background: #111827; border-radius: 30px; padding: 35px 22px; 
+            margin-bottom: 40px; border-left: 8px solid #00f2ff;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6); width: 100%;
+        }
+
+        .page-label { 
+            background: #ffca28; color: #000; padding: 8px 18px; 
+            border-radius: 10px; font-weight: 800; font-size: 0.8rem; 
+            display: inline-block; margin-bottom: 30px; text-transform: uppercase;
+        }
+
+        .topic-h { color: #ffca28; font-size: 1.8rem; font-weight: 800; margin-bottom: 25px; line-height: 1.2; }
+        .desc-p { font-size: 1.1rem; line-height: 1.8; color: #d1d5db; margin-bottom: 20px; }
+        
+        .hl-c { color: #00f2ff; font-weight: bold; }
+        .hl-y { color: #ffca28; font-weight: bold; }
+
+        /* Important Info Box */
+        .glow-box {
+            background: rgba(0, 242, 255, 0.05); border-radius: 15px;
+            padding: 20px; border: 1px dashed #00f2ff; margin: 20px 0;
+        }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 15px; color: #d1d5db; font-size: 1.05rem; }
+    </style>
+</head>
+<body>
+
+    <div class="header-top">
+        <a href="sci-chapters.html" class="back-btn">BACK</a>
+        <div class="smart-tag">SMART STUDY<br>FOR TOPPERS</div>
+    </div>
+
+    <h1 class="ch-title">CONTROL AND<br>COORDINATION</h1>
+
+    <div class="container">
+
+        <div class="mega-card">
+            <span class="page-label">PAGE 1-2: THE NEURON</span>
+            <h2 class="topic-h">Nervous System &<br>Nerve Cells</h2>
+            <p class="desc-p">All information from our environment is detected by specialized tips of some nerve cells called <span class="hl-c">Receptors</span>.</p>
+            <div class="glow-box">
+                <span class="hl-y">Impulse Path:</span><br>
+                Dendrite → Cell Body → Axon → Nerve Ending → Synapse.
+            </div>
+            <p class="desc-p">At the <span class="hl-c">Synapse</span>, a chemical signal is released to bridge the gap between two neurons.</p>
+        </div>
+
+        <div class="mega-card">
+            <span class="page-label">PAGE 3-4: REFLEXES</span>
+            <h2 class="topic-h">Reflex Action &<br>Reflex Arc</h2>
+            <p class="desc-p">Sudden responses to stimuli that bypass the conscious brain for speed are <span class="hl-c">Reflex Actions</span>.</p>
+            <ul>
+                <li><span class="hl-y">Sensory Neuron:</span> Carries signal to spinal cord.</li>
+                <li><span class="hl-y">Motor Neuron:</span> Carries command to muscle.</li>
+                <li><span class="hl-y">Effector:</span> The muscle that performs the action.</li>
+            </ul>
+        </div>
+
+        <div class="mega-card">
+            <span class="page-label">PAGE 5-6: HUMAN BRAIN</span>
+            <h2 class="topic-h">The Central Nervous System</h2>
+            <p class="desc-p">Brain is the main coordinating center. It is protected by the <span class="hl-c">Cranium</span> (skull) and CSF.</p>
+            <div class="glow-box">
+                <b>1. Fore-brain:</b> Thinking, memory, and voluntary actions.<br>
+                <b>2. Mid-brain:</b> Involuntary reflexes (eye/head).<br>
+                <b>3. Hind-brain:</b> <span class="hl-y">Cerebellum</span> (Balance), <span class="hl-y">Medulla</span> (BP/Vomiting), and <span class="hl-y">Pons</span> (Respiration).
+            </div>
+        </div>
+
+        <div class="mega-card">
+            <span class="page-label">PAGE 7-8: PLANTS</span>
+            <h2 class="topic-h">Coordination in Plants</h2>
+            <p class="desc-p">Plants use hormones for communication. They show <span class="hl-c">Tropic Movements</span> (Growth-related).</p>
+            <ul>
+                <li><span class="hl-y">Phototropism:</span> Movement towards light (Auxin).</li>
+                <li><span class="hl-y">Geotropism:</span> Response to gravity.</li>
+                <li><span class="hl-y">Chemotropism:</span> Growth of pollen tubes.</li>
+            </ul>
+        </div>
+
+        <div class="mega-card">
+            <span class="page-label">PAGE 9-10: HORMONES</span>
+            <h2 class="topic-h">Hormones in Animals</h2>
+            <p class="desc-p">Endocrine glands release hormones directly into the blood.</p>
+            <div class="glow-box">
+                - <span class="hl-c">Adrenaline:</span> Emergency hormone.<br>
+                - <span class="hl-c">Thyroxine:</span> Regulates metabolism (Needs Iodine).<br>
+                - <span class="hl-c">Insulin:</span> Controls blood sugar levels.<br>
+                - <span class="hl-c">Growth Hormone:</span> Secreted by Pituitary gland.
+            </div>
+            <p class="desc-p">The amount is regulated by the <span class="hl-y">Feedback Mechanism</span>.</p>
+        </div>
+        <h2 class="ch-title" style="margin-top: 80px; font-size: 2rem;">PRACTICE MCQS</h2>
+
+        <div id="mcq-container">
+            <script>
+                const mcqData = [
+                    { q: "Which of the following is the structural and functional unit of the nervous system?", o: ["Nephron", "Neuron", "Cerebrum", "Axon"], a: "Neuron" },
+                    { q: "The gap between two neurons is called a:", o: ["Dendrite", "Synapse", "Axon", "Impulse"], a: "Synapse" },
+                    { q: "In a neuron, where is the information first acquired?", o: ["Dendrite", "Cell Body", "Axon", "Nerve Ending"], a: "Dendrite" },
+                    { q: "Which part of the brain maintains posture and balance of the body?", o: ["Cerebrum", "Cerebellum", "Medulla", "Pons"], a: "Cerebellum" },
+                    { q: "Sudden involuntary response to a stimulus is known as:", o: ["Coordination", "Reflex Action", "Thinking", "Movement"], a: "Reflex Action" },
+                    { q: "Spinal cord originates from which part of the brain?", o: ["Cerebrum", "Cerebellum", "Pons", "Medulla"], a: "Medulla" },
+                    { q: "Which hormone is responsible for 'Fight or Flight' response?", o: ["Insulin", "Thyroxine", "Adrenaline", "Estrogen"], a: "Adrenaline" },
+                    { q: "The main thinking part of the brain is:", o: ["Fore-brain", "Mid-brain", "Hind-brain", "Spinal Cord"], a: "Fore-brain" },
+                    { q: "Which plant hormone inhibits growth and causes wilting of leaves?", o: ["Auxin", "Gibberellin", "Cytokinin", "Abscisic Acid"], a: "Abscisic Acid" },
+                    { q: "Iodine is necessary for the synthesis of which hormone?", o: ["Adrenaline", "Thyroxine", "Auxin", "Insulin"], a: "Thyroxine" },
+                    { q: "Growth of pollen tubes towards ovules is an example of:", o: ["Phototropism", "Hydrotropism", "Chemotropism", "Geotropism"], a: "Chemotropism" },
+                    { q: "The movement of sunflower in accordance with the sun is:", o: ["Chemotropism", "Geotropism", "Phototropism", "Hydrotropism"], a: "Phototropism" },
+                    { q: "Which of the following is a plant hormone?", o: ["Insulin", "Thyroxine", "Estrogen", "Cytokinin"], a: "Cytokinin" },
+                    { q: "Deficiency of Insulin causes:", o: ["Goitre", "Dwarfism", "Diabetes", "Gigantism"], a: "Diabetes" },
+                    { q: "Reflex arcs are formed in:", o: ["Brain", "Spinal Cord", "Muscles", "Nerves"], a: "Spinal Cord" },
+                    { q: "The protective bony box containing the brain is:", o: ["Vertebral Column", "Cranium", "Rib cage", "Skull"], a: "Cranium" },
+                    { q: "Which endocrine gland is called the 'Master Gland'?", o: ["Thyroid", "Adrenal", "Pituitary", "Pancreas"], a: "Pituitary" },
+                    { q: "Roots of plants show:", o: ["Positive Geotropism", "Negative Geotropism", "Positive Phototropism", "None"], a: "Positive Geotropism" },
+                    { q: "Pancreas secretes which of these hormones?", o: ["Insulin", "Glucagon", "Both A and B", "None"], a: "Both A and B" },
+                    { q: "Involuntary actions like salivation are controlled by:", o: ["Pons", "Medulla", "Cerebellum", "Cerebrum"], a: "Medulla" },
+                    { q: "Chemical signal that transmits impulse across a synapse:", o: ["Hormone", "Neurotransmitter", "Enzyme", "Blood"], a: "Neurotransmitter" },
+                    { q: "Changes in girls at puberty are due to:", o: ["Testosterone", "Estrogen", "Thyroxine", "Adrenaline"], a: "Estrogen" },
+                    { q: "Which plant hormone helps in the growth of the stem?", o: ["Auxin", "Gibberellin", "Both A and B", "Abscisic Acid"], a: "Both A and B" },
+                    { q: "Dwarfism is caused by deficiency of:", o: ["Thyroxine", "Growth Hormone", "Insulin", "Adrenaline"], a: "Growth Hormone" },
+                    { q: "Precise voluntary actions are controlled by:", o: ["Cerebrum", "Cerebellum", "Medulla", "Pons"], a: "Cerebellum" }
+                ];
+
+                document.write(mcqData.map((item, index) => `
+                    <div class="mega-card">
+                        <span class="page-label">QUESTION ${index + 1}</span>
+                        <div class="topic-h" style="font-size: 1.2rem;">${item.q}</div>
+                        <div style="display: grid; gap: 8px; margin: 15px 0;">
+                            ${item.o.map(opt => `<div style="background: rgba(0, 242, 255, 0.05); border: 1px solid #1e293b; padding: 12px; border-radius: 12px; color: #d1d5db; font-size: 1rem;">${opt}</div>`).join('')}
+                        </div>
+                        <button onclick="toggleAns(this)" style="width: 100%; padding: 12px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer;">SHOW ANSWER</button>
+                        <div style="display: none; margin-top: 15px; padding: 15px; background: rgba(0, 242, 255, 0.1); border-left: 4px solid #ffca28; color: #ffca28; font-weight: bold; border-radius: 8px;">
+                            Correct Answer: ${item.a}
+                        </div>
+                    </div>
+                `).join(''));
+
+                function toggleAns(btn) {
+                    const ans = btn.nextElementSibling;
+                    if (ans.style.display === "block") {
+                        ans.style.display = "none";
+                        btn.innerText = "SHOW ANSWER";
+                    } else {
+                        ans.style.display = "block";
+                        btn.innerText = "HIDE ANSWER";
+                    }
+                }
+            </script>
+        </div>
+        <div id="mcq-container-2">
+            <script>
+                const mcqData2 = [
+                    { q: "Which gland is associated with the 'Goitre' disease?", o: ["Pancreas", "Thyroid", "Adrenal", "Pituitary"], a: "Thyroid" },
+                    { q: "The movement of a shoot towards light is:", o: ["Positive Phototropism", "Negative Phototropism", "Hydrotropism", "Geotropism"], a: "Positive Phototropism" },
+                    { q: "Name the hormone that regulates blood pressure and heart beat in emergency:", o: ["Insulin", "Thyroxine", "Adrenaline", "Testosterone"], a: "Adrenaline" },
+                    { q: "Main function of Abscisic acid in plants is to:", o: ["Increase length", "Inhibit growth", "Promote cell division", "Help in flowering"], a: "Inhibit growth" },
+                    { q: "The shape of guard cells changes due to change in the amount of:", o: ["Protein", "Water", "Sugar", "Oxygen"], a: "Water" },
+                    { q: "Which of the following is an involuntary action?", o: ["Walking", "Picking a pen", "Heart beat", "Chewing food"], a: "Heart beat" },
+                    { q: "Thinking is the function of:", o: ["Fore-brain", "Mid-brain", "Hind-brain", "Spinal Cord"], a: "Fore-brain" },
+                    { q: "A diabetic patient is given injections of:", o: ["Thyroxine", "Adrenaline", "Insulin", "Estrogen"], a: "Insulin" },
+                    { q: "Response of plant roots towards water is called:", o: ["Chemotropism", "Phototropism", "Hydrotropism", "Geotropism"], a: "Hydrotropism" },
+                    { q: "The brain is responsible for:", o: ["Thinking", "Regulating heartbeat", "Balancing the body", "All of the above"], a: "All of the above" },
+                    { q: "Which hormone is called the 'Male Sex Hormone'?", o: ["Estrogen", "Progesterone", "Testosterone", "Insulin"], a: "Testosterone" },
+                    { q: "The longest fibre on the cell body of a neuron is:", o: ["Dendrite", "Axon", "Cytoplasm", "Synapse"], a: "Axon" },
+                    { q: "Master gland of the human body is:", o: ["Thyroid", "Pituitary", "Adrenal", "Pancreas"], a: "Pituitary" },
+                    { q: "Bending of the stem of a plant towards a source of light is caused by:", o: ["Cytokinin", "Gibberellin", "Auxin", "Abscisic Acid"], a: "Auxin" },
+                    { q: "Walking in a straight line is possible due to:", o: ["Cerebrum", "Cerebellum", "Medulla", "Pons"], a: "Cerebellum" },
+                    { q: "A person who has a very high blood sugar level is suffering from:", o: ["Goitre", "Gigantism", "Diabetes", "Anaemia"], a: "Diabetes" },
+                    { q: "Which of the following is NOT a plant hormone?", o: ["Auxin", "Gibberellin", "Adrenaline", "Cytokinin"], a: "Adrenaline" },
+                    { q: "The junction between two neurons is:", o: ["Synapse", "Joint", "Lunction", "Connector"], a: "Synapse" },
+                    { q: "Which gland secretes the Growth Hormone?", o: ["Adrenal", "Pituitary", "Thyroid", "Pancreas"], a: "Pituitary" },
+                    { q: "Drooping of leaves of Mimosa pudica is a:", o: ["Tropic movement", "Nastic movement", "Chemical movement", "None"], a: "Nastic movement" },
+                    { q: "The center for hunger is located in:", o: ["Fore-brain", "Mid-brain", "Hind-brain", "Medulla"], a: "Fore-brain" },
+                    { q: "Which hormone is essential for the metabolism of carbohydrates, fats and proteins?", o: ["Insulin", "Thyroxine", "Adrenaline", "Growth Hormone"], a: "Thyroxine" },
+                    { q: "Involuntary actions like vomiting are controlled by:", o: ["Medulla", "Pons", "Cerebellum", "Cerebrum"], a: "Medulla" },
+                    { q: "Estrogen is produced in:", o: ["Testes", "Ovary", "Pancreas", "Pituitary"], a: "Ovary" },
+                    { q: "Feedback mechanism regulates the:", o: ["Digestion", "Hormone release", "Blood flow", "Excretion"], a: "Hormone release" }
+                ];
+
+                document.write(mcqData2.map((item, index) => `
+                    <div class="mega-card">
+                        <span class="page-label">QUESTION ${index + 26}</span>
+                        <div class="topic-h" style="font-size: 1.2rem;">${item.q}</div>
+                        <div style="display: grid; gap: 8px; margin: 15px 0;">
+                            ${item.o.map(opt => `<div style="background: rgba(0, 242, 255, 0.05); border: 1px solid #1e293b; padding: 12px; border-radius: 12px; color: #d1d5db; font-size: 1rem;">${opt}</div>`).join('')}
+                        </div>
+                        <button onclick="toggleAns(this)" style="width: 100%; padding: 12px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer;">SHOW ANSWER</button>
+                        <div style="display: none; margin-top: 15px; padding: 15px; background: rgba(0, 242, 255, 0.1); border-left: 4px solid #ffca28; color: #ffca28; font-weight: bold; border-radius: 8px;">
+                            Correct Answer: ${item.a}
+                        </div>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+        <div id="hard-mcq-fixed-v2">
+            <script>
+                const fixedHardMcqs = [
+                    { q: "Q51. Which part of the neuron converts an electrical signal into a chemical signal?", o: ["Dendrite", "Cell Body", "Axon terminal", "Myelin sheath"], a: "Axon terminal" },
+                    { q: "Q52. The movement of sunflower in response to light is a:", o: ["Nastic movement", "Tropic movement", "Tactic movement", "None"], a: "Tropic movement" },
+                    { q: "Q53. A person with a damaged cerebellum will find it difficult to:", o: ["Breathe", "Stop vomiting", "Walk in a straight line", "Feel hunger"], a: "Walk in a straight line" },
+                    { q: "Q54. Which hormone's synthesis is affected if a person lives in an iodine-deficient area?", o: ["Adrenaline", "Thyroxine", "Insulin", "Auxin"], a: "Thyroxine" },
+                    { q: "Q55. The rapid drooping of 'Touch-me-not' leaves is due to change in:", o: ["Turgor pressure of cells", "Rate of photosynthesis", "Direction of light", "Temperature"], a: "Turgor pressure of cells" },
+                    { q: "Q56. Which part of the brain is the center for 'Urge of eating'?", o: ["Hypothalamus", "Cerebellum", "Medulla", "Pons"], a: "Hypothalamus" },
+                    { q: "Q57. In a synapse, chemical signal is transmitted from:", o: ["Dendrite to Axon", "Axon to Dendrite", "Nucleus to Axon", "Axon to Cell Body"], a: "Axon to Dendrite" },
+                    { q: "Q58. Which plant hormone is known as the 'Stress Hormone'?", o: ["Auxin", "Gibberellin", "Abscisic Acid", "Cytokinin"], a: "Abscisic Acid" },
+                    { q: "Q59. A growth-independent movement in plants is:", o: ["Phototropism", "Chemotropism", "Seismonasty", "Geotropism"], a: "Seismonasty" },
+                    { q: "Q60. Which hormone is secreted by the Pituitary gland to stimulate the Thyroid?", o: ["TSH", "Thyroxine", "Adrenaline", "STH"], a: "TSH" },
+                    { q: "Q61. The main function of Cytokinins is to:", o: ["Inhibit growth", "Promote cell division", "Elongate cells", "Cause wilting"], a: "Promote cell division" },
+                    { q: "Q62. Posture and balance are voluntary but controlled by:", o: ["Cerebrum", "Cerebellum", "Medulla", "Spinal Cord"], a: "Cerebellum" },
+                    { q: "Q63. Which part of the brain controls the reflex of swallowing and coughing?", o: ["Pons", "Cerebellum", "Medulla", "Fore-brain"], a: "Medulla" },
+                    { q: "Q64. If the tip of a seedling is removed, it stops growing towards light because of loss of:", o: ["Gibberellin", "Auxin", "Cytokinin", "Ethylene"], a: "Auxin" },
+                    { q: "Q65. Which of these is a 'Mixed Gland'?", o: ["Thyroid", "Adrenal", "Pancreas", "Pituitary"], a: "Pancreas" },
+                    { q: "Q66. The response of a plant towards the touch of a support is:", o: ["Chemotropism", "Thigmotropism", "Hydrotropism", "Geotropism"], a: "Thigmotropism" },
+                    { q: "Q67. Which hormone regulates secondary sexual characters in males?", o: ["Estrogen", "Testosterone", "Insulin", "Thyroxine"], a: "Testosterone" },
+                    { q: "Q68. Sensory neurons carry messages from:", o: ["Brain to muscles", "Receptors to CNS", "CNS to receptors", "Muscle to muscle"], a: "Receptors to CNS" },
+                    { q: "Q69. High concentration of Auxin in roots:", o: ["Stimulates growth", "Inhibits growth", "No effect", "Promotes branching"], a: "Inhibits growth" },
+                    { q: "Q70. Which part of the brain is most developed in humans?", o: ["Cerebellum", "Cerebrum", "Medulla", "Pons"], a: "Cerebrum" },
+                    { q: "Q71. Growth of a plant stem against gravity is:", o: ["Positive Geotropism", "Negative Geotropism", "Positive Phototropism", "None"], a: "Negative Geotropism" },
+                    { q: "Q72. Excessive secretion of Growth Hormone leads to:", o: ["Dwarfism", "Gigantism", "Goitre", "Diabetes"], a: "Gigantism" },
+                    { q: "Q73. Reflex actions are faster because they don't involve:", o: ["Neurons", "Muscles", "Complex Brain processing", "Spinal Cord"], a: "Complex Brain processing" },
+                    { q: "Q74. Which hormone helps in the ripening of fruits?", o: ["Auxin", "Ethylene", "Gibberellin", "ABA"], a: "Ethylene" },
+                    { q: "Q75. The gap between two neurons is:", o: ["Node of Ranvier", "Synapse", "Axon Hillock", "Dendrite tip"], a: "Synapse" }
+                ];
+
+                document.write(fixedHardMcqs.map((item, index) => `
+                    <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                        <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">MCQ ${index + 51}</span>
+                        <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">${item.q}</div>
+                        <div style="display: grid; gap: 10px; margin-top: 15px;">
+                            ${item.o.map(opt => `<div style="background: rgba(188, 19, 254, 0.05); border: 1px solid #2d134d; padding: 12px; border-radius: 12px; color: #d1d5db; font-size: 0.9rem;">${opt}</div>`).join('')}
+                        </div>
+                        <button onclick="toggleAns(this)" style="width: 140px; height: 44px; margin-top: 20px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                        <div style="display: none; margin-top: 15px; padding: 12px; background: rgba(0, 242, 255, 0.1); border-left: 4px solid #00f2ff; color: #00f2ff; font-weight: bold; font-size: 0.9rem;">Correct: ${item.a}</div>
+                    </div>
+                `).join(''));
+
+                function toggleAns(btn) {
+                    const ans = btn.nextElementSibling;
+                    if (ans.style.display === "block") {
+                        ans.style.display = "none";
+                        btn.innerText = "SHOW ANSWER";
+                    } else {
+                        ans.style.display = "block";
+                        btn.innerText = "HIDE ANSWER";
+                    }
+                }
+            </script>
+        </div>
+        <div id="final-mcq-fixed">
+            <script>
+                const finalSet = [
+                    { q: "Q76. Which part of the brain is responsible for the precision of voluntary actions?", o: ["Cerebrum", "Pons", "Cerebellum", "Medulla"], a: "Cerebellum" },
+                    { q: "Q77. The movement of plant part in response to gravity is:", o: ["Phototropism", "Geotropism", "Hydrotropism", "Chemotropism"], a: "Geotropism" },
+                    { q: "Q78. Which hormone is known as the 'Pregnancy Hormone' in females?", o: ["Estrogen", "Progesterone", "Testosterone", "Thyroxine"], a: "Progesterone" },
+                    { q: "Q79. The involuntary action like blood pressure is controlled by:", o: ["Pons", "Medulla", "Cerebellum", "Cerebrum"], a: "Medulla" },
+                    { q: "Q80. Which plant hormone promotes the falling of mature leaves?", o: ["Auxin", "Gibberellin", "Cytokinin", "Abscisic Acid"], a: "Abscisic Acid" },
+                    { q: "Q81. The structural and functional unit of the human nervous system is:", o: ["Axon", "Nephron", "Neuron", "Dendrite"], a: "Neuron" },
+                    { q: "Q82. Which gland is called the 'Master Gland'?", o: ["Thyroid", "Adrenal", "Pituitary", "Pancreas"], a: "Pituitary" },
+                    { q: "Q83. Response of plants to the stimulus of water is:", o: ["Chemotropism", "Hydrotropism", "Geotropism", "Phototropism"], a: "Hydrotropism" },
+                    { q: "Q84. Which hormone deficiency leads to Dwarfism?", o: ["Thyroxine", "Adrenaline", "Growth Hormone", "Insulin"], a: "Growth Hormone" },
+                    { q: "Q85. The site of information acquisition in a neuron is:", o: ["Axon", "Dendrite", "Cell body", "Synapse"], a: "Dendrite" },
+                    { q: "Q86. Which part of the brain regulates respiration?", o: ["Pons", "Medulla", "Cerebellum", "Fore-brain"], a: "Pons" },
+                    { q: "Q87. A feedback mechanism regulates the amount of which substance?", o: ["Blood", "Urine", "Hormones", "Digestive juice"], a: "Hormones" },
+                    { q: "Q88. Which hormone helps the body to adjust to stress?", o: ["Thyroxine", "Insulin", "Adrenaline", "Estrogen"], a: "Adrenaline" },
+                    { q: "Q89. Growth of pollen tubes towards ovules is:", o: ["Hydrotropism", "Chemotropism", "Geotropism", "Phototropism"], a: "Chemotropism" },
+                    { q: "Q90. Which gland regulates the metabolism of carbohydrates?", o: ["Thyroid", "Adrenal", "Pancreas", "Pituitary"], a: "Thyroid" },
+                    { q: "Q91. The fluid-filled space between brain and skull is:", o: ["Blood", "Plasma", "CSF", "Lymph"], a: "CSF" },
+                    { q: "Q92. Which hormone is produced in the Testes?", o: ["Estrogen", "Progesterone", "Testosterone", "Insulin"], a: "Testosterone" },
+                    { q: "Q93. Non-directional movement in response to touch is:", o: ["Thigmotropism", "Seismonasty", "Phototropism", "Geotropism"], a: "Seismonasty" },
+                    { q: "Q94. Which hormone is called the 'Fight or Flight' hormone?", o: ["Insulin", "Thyroxine", "Adrenaline", "Growth Hormone"], a: "Adrenaline" },
+                    { q: "Q95. The bony box protecting the brain is called:", o: ["Ribcage", "Vertebra", "Cranium", "Sternum"], a: "Cranium" },
+                    { q: "Q96. Which plant hormone helps in cell division?", o: ["Auxin", "Gibberellin", "Cytokinin", "ABA"], a: "Cytokinin" },
+                    { q: "Q97. Involuntary actions like vomiting are controlled by:", o: ["Pons", "Medulla", "Cerebellum", "Cerebrum"], a: "Medulla" },
+                    { q: "Q98. Which gland is both endocrine and exocrine?", o: ["Thyroid", "Adrenal", "Pancreas", "Pituitary"], a: "Pancreas" },
+                    { q: "Q99. The sensory neuron carries impulse to the:", o: ["Muscle", "Spinal Cord", "Receptor", "Gland"], a: "Spinal Cord" },
+                    { q: "Q100. Coordination in animals is achieved through:", o: ["Nervous system", "Endocrine system", "Both A and B", "Digestive system"], a: "Both A and B" }
+                ];
+
+                document.write(finalSet.map((item, index) => `
+                    <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                        <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">MCQ ${index + 76}</span>
+                        <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">${item.q}</div>
+                        <div style="display: grid; gap: 8px; margin-top: 15px;">
+                            ${item.o.map(opt => `<div style="background: rgba(188, 19, 254, 0.05); border: 1px solid #2d134d; padding: 10px; border-radius: 10px; color: #e0e1dd; font-size: 0.9rem;">${opt}</div>`).join('')}
+                        </div>
+                        <button onclick="toggleAns(this)" style="width: 140px; height: 44px; margin-top: 20px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                        <div style="display: none; margin-top: 15px; padding: 12px; background: rgba(0, 242, 255, 0.1); border-left: 4px solid #00f2ff; color: #00f2ff; font-weight: bold; font-size: 0.9rem;">Correct: ${item.a}</div>
+                    </div>
+                `).join(''));
+
+                function toggleAns(btn) {
+                    const ans = btn.nextElementSibling;
+                    if (ans.style.display === "block") {
+                        ans.style.display = "none";
+                        btn.innerText = "SHOW ANSWER";
+                    } else {
+                        ans.style.display = "block";
+                        btn.innerText = "HIDE ANSWER";
+                    }
+                }
+            </script>
+        </div>
+        <h2 class="ch-title" style="margin-top: 80px; font-size: 2rem;">LONG QUESTIONS</h2>
+
+        <div class="container">
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q1</span>
+                <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">Draw the structure of a neuron and explain its functions. How does the impulse travel?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid #2d134d; pt: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> Neuron has three main parts: <b>Dendrite</b> (acquires info), <b>Cell Body</b> (processes info), and <b>Axon</b> (transmits info).<br><br>
+                    <b>Impulse Travel:</b> Info creates an electrical impulse at dendrite → travels to axon → at synapse, chemicals are released → start new impulse in next neuron.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q2</span>
+                <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">What is a reflex arc? Trace the sequence of events when we touch a hot object.</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid #2d134d; pt: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> The pathway of nerve impulses in a reflex action is a reflex arc.<br><br>
+                    <b>Sequence:</b> Stimulus (Heat) → Receptor (Skin) → Sensory Neuron → Spinal Cord → Motor Neuron → Effector (Muscle) → Response (Hand pulls back).</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q3</span>
+                <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">Explain the major regions of the human brain and their specific functions.</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid #2d134d; pt: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    1. <b>Fore-brain:</b> Main thinking part, controls voluntary actions and memory.<br>
+                    2. <b>Mid-brain:</b> Controls involuntary head and eye movements.<br>
+                    3. <b>Hind-brain:</b> Cerebellum (balance), Medulla (BP, vomiting), and Pons (respiration).</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q4</span>
+                <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">Differentiate between Tropic and Nastic movements in plants with examples.</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid #2d134d; pt: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    - <b>Tropic:</b> Directional and growth-dependent. Ex: Phototropism (stem moves to light).<br>
+                    - <b>Nastic:</b> Non-directional and growth-independent. Ex: Drooping of Touch-me-not leaves.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q5</span>
+                <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">How does our body respond when adrenaline is secreted into the blood?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid #2d134d; pt: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> It prepares the body for emergency:<br>
+                    1. Heart beat increases to supply more oxygen.<br>
+                    2. Blood diverted to skeletal muscles.<br>
+                    3. Breathing rate increases. This is the "Fight or Flight" response.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            function toggleLong(btn) {
+                const ans = btn.nextElementSibling;
+                if (ans.style.display === "block") {
+                    ans.style.display = "none";
+                    btn.innerText = "SHOW ANSWER";
+                } else {
+                    ans.style.display = "block";
+                    btn.innerText = "HIDE ANSWER";
+                }
+            }
+        </script>
+        <div class="container">
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q6</span>
+                <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">How do auxins promote the growth of a tendril around a support?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid #2d134d; padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> Auxin diffuses towards the side away from the support. This causes the outer side to grow faster, making the tendril circle the support.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q7</span>
+                <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">Why is the use of iodised salt advisable?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid #2d134d; padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> Iodine is needed by the Thyroid gland to make Thyroxine. It prevents Goitre.</p>
+                </div>
+            </div>
+
+            </div>
+
+        <script>
+            // YE FUNCTION ANSWER KO SHOW/HIDE KARTA HAI
+            function toggleLong(btn) {
+                const ans = btn.nextElementSibling;
+                if (ans.style.display === "block") {
+                    ans.style.display = "none";
+                    btn.innerText = "SHOW ANSWER";
+                } else {
+                    ans.style.display = "block";
+                    btn.innerText = "HIDE ANSWER";
+                }
+            }
+        </script>
+            <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q8</span>
+                <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">Explain the feedback mechanism for regulation of insulin secretion.</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid #2d134d; padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> When blood sugar levels rise, it is detected by the cells of the <b>Pancreas</b> which respond by producing more insulin. As the blood sugar level falls, insulin secretion is reduced. This timing and amount of hormone released are controlled by the feedback mechanism.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q9</span>
+                <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">Compare and contrast Nervous and Hormonal coordination.</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid #2d134d; padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    1. <b>Nervous:</b> Information is sent as electrical impulses. It is very fast but its effect is short-lived.<br>
+                    2. <b>Hormonal:</b> Information is sent as chemical messengers via blood. It is slower but reaches every cell and has a long-lasting effect.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q10</span>
+                <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">What are the functions of Cerebellum and Medulla?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid #2d134d; padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    - <b>Cerebellum:</b> Controls precision of voluntary actions and maintains the posture and balance of the body.<br>
+                    - <b>Medulla:</b> Controls involuntary actions such as blood pressure, salivation, and vomiting.</p>
+                </div>
+            </div>
+        <div class="container">
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q11</span>
+                <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">How does the movement of leaves in a sensitive plant (Mimosa pudica) differ from the movement of a shoot towards light?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid #2d134d; padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    1. <b>Sensitive Plant:</b> It is a <u>Nastic movement</u>. It is growth-independent and caused by sudden change in turgor pressure (water amount) in leaves. It is very fast.<br>
+                    2. <b>Shoot towards light:</b> It is a <u>Tropic movement</u> (Phototropism). It is growth-dependent and caused by the unequal distribution of Auxin hormone. It is a very slow process.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q12</span>
+                <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">Explain the mechanism of 'Chemical Communication' in animals. Why is it needed alongside nervous coordination?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid #2d134d; padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> Chemical communication happens through <b>Hormones</b> secreted by endocrine glands directly into blood.<br><br>
+                    <b>Why needed?</b> Nervous impulses do not reach every single cell of the body. Also, nerve cells cannot constantly create and transmit impulses. Hormones can reach each and every cell and provide long-lasting, steady coordination.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q13</span>
+                <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">What happens at the synapse between two neurons? Explain the role of neurotransmitters.</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid #2d134d; padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> Synapse is the microscopic gap between two neurons. When an electrical impulse reaches the nerve ending of an axon, it triggers the release of <b>Neurotransmitters</b> (chemicals). These chemicals diffuse across the gap and start a similar electrical impulse in the dendrite of the next neuron.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q14</span>
+                <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">How does the brain and spinal cord stay protected? Mention the layers and fluid.</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid #2d134d; padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    1. <b>Brain:</b> It is situtated inside a bony box called the <b>Cranium</b> (Skull). Inside it, the brain is contained in a fluid-filled balloon which acts as a shock absorber. This fluid is <b>Cerebrospinal Fluid (CSF)</b>.<br>
+                    2. <b>Spinal Cord:</b> It is protected by a bony structure called the <b>Vertebral Column</b> or backbone.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q15</span>
+                <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">Explain how the human eye adjusts to look at distant and nearby objects. Which part of the brain coordinates this?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid #2d134d; padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> The ciliary muscles modify the curvature of the eye lens to adjust its focal length (Power of Accommodation). <br><br><b>Brain Part:</b> The <b>Mid-brain</b> is responsible for coordinating these visual reflexes and involuntary eye muscle movements.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q16</span>
+                <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">What is the significance of the 'Blood-Brain Barrier' and how is the CNS protected from mechanical shocks?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid #2d134d; padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> The BBB protects the brain from harmful chemicals and pathogens in the blood. <br><br><b>Mechanical Protection:</b> The brain is floating in <b>Cerebrospinal Fluid (CSF)</b> inside the cranium. This fluid acts as a shock absorber, spreading the force of an impact to prevent direct injury to the delicate brain tissue.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q17</span>
+                <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">Why is the pancreas called a 'Dual Gland'? Explain its role in maintaining homeostasis.</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid #2d134d; padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> It is both <b>Exocrine</b> (secretes digestive enzymes via ducts) and <b>Endocrine</b> (secretes hormones like Insulin and Glucagon directly into blood). <br><br><b>Homeostasis:</b> It maintains blood sugar levels. Insulin lowers high sugar, while Glucagon increases low sugar, ensuring a stable internal environment.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2px solid #bc13fe; background: #110421; border-radius: 25px; padding: 25px 20px;">
+                <span class="page-label" style="background: #ffca28; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q18</span>
+                <div class="topic-h" style="color: #00f2ff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px;">Describe the path of a nerve impulse in the body. Why can it only flow in one direction?</div>
+                
+                <button onclick="toggleLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem;">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid #2d134d; padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> Path: Dendrite → Cell Body → Axon → Synapse → Next Neuron. <br><br><b>One-way Flow:</b> This is because neurotransmitters are only present in the <b>Axon Terminals</b> (nerve endings) and receptors for these chemicals are only present on the <b>Dendrites</b> of the next neuron. Thus, the signal cannot go backward.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

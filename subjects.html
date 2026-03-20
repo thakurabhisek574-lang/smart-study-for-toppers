@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Subjects - Smart Study</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #0f2027; /* Dark Premium Theme */
+            height: 100vh;
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            overflow: hidden;
+        }
+
+        /* Back Button */
+        .nav-top {
+            padding: 20px;
+            z-index: 10;
+        }
+        .back-btn {
+            text-decoration: none;
+            color: #ffca28;
+            font-weight: bold;
+            background: rgba(255,255,255,0.05);
+            padding: 10px 20px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Main Center Content */
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* BIG BRAND NAME */
+        .brand-heavy {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin-bottom: 40px;
+            background: linear-gradient(to bottom, #ffffff, #81d4fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        /* HEAVY SUBJECT CARD */
+        .subject-link {
+            width: 100%;
+            max-width: 350px;
+            text-decoration: none;
+        }
+
+        .subject-card {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 40px 20px;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            border: 2px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .subject-card:active {
+            transform: scale(0.95);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .subject-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            letter-spacing: 3px;
+            color: white;
+            display: block;
+        }
+
+        .sub-text {
+            color: #ffca28;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-top: 10px;
+            display: block;
+        }
+
+        /* Decoration Circles */
+        .bg-circle {
+            position: absolute;
+            background: rgba(129, 212, 250, 0.03);
+            border-radius: 50%;
+            z-index: -1;
+        }
+        .circle-1 { width: 400px; height: 400px; top: -100px; right: -100px; }
+    </style>
+</head>
+<body>
+
+    <div class="bg-circle circle-1"></div>
+
+    <div class="nav-top">
+        <a href="index.html" class="back-btn">← BACK</a>
+    </div>
+
+    <div class="content">
+        <h1 class="brand-heavy">Smart Study<br>For Toppers</h1>
+
+        <a href="sci-chapters.html" class="subject-link">
+            <div class="subject-card">
+                <span class="subject-name">SCIENCE</span>
+                <span class="sub-text">Class 10th Notes</span>
+            </div>
+        </a>
+        
+        <p style="margin-top: 30px; opacity: 0.3; font-size: 0.8rem;">More subjects coming soon</p>
+    </div>
+
+</body>
+</html>

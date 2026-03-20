@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 12 | Heredity Deep Notes | Smart Study</title>
+    <style>
+        :root {
+            --neon-blue: #00d4ff;
+            --neon-green: #39ff14;
+            --bg-dark: #0a1122;
+            --card-bg: rgba(16, 24, 48, 0.95);
+            --text-gray: #b0b8c4;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: #ffffff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding-top: 90px;
+            line-height: 1.8;
+        }
+
+        /* STICKY HEADER - Hamesha upar dikhega */
+        .sticky-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(10, 17, 34, 0.98);
+            backdrop-filter: blur(15px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            box-sizing: border-box;
+            border-bottom: 2px solid var(--neon-blue);
+            z-index: 9999;
+            box-shadow: 0 0 25px rgba(0, 212, 255, 0.3);
+        }
+
+        .back-btn {
+            background: transparent;
+            color: var(--neon-green);
+            border: 2px solid var(--neon-green);
+            padding: 10px 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 0 15px var(--neon-green);
+            transition: 0.4s;
+            text-transform: uppercase;
+        }
+
+        .back-btn:hover {
+            background: var(--neon-green);
+            color: #000;
+        }
+
+        .brand-logo { text-align: right; }
+        .brand-logo .s-study { color: #fff; font-size: 0.8rem; letter-spacing: 3px; display: block; }
+        .brand-logo .toppers { color: var(--neon-green); font-weight: 900; font-size: 1.2rem; text-shadow: 0 0 10px var(--neon-green); }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        
+        .main-hero-title {
+            text-align: center;
+            font-size: 3rem;
+            background: linear-gradient(to right, var(--neon-blue), var(--neon-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+            margin-bottom: 50px;
+        }
+
+        .mega-page {
+            background: var(--card-bg);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 25px;
+            padding: 40px;
+            margin-bottom: 50px;
+            position: relative;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .page-badge {
+            position: absolute;
+            top: -15px;
+            right: 30px;
+            background: var(--neon-blue);
+            color: #000;
+            padding: 5px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        h2 { color: var(--neon-green); font-size: 1.8rem; border-left: 5px solid var(--neon-green); padding-left: 15px; margin-bottom: 25px; }
+        h3 { color: var(--neon-blue); font-size: 1.4rem; margin-top: 30px; border-bottom: 1px dashed #333; display: inline-block; }
+
+        .content-block {
+            background: rgba(255,255,255,0.02);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .highlight { color: var(--neon-green); font-weight: bold; }
+        
+        table { width: 100%; border-collapse: collapse; margin: 25px 0; }
+        th { background: var(--neon-blue); color: #000; padding: 15px; text-align: left; }
+        td { border: 1px solid #2a3a5a; padding: 15px; }
+
+        ul li { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+
+    <header class="sticky-header">
+        <a href="sci-chapters.html" class="back-btn">← BACK</a>
+        <div class="brand-logo">
+            <span class="s-study">SMART STUDY</span>
+            <span class="toppers">FOR TOPPERS</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="main-hero-title">HEREDITY: THE COMPLETE GUIDE</h1>
+
+        <div class="mega-page">
+            <div class="page-badge">PAGE 1-3</div>
+            <h2>1. Variations and Reproduction</h2>
+            <div class="content-block">
+                <p><span class="highlight">Introduction:</span> Bachpan se humne dekha hai ki hum apne parents jaise dikhte hain, par bilkul unki copy nahi hote. Is study ko Genetics kehte hain.</p>
+                <p><b>Asexual vs Sexual Variation:</b> 
+                Asexual reproduction mein variations bahut kam hoti hain (sirf DNA copying errors ki wajah se). Lekin Sexual reproduction mein variations bahut zyada hoti hain kyunki do alag parents ka DNA milta hai.</p>
+                <p><span class="highlight">Importance:</span> Variations species ko survive karne mein madad karti hain. Agar environment suddenly badal jaye, toh variations hi kisi species ko khatam hone se bachati hain.</p>
+            </div>
+        </div>
+
+        <div class="mega-page">
+            <div class="page-badge">PAGE 4-7</div>
+            <h2>2. Gregor Mendel's Experiments</h2>
+            <div class="content-block">
+                <p>Mendel ne <b>Garden Pea (Pisum sativum)</b> par kaam kiya. Unhone 7 saal tak research ki aur bataya ki characters kaise inherit hote hain.</p>
+                <h3>Why Pea Plant?</h3>
+                <ul>
+                    <li>Bisexual flowers aur easy self-pollination.</li>
+                    <li>Chota life cycle (jaldi results milte hain).</li>
+                    <li>Saaf dikhne wale contrasting characters (Tall/Dwarf).</li>
+                </ul>
+            </div>
+            <table>
+                <tr><th>Character</th><th>Dominant</th><th>Recessive</th></tr>
+                <tr><td>Height</td><td>Tall (T)</td><td>Dwarf (t)</td></tr>
+                <tr><td>Seed Shape</td><td>Round (R)</td><td>Wrinkled (r)</td></tr>
+                <tr><td>Seed Color</td><td>Yellow (Y)</td><td>Green (y)</td></tr>
+            </table>
+        </div>
+
+        <div class="mega-page">
+            <div class="page-badge">PAGE 8-12</div>
+            <h2>3. Mendel's Three Great Laws</h2>
+            <div class="content-block">
+                <h3>I. Law of Dominance</h3>
+                <p>Jab do alag traits (T aur t) saath aate hain, toh sirf dominant trait (Tall) hi dikhta hai. Recessive trait (Dwarf) tab tak nahi dikhta jab tak wo pair mein na ho (tt).</p>
+                
+                <h3>II. Law of Segregation</h3>
+                <p>Jab gametes (seeds) bante hain, toh genes ka pair alag-alag ho jata hai. Har sperm ya egg mein sirf ek hi gene jata hai. Ise 'Purity of Gametes' bhi kehte hain.</p>
+
+                <h3>III. Law of Independent Assortment</h3>
+                <p>Ye Dihybrid cross par base hai. Iska matlab hai ki seed ka color aur seed ki shape ek dusre par depend nahi karte. Dono azadi se inherit hote hain.</p>
+            </div>
+        </div>
+
+        <div class="mega-page">
+            <div class="page-badge">PAGE 13-16</div>
+            <h2>4. Monohybrid & Dihybrid Cross</h2>
+            <div class="content-block">
+                <p><b>Monohybrid (Single Trait):</b> 
+                F2 generation ka ratio hamesha <span class="highlight">3 : 1 (Phenotype)</span> aur <span class="highlight">1 : 2 : 1 (Genotype)</span> hota hai.</p>
+                
+                <p><b>Dihybrid (Two Traits):</b> 
+                Jab Round-Yellow aur Wrinkled-Green ko cross kiya gaya, toh F2 mein <span class="highlight">9 : 3 : 3 : 1</span> ka ratio mila.</p>
+            </div>
+        </div>
+
+        <div class="mega-page">
+            <div class="page-badge">PAGE 17-20</div>
+            <h2>5. Sex Determination</h2>
+            <div class="content-block">
+                <p>Humans mein 23 pairs chromosomes hote hain. 22 pairs sabme same hote hain (Autosomes), lekin 23rd pair sex decide karta hai.</p>
+                <ul>
+                    <li><b>Female:</b> XX chromosomes hote hain.</li>
+                    <li><b>Male:</b> XY chromosomes hote hain.</li>
+                </ul>
+                <p><b>Logic:</b> Baby boy hoga ya girl, ye puri tarah **Father** par depend karta hai. Agar father se 'Y' mila toh Boy, agar 'X' mila toh Girl.</p>
+            </div>
+        </div>
+
+        <div class="mega-page">
+            <div class="page-badge">PAGE 21+</div>
+            <h2>6. Expression of Traits</h2>
+            <div class="content-block">
+                <p>DNA cells ke nucleus mein hota hai. DNA ka wo part jo ek protein banane ki information deta hai, use **Gene** kehte hain. Protein hi decide karta hai ki hamara body design ya character kaisa hoga.</p>
+                <p><span class="highlight">Acquired Traits:</span> Jo hum seekhte hain (Swimming), ye DNA mein nahi jate.</p>
+                <p><span class="highlight">Inherited Traits:</span> Jo humein parents se milte hain (Eye color), ye DNA ke zariye pass hote hain.</p>
+            </div>
+        </div>
+
+    </div>
+<style>
+    .mcq-section {
+        max-width: 850px;
+        margin: 20px auto;
+        font-family: 'Segoe UI', sans-serif;
+        color: white;
+        background-color: #0a1122;
+        padding: 25px;
+        border-radius: 20px;
+    }
+    .q-card {
+        background: rgba(16, 24, 48, 0.95);
+        border: 1px solid #00d4ff;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .q-text { font-size: 1.15rem; font-weight: bold; display: block; margin-bottom: 15px; color: #e0e0e0; }
+    .toggle-btn {
+        background: #39ff14;
+        color: #000;
+        border: none;
+        padding: 12px;
+        width: 100%;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 900;
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
+    .ans-box {
+        display: none;
+        margin-top: 15px;
+        color: #39ff14;
+        font-weight: bold;
+        padding: 12px;
+        border-top: 1px dashed #444;
+        font-size: 1.1rem;
+        background: rgba(57, 255, 20, 0.05);
+    }
+</style>
+
+<div class="mcq-section">
+    <h1 style="text-align: center; color: #00d4ff; border-bottom: 2px solid #39ff14; padding-bottom: 10px;">HEREDITY: TOP 25 MCQS</h1>
+
+    <div id="mcq-list">
+        <div class="q-card"><span class="q-text">1. Who is known as the Father of Genetics?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Gregor Johann Mendel</div></div>
+        
+        <div class="q-card"><span class="q-text">2. Scientific name of Pea plant used by Mendel?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Pisum sativum</div></div>
+        
+        <div class="q-card"><span class="q-text">3. F2 Phenotypic ratio of Monohybrid cross?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: 3 : 1</div></div>
+        
+        <div class="q-card"><span class="q-text">4. F2 Genotypic ratio of Monohybrid cross?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: 1 : 2 : 1</div></div>
+        
+        <div class="q-card"><span class="q-text">5. Phenotypic ratio of Dihybrid cross?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: 9 : 3 : 3 : 1</div></div>
+        
+        <div class="q-card"><span class="q-text">6. Total number of chromosomes in a human cell?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: 46 (23 Pairs)</div></div>
+        
+        <div class="q-card"><span class="q-text">7. Sex chromosomes in a human male?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: XY</div></div>
+        
+        <div class="q-card"><span class="q-text">8. Sex chromosomes in a human female?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: XX</div></div>
+        
+        <div class="q-card"><span class="q-text">9. Which cell decides the sex of the child?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Sperm (from Father)</div></div>
+        
+        <div class="q-card"><span class="q-text">10. Functional unit of heredity?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Gene</div></div>
+        
+        <div class="q-card"><span class="q-text">11. Alternative forms of a gene are called?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Alleles</div></div>
+        
+        <div class="q-card"><span class="q-text">12. Visible traits of an organism?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Phenotype</div></div>
+        
+        <div class="q-card"><span class="q-text">13. Genetic makeup of an organism?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Genotype</div></div>
+        
+        <div class="q-card"><span class="q-text">14. Example of an acquired trait?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Learning a language / Swimming</div></div>
+        
+        <div class="q-card"><span class="q-text">15. Example of an inherited trait?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Eye color / Blood group</div></div>
+        
+        <div class="q-card"><span class="q-text">16. Number of autosomes in humans?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: 22 Pairs</div></div>
+        
+        <div class="q-card"><span class="q-text">17. Law based on Monohybrid cross?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Law of Segregation</div></div>
+        
+        <div class="q-card"><span class="q-text">18. Law based on Dihybrid cross?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Law of Independent Assortment</div></div>
+        
+        <div class="q-card"><span class="q-text">19. Percentage of boy probability in birth?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: 50%</div></div>
+        
+        <div class="q-card"><span class="q-text">20. Mendel's 'Factors' are now called?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Genes</div></div>
+        
+        <div class="q-card"><span class="q-text">21. Trait that hides in F1?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Recessive Trait</div></div>
+        
+        <div class="q-card"><span class="q-text">22. Trait that expresses in F1?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Dominant Trait</div></div>
+        
+        <div class="q-card"><span class="q-text">23. Pure tall plant genotype?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: TT (Homozygous Dominant)</div></div>
+        
+        <div class="q-card"><span class="q-text">24. Small changes in DNA during copying?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Variation</div></div>
+        
+        <div class="q-card"><span class="q-text">25. Branch of biology dealing with heredity?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Genetics</div></div>
+    </div>
+</div>
+
+<script>
+    function toggle(btn) {
+        var box = btn.nextElementSibling;
+        if (box.style.display === "block") {
+            box.style.display = "none";
+            btn.innerText = "Show Answer";
+            btn.style.background = "#39ff14";
+        } else {
+            box.style.display = "block";
+            btn.innerText = "Hide Answer";
+            btn.style.background = "#ff4444";
+        }
+    }
+</script>
+<div class="mcq-section" style="margin-top: 0;">
+    <div id="mcq-list-2">
+        <div class="q-card"><span class="q-text">26. DNA ka full form kya hai?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Deoxyribonucleic Acid</div></div>
+
+        <div class="q-card"><span class="q-text">27. Human sperm mein kitne sex chromosomes hote hain?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: 1 (Ya toh X ya Y)</div></div>
+
+        <div class="q-card"><span class="q-text">28. Mendel ne 'Factor' shabd ka istemal kiske liye kiya tha?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Gene</div></div>
+
+        <div class="q-card"><span class="q-text">29. Inme se kaunsa homozygous recessive hai?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: tt</div></div>
+
+        <div class="q-card"><span class="q-text">30. Birds ke pankh aur Insects ke pankh kaise organs hain?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Analogous Organs</div></div>
+
+        <div class="q-card"><span class="q-text">31. F1 generation mein hamesha kaunsa trait dikhta hai?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Dominant Trait</div></div>
+
+        <div class="q-card"><span class="q-text">32. Evolution ki basic unit kise mana jata hai?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Mutation / Variation</div></div>
+
+        <div class="q-card"><span class="q-text">33. Agar dono parents 'tt' hain, toh bacha kaisa hoga?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Dwarf (100%)</div></div>
+
+        <div class="q-card"><span class="q-text">34. Sex chromosomes ke alawa baaki 22 pairs ko kya kehte hain?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Autosomes</div></div>
+
+        <div class="q-card"><span class="q-text">35. Pea plant mein 'Violet flower' kaisa trait hai?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Dominant</div></div>
+
+        <div class="q-card"><span class="q-text">36. Genetic material ka exchange kis process mein hota hai?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Sexual Reproduction</div></div>
+
+        <div class="q-card"><span class="q-text">37. 'Speciation' ka kya matlab hai?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Formation of new species</div></div>
+
+        <div class="q-card"><span class="q-text">38. Mendel ne pea plant ke kitne characters chune the?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: 7 pairs</div></div>
+
+        <div class="q-card"><span class="q-text">39. 'Natural Selection' ki theory kisne di thi?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Charles Darwin</div></div>
+
+        <div class="q-card"><span class="q-text">40. Human beings ka scientific naam kya hai?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Homo sapiens</div></div>
+
+        <div class="q-card"><span class="q-text">41. 'Gene' shabd sabse pehle kisne diya tha?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Wilhelm Johannsen</div></div>
+
+        <div class="q-card"><span class="q-text">42. Inme se kaunsa variation inherit nahi hota?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Somatic variation (Acquired traits)</div></div>
+
+        <div class="q-card"><span class="q-text">43. F2 generation mein Dwarf plants ka percentage kitna hota hai (Monohybrid)?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: 25%</div></div>
+
+        <div class="q-card"><span class="q-text">44. Chromosomes kahan paye jate hain?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Nucleus of the cell</div></div>
+
+        <div class="q-card"><span class="q-text">45. 'Survival of the fittest' kiska concept hai?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Darwinism</div></div>
+
+        <div class="q-card"><span class="q-text">46. Blood group control karne wale genes kitne types ke hote hain?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: 3 (A, B, O alleles)</div></div>
+
+        <div class="q-card"><span class="q-text">47. Pea plant mein 'Green seed' kaisa trait hai?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Recessive</div></div>
+
+        <div class="q-card"><span class="q-text">48. 'Vestigial organs' kya hote hain?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Functionless organs (e.g., Appendix)</div></div>
+
+        <div class="q-card"><span class="q-text">49. Dihybrid cross mein total kitne boxes bante hain Punnett square mein?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: 16</div></div>
+
+        <div class="q-card"><span class="q-text">50. Heredity aur Variation ki study ko kya kehte hain?</span><button class="toggle-btn" onclick="toggle(this)">Show Answer</button><div class="ans-box">ANS: Genetics</div></div>
+    </div>
+</div>
+<div class="mcq-section" style="margin-top: 0;">
+    <h2 style="text-align: center; color: #ff4444; border-bottom: 2px solid #ff4444; padding-bottom: 10px;">🔥 LEVEL: HARDEST (51-75) 🔥</h2>
+    
+    <div id="mcq-list-3">
+        <div class="q-card">
+            <span class="q-text">51. Agar ek child ka blood group 'O' hai aur father ka 'A' aur mother ka 'B', toh parents ka genotype kya hoga?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Father (IAi) and Mother (IBi) - Dono heterozygous hain.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">52. 'Law of Independent Assortment' ka exception kya hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Linkage (Jab genes ek hi chromosome par bahut pas hote hain).</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">53. Inme se kaunsa ratio 'Incomplete Dominance' (Mirabilis jalapa) mein phenotypic aur genotypic dono barabar dikhata hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: 1 : 2 : 1</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">54. 'Genetic Drift' sabse zyada asar kis par dalti hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Small isolated populations par.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">55. Agar F1 hybrid (Tt) ko uske recessive parent (tt) se cross karayein, toh ise kya kehte hain?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Test Cross</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">56. Sex-linked diseases (jaise Haemophilia) ke genes aksar kis chromosome par hote hain?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: X Chromosome par.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">57. 'Evolutionary relationships' check karne ke liye sabse reliable method kaunsa hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: DNA Sequencing (Molecular Phylogeny).</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">58. Dihybrid cross mein 'recombinant types' (naye combinations) kyun bante hain?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Crossing over aur Independent Assortment ki wajah se.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">59. 'Germplasm Theory' kisne di thi jo Lamarck ki theory ko galat sabit karti hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: August Weismann.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">60. Human male mein 'Y' chromosome par paye jane wale genes ko kya kehte hain?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Holandric Genes.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">61. Agar 100 seeds mile monohybrid cross mein, toh statistically kitne seeds dwarf hone chahiye?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: 25 seeds (25% ratio).</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">62. 'Micro-evolution' ka main kaaran kya hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Gene frequency mein badlav (All of: Mutation, Selection, Drift).</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">63. Human female mein kitne 'Linkage Groups' hote hain?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: 23 Linkage Groups.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">64. 'Palaeontology' mein kiska adhyayan (study) kiya jata hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Fossils ka.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">65. Archaeopteryx kin do vargo (classes) ke beech ki 'missing link' hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Reptiles and Birds.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">66. DNA ki backbone kis cheez se bani hoti hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Sugar and Phosphate.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">67. 'Point Mutation' ka ek example do?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Sickle Cell Anaemia.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">68. Mendel ne 'True breeding lines' kitni use ki thi?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: 14 (7 pairs of contrasting traits).</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">69. 'Bottle-neck effect' kiska part hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Genetic Drift ka.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">70. Inme se kaunsa DNA nitrogenous base RNA mein nahi hota?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Thymine (RNA mein Uracil hota hai).</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">71. Punnett Square sabse pehle kisne banaya tha?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Reginald C. Punnett.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">72. Agar ek cell mein 2n+1 chromosomes hain, toh is condition ko kya kehte hain?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Trisomy.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">73. 'Adaptive Radiation' ka best example kya hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Darwin's Finches (Galapagos Islands).</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">74. Genes ki physical location ko chromosome par kya kehte hain?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Locus.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">75. Human Evolution ka sabse pehla purvaj (ancestor) kise mana jata hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Dryopithecus / Ramapithecus.</div>
+        </div>
+    </div>
+</div>
+<div class="mcq-section" style="margin-top: 0;">
+    <h2 style="text-align: center; color: #ff00ff; border-bottom: 2px solid #ff00ff; padding-bottom: 10px;">🏆 LEVEL: LEGENDARY (76-100) 🏆</h2>
+    
+    <div id="mcq-list-4">
+        <div class="q-card">
+            <span class="q-text">76. Agar ek cross mein F2 generation ka phenotypic aur genotypic ratio dono 1:2:1 aata hai, toh ye kis cheez ka case hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Incomplete Dominance (e.g., Snapdragons mein pink flowers).</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">77. 'Law of Segregation' cell division ke kis phase mein operate karta hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Anaphase I (Meiosis mein).</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">78. Ek DNA molecule mein Adenine 20% hai, toh Cytosine kitne percent hoga?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: 30% (Chargaff's Rule: A=T, G=C).</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">79. 'Genetic erosion' ka kya matlab hota hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Gene pool se genetic diversity ka khatam hona.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">80. Human Genome Project ke mutabik, insano mein lagbhag kitne genes hote hain?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: 20,000 to 25,000 genes.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">81. Inme se kaunsa evolutionary evidence 'Living Fossil' kahlata hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Ginkgo biloba / Coelacanth fish.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">82. Agar ek haemophilic man ek normal woman (non-carrier) se shaadi karta hai, toh bacho mein haemophilia ki kya probability hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: 0% (Lekin saari ladkiyan 'Carriers' hongi).</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">83. 'Parallel Evolution' ka ek example do?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Marsupial mammals aur Placental mammals ka milta-julta evolution.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">84. DNA replication ki direction hamesha kya hoti hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: 5' (five prime) to 3' (three prime) direction.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">85. 'Hardy-Weinberg Equilibrium' tabhi valid hota hai jab population mein ______ na ho.</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Mutation, Selection, ya Migration (Evolutionary forces).</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">86. Ek hi gene jab multiple traits (phenotypes) ko control kare, toh ise kya kehte hain?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Pleiotropy.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">87. Mitochondria ka DNA kahan se inherit hota hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Sirf Mother se (Maternal Inheritance).</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">88. 'Epistasis' ka matlab kya hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Jab ek gene dusre gene ke expression ko mask (chhupa) deta hai.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">89. Chromosome ki 'Arms' ko kya kehte hain?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Chromatids (P-arm aur Q-arm).</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">90. 'Sutton and Boveri' ne kaunsi theory propose ki thi?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Chromosomal Theory of Inheritance.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">91. Human eye color 'Polygenic Inheritance' ka example hai. Iska kya matlab hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Ek trait jo bahut saare genes ke dwara control hota hai.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">92. 'Carbon dating' mein carbon ka kaunsa isotope use hota hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: C-14 Isotope.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">93. DNA ki winding ko control karne wale proteins ko kya kehte hain?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Histone Proteins.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">94. 'Co-dominance' ka sabse common example kya hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: AB Blood Group (Yahan A aur B dono express hote hain).</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">95. Agar ek chromosome ka segment toot kar wapas ulta lag jaye, toh ise kya kahenge?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Inversion.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">96. 'Founders Effect' kis se related hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Genetic Drift (Jab chota group nayi jagah par population banata hai).</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">97. 'Back cross' aur 'Test cross' mein kya antar hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Har test cross back cross hota hai, par har back cross test cross nahi.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">98. DNA ka double helix structure 'Antiparallel' hota hai. Iska kya matlab hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Ek strand 5'-3' chalti hai aur dusri 3'-5' direction mein.</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">99. 'Z-W' type sex determination kis mein paya jata hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Birds mein (Yahan female ZW aur male ZZ hote hain).</div>
+        </div>
+
+        <div class="q-card">
+            <span class="q-text">100. Modern Synthetic Theory of Evolution kin do cheezon ka mel (combination) hai?</span>
+            <button class="toggle-btn" onclick="toggle(this)">Show Answer</button>
+            <div class="ans-box">ANS: Darwin's Natural Selection + Mendel's Genetics.</div>
+        </div>
+    </div>
+</div>
+<style>
+    .long-q-section {
+        max-width: 850px;
+        margin: 20px auto;
+        font-family: 'Segoe UI', sans-serif;
+        color: white;
+        background-color: #0a1122;
+        padding: 25px;
+        border-radius: 20px;
+    }
+    .l-card {
+        background: rgba(16, 24, 48, 0.95);
+        border: 1px solid #00d4ff;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 15px rgba(0, 212, 255, 0.1);
+    }
+    .l-title { 
+        font-size: 1.2rem; 
+        font-weight: bold; 
+        color: #e0e0e0; 
+        display: block; 
+        margin-bottom: 15px;
+    }
+    .toggle-l-btn {
+        background: #39ff14;
+        color: #000;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 900;
+        text-transform: uppercase;
+        transition: 0.3s;
+    }
+    .ans-content {
+        display: none;
+        margin-top: 15px;
+        color: #cccccc;
+        line-height: 1.6;
+        font-size: 1.05rem;
+        padding: 15px;
+        border-top: 1px dashed #444;
+        background: rgba(0, 212, 255, 0.05);
+    }
+    .h-tag {
+        color: #00d4ff;
+        font-size: 0.8rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        display: block;
+        margin-bottom: 5px;
+    }
+</style>
+
+<div class="long-q-section">
+    <h1 style="text-align: center; color: #39ff14; text-transform: uppercase; border-bottom: 2px solid #00d4ff; padding-bottom: 10px;">📝 HEREDITY: TOP 10 LONG QUESTIONS</h1>
+
+    <div class="l-card">
+        <span class="h-tag">#MONOHYBRID_CROSS</span>
+        <span class="l-title">1. Explain Mendel's Monohybrid Cross with an example and Punnett Square.</span>
+        <button class="toggle-l-btn" onclick="toggleLong(this)">Show Answer</button>
+        <div class="ans-content">
+            Mendel crossed a pure tall (TT) and a pure dwarf (tt) pea plant. 
+            <br>• <b>F1 Generation:</b> All plants were heterozygous Tall (Tt). 
+            <br>• <b>F2 Generation:</b> After selfing F1, the result was 3 Tall : 1 Dwarf (Phenotypic ratio) and 1(TT):2(Tt):1(tt) (Genotypic ratio). 
+            <br><b>Conclusion:</b> This experiment led to the 'Law of Segregation', stating that alleles separate during gamete formation.
+        </div>
+    </div>
+
+    <div class="l-card">
+        <span class="h-tag">#DIHYBRID_CROSS</span>
+        <span class="l-title">2. State the Law of Independent Assortment with the help of a Dihybrid cross.</span>
+        <button class="toggle-l-btn" onclick="toggleLong(this)">Show Answer</button>
+        <div class="ans-content">
+            This law states that when two pairs of traits are combined in a hybrid, the segregation of one pair of characters is independent of the other pair. 
+            <br>Mendel used Round-Yellow (RRYY) and Wrinkled-Green (rryy) seeds. 
+            <br>The F2 phenotypic ratio was <b>9:3:3:1</b>. This showed that new combinations like Round-Green and Wrinkled-Yellow appear, proving independence.
+        </div>
+    </div>
+
+    <div class="l-card">
+        <span class="h-tag">#SEX_DETERMINATION</span>
+        <span class="l-title">3. Explain the mechanism of sex determination in human beings.</span>
+        <button class="toggle-l-btn" onclick="toggleLong(this)">Show Answer</button>
+        <div class="ans-content">
+            Humans have 23 pairs of chromosomes. The 23rd pair is the sex chromosome. 
+            <br>• Females have <b>XX</b> and Males have <b>XY</b>. 
+            <br>• All eggs carry an 'X' chromosome. Sperms can carry either an 'X' or a 'Y'. 
+            <br>• If X-sperm + X-egg = Female (XX). 
+            <br>• If Y-sperm + X-egg = Male (XY). 
+            <br><b>Important:</b> The father is responsible for the sex of the child.
+        </div>
+    </div>
+
+    <div class="l-card">
+        <span class="h-tag">#ACQUIRED_VS_INHERITED</span>
+        <span class="l-title">4. Differentiate between Acquired and Inherited traits with examples.</span>
+        <button class="toggle-l-btn" onclick="toggleLong(this)">Show Answer</button>
+        <div class="ans-content">
+            <b>Inherited Traits:</b> These are passed from parents to offspring via DNA (e.g., Eye color, Skin tone). They cause evolution.
+            <br><b>Acquired Traits:</b> These are developed during a lifetime due to environment or use/disuse (e.g., Learning to play guitar, weight gain). 
+            <br>Acquired traits do not change the DNA of germ cells, so they are <b>not</b> passed to the next generation.
+        </div>
+    </div>
+
+    <div class="l-card">
+        <span class="h-tag">#SPECIATION</span>
+        <span class="l-title">5. What is Speciation? What factors lead to the formation of a new species?</span>
+        <button class="toggle-l-btn" onclick="toggleLong(this)">Show Answer</button>
+        <div class="ans-content">
+            Speciation is the formation of a new species from an existing one. 
+            <br><b>Factors:</b>
+            <br>1. <b>Geographical Isolation:</b> Populations separated by mountains/rivers.
+            <br>2. <b>Genetic Drift:</b> Random changes in gene frequency.
+            <br>3. <b>Natural Selection:</b> Nature picking the best-suited variations.
+            <br>4. <b>Reproductive Isolation:</b> When two groups can no longer interbreed.
+        </div>
+    </div>
+
+    <div class="l-card">
+        <span class="h-tag">#ORGANS_EVIDENCE</span>
+        <span class="l-title">6. Compare Homologous and Analogous organs as evidence for evolution.</span>
+        <button class="toggle-l-btn" onclick="toggleLong(this)">Show Answer</button>
+        <div class="ans-content">
+            <b>Homologous Organs:</b> Similar basic structure but different functions (e.g., Forelimbs of lizard, frog, and human). They prove <b>Divergent Evolution</b> (common ancestors).
+            <br><b>Analogous Organs:</b> Different structure but similar function (e.g., Wings of bird and bat). They prove <b>Convergent Evolution</b> (adapting to same environment).
+        </div>
+    </div>
+
+    <div class="l-card">
+        <span class="h-tag">#FOSSILS</span>
+        <span class="l-title">7. What are fossils? How do they help in tracing evolutionary history?</span>
+        <button class="toggle-l-btn" onclick="toggleLong(this)">Show Answer</button>
+        <div class="ans-content">
+            Fossils are the preserved remains or impressions of organisms that lived in the past. 
+            <br><b>Importance:</b>
+            <br>1. They show the timeline of evolution.
+            <br>2. They show 'connecting links' (e.g., Archaeopteryx links reptiles to birds).
+            <br>3. They help us understand which organisms were simpler and which were complex.
+        </div>
+    </div>
+
+    <div class="l-card">
+        <span class="h-tag">#PROTEIN_EXPRESSION</span>
+        <span class="l-title">8. How do genes control the expression of traits?</span>
+        <button class="toggle-l-btn" onclick="toggleLong(this)">Show Answer</button>
+        <div class="ans-content">
+            A gene is a segment of DNA that provides instructions for making a specific protein. 
+            <br>• For example, a gene for plant height produces an <b>enzyme</b> (protein) that makes growth hormone.
+            <br>• If the gene works efficiently, more hormone is produced → Tall plant.
+            <br>• If the gene is altered, less hormone is produced → Dwarf plant.
+            <br>Thus, DNA controls traits via protein synthesis.
+        </div>
+    </div>
+
+    <div class="l-card">
+        <span class="h-tag">#EVOLUTION_STAGES</span>
+        <span class="l-title">9. Explain evolution by stages using the example of the eye or feathers.</span>
+        <button class="toggle-l-btn" onclick="toggleLong(this)">Show Answer</button>
+        <div class="ans-content">
+            Complex organs like the eye are not created by a single DNA change but by <b>bit-by-bit changes</b> over generations.
+            <br>• <b>Eye:</b> Started as simple eye-spots in Planaria (detected light), then became complex.
+            <br>• <b>Feathers:</b> Initially evolved for insulation (warmth) in dinosaurs, but later were adapted for flight in birds.
+        </div>
+    </div>
+
+    <div class="l-card">
+        <span class="h-tag">#ARTIFICIAL_SELECTION</span>
+        <span class="l-title">10. How does artificial selection differ from natural selection? Explain with wild cabbage.</span>
+        <button class="toggle-l-btn" onclick="toggleLong(this)">Show Answer</button>
+        <div class="ans-content">
+            <b>Natural Selection:</b> Nature selects traits for survival. 
+            <br><b>Artificial Selection:</b> Humans select traits for their own benefit.
+            <br><b>Example:</b> From Wild Cabbage, humans selected:
+            <br>• Short leaves → Cabbage
+            <br>• Arrested flowers → Broccoli
+            <br>• Sterile flowers → Cauliflower
+            <br>• Swollen parts → Kohlrabi
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleLong(btn) {
+        var content = btn.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+            btn.innerText = "Show Answer";
+            btn.style.background = "#39ff14";
+        } else {
+            content.style.display = "block";
+            btn.innerText = "Hide Answer";
+            btn.style.background = "#ff4444";
+        }
+    }
+</script>
+<div class="long-q-section" style="margin-top: 0;">
+    <h2 style="text-align: center; color: #ff0000; border-bottom: 2px solid #ff0000; padding-bottom: 10px;">💀 LEVEL: HARDEST (11-18) 💀</h2>
+
+    <div class="l-card">
+        <span class="h-tag">#GENETIC_PROBABILITY</span>
+        <span class="l-title">11. A man with blood group A marries a woman with blood group B. They have a child with blood group O. Show the possibility of all other blood groups in their future children using a cross.</span>
+        <button class="toggle-l-btn" onclick="toggleLong(this)">Show Answer</button>
+        <div class="ans-content">
+            Child has 'O' group (ii), which means both parents must carry the 'i' allele.
+            <br>• <b>Genotypes:</b> Father is <b>I<sup>A</sup>i</b> and Mother is <b>I<sup>B</sup>i</b>.
+            <br>• <b>Cross Results:</b>
+            <br>1. I<sup>A</sup>I<sup>B</sup> (Group AB) - 25%
+            <br>2. I<sup>A</sup>i (Group A) - 25%
+            <br>3. I<sup>B</sup>i (Group B) - 25%
+            <br>4. ii (Group O) - 25%
+            <br><b>Conclusion:</b> In this specific case, all four blood groups (A, B, AB, O) are possible in their children.
+        </div>
+    </div>
+
+    <div class="l-card">
+        <span class="h-tag">#DNA_VS_VARIATION</span>
+        <span class="l-title">12. "DNA copying is not a foolproof process." Justify this statement and explain its significance in the survival of a species.</span>
+        <button class="toggle-l-btn" onclick="toggleLong(this)">Show Answer</button>
+        <div class="ans-content">
+            During cell division, DNA replication occurs. Biochemical reactions involved are not 100% accurate, leading to small <b>variations</b> in the new DNA strand.
+            <br><b>Significance:</b>
+            <br>1. If environment changes suddenly (e.g., global warming), some variants might survive while others perish.
+            <br>2. It provides the raw material for <b>Evolution</b>.
+            <br>3. Without these "errors," species would be static and highly vulnerable to extinction.
+        </div>
+    </div>
+
+    <div class="l-card">
+        <span class="h-tag">#DIHYBRID_ANALYSIS</span>
+        <span class="l-title">13. In a Dihybrid cross, what is the frequency of 'Double Homozygous Recessive' (rryy) and 'Double Homozygous Dominant' (RRYY) offsprings in F2? Explain.</span>
+        <button class="toggle-l-btn" onclick="toggleLong(this)">Show Answer</button>
+        <div class="ans-content">
+            In a standard 16-box Punnett Square:
+            <br>• <b>RRYY (Pure Dominant):</b> Only <b>1/16</b> (Top-left corner).
+            <br>• <b>rryy (Pure Recessive):</b> Only <b>1/16</b> (Bottom-right corner).
+            <br><b>Concept:</b> Both parental pure types appear with the same frequency (6.25% each), while the rest 14/16 are either heterozygous or recombinants.
+        </div>
+    </div>
+
+    <div class="l-card">
+        <span class="h-tag">#GEOGRAPHICAL_ISOLATION</span>
+        <span class="l-title">14. Will geographical isolation be a major factor in the speciation of a self-pollinating plant species? Why or why not?</span>
+        <button class="toggle-l-btn" onclick="toggleLong(this)">Show Answer</button>
+        <div class="ans-content">
+            <b>Answer: No.</b> 
+            <br>Speciation via geographical isolation mainly affects <b>outbreeding/sexually reproducing</b> organisms where gene flow is cut off. 
+            <br>In self-pollinating plants, the pollen comes from the same plant, so there is already very little gene flow between different plants. Variations occur mainly due to internal mutations rather than external genetic exchange.
+        </div>
+    </div>
+
+    <div class="l-card">
+        <span class="h-tag">#MOLECULAR_PHYLOGENY</span>
+        <span class="l-title">15. Explain how Molecular Phylogeny helps in tracing evolutionary relationships better than Morphology.</span>
+        <button class="toggle-l-btn" onclick="toggleLong(this)">Show Answer</button>
+        <div class="ans-content">
+            Morphology (looking at structures) can be misleading because of <b>Analogous organs</b> (different ancestors, same look).
+            <br><b>Molecular Phylogeny:</b>
+            <br>1. It compares changes in DNA or Protein sequences.
+            <br>2. More distantly related organisms have more differences in their DNA.
+            <br>3. This gives a <b>direct quantitative measure</b> of how long ago two species diverged, which morphology cannot do accurately.
+        </div>
+    </div>
+
+    <div class="l-card">
+        <span class="h-tag">#CONNECTING_LINKS</span>
+        <span class="l-title">16. Mention the importance of Archaeopteryx in evolution. Which two classes does it bridge?</span>
+        <button class="toggle-l-btn" onclick="toggleLong(this)">Show Answer</button>
+        <div class="ans-content">
+            Archaeopteryx is a <b>Connecting Link</b> fossil.
+            <br>• <b>Reptilian features:</b> It had teeth in its beak, a long bony tail, and claws on its wings.
+            <br>• <b>Avian (Bird) features:</b> It had feathers and wings.
+            <br><b>Conclusion:</b> It provides solid evidence that birds have evolved from reptiles.
+        </div>
+    </div>
+
+    <div class="l-card">
+        <span class="h-tag">#GENETIC_DRIFT_HARD</span>
+        <span class="l-title">17. Explain the "Beetle Population" example from NCERT to describe Genetic Drift and Natural Selection.</span>
+        <button class="toggle-l-btn" onclick="toggleLong(this)">Show Answer</button>
+        <div class="ans-content">
+            1. <b>Natural Selection (Green vs Red):</b> Crows eat red beetles. A mutation creates green beetles. Crows can't see green on green leaves. Green beetles survive better. (Directional change).
+            <br>2. <b>Genetic Drift (Blue vs Red):</b> An elephant steps on the beetle bush, accidentally killing most red ones. The few surviving blue ones (lucky, not better) multiply. (Random change in small population).
+        </div>
+    </div>
+
+    <div class="l-card">
+        <span class="h-tag">#REPRODUCTIVE_BARRIERS</span>
+        <span class="l-title">18. Why can a lion and a tiger not be considered the same species, even though they look similar and belong to the same genus (Panthera)?</span>
+        <button class="toggle-l-btn" onclick="toggleLong(this)">Show Answer</button>
+        <div class="ans-content">
+            According to the <b>Biological Species Concept</b>:
+            <br>1. Species must be able to interbreed in nature.
+            <br>2. They must produce <b>fertile offspring</b>.
+            <br>Lions and Tigers are reproductively isolated in the wild. Although they can produce "Ligers" or "Tigons" in captivity, these hybrids are usually sterile. Hence, they are distinct species.
+        </div>
+    </div>
+</div>
+
+<script>
+    // Logic pehle wala hi hai, bas ensure kar raha hoon ki kaam kare
+    function toggleLong(btn) {
+        var content = btn.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+            btn.innerText = "Show Answer";
+            btn.style.background = "#39ff14";
+        } else {
+            content.style.display = "block";
+            btn.innerText = "Hide Answer";
+            btn.style.background = "#ff4444";
+        }
+    }
+</script>
+
+</body>
+</html>

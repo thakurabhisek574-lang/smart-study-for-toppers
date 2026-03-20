@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Smart Study Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden; /* Screen cover karne ke liye extra scroll band */
+        }
+
+        /* Full Screen Background Gradient */
+        .main-wrapper {
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Top Text - Smart Study for Toppers */
+        .top-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            line-height: 1.1;
+            text-transform: uppercase;
+            background: linear-gradient(to right, #ffffff, #81d4fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            text-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Class 10 Text */
+        .sub-title {
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+            color: #ffca28; /* Gold color for Premium feel */
+            font-weight: 600;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+        }
+
+        /* Learn Button - Heavy Design */
+        .learn-btn {
+            background: #ffffff;
+            color: #0f2027;
+            padding: 18px 60px;
+            font-size: 1.4rem;
+            font-weight: 800;
+            text-decoration: none;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 2px solid transparent;
+        }
+
+        .learn-btn:active {
+            transform: scale(0.9);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Animated Background Circles (Extra Heavy Look) */
+        .circle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            z-index: 0;
+        }
+        .c1 { width: 300px; height: 300px; top: -100px; left: -100px; }
+        .c2 { width: 200px; height: 200px; bottom: -50px; right: -50px; }
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+
+        <h1 class="top-title">Smart Study <br> For Toppers</h1>
+        <p class="sub-title">Class 10</p>
+
+        <a href="subjects.html" class="learn-btn">Learn</a>
+    </div>
+
+</body>
+</html>

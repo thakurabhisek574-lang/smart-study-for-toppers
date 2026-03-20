@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 10 | Human Eye Toppers Notes</title>
+    <style>
+        /* Base Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            padding-top: 100px; /* Header ke liye jagah */
+            padding-bottom: 60px;
+        }
+
+        /* --- STICKY HEADER (AS PER SCREENSHOT) --- */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 85px;
+            background: rgba(0, 0, 0, 0.95);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
+            border-bottom: 3px solid #ff00ff;
+            box-shadow: 0 0 25px rgba(255, 0, 255, 0.4);
+        }
+
+        /* BACK BUTTON LINKED TO sci-chapters.html */
+        .back-btn {
+            background: transparent;
+            border: 2.5px solid #ffff00;
+            color: #ffff00;
+            padding: 10px 25px;
+            border-radius: 12px;
+            font-weight: 900;
+            text-decoration: none;
+            font-size: 0.95rem;
+            box-shadow: 0 0 12px #ffff00;
+            transition: 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .back-btn:hover {
+            background: #ffff00;
+            color: #000;
+            box-shadow: 0 0 20px #ffff00;
+        }
+
+        .header-right { text-align: right; }
+        .smart-text { color: #ffffff; font-size: 1rem; font-weight: 700; display: block; letter-spacing: 1px; }
+        .topper-text { color: #ff9100; font-size: 1.2rem; font-weight: 900; text-transform: uppercase; text-shadow: 0 0 10px #ff9100; }
+
+        /* --- CONTENT CARDS --- */
+        .container { width: 92%; max-width: 850px; margin: auto; }
+
+        .mega-card {
+            background: #0d0d0d;
+            border: 2.5px solid #ff00ff;
+            border-radius: 30px;
+            padding: 30px;
+            margin-bottom: 35px;
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.15);
+        }
+
+        .hard-tag {
+            background: #ffff00;
+            color: #000;
+            padding: 6px 15px;
+            border-radius: 8px;
+            font-weight: 900;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        h2 { color: #00ffff; font-size: 1.6rem; margin-bottom: 15px; text-shadow: 0 0 10px #00ffff; }
+        p { color: #e0e0e0; font-size: 1.1rem; line-height: 1.8; margin-bottom: 15px; }
+        b { color: #ff00ff; }
+
+        /* BUTTON SIZE AS PER SCREENSHOT */
+        .show-btn {
+            width: 170px;
+            height: 48px;
+            background: transparent;
+            border: 2.5px solid #ffff00;
+            color: #ffff00;
+            border-radius: 12px;
+            font-weight: 900;
+            font-size: 0.85rem;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(255, 255, 0, 0.3);
+            text-transform: uppercase;
+            transition: 0.2s;
+        }
+
+        .show-btn:active { transform: scale(0.95); }
+
+        .ans-box {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            border-top: 2px dashed #00ffff;
+            background: rgba(0, 255, 255, 0.05);
+            border-radius: 15px;
+            color: #00ff00;
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="sci-chapters.html" class="back-btn">BACK</a>
+        <div class="header-right">
+            <span class="smart-text">SMART STUDY</span>
+            <span class="topper-text">FOR TOPPERS</span>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <h1 style="text-align: center; color: #ff00ff; margin-bottom: 40px; font-size: 2rem; text-shadow: 0 0 15px #ff00ff;">CHAPTER 10: THE HUMAN EYE</h1>
+
+        <div class="mega-card">
+            <span class="hard-tag">PAGE 1: ANATOMY</span>
+            <h2>1. Structure & Parts of the Eye</h2>
+            <p>The human eye is the most sensitive sense organ. It uses a <b>Convex Lens</b> to form a real, inverted image on the <b>Retina</b>.</p>
+            <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+            <div class="ans-box">
+                <b>Main Parts:</b><br>
+                - <b>Cornea:</b> Outer layer jahan maximum refraction hota hai.<br>
+                - <b>Iris:</b> Pupil ka size control karta hai.<br>
+                - <b>Ciliary Muscles:</b> Lens ki focal length adjust karti hain.<br>
+                - <b>Retina:</b> Screen jahan image banti hai (Rods & Cones cells).
+            </div>
+        </div>
+
+        <div class="mega-card">
+            <span class="hard-tag">PAGE 2: FOCUSING</span>
+            <h2>2. Power of Accommodation</h2>
+            <p>Eye lens ki focal length ko badalne ki ability ko <b>Accommodation</b> kehte hain. Yeh Ciliary muscles ki wajah se hota hai.</p>
+            <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+            <div class="ans-box">
+                <b>Points to Remember:</b><br>
+                - Near Point: <b>25 cm</b> (Minimum distance for clear vision).<br>
+                - Far Point: <b>Infinity</b> ($\infty$).<br>
+                - Budhape mein yeh power kam ho jati hai (Presbyopia).
+            </div>
+        </div>
+
+        <div class="mega-card">
+            <span class="hard-tag">PAGE 3-5: DEFECTS</span>
+            <h2>3. Myopia & Hypermetropia</h2>
+            <p>Jab image retina par nahi banti, toh vision defects paida hote hain. Inhe lenses se theek kiya jata hai.</p>
+            <button class="show-btn" onclick="toggle(this)">SHOW DETAILS</button>
+            <div class="ans-box">
+                <b>1. Myopia (Short-sightedness):</b> Door ka nahi dikhta. Image retina ke aage banti hai. Correction: <b>Concave Lens</b>.<br><br>
+                <b>2. Hypermetropia (Far-sightedness):</b> Paas ka nahi dikhta. Image retina ke peeche banti hai. Correction: <b>Convex Lens</b>.
+            </div>
+        </div>
+
+        <div class="mega-card">
+            <span class="hard-tag">PAGE 6-10: OPTICS</span>
+            <h2>4. Prism & Atmospheric Refraction</h2>
+            <p>White light ka split hona (Dispersion) aur stars ka chamakna (Twinkling) sab isi category mein aate hain.</p>
+            <button class="show-btn" onclick="toggle(this)">SHOW LOGIC</button>
+            <div class="ans-box">
+                - <b>Dispersion:</b> Splitting of white light into 7 colors (VIBGYOR).<br>
+                - <b>Twinkling:</b> Atmosphere ki layers ki density change hone se star ki light refract hoti rehti hai.<br>
+                - <b>Tyndall Effect:</b> Scattering of light by dust/smoke particles.
+            </div>
+        </div>
+
+    </div>
+        <div class="mega-card">
+            <span class="hard-tag">PAGE 5: ADVANCED ANATOMY</span>
+            <h2>Photoreceptors & Signal Transmission</h2>
+            <p>Retina koi mamuli screen nahi hai. Isme cells ka pura network hota hai jo light ko bijli (electricity) mein badalta hai.</p>
+            <ul>
+                <li><b>Rods:</b> Ye cells "Light Intensity" (kam ya zyada roshni) ko pehchante hain. Raat ko rods hi kaam aate hain.</li>
+                <li><b>Cones:</b> Ye "Colours" ko pehchante hain. Agar cones na ho, toh sab black and white dikhega.</li>
+                <li><b>Blind Spot:</b> Jahan Optic Nerve eye se bahar nikalta hai, wahan koi image nahi banti.</li>
+            </ul>
+            <button class="show-btn" onclick="toggle(this)">SHOW PHYSICS</button>
+            <div class="ans-box">
+                <b>Signal Flow:</b> Light → Cornea → Pupil → Lens → Retina (Image) → Electrical Signal → Optic Nerve → Brain Interpretation.
+            </div>
+        </div>
+
+        <div class="mega-card">
+            <span class="hard-tag">PAGE 6: PRISM GEOMETRY</span>
+            <h2>Refraction Through a Glass Prism</h2>
+            <p>Glass slab aur Prism mein farak ye hai ki Prism ke sides parallel nahi hote, isliye light bend ho kar <b>Base</b> ki taraf jati hai.</p>
+            <div style="background: rgba(255, 0, 255, 0.05); padding: 15px; border-radius: 10px; border: 1px solid #ff00ff;">
+                <p><b>$\angle A + \angle \delta = \angle i + \angle e$</b></p>
+                <p>Jahan $A$ = Angle of Prism aur $\delta$ = Angle of Deviation hai.</p>
+            </div>
+            <button class="show-btn" onclick="toggle(this)">SHOW DEVIATION LOGIC</button>
+            <div class="ans-box">
+                Angle of Deviation ($\delta$) depend karta hai: <br>
+                1. Angle of Incidence ($\angle i$) par. <br>
+                2. Prism ke material (Refractive Index) par. <br>
+                3. Light ke colour (Wavelength) par.
+            </div>
+        </div>
+
+        <div class="mega-card">
+            <span class="hard-tag">PAGE 7: SPECTRUM</span>
+            <h2>Newton's Double Prism Experiment</h2>
+            <p>Sir Isaac Newton ne dikhaya ki white light 7 colors se bani hai. Unhone ek ulta prism use karke colors ko wapas white light mein badal diya.</p>
+            <p><b>VIBGYOR:</b> Violet (sabse zyada bend), Red (sabse kam bend).</p>
+            <button class="show-btn" onclick="toggle(this)">RAINBOW LOGIC</button>
+            <div class="ans-box">
+                <b>Rainbow Formation:</b> Raindrop ek chote prism ki tarah kaam karti hai. Isme 3 cheezein hoti hain: <br>
+                1. Refraction <br>
+                2. Dispersion <br>
+                3. Total Internal Reflection (TIR)
+            </div>
+        </div>
+
+        <div class="mega-card">
+            <span class="hard-tag">PAGE 8: ATMOSPHERE</span>
+            <h2>Twinkling vs No Twinkling</h2>
+            <p>Taare (Stars) timtimate hain, par Grah (Planets) nahi. Kyun?</p>
+            <button class="show-btn" onclick="toggle(this)">SHOW DETAILED REASON</button>
+            <div class="ans-box">
+                <b>Stars:</b> Point source hote hain. Atmosphere ki layers hilne se light refract hoti hai aur lagta hai position change ho rahi hai. <br>
+                <b>Planets:</b> Ye hamare bahut paas hain (Extended Source). Inse aane wali light ka total effect cancel ho jata hai, isliye ye twinkle nahi karte.
+            </div>
+        </div>
+
+        <div class="mega-card">
+            <span class="hard-tag">PAGE 9: SCATTERING</span>
+            <h2>Tyndall Effect & Scattering</h2>
+            <p>Jab light dhool (dust) ya dhuein (smoke) se takrati hai, toh wo scatter ho jati hai.</p>
+            <p><b>Rayleigh Scattering Law:</b> Scattering $\propto 1/\lambda^4$. Matlab jiski wavelength $(\lambda)$ choti hogi, wo zyada scatter hoga.</p>
+            <button class="show-btn" onclick="toggle(this)">DANGER SIGNAL WHY?</button>
+            <div class="ans-box">
+                <b>Red Color:</b> Iski wavelength sabse lamba (Longest) hoti hai. Isliye dhund (fog) ya dhuein mein ye scatter nahi hota aur bahut door tak dikhayi deta hai.
+            </div>
+        </div>
+
+        <div class="mega-card">
+            <span class="hard-tag">PAGE 10: SUNSET/SUNRISE</span>
+            <h2>Apparent Flattening of Sun's Disc</h2>
+            <p>Sunrise aur Sunset ke time Sun thoda chapta (flat) dikhta hai aur reddish dikhta hai.</p>
+            <button class="show-btn" onclick="toggle(this)">SHOW ADVANCED WHY</button>
+            <div class="ans-box">
+                1. <b>Reddish Sun:</b> Light ko lamba safar tay karna padta hai. Blue light scatter ho jati hai, sirf Red bachti hai. <br>
+                2. <b>Flattening:</b> Horizon ke paas atmospheric refraction ki wajah se Sun ka upper aur lower edge alag alag bend hota hai.
+            </div>
+        </div>
+
+    <script>
+        function toggle(btn) {
+            const ans = btn.nextElementSibling;
+            if (ans.style.display === "block") {
+                ans.style.display = "none";
+                btn.innerText = "SHOW ANSWER";
+            } else {
+                ans.style.display = "block";
+                btn.innerText = "HIDE ANSWER";
+            }
+        }
+    </script>
+        <h1 style="text-align: center; color: #ffff00; margin: 50px 0 30px; font-size: 2.2rem; text-shadow: 0 0 20px #ffff00; border-top: 5px double #ff00ff; padding-top: 30px;">
+            ULTIMATE MCQ CHALLENGE (1-25)
+        </h1>
+
+        <div id="mcq-container">
+            
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q1</span>
+                <h2>The ability of the eye lens to adjust its focal length is called:</h2>
+                <p>A) Myopia <br> B) Accommodation <br> C) Presbyopia <br> D) Dispersion</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Accommodation</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q2</span>
+                <h2>The least distance of distinct vision for a young adult with normal vision is about:</h2>
+                <p>A) 25 m <br> B) 2.5 cm <br> C) 25 cm <br> D) 2.5 m</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) 25 cm</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q3</span>
+                <h2>The change in focal length of an eye lens is caused by the action of the:</h2>
+                <p>A) Pupil <br> B) Retina <br> C) Ciliary muscles <br> D) Iris</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Ciliary muscles</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q4</span>
+                <h2>Which part of the eye controls the amount of light entering it?</h2>
+                <p>A) Iris <br> B) Pupil <br> C) Cornea <br> D) Lens</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Pupil</b> (Iris regulates the size of the Pupil).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q5</span>
+                <h2>A person cannot see distant objects clearly. He is suffering from:</h2>
+                <p>A) Hypermetropia <br> B) Myopia <br> C) Presbyopia <br> D) Cataract</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Myopia</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q6</span>
+                <h2>Myopia can be corrected by using a:</h2>
+                <p>A) Convex lens <br> B) Concave lens <br> C) Bifocal lens <br> D) Cylindrical lens</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Concave lens</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q7</span>
+                <h2>The image formed by the retina of the human eye is:</h2>
+                <p>A) Virtual and erect <br> B) Real and erect <br> C) Real and inverted <br> D) Virtual and inverted</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Real and inverted</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q8</span>
+                <h2>The far point of a normal human eye is:</h2>
+                <p>A) 25 cm <br> B) 100 cm <br> C) Infinity <br> D) 50 cm</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Infinity</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q9</span>
+                <h2>The splitting of white light into different colours on passing through a prism is called:</h2>
+                <p>A) Reflection <br> B) Refraction <br> C) Dispersion <br> D) Deviation</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Dispersion</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q10</span>
+                <h2>Which colour of light deviates the least while passing through a glass prism?</h2>
+                <p>A) Violet <br> B) Red <br> C) Blue <br> D) Green</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Red</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q11</span>
+                <h2>Twinkling of stars is due to atmospheric:</h2>
+                <p>A) Reflection <br> B) Dispersion <br> C) Refraction <br> D) Scattering</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Refraction</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q12</span>
+                <h2>The danger signals are red in colour because red light is:</h2>
+                <p>A) Scattered the most <br> B) Scattered the least <br> C) Absorbed the most <br> D) Brightest</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Scattered the least</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q13</span>
+                <h2>The sky appears blue because of:</h2>
+                <p>A) Atmospheric refraction <br> B) Scattering of light <br> C) Dispersion <br> D) Total internal reflection</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Scattering of light</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q14</span>
+                <h2>Tyndall effect is related to:</h2>
+                <p>A) Refraction <br> B) Reflection <br> C) Scattering <br> D) Polarization</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Scattering</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q15</span>
+                <h2>At sunrise and sunset, the sun appears:</h2>
+                <p>A) White <br> B) Reddish <br> C) Blue <br> D) Black</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Reddish</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q16</span>
+                <h2>Who was the first scientist to use a glass prism to obtain the spectrum of sunlight?</h2>
+                <p>A) Einstein <br> B) Newton <br> C) C.V. Raman <br> D) Galileo</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Newton</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q17</span>
+                <h2>The point of maximum sensitivity in the retina is:</h2>
+                <p>A) Blind spot <br> B) Yellow spot <br> C) Cornea <br> D) Optic nerve</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Yellow spot (Fovea centralis)</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q18</span>
+                <h2>Presbyopia is also known as:</h2>
+                <p>A) Short-sightedness <br> B) Old-age hypermetropia <br> C) Cataract <br> D) Astigmatism</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Old-age hypermetropia</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q19</span>
+                <h2>Rainbow is always formed in the direction:</h2>
+                <p>A) Of the sun <br> B) Opposite to the sun <br> C) Parallel to the sun <br> D) None</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Opposite to the sun</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q20</span>
+                <h2>Stars appear higher in the sky than they actually are due to:</h2>
+                <p>A) Reflection <br> B) Atmospheric refraction <br> C) Dispersion <br> D) Diffraction</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Atmospheric refraction</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q21</span>
+                <h2>The power of a lens is measured in:</h2>
+                <p>A) Meters <br> B) Watts <br> C) Dioptres <br> D) Joules</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Dioptres</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q22</span>
+                <h2>Hypermetropia is corrected by:</h2>
+                <p>A) Concave lens <br> B) Convex lens <br> C) Plane glass <br> D) Cylindrical lens</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Convex lens</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q23</span>
+                <h2>The time difference between actual sunrise and apparent sunrise is about:</h2>
+                <p>A) 4 minutes <br> B) 1 minute <br> C) 2 minutes <br> D) 5 minutes</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) 2 minutes</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q24</span>
+                <h2>Planets do not twinkle because:</h2>
+                <p>A) They are very far <br> B) They are point sources <br> C) They are extended sources <br> D) They have no light</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) They are extended sources</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q25</span>
+                <h2>Clear sky appears blue, but for an astronaut in space, it appears:</h2>
+                <p>A) Blue <br> B) Red <br> C) White <br> D) Dark/Black</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>D) Dark/Black</b> (No atmosphere to scatter light).</div>
+            </div>
+
+        </div>
+        <h1 style="text-align: center; color: #00ffff; margin: 50px 0 30px; font-size: 2.2rem; text-shadow: 0 0 20px #00ffff; border-top: 5px double #ffff00; padding-top: 30px;">
+            PRO LEVEL MCQ CHALLENGE (26-50)
+        </h1>
+
+        <div id="mcq-container-v2">
+            
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q26</span>
+                <h2>The focal length of the eye lens increases when eye muscles:</h2>
+                <p>A) Contract and lens becomes thicker <br> B) Relax and lens becomes thinner <br> C) Contract and lens becomes thinner <br> D) Relax and lens becomes thicker</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Relax and lens becomes thinner</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q27</span>
+                <h2>Which of the following phenomena contributes significantly to the reddish appearance of the sun at sunrise or sunset?</h2>
+                <p>A) Dispersion of light <br> B) Scattering of light <br> C) Total internal reflection <br> D) Reflection of light from earth</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Scattering of light</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q28</span>
+                <h2>The image of an object formed on the retina persists there for about:</h2>
+                <p>A) 1/10th of a second <br> B) 1/16th of a second <br> C) 1 second <br> D) 1/25th of a second</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) 1/16th of a second</b> (Persistence of Vision).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q29</span>
+                <h2>Bifocal lenses are required by people suffering from:</h2>
+                <p>A) Myopia <br> B) Hypermetropia <br> C) Presbyopia <br> D) Both Myopia and Hypermetropia</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Presbyopia</b> (Often involves both near and far vision issues).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q30</span>
+                <h2>The amount of light entering the eye is regulated by:</h2>
+                <p>A) Eye lens <br> B) Pupil <br> C) Iris <br> D) Cornea</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Pupil</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q31</span>
+                <h2>When light rays enter the eye, most of the refraction occurs at the:</h2>
+                <p>A) Crystalline lens <br> B) Outer surface of the cornea <br> C) Iris <br> D) Pupil</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Outer surface of the cornea</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q32</span>
+                <h2>The part of the eye which is equivalent to the photographic film in a camera is:</h2>
+                <p>A) Iris <br> B) Pupil <br> C) Retina <br> D) Cornea</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Retina</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q33</span>
+                <h2>A prism ABC (with BC as base) is placed in different orientations. A narrow beam of white light is incident on the prism. In which case, after dispersion, the third colour from the top corresponds to the colour of the sky?</h2>
+                <p>A) Base BC is at bottom <br> B) Base BC is at top <br> C) Base BC is vertical <br> D) Base BC is slanted</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Base BC is at top</b> (Inverted prism makes Blue the 3rd from top).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q34</span>
+                <h2>The deviation of light rays by a prism is highest for:</h2>
+                <p>A) Red light <br> B) Green light <br> C) Violet light <br> D) Yellow light</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Violet light</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q35</span>
+                <h2>Which of the following is a natural phenomenon caused by dispersion of sunlight?</h2>
+                <p>A) Twinkling of stars <br> B) Tyndall effect <br> C) Rainbow <br> D) Advanced sunrise</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Rainbow</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q36</span>
+                <h2>The path of light becomes visible when it passes through a colloidal solution due to:</h2>
+                <p>A) Reflection <br> B) Tyndall effect <br> C) Dispersion <br> D) Refraction</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Tyndall effect</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q37</span>
+                <h2>At high altitudes, the sky appears dark to astronauts because:</h2>
+                <p>A) Light is absorbed <br> B) There is no atmosphere to scatter light <br> C) Only red light is present <br> D) Sun is not bright enough</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) There is no atmosphere to scatter light</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q38</span>
+                <h2>The power of accommodation of a normal eye is about:</h2>
+                <p>A) 1 D <br> B) 2 D <br> C) 3 D <br> D) 4 D</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>D) 4 D</b> (Calculation: $P = 1/f = 1/0.25 = 4D$).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q39</span>
+                <h2>A person using a convex lens of focal length 20 cm as reading goggles has a power of:</h2>
+                <p>A) +5 D <br> B) -5 D <br> C) +2 D <br> D) -2 D</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>A) +5 D</b> ($P = 100/20 = 5$).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q40</span>
+                <h2>Which part of the eye is responsible for color vision?</h2>
+                <p>A) Rods <br> B) Cones <br> C) Optic Nerve <br> D) Cornea</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Cones</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q41</span>
+                <h2>The medical condition in which the eye lens becomes milky and cloudy is:</h2>
+                <p>A) Myopia <br> B) Hypermetropia <br> C) Cataract <br> D) Presbyopia</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Cataract</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q42</span>
+                <h2>The blue color of water in the deep sea is due to:</h2>
+                <p>A) Presence of algae <br> B) Scattering of light <br> C) Reflection of sky in water <br> D) Absorption of light by the sea</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Scattering of light</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q43</span>
+                <h2>The angle between two refracting surfaces of a prism is called:</h2>
+                <p>A) Angle of incidence <br> B) Angle of deviation <br> C) Angle of prism <br> D) Angle of emergence</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Angle of prism</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q44</span>
+                <h2>Which light has the longest wavelength in the visible spectrum?</h2>
+                <p>A) Violet <br> B) Green <br> C) Red <br> D) Yellow</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Red</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q45</span>
+                <h2>Atmospheric refraction causes the sun to be seen how much time after the actual sunset?</h2>
+                <p>A) 1 min <br> B) 2 min <br> C) 3 min <br> D) 4 min</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) 2 min</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q46</span>
+                <h2>The function of the iris is to:</h2>
+                <p>A) Move eye lens <br> B) Control size of pupil <br> C) Focus on retina <br> D) Send signals to brain</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Control size of pupil</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q47</span>
+                <h2>A point source of light in a dense medium when viewed from a rare medium appears:</h2>
+                <p>A) Closer <br> B) Farther <br> C) At same distance <br> D) Dimmer</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>A) Closer</b> (Due to refraction).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q48</span>
+                <h2>Stars twinkle, but planets do not because:</h2>
+                <p>A) Stars are smaller <br> B) Planets are closer and act as extended sources <br> C) Stars are closer <br> D) Planets move faster</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Planets are closer and act as extended sources</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q49</span>
+                <h2>The focal length of a normal eye lens when ciliary muscles are relaxed is about:</h2>
+                <p>A) 2.5 cm <br> B) 25 cm <br> C) 10 cm <br> D) 1 cm</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>A) 2.5 cm</b> (Approximate diameter of eyeball).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">MCQ Q50</span>
+                <h2>Which lens is used in a simple microscope?</h2>
+                <p>A) Concave <br> B) Convex <br> C) Cylindrical <br> D) Bifocal</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Convex</b></div>
+            </div>
+
+        </div>
+        <h1 style="text-align: center; color: #ff0000; margin: 60px 0 30px; font-size: 2.5rem; text-transform: uppercase; text-shadow: 0 0 30px #ff0000, 0 0 10px #ffffff; border: 4px dashed #ff0000; padding: 20px; background: rgba(255,0,0,0.1); border-radius: 20px;">
+            ☢️ WARNING: HARDEST CONCEPTUAL MCQS (51-75) ☢️
+        </h1>
+
+        <div id="mcq-container-hardest">
+            
+            <div class="mega-card" style="border-color: #ff0000; box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);">
+                <span class="hard-tag" style="background: #ff0000; color: #fff;">EXTREME Q51</span>
+                <h2>When a person looks at a distant object, the ciliary muscles are relaxed. In this state, the focal length of the eye lens is:</h2>
+                <p>A) Minimum <br> B) Maximum <br> C) Zero <br> D) Equal to the near point</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Maximum</b> (Thin lens has maximum focal length).</div>
+            </div>
+
+            <div class="mega-card" style="border-color: #ff0000;">
+                <span class="hard-tag" style="background: #ff0000; color: #fff;">EXTREME Q52</span>
+                <h2>If the earth had no atmosphere, the duration of the day would:</h2>
+                <p>A) Increase by 4 mins <br> B) Decrease by 4 mins <br> C) Remain same <br> D) Decrease by 2 mins</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Decrease by 4 mins</b> (2 mins early sunrise + 2 mins delayed sunset cancel ho jayenge).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q53</span>
+                <h2>A person wears glasses of power -2.5 D. The defect of vision and the far point of the person are:</h2>
+                <p>A) Myopia, 40 cm <br> B) Hypermetropia, 40 cm <br> C) Myopia, 250 cm <br> D) Hypermetropia, 250 cm</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>A) Myopia, 40 cm</b> ($f = 1/P = 1/-2.5 = -0.4m = -40cm$).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q54</span>
+                <h2>The twinkling of stars is primarily due to the fluctuation of:</h2>
+                <p>A) Star's temperature <br> B) Distance of star <br> C) Refractive index of air layers <br> D) Size of the star</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Refractive index of air layers</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q55</span>
+                <h2>Which component of white light is least deviated by a prism?</h2>
+                <p>A) Violet <br> B) Indigo <br> C) Red <br> D) Yellow</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Red</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">EXTREME Q56</span>
+                <h2>At the time of sunset, the light has to pass through ______ of air.</h2>
+                <p>A) Thinner layers <br> B) Less distance <br> C) Larger distance & thicker layers <br> D) Vacuum</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Larger distance & thicker layers</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">EXTREME Q57</span>
+                <h2>The clear sky appears blue because the atmosphere scatters:</h2>
+                <p>A) Violet and Blue light more than Red <br> B) Red light more than Blue <br> C) All colors equally <br> D) Only White light</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>A) Violet and Blue light more than Red</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">EXTREME Q58</span>
+                <h2>The image formed on the retina is:</h2>
+                <p>A) Real and erect <br> B) Real and inverted <br> C) Virtual and erect <br> D) Virtual and inverted</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Real and inverted</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q59</span>
+                <h2>In Hypermetropia, the near point of the eye:</h2>
+                <p>A) Comes closer than 25cm <br> B) Moves farther than 25cm <br> C) Remains at 25cm <br> D) Becomes infinity</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Moves farther than 25cm</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q60</span>
+                <h2>Bi-focal lenses were invented by:</h2>
+                <p>A) Newton <br> B) Benjamin Franklin <br> C) Einstein <br> D) C.V. Raman</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Benjamin Franklin</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">ULTRA Q61</span>
+                <h2>Total Internal Reflection in a raindrop occurs:</h2>
+                <p>A) Once <br> B) Twice <br> C) Thrice <br> D) Never</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>A) Once</b> (For primary rainbow).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">ULTRA Q62</span>
+                <h2>A prism causes both ______ and ______ of light.</h2>
+                <p>A) Reflection, Refraction <br> B) Deviation, Dispersion <br> C) Scattering, Reflection <br> D) None</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Deviation, Dispersion</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">ULTRA Q63</span>
+                <h2>When we enter a dark room from sunlight, we cannot see clearly for some time because:</h2>
+                <p>A) Pupil takes time to expand <br> B) Pupil takes time to contract <br> C) Iris becomes fixed <br> D) Retina becomes inactive</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>A) Pupil takes time to expand</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q64</span>
+                <h2>The splitting of light into its component colors is called:</h2>
+                <p>A) Refraction <br> B) Spectrum <br> C) Dispersion <br> D) Tyndall Effect</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Dispersion</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q65</span>
+                <h2>The color of light with the highest frequency is:</h2>
+                <p>A) Red <br> B) Yellow <br> C) Violet <br> D) Blue</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Violet</b> (Lowest wavelength = Highest frequency).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">ULTRA Q66</span>
+                <h2>A person uses a lens of -2.0 D. The nature of lens is:</h2>
+                <p>A) Converging <br> B) Diverging <br> C) Plane <br> D) Cylindrical</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Diverging</b> (Concave lens has negative power).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">ULTRA Q67</span>
+                <h2>The space between the cornea and the eye lens is filled with:</h2>
+                <p>A) Vitreous humour <br> B) Aqueous humour <br> C) Water <br> D) Blood</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Aqueous humour</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q68</span>
+                <h2>Which defect is caused by the elongation of the eyeball?</h2>
+                <p>A) Hypermetropia <br> B) Myopia <br> C) Presbyopia <br> D) Cataract</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Myopia</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q69</span>
+                <h2>In which part of the eye is the focal length adjusted?</h2>
+                <p>A) Retina <br> B) Iris <br> C) Crystalline lens <br> D) Cornea</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Crystalline lens</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">ULTRA Q70</span>
+                <h2>The angle at which the incident ray and emergent ray meet in a prism is:</h2>
+                <p>A) Angle of Prism <br> B) Angle of Deviation <br> C) Angle of Incidence <br> D) Critical Angle</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Angle of Deviation</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">ULTRA Q71</span>
+                <h2>Why do planets not twinkle?</h2>
+                <p>A) They are very small <br> B) They are very far <br> C) They act as a collection of point sources <br> D) They don't reflect light</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) They act as a collection of point sources</b> (Extended sources).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q72</span>
+                <h2>Which color light is scattered most by the atmosphere?</h2>
+                <p>A) Red <br> B) Yellow <br> C) Blue <br> D) Green</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Blue</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q73</span>
+                <h2>The danger signals are red because red light:</h2>
+                <p>A) Is scattered the least <br> B) Is the brightest <br> C) Has lowest wavelength <br> D) Moves fastest in air</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>A) Is scattered the least</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">ULTRA Q74</span>
+                <h2>Which phenomenon is not caused by atmospheric refraction?</h2>
+                <p>A) Twinkling of stars <br> B) Advanced sunrise <br> C) Blue color of sky <br> D) Apparent position of stars</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Blue color of sky</b> (It is due to Scattering).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">ULTRA Q75</span>
+                <h2>The medical term for the 'Old age' defect of vision is:</h2>
+                <p>A) Myopia <br> B) Hypermetropia <br> C) Presbyopia <br> D) Astigmatism</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Presbyopia</b></div>
+            </div>
+
+        </div>
+            <div class="mega-card" style="border-color: #ff0000;">
+                <span class="hard-tag" style="background: #ff0000; color: #fff;">ULTRA Q76</span>
+                <h2>The danger signal is red because it is scattered the least by air molecules. This is because the wavelength of red light is _____ times that of blue light.</h2>
+                <p>A) 1.2 <br> B) 1.8 <br> C) 2.5 <br> D) 4.0</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) 1.8</b> (Red wavelength is approx 1.8 times more than Blue).</div>
+            </div>
+
+            <div class="mega-card" style="border-color: #ff0000;">
+                <span class="hard-tag" style="background: #ff0000; color: #fff;">ULTRA Q77</span>
+                <h2>A person having a myopic eye uses a lens of focal length -50 cm. What is the power of the lens?</h2>
+                <p>A) +2.0 D <br> B) -2.0 D <br> C) +0.5 D <br> D) -0.5 D</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) -2.0 D</b> (Calculation: $P = 100 / -50 = -2$).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q78</span>
+                <h2>The screen of the eye (Retina) is a delicate membrane having enormous number of:</h2>
+                <p>A) Light sensitive cells <br> B) Blood cells <br> C) Muscle cells <br> D) Nerve cells only</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>A) Light sensitive cells</b> (Rods and Cones).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q79</span>
+                <h2>When ciliary muscles contract, the curvature of the eye lens:</h2>
+                <p>A) Decreases <br> B) Increases <br> C) Remains same <br> D) Becomes zero</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Increases</b> (Lens becomes thicker/more rounded).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">ULTRA Q80</span>
+                <h2>Which of the following is responsible for the 'Persistence of Vision'?</h2>
+                <p>A) Iris <br> B) Pupil <br> C) Retina <br> D) Ciliary muscles</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Retina</b> (Image stays for 1/16th of a sec).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">EXTREME Q81</span>
+                <h2>A prism splits white light because different colours travel with:</h2>
+                <p>A) Same speed in glass <br> B) Different speeds in glass <br> C) Same frequency in glass <br> D) Different speeds in vacuum</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Different speeds in glass</b> (Refractive index depends on speed).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">EXTREME Q82</span>
+                <h2>The sensation of vision in the brain is carried by:</h2>
+                <p>A) Auditory nerve <br> B) Optic nerve <br> C) Spinal cord <br> D) Cranial nerve</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Optic nerve</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q83</span>
+                <h2>The angle of deviation ($\delta$) in a prism is minimum when:</h2>
+                <p>A) $\angle i = \angle e$ <br> B) $\angle i > \angle e$ <br> C) $\angle i < \angle e$ <br> D) $\angle i = 90^\circ$</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>A) $\angle i = \angle e$</b> (Angle of incidence equals angle of emergence).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q84</span>
+                <h2>Cataract can be corrected by:</h2>
+                <p>A) Concave lens <br> B) Convex lens <br> C) Surgery <br> D) Bifocal lens</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Surgery</b> (Replacement of opaque lens).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">ULTRA Q85</span>
+                <h2>The colored part of the eye which is visible from outside is:</h2>
+                <p>A) Pupil <br> B) Iris <br> C) Cornea <br> D) Sclera</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Iris</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q86</span>
+                <h2>Which color of white light is deviated the most by a prism?</h2>
+                <p>A) Red <br> B) Violet <br> C) Blue <br> D) Yellow</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Violet</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">EXTREME Q87</span>
+                <h2>Sunlight consists of how many colors?</h2>
+                <p>A) 5 <br> B) 6 <br> C) 7 <br> D) 8</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) 7</b> (VIBGYOR).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">EXTREME Q88</span>
+                <h2>The phenomenon of scattering of light by colloidal particles is:</h2>
+                <p>A) Dispersion <br> B) Tyndall effect <br> C) Refraction <br> D) Total Internal Reflection</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Tyndall effect</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">ULTRA Q89</span>
+                <h2>A person cannot see objects beyond 1.2 m. This defect can be corrected by:</h2>
+                <p>A) Convex lens <br> B) Concave lens <br> C) Cylindrical lens <br> D) None</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Concave lens</b> (This is Myopia).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q90</span>
+                <h2>Hypermetropia is also known as:</h2>
+                <p>A) Near-sightedness <br> B) Long-sightedness <br> C) Color blindness <br> D) Cataract</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Long-sightedness</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">EXTREME Q91</span>
+                <h2>The focal length of a lens of power -2.0 D is:</h2>
+                <p>A) -50 cm <br> B) -20 cm <br> C) 50 cm <br> D) 20 cm</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>A) -50 cm</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q92</span>
+                <h2>The light sensitive cells 'Cones' respond to:</h2>
+                <p>A) Brightness <br> B) Darkness <br> C) Colors <br> D) Movement</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>C) Colors</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">ULTRA Q93</span>
+                <h2>The light sensitive cells 'Rods' respond to:</h2>
+                <p>A) Colors <br> B) Intensity of light <br> C) Shape of object <br> D) Distance</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Intensity of light</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q94</span>
+                <h2>What is the shape of the human eye?</h2>
+                <p>A) Perfect Sphere <br> B) Almost Spherical <br> C) Oval <br> D) Cylindrical</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Almost Spherical</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">ULTRA Q95</span>
+                <h2>The refractive index of the atmosphere _____ as we go higher.</h2>
+                <p>A) Increases <br> B) Decreases <br> C) Remains constant <br> D) First increases then decreases</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Decreases</b> (Air becomes rarer).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q96</span>
+                <h2>Secondary rainbow has:</h2>
+                <p>A) Red on top <br> B) Violet on top <br> C) Blue on top <br> D) Green on top</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Violet on top</b> (Colors are reversed).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">EXTREME Q97</span>
+                <h2>The star appears slightly ______ than its actual position.</h2>
+                <p>A) Lower <br> B) Higher <br> C) Closer <br> D) Dimmer</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Higher</b> (Due to atmospheric refraction).</div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">ULTRA Q98</span>
+                <h2>Atmospheric refraction can be seen in:</h2>
+                <p>A) Twinkling of stars <br> B) Mirage <br> C) Flickering of objects above fire <br> D) All of the above</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>D) All of the above</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">HARD Q99</span>
+                <h2>If there was no scattering, the sky would look:</h2>
+                <p>A) Blue <br> B) White <br> C) Red <br> D) Black</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>D) Black</b></div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">EXTREME Q100</span>
+                <h2>Which part of the eye bends light the most?</h2>
+                <p>A) Eye Lens <br> B) Cornea <br> C) Iris <br> D) Retina</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box">Correct Answer: <b>B) Cornea</b> (Most of the refraction happens at outer surface).</div>
+            </div>
+
+        </div>
+        <h1 style="text-align: center; color: #ff00ff; margin: 60px 0 30px; font-size: 2.2rem; text-transform: uppercase; text-shadow: 0 0 20px #ff00ff; border-top: 5px solid #00ffff; padding-top: 30px;">
+            SECTION: LONG ANSWER QUESTIONS (5 MARKS)
+        </h1>
+
+        <div id="long-questions-container">
+            
+            <div class="mega-card">
+                <span class="hard-tag">LONG Q1</span>
+                <h2>Explain the structure and functioning of the Human Eye with a neat labeled diagram.</h2>
+                <p>Describe the role of Cornea, Iris, Pupil, Lens, and Retina in the process of vision.</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW DETAILED ANSWER</button>
+                <div class="ans-box">
+                    <b>Answer Highlights:</b><br>
+                    1. <b>Cornea:</b> Outer transparent part, maximum refraction occurs here.<br>
+                    2. <b>Iris & Pupil:</b> Iris is a dark muscular diaphragm that controls the size of the pupil to regulate light.<br>
+                    3. <b>Eye Lens:</b> Adjusts focal length to form a sharp image on the retina.<br>
+                    4. <b>Retina:</b> Acts as a screen containing light-sensitive cells (Rods & Cones).<br>
+                    5. <b>Optic Nerve:</b> Transmits electrical signals to the brain.
+                </div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">LONG Q2</span>
+                <h2>What is Myopia? State its causes. How can it be corrected? Explain with ray diagrams.</h2>
+                <p>Also, explain why a person with myopia cannot see distant objects clearly.</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW DETAILED ANSWER</button>
+                <div class="ans-box">
+                    <b>Answer Highlights:</b><br>
+                    - <b>Definition:</b> A defect where a person sees nearby objects clearly but distant objects appear blurry.<br>
+                    - <b>Causes:</b> 1. Excessive curvature of the eye lens. 2. Elongation of the eyeball.<br>
+                    - <b>Image formation:</b> Image is formed in front of the retina.<br>
+                    - <b>Correction:</b> Using a <b>Concave Lens</b> of suitable focal length which diverges the rays to focus exactly on the retina.
+                </div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">LONG Q3</span>
+                <h2>Explain the phenomenon of Dispersion of white light through a glass prism. Why do we see a spectrum?</h2>
+                <p>Include Newton's experiment of recombination of spectrum to get white light back.</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW DETAILED ANSWER</button>
+                <div class="ans-box">
+                    <b>Answer Highlights:</b><br>
+                    - <b>Dispersion:</b> Splitting of white light into its seven constituent colors (VIBGYOR).<br>
+                    - <b>Reason:</b> Different colors of light travel at different speeds in glass, so they bend at different angles.<br>
+                    - <b>Newton's Experiment:</b> He used two prisms, one upright and one inverted. The inverted prism recombined the seven colors to form white light again, proving sunlight is made of 7 colors.
+                </div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">LONG Q4</span>
+                <h2>How is a Rainbow formed in the sky? Explain the three physical processes involved.</h2>
+                <p>Draw a diagram showing the path of a ray of light through a water droplet.</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW DETAILED ANSWER</button>
+                <div class="ans-box">
+                    <b>Answer Highlights:</b><br>
+                    A rainbow is a natural spectrum appearing in the sky after rain. Processes involved:<br>
+                    1. <b>Refraction & Dispersion:</b> Sunlight enters the raindrop and splits into colors.<br>
+                    2. <b>Internal Reflection:</b> Light hits the back of the drop and reflects back.<br>
+                    3. <b>Refraction:</b> Light exits the drop, bending again before reaching the observer's eye.<br>
+                    <i>Note: Rainbow is always formed in the direction opposite to the Sun.</i>
+                </div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">LONG Q5</span>
+                <h2>Give reasons for the following atmospheric phenomena:<br> (a) Twinkling of Stars (b) Advanced Sunrise (c) Why Sky is Blue.</h2>
+                <button class="show-btn" onclick="toggle(this)">SHOW DETAILED ANSWER</button>
+                <div class="ans-box">
+                    <b>Answer Highlights:</b><br>
+                    (a) <b>Twinkling:</b> Due to atmospheric refraction. Refractive index of air layers keeps changing, causing the apparent position of the star to fluctuate.<br>
+                    (b) <b>Advanced Sunrise:</b> Atmosphere bends sunlight, making the sun visible 2 minutes before it actually crosses the horizon.<br>
+                    (c) <b>Blue Sky:</b> Scattering of light. Blue light has a shorter wavelength and is scattered more strongly by fine particles in the atmosphere than red light.
+                </div>
+            </div>
+
+        </div>
+            <div class="mega-card">
+                <span class="hard-tag">LONG Q6</span>
+                <h2>What is Hypermetropia? Write its two causes. How is it corrected? Explain with the help of a ray diagram.</h2>
+                <p>A person with a hypermetropic eye has a near point of 1 m. What is the power of the lens required to correct this defect? (Assume near point of normal eye is 25 cm).</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW DETAILED ANSWER</button>
+                <div class="ans-box">
+                    <b>Theory:</b> Far-sightedness where a person can't see nearby objects. Causes: 1. Focal length of eye lens is too long. 2. Eyeball has become too small.<br>
+                    <b>Correction:</b> Convex lens.<br>
+                    <b>Numerical:</b> $u = -25 cm$, $v = -100 cm$.<br>
+                    Using $1/f = 1/v - 1/u$:<br>
+                    $1/f = 1/-100 - 1/-25 = -1/100 + 1/25 = 3/100$.<br>
+                    $f = 100/3 = 33.3 cm$.<br>
+                    <b>Power (P) = +3.0 D.</b>
+                </div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">LONG Q7</span>
+                <h2>(a) Why does the Sun appear reddish early in the morning? <br>(b) Why does the Sun appear white at noon?</h2>
+                <p>Explain the role of scattering of light in these observations.</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW DETAILED ANSWER</button>
+                <div class="ans-box">
+                    <b>(a) Sunrise:</b> Light has to travel a larger distance through the atmosphere. Most of the blue/short wavelength light is scattered away. Only red light (longer wavelength) reaches our eyes.<br>
+                    <b>(b) Noon:</b> The Sun is overhead. Light travels a shorter distance. Very little scattering occurs, so all colors reach us almost equally, making it look white.
+                </div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">LONG Q8</span>
+                <h2>Define 'Power of Accommodation'. Explain how ciliary muscles help in focusing objects at different distances.</h2>
+                <p>What happens to the eye lens when we look at (i) a distant tree and (ii) a book held close to the eyes?</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW DETAILED ANSWER</button>
+                <div class="ans-box">
+                    <b>Definition:</b> The ability of the eye lens to adjust its focal length to see both near and far objects.<br>
+                    <b>(i) Distant Tree:</b> Ciliary muscles relax → Lens becomes thin → Focal length increases → Sharp image on retina.<br>
+                    <b>(ii) Close Book:</b> Ciliary muscles contract → Lens becomes thick/curved → Focal length decreases → Sharp image on retina.
+                </div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">LONG Q9</span>
+                <h2>Explain the formation of a spectrum by a glass prism. If a second identical prism is placed in an inverted position, what will happen?</h2>
+                <p>Draw a diagram to illustrate the recombination of white light.</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW DETAILED ANSWER</button>
+                <div class="ans-box">
+                    <b>Dispersion:</b> White light splits into VIBGYOR because different colors bend at different angles due to different speeds in glass.<br>
+                    <b>Recombination:</b> This was Newton's experiment. The first prism disperses light. The second (inverted) prism recombines these colors. The emergent ray from the second prism is white light again.
+                </div>
+            </div>
+
+            <div class="mega-card">
+                <span class="hard-tag">LONG Q10</span>
+                <h2>Describe an activity to demonstrate the scattering of light in a colloidal solution (Tyndall Effect).</h2>
+                <p>How does this explain the blue color of the sky and the reddish color of the sun at sunset?</p>
+                <button class="show-btn" onclick="toggle(this)">SHOW DETAILED ANSWER</button>
+                <div class="ans-box">
+                    <b>Activity:</b> Pass a beam of light through a tank of clear water, then add sodium thiosulphate and sulphuric acid. Sulphur particles start forming.<br>
+                    <b>Observation:</b> Blue light is scattered first (visible from sides). Red light is transmitted (visible from the other end).<br>
+                    <b>Conclusion:</b> This proves that fine particles scatter shorter wavelengths (blue) more easily, while longer wavelengths (red) pass through.
+                </div>
+            </div>
+        </div>
+        <h1 style="text-align: center; color: #ff0000; margin: 50px 0 30px; font-size: 2rem; text-transform: uppercase; text-shadow: 0 0 15px #ff0000; border: 2px solid #ff0000; padding: 15px; border-radius: 15px; background: rgba(255,0,0,0.1);">
+            SECTION: HARD QUESTIONS (11-18)
+        </h1>
+
+        <div id="hard-questions-container">
+            
+            <div class="mega-card" style="padding: 20px;">
+                <span class="hard-tag" style="font-size: 0.75rem;">HARD Q11</span>
+                <h2 style="font-size: 1.3rem;">How does the eye focus on objects at different distances? Explain the role of the ciliary muscles and the crystalline lens in detail.</h2>
+                <p style="font-size: 0.95rem;">Discuss the change in curvature and focal length during this process.</p>
+                <button class="show-btn" style="width: 150px; height: 40px; font-size: 0.75rem;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box" style="font-size: 0.95rem;">
+                    <b>Mechanism:</b> To see distant objects, ciliary muscles relax, making the lens thin and increasing focal length. To see nearby objects, muscles contract, making the lens thick/curved, which decreases focal length to focus the image on the retina.
+                </div>
+            </div>
+
+            <div class="mega-card" style="padding: 20px;">
+                <span class="hard-tag" style="font-size: 0.75rem;">HARD Q12</span>
+                <h2 style="font-size: 1.3rem;">Explain why a person with a normal eye cannot see clearly objects placed closer than 25 cm.</h2>
+                <p style="font-size: 0.95rem;">Relate this to the limit of accommodation of the eye lens.</p>
+                <button class="show-btn" style="width: 150px; height: 40px; font-size: 0.75rem;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box" style="font-size: 0.95rem;">
+                    <b>Reason:</b> Ciliary muscles cannot contract beyond a certain limit to make the lens thicker. If an object is closer than 25 cm, the lens cannot decrease its focal length enough to form a sharp image on the retina, resulting in a blurred image.
+                </div>
+            </div>
+
+            <div class="mega-card" style="padding: 20px;">
+                <span class="hard-tag" style="font-size: 0.75rem;">HARD Q13</span>
+                <h2 style="font-size: 1.3rem;">Describe the formation of a spectrum using two identical glass prisms—one in an upright and the other in an inverted position.</h2>
+                <p style="font-size: 0.95rem;">Explain the observations made by Isaac Newton in this experiment.</p>
+                <button class="show-btn" style="width: 150px; height: 40px; font-size: 0.75rem;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box" style="font-size: 0.95rem;">
+                    <b>Observation:</b> The first prism disperses white light into seven colors. The second inverted prism recombines these colors back into a single beam of white light. This proved that white light is composed of seven constituent colors.
+                </div>
+            </div>
+
+            <div class="mega-card" style="padding: 20px;">
+                <span class="hard-tag" style="font-size: 0.75rem;">HARD Q14</span>
+                <h2 style="font-size: 1.3rem;">Why do we see a rainbow only in the direction opposite to the sun? Explain the internal physics.</h2>
+                <p style="font-size: 0.95rem;">Include the concept of Total Internal Reflection (TIR).</p>
+                <button class="show-btn" style="width: 150px; height: 40px; font-size: 0.75rem;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box" style="font-size: 0.95rem;">
+                    <b>Physics:</b> Water droplets act as tiny prisms. Light enters, refracts/disperses, undergoes TIR at the back surface of the drop, and refracts again while exiting. This geometry only allows the observer to see the spectrum when the sun is behind them.
+                </div>
+            </div>
+
+            <div class="mega-card" style="padding: 20px;">
+                <span class="hard-tag" style="font-size: 0.75rem;">HARD Q15</span>
+                <h2 style="font-size: 1.3rem;">Compare Myopia and Hypermetropia based on: (i) Nature of defect (ii) Causes (iii) Correction method.</h2>
+                <button class="show-btn" style="width: 150px; height: 40px; font-size: 0.75rem;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box" style="font-size: 0.95rem;">
+                    <b>Myopia:</b> Near vision clear; caused by long eyeball/high curvature; corrected by <b>Concave Lens</b>.<br>
+                    <b>Hypermetropia:</b> Distant vision clear; caused by short eyeball/low curvature; corrected by <b>Convex Lens</b>.
+                </div>
+            </div>
+
+            <div class="mega-card" style="padding: 20px;">
+                <span class="hard-tag" style="font-size: 0.75rem;">HARD Q16</span>
+                <h2 style="font-size: 1.3rem;">What is Presbyopia? How is it different from Hypermetropia? Suggest a remedy for a person with both defects.</h2>
+                <button class="show-btn" style="width: 150px; height: 40px; font-size: 0.75rem;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box" style="font-size: 0.95rem;">
+                    <b>Presbyopia:</b> Age-related weakening of ciliary muscles. Unlike Hypermetropia (eyeball size issue), this is a loss of flexibility. People with both Myopia and Presbyopia use <b>Bifocal Lenses</b> (Upper part concave, lower part convex).
+                </div>
+            </div>
+
+            <div class="mega-card" style="padding: 20px;">
+                <span class="hard-tag" style="font-size: 0.75rem;">HARD Q17</span>
+                <h2 style="font-size: 1.3rem;">Explain the 'Twinkling of Stars' and why planets do not twinkle using the concept of apparent position.</h2>
+                <button class="show-btn" style="width: 150px; height: 40px; font-size: 0.75rem;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box" style="font-size: 0.95rem;">
+                    <b>Explanation:</b> Stars are point sources; atmospheric turbulence shifts their apparent position, causing twinkling. Planets are closer/extended sources; the average brightness from many points remains constant, canceling the twinkling effect.
+                </div>
+            </div>
+
+            <div class="mega-card" style="padding: 20px;">
+                <span class="hard-tag" style="font-size: 0.75rem;">HARD Q18</span>
+                <h2 style="font-size: 1.3rem;">Numerical: A person cannot see objects beyond 2 m clearly. Identify the defect and calculate the power of lens required.</h2>
+                <button class="show-btn" style="width: 150px; height: 40px; font-size: 0.75rem;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-box" style="font-size: 0.95rem;">
+                    <b>Defect:</b> Myopia.<br>
+                    <b>Calculation:</b> $v = -2 m$, $u = \infty$.<br>
+                    $1/f = 1/v - 1/u = 1/-2 - 1/\infty = -1/2$.<br>
+                    $f = -2 m$.<br>
+                    <b>Power (P) = 1/f = -0.5 D (Concave lens).</b>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+</html>

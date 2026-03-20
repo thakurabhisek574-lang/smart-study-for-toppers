@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Metals and Non-Metals | Smart Study For Toppers</title>
+    <style>
+        :root { 
+            --neon-blue: #00e5ff; 
+            --gold: #ffca28; 
+            --bg-dark: #0d1b2a; 
+            --card-bg: #050a14; 
+            --text-gray: #e0e1dd; 
+        }
+
+        body { background-color: var(--bg-dark); color: var(--text-gray); font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; line-height: 1.8; }
+
+        /* Top Bar Branding */
+        .top-bar {
+            background: #1b263b;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid var(--neon-blue);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+        }
+
+        .brand-name {
+            color: var(--gold);
+            font-weight: 900;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(255, 202, 40, 0.5);
+        }
+
+        .back-btn {
+            background: transparent;
+            border: 2px solid var(--neon-blue);
+            color: var(--neon-blue);
+            padding: 8px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--neon-blue);
+            color: #000;
+            box-shadow: 0 0 20px var(--neon-blue);
+        }
+
+        .container { max-width: 900px; margin: 40px auto; padding: 20px; }
+
+        /* Concept Cards */
+        .concept-card { 
+            background: var(--card-bg); 
+            border: 1px solid #1b263b;
+            border-left: 6px solid var(--neon-blue); 
+            border-radius: 20px; 
+            padding: 40px; 
+            margin-bottom: 60px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+            transition: 0.4s; 
+        }
+
+        .concept-card:hover { 
+            transform: translateY(-10px);
+            border-color: var(--gold); 
+            box-shadow: 0 0 50px rgba(255, 202, 40, 0.2); 
+        }
+
+        h1.main-title { text-align: center; color: var(--neon-blue); font-size: 2.8rem; text-shadow: 0 0 15px var(--neon-blue); margin-bottom: 60px; }
+        h2 { color: var(--gold); font-size: 2rem; margin-top: 0; border-bottom: 1px solid #1b263b; padding-bottom: 10px; }
+        .highlight { color: var(--neon-blue); font-weight: bold; }
+        
+        .reaction-box { 
+            background: #162435; 
+            padding: 25px; 
+            border-radius: 15px; 
+            border: 1px dashed var(--neon-blue); 
+            color: #fff; 
+            font-family: 'Courier New', monospace; 
+            margin: 25px 0; 
+            font-size: 1.2rem;
+            overflow-x: auto;
+        }
+
+        .tag { 
+            background: var(--gold); 
+            color: #000; 
+            padding: 6px 18px; 
+            border-radius: 6px; 
+            font-weight: 900; 
+            font-size: 0.9rem; 
+            margin-bottom: 20px; 
+            display: inline-block;
+        }
+
+        ul li { margin-bottom: 15px; list-style: none; font-size: 1.15rem; }
+        ul li::before { content: "❖"; margin-right: 15px; color: var(--neon-blue); font-weight: bold; }
+
+        .important-note { background: rgba(255, 202, 40, 0.1); border: 1px solid var(--gold); padding: 15px; border-radius: 10px; color: var(--gold); font-style: italic; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="sci-chapters.html" class="back-btn">BACK</a>
+        <div class="brand-name">Smart Study For Toppers</div>
+        <div style="width: 70px;"></div>
+    </div>
+
+    <div class="container">
+        <h1 class="main-title">CHAPTER 3: METALS & NON-METALS</h1>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 1: PHYSICAL PROPERTIES (METALS)</span>
+            <h2>Physical Nature of Metals</h2>
+            <ul>
+                <li><span class="highlight">Malleability:</span> Gold and Silver can be beaten into ultra-thin foils.</li>
+                <li><span class="highlight">Ductility:</span> 1 gram of Gold can be drawn into a 2km long wire.</li>
+                <li><span class="highlight">Thermal Conductivity:</span> Silver is the champion, Lead and Mercury are the losers (poor conductors).</li>
+                <li><span class="highlight">Density:</span> Generally high, but Li, Na, K have very low density.</li>
+            </ul>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 2: PHYSICAL PROPERTIES (NON-METALS)</span>
+            <h2>The World of Non-Metals</h2>
+            <p>Non-metals are mostly gases (Oxygen) or solids (Sulphur), except <span class="highlight">Bromine</span> which is a liquid.</p>
+            <ul>
+                <li><span class="highlight">Lustre:</span> Usually dull, but <span class="highlight">Iodine</span> shines like a metal.</li>
+                <li><span class="highlight">Allotropes:</span> Carbon exists as Diamond (hardest) and Graphite (good conductor).</li>
+                <li><span class="highlight">Melting Points:</span> Generally low, but Gallium and Caesium melt on your palm!</li>
+            </ul>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 3: CHEMICAL PROPERTIES I</span>
+            <h2>Reaction with Oxygen</h2>
+            <p>Metals burn in air to form <span class="highlight">Basic Oxides</span>. Some are special:</p>
+            <div class="reaction-box">
+                4Na + O₂ → 2Na₂O (Room Temp)<br>
+                2Cu + O₂ → 2CuO (Black Copper Oxide)
+            </div>
+            <p><strong>Amphoteric Oxides:</strong> Those that react with both Acid and Base.</p>
+            <div class="reaction-box">
+                Al₂O₃ + 2NaOH → 2NaAlO₂ (Sodium Aluminate) + H₂O
+            </div>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 4: CHEMICAL PROPERTIES II</span>
+            <h2>Reaction with Water</h2>
+            <ul>
+                <li><span class="highlight">Sodium/Potassium:</span> React violently, H₂ catches fire immediately.</li>
+                <li><span class="highlight">Calcium:</span> Starts floating because H₂ bubbles stick to its surface.</li>
+                <li><span class="highlight">Magnesium:</span> Only reacts with hot water.</li>
+                <li><span class="highlight">Iron/Aluminium:</span> Only reacts with steam.</li>
+            </ul>
+            <div class="reaction-box">3Fe + 4H₂O (steam) → Fe₃O₄ + 4H₂</div>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 5: REACTION WITH ACIDS</span>
+            <h2>Metals + Dilute Acids</h2>
+            <p>Metal + Acid → Salt + Hydrogen gas.</p>
+            <p><strong>The HNO₃ Exception:</strong> When metals react with Nitric Acid, H₂ gas is NOT evolved because HNO₃ is a strong oxidizing agent. It oxidizes H₂ to H₂O.</p>
+            <div class="important-note">Exception: Mn and Mg still produce H₂ with very dilute HNO₃.</div>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 6: REACTIVITY SERIES</span>
+            <h2>The Reactivity Ladder</h2>
+            <p>This list decides who wins a displacement reaction.</p>
+            <div class="reaction-box" style="text-align: center; border-style: solid; font-weight: bold; color: var(--gold);">
+                K > Na > Ca > Mg > Al > Zn > Fe > Pb > [H] > Cu > Hg > Ag > Au
+            </div>
+            <ul>
+                <li>Metals above Hydrogen are "Active Metals".</li>
+                <li>Gold (Au) is the most "Noble" (least reactive).</li>
+            </ul>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 7: IONIC BONDING</span>
+            <h2>Formation of Ionic Compounds</h2>
+            <p>Metals lose electrons (become Cations), Non-metals gain electrons (become Anions).</p>
+            <div class="reaction-box">
+                Mg → Mg²⁺ + 2e⁻ (2,8,2 → 2,8)<br>
+                Cl₂ + 2e⁻ → 2Cl⁻ (2,8,7 → 2,8,8)<br>
+                Result: MgCl₂
+            </div>
+            <p><strong>Properties:</strong> High MP/BP, Hard/Brittle, Conductive only when liquid.</p>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 8: METALLURGY I</span>
+            <h2>Concentration of Ores</h2>
+            <ul>
+                <li><span class="highlight">Minerals:</span> Naturally occurring compounds.</li>
+                <li><span class="highlight">Ores:</span> Minerals from which metal can be extracted profitably.</li>
+                <li><span class="highlight">Gangue:</span> Dust, sand, and stones mixed with ore.</li>
+            </ul>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 9: METALLURGY II</span>
+            <h2>Roasting and Calcination</h2>
+            <p>Essential for converting ores into oxides.</p>
+            <div class="reaction-box">
+                <strong>Roasting (Sulphide Ores):</strong> 2ZnS + 3O₂ → 2ZnO + 2SO₂<br><br>
+                <strong>Calcination (Carbonate Ores):</strong> ZnCO₃ → ZnO + CO₂
+            </div>
+            <p>Oxides are then reduced using Carbon (Coke).</p>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 10: REDUCTION METHODS</span>
+            <h2>Thermit Reaction & Electrolysis</h2>
+            <p>For highly reactive metals, we use electricity.</p>
+            <div class="reaction-box">
+                <strong>Thermit Reaction:</strong> Fe₂O₃ + 2Al → 2Fe(l) + Al₂O₃ + Heat
+            </div>
+            <p>Used to join railway tracks because the Iron produced is in molten state.</p>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 11: REFINING</span>
+            <h2>Electrolytic Refining of Copper</h2>
+            <ul>
+                <li><span class="highlight">Anode:</span> Impure thick block of Copper.</li>
+                <li><span class="highlight">Cathode:</span> Pure thin strip of Copper.</li>
+                <li><span class="highlight">Electrolyte:</span> Acidified CuSO₄ solution.</li>
+                <li><span class="highlight">Anode Mud:</span> Insoluble impurities settle at the bottom.</li>
+            </ul>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 12: CORROSION & ALLOYS</span>
+            <h2>Protection of Metals</h2>
+            <p><strong>Prevention:</strong> Painting, Oiling, Galvanising (Zinc coating), Anodising, and Alloying.</p>
+            <p><strong>Popular Alloys:</strong></p>
+            <ul>
+                <li><span class="highlight">Stainless Steel:</span> Fe + Ni + Cr (Never rusts).</li>
+                <li><span class="highlight">Brass:</span> Cu + Zn | <span class="highlight">Bronze:</span> Cu + Sn.</li>
+                <li><span class="highlight">22 Carat Gold:</span> 22 parts Gold + 2 parts Copper/Silver (for strength).</li>
+            </ul>
+        </div>
+
+        <div class="footer-note" style="text-align: center; color: var(--neon-blue); font-weight: bold; padding: 40px;">
+            💎 CHAPTER 3 COMPLETE MASTER NOTES 💎
+        </div>
+    </div>
+<style>
+    /* MCQ Section Styling - Exactly same as Chapter 1 & 2 */
+    .mcq-section-ch3 { width: 100%; background: #0d1b2a; border: 3px solid #00e5ff; border-radius: 25px; padding: 25px; margin-top: 50px; box-shadow: 0 0 30px rgba(0, 229, 255, 0.4); box-sizing: border-box; }
+    .mcq-card-ch3 { background: #050a14; border: 1px solid #1b263b; padding: 20px; border-radius: 20px; margin-bottom: 35px; transition: 0.5s; }
+    .mcq-card-ch3:hover { border-color: #ffca28; box-shadow: 0 0 35px rgba(255, 202, 40, 0.3); }
+    .mcq-q-text { color: #ffca28; font-size: 1.3rem; font-weight: 900; display: block; margin-bottom: 15px; }
+    .mcq-opt { display: block; padding: 12px; background: #162435; margin: 8px 0; border-radius: 12px; color: #e0e1dd; border: 1px solid #334155; }
+    .mcq-btn { width: 100%; padding: 15px; background: transparent; border: 2px solid #00e5ff; color: #00e5ff; border-radius: 15px; font-weight: 900; cursor: pointer; text-transform: uppercase; margin-top: 10px; transition: 0.3s; }
+    .mcq-ans-box { display: none; margin-top: 15px; padding: 12px; background: rgba(0, 229, 255, 0.1); border-left: 6px solid #00e5ff; color: #00e5ff; font-weight: bold; font-size: 1.1rem; text-align: center; border-radius: 10px; }
+</style>
+
+<div class="mcq-section-ch3" id="ch3-mcq-container">
+    <h2 style="text-align:center; color:#00e5ff; font-size:1.8rem; text-shadow: 0 0 15px #00e5ff; margin-bottom: 40px;">CH-3 TOPPER'S QUIZ (1-25)</h2>
+    
+    <script>
+        const mcqs_ch3 = [
+            {q: "Which metal is the best conductor of heat?", a: "Silver", o: ["Lead", "Mercury", "Silver", "Iron"]},
+            {q: "The most ductile metal is?", a: "Gold", o: ["Silver", "Gold", "Copper", "Aluminium"]},
+            {q: "Which non-metal is lustrous (shining)?", a: "Iodine", o: ["Sulphur", "Oxygen", "Nitrogen", "Iodine"]},
+            {q: "Which metal can be easily cut with a knife?", a: "Sodium", o: ["Sodium", "Iron", "Copper", "Gold"]},
+            {q: "Non-metal which is liquid at room temperature is?", a: "Bromine", o: ["Mercury", "Bromine", "Chlorine", "Iodine"]},
+            {q: "Aluminium oxide is an ______ oxide.", a: "Amphoteric", o: ["Acidic", "Basic", "Neutral", "Amphoteric"]},
+            {q: "Which of the following does not react with water even at high temperature?", a: "Gold", o: ["Iron", "Aluminium", "Gold", "Calcium"]},
+            {q: "The reactive metal among these is?", a: "Potassium", o: ["Iron", "Copper", "Gold", "Potassium"]},
+            {q: "Aqua Regia is a mixture of Conc. HCl and Conc. HNO3 in ratio?", a: "3:1", o: ["1:3", "3:1", "2:2", "3:2"]},
+            {q: "Ionic compounds have high melting points due to?", a: "Strong electrostatic forces", o: ["Weak forces", "Strong electrostatic forces", "Covalent bonding", "None"]},
+            {q: "The process of heating sulphide ores in excess air is?", a: "Roasting", o: ["Calcination", "Roasting", "Reduction", "Refining"]},
+            {q: "Which alloy contains Mercury as one of its constituents?", a: "Amalgam", o: ["Stainless Steel", "Alnico", "Solder", "Amalgam"]},
+            {q: "Brass is an alloy of?", a: "Copper and Zinc", o: ["Copper and Tin", "Copper and Zinc", "Lead and Tin", "Iron and Carbon"]},
+            {q: "Galvanisation is a method of protecting iron from rusting by coating it with?", a: "Zinc", o: ["Silver", "Zinc", "Copper", "Aluminium"]},
+            {q: "Which metal starts floating when reacted with water?", a: "Magnesium", o: ["Sodium", "Potassium", "Magnesium", "Iron"]},
+            {q: "Anodising is the process of forming a thick oxide layer of?", a: "Aluminium", o: ["Copper", "Aluminium", "Zinc", "Iron"]},
+            {q: "Reaction of Iron(III) oxide with Aluminium is used to join railway tracks. It is called?", a: "Thermit Reaction", o: ["Combination Reaction", "Thermit Reaction", "Reduction Reaction", "Oxidation"]},
+            {q: "Solder is an alloy of?", a: "Lead and Tin", o: ["Copper and Zinc", "Lead and Tin", "Iron and Carbon", "Copper and Gold"]},
+            {q: "Which non-metal is a good conductor of electricity?", a: "Graphite", o: ["Diamond", "Sulphur", "Graphite", "Phosphorus"]},
+            {q: "In electrolytic refining, the impure metal is made the?", a: "Anode", o: ["Cathode", "Anode", "Electrolyte", "None"]},
+            {q: "Food cans are coated with tin and not with zinc because?", a: "Zinc is more reactive than tin", o: ["Zinc is costlier", "Zinc has higher MP", "Zinc is more reactive than tin", "Zinc is less reactive"]},
+            {q: "Amphoteric oxides react with?", a: "Both Acids and Bases", o: ["Only Acids", "Only Bases", "Both Acids and Bases", "Neither Acids nor Bases"]},
+            {q: "The chemical formula of Sodium Aluminate is?", a: "NaAlO2", o: ["NaAlO", "Na2AlO2", "NaAlO2", "NaAl2O"]},
+            {q: "Metals in the middle of the reactivity series are extracted by?", a: "Reduction with Carbon", o: ["Electrolysis", "Reduction with Carbon", "Roasting only", "Calcination only"]},
+            {q: "The most abundant metal in the earth's crust is?", a: "Aluminium", o: ["Iron", "Aluminium", "Calcium", "Sodium"]}
+        ];
+
+        const container = document.getElementById('ch3-mcq-container');
+        mcqs_ch3.forEach((item, i) => {
+            const card = document.createElement('div');
+            card.className = 'mcq-card-ch3';
+            card.innerHTML = `
+                <span class="mcq-q-text">Q${i+1}. ${item.q}</span>
+                ${item.o.map(opt => `<span class="mcq-opt">${opt}</span>`).join('')}
+                <button class="mcq-btn" onclick="toggleCh3Mcq(this)">Show Answer</button>
+                <div class="mcq-ans-box">✨ Correct Answer: ${item.a}</div>
+            `;
+            container.appendChild(card);
+        });
+
+        function toggleCh3Mcq(btn) {
+            const ans = btn.nextElementSibling;
+            if (ans.style.display === "block") {
+                ans.style.display = "none";
+                btn.innerText = "Show Answer";
+                btn.style.color = "#00e5ff";
+                btn.style.borderColor = "#00e5ff";
+            } else {
+                ans.style.display = "block";
+                btn.innerText = "Hide Answer";
+                btn.style.color = "#ff4444";
+                btn.style.borderColor = "#ff4444";
+            }
+        }
+    </script>
+</div>
+<style>
+    /* Styling wahi rakhi hai jo pehle wale section ki thi */
+    .mcq-box-ch3-p2 { width: 100%; background: #0d1b2a; border: 3px solid #ffca28; border-radius: 25px; padding: 25px; margin-top: 30px; box-shadow: 0 0 30px rgba(255, 202, 40, 0.2); box-sizing: border-box; }
+    .m-card-ch3-v2 { background: #050a14; border: 1px solid #1b263b; padding: 20px; border-radius: 20px; margin-bottom: 35px; transition: 0.5s; }
+    .m-card-ch3-v2:hover { border-color: #00e5ff; box-shadow: 0 0 35px rgba(0, 229, 255, 0.3); }
+    .m-q-ch3-v2 { color: #ffca28; font-size: 1.3rem; font-weight: 900; display: block; margin-bottom: 15px; }
+    .m-opt-ch3-v2 { display: block; padding: 12px; background: #162435; margin: 8px 0; border-radius: 12px; color: #e0e1dd; border: 1px solid #334155; }
+    .m-btn-ch3-v2 { width: 100%; padding: 15px; background: transparent; border: 2px solid #ffca28; color: #ffca28; border-radius: 15px; font-weight: 900; cursor: pointer; text-transform: uppercase; margin-top: 10px; transition: 0.3s; }
+    .m-ans-ch3-v2 { display: none; margin-top: 15px; padding: 12px; background: rgba(255, 202, 40, 0.1); border-left: 6px solid #ffca28; color: #ffca28; font-weight: bold; font-size: 1.1rem; text-align: center; border-radius: 10px; }
+</style>
+
+<div class="mcq-box-ch3-p2" id="ch3-mcq-p2">
+    <h2 style="text-align:center; color:#ffca28; font-size:1.8rem; text-shadow: 0 0 15px #ffca28; margin-bottom: 40px;">CH-3 TOPPER'S QUIZ (26-50)</h2>
+    
+    <script>
+        const mcqsCh3Part2 = [
+            {q: "Which metal is stored in kerosene to prevent its reaction with air?", a: "Sodium", o: ["Magnesium", "Sodium", "Zinc", "Copper"]},
+            {q: "The most abundant non-metal in the earth's crust is?", a: "Oxygen", o: ["Nitrogen", "Oxygen", "Hydrogen", "Silicon"]},
+            {q: "Which metal is found in a free state in nature?", a: "Gold", o: ["Sodium", "Iron", "Zinc", "Gold"]},
+            {q: "Property of metals by which they can be drawn into thin wires?", a: "Ductility", o: ["Malleability", "Ductility", "Sonority", "Hardness"]},
+            {q: "Oxides of non-metals are generally _______ in nature.", a: "Acidic", o: ["Acidic", "Basic", "Amphoteric", "Neutral"]},
+            {q: "Which metal reacts with steam only?", a: "Iron", o: ["Sodium", "Calcium", "Magnesium", "Iron"]},
+            {q: "Alnico is an alloy of?", a: "Al, Ni, Co, Fe", o: ["Al, Ni, Co, Fe", "Cu, Zn", "Pb, Sn", "Cu, Sn"]},
+            {q: "The electronic configuration of Sodium ion (Na+) is?", a: "2, 8", o: ["2, 8, 1", "2, 8", "2, 8, 2", "2, 7"]},
+            {q: "Which of the following metals melt on palm?", a: "Gallium", o: ["Sodium", "Magnesium", "Gallium", "Aluminium"]},
+            {q: "Cinnabar is an ore of which metal?", a: "Mercury", o: ["Lead", "Copper", "Mercury", "Zinc"]},
+            {q: "Self-reduction is used for the extraction of?", a: "Copper", o: ["Sodium", "Aluminium", "Copper", "Iron"]},
+            {q: "What is the purpose of adding Carbon to Iron?", a: "To make it hard and strong", o: ["To prevent rust", "To make it soft", "To make it hard and strong", "To change its color"]},
+            {q: "Which of the following is not an ionic compound?", a: "CCl4", o: ["NaCl", "MgCl2", "CCl4", "CaO"]},
+            {q: "The process of coating iron with tin is called?", a: "Tinning", o: ["Galvanisation", "Anodising", "Tinning", "Alloying"]},
+            {q: "Pure gold is _____ carats.", a: "24", o: ["22", "24", "18", "20"]},
+            {q: "Silver articles become black after some time due to formation of?", a: "Ag2S", o: ["AgO", "Ag2S", "AgCl", "AgNO3"]},
+            {q: "Which metal is used in thermit reaction to reduce iron oxide?", a: "Aluminium", o: ["Zinc", "Magnesium", "Aluminium", "Copper"]},
+            {q: "Copper is refined by?", a: "Electrolytic refining", o: ["Liquation", "Roasting", "Electrolytic refining", "Distillation"]},
+            {q: "Non-metals form _____ ions by gaining electrons.", a: "Negative", o: ["Positive", "Negative", "Neutral", "None"]},
+            {q: "Which gas is evolved when a metal reacts with dilute acid?", a: "Hydrogen", o: ["Oxygen", "Hydrogen", "Nitrogen", "CO2"]},
+            {q: "The green coating on copper is due to?", a: "Basic Copper Carbonate", o: ["Copper Oxide", "Copper Sulphate", "Basic Copper Carbonate", "Copper Nitrate"]},
+            {q: "Which is the hardest natural substance known?", a: "Diamond", o: ["Gold", "Iron", "Diamond", "Graphite"]},
+            {q: "22 Carat gold contains 22 parts gold and 2 parts of?", a: "Copper or Silver", o: ["Zinc", "Copper or Silver", "Lead", "Mercury"]},
+            {q: "Stainless steel is an alloy of iron with?", a: "Nickel and Chromium", o: ["Carbon and Zinc", "Nickel and Chromium", "Copper and Tin", "Lead and Tin"]},
+            {q: "Which metal does not react even with boiling water but reacts with steam?", a: "Iron", o: ["Sodium", "Potassium", "Calcium", "Iron"]}
+        ];
+
+        const containerP2 = document.getElementById('ch3-mcq-p2');
+        mcqsCh3Part2.forEach((item, i) => {
+            const card = document.createElement('div');
+            card.className = 'm-card-ch3-v2';
+            card.innerHTML = `
+                <span class="m-q-ch3-v2">Q${i+26}. ${item.q}</span>
+                ${item.o.map(opt => `<span class="m-opt-ch3-v2">${opt}</span>`).join('')}
+                <button class="m-btn-ch3-v2" onclick="tglCh3P2(this)">Show Answer</button>
+                <div class="m-ans-ch3-v2">✨ Answer: ${item.a}</div>
+            `;
+            containerP2.appendChild(card);
+        });
+
+        function tglCh3P2(btn) {
+            const box = btn.nextElementSibling;
+            if (box.style.display === "block") {
+                box.style.display = "none";
+                btn.innerText = "Show Answer";
+                btn.style.color = "#ffca28";
+                btn.style.borderColor = "#ffca28";
+            } else {
+                box.style.display = "block";
+                btn.innerText = "Hide Answer";
+                btn.style.color = "#ff4444";
+                btn.style.borderColor = "#ff4444";
+            }
+        }
+    </script>
+</div>
+<style>
+    /* Dark Crimson & Gold Theme for Hardcore Level */
+    .mcq-extreme-ch3 { width: 100%; background: #050a14; border: 3px solid #ff4444; border-radius: 25px; padding: 25px; margin-top: 30px; box-shadow: 0 0 40px rgba(255, 64, 64, 0.3); box-sizing: border-box; }
+    .e-card-ch3 { background: #0d1b2a; border: 1px solid #2d1111; padding: 20px; border-radius: 20px; margin-bottom: 35px; transition: 0.5s; }
+    .e-card-ch3:hover { border-color: #ffca28; transform: scale(1.02); }
+    .e-q-ch3 { color: #ff4444; font-size: 1.3rem; font-weight: 900; display: block; margin-bottom: 15px; }
+    .e-opt-ch3 { display: block; padding: 12px; background: #162435; margin: 8px 0; border-radius: 12px; color: #e0e1dd; border: 1px solid #334155; }
+    .e-btn-ch3 { width: 100%; padding: 15px; background: #ff4444; color: #fff; border: none; border-radius: 15px; font-weight: 900; cursor: pointer; text-transform: uppercase; margin-top: 10px; transition: 0.3s; }
+    .e-btn-ch3:hover { background: #cc0000; box-shadow: 0 0 20px rgba(255, 64, 64, 0.5); }
+    .e-ans-ch3 { display: none; margin-top: 15px; padding: 12px; background: rgba(255, 64, 64, 0.1); border-left: 6px solid #ffca28; color: #ffca28; font-weight: bold; font-size: 1.1rem; text-align: center; border-radius: 10px; }
+</style>
+
+<div class="mcq-extreme-ch3" id="ch3-mcq-hard">
+    <h2 style="text-align:center; color:#ff4444; font-size:1.8rem; text-shadow: 0 0 15px #ff4444; margin-bottom: 40px;">🔥 CHALLENGER LEVEL: CH-3 MCQs (51-75)</h2>
+    
+    <script>
+        const mcqsCh3Hard = [
+            {q: "Which of the following metals is protected by a layer of its own oxide?", a: "Aluminium", o: ["Silver", "Gold", "Aluminium", "Iron"]},
+            {q: "The electronic configuration of an element is 2, 8, 8, 2. It is a:", a: "Metal", o: ["Metal", "Non-metal", "Metalloid", "Noble Gas"]},
+            {q: "Which metal does not evolve H2 gas with dilute HNO3 (except very dilute)?", a: "Zinc", o: ["Magnesium", "Manganese", "Zinc", "Copper"]},
+            {q: "The process of 'Anodising' is used for which metal?", a: "Aluminium", o: ["Iron", "Zinc", "Aluminium", "Copper"]},
+            {q: "Which of the following is an amphoteric oxide?", a: "Al2O3", o: ["Na2O", "MgO", "Al2O3", "CO2"]},
+            {q: "What is the ratio of Conc. HCl and Conc. HNO3 in Aqua Regia?", a: "3 : 1", o: ["1 : 3", "3 : 1", "2 : 2", "3 : 2"]},
+            {q: "During electrolytic refining, pure metal is deposited at?", a: "Cathode", o: ["Anode", "Cathode", "Electrolyte", "Bottom of tank"]},
+            {q: "Which non-metal is the only liquid at room temperature?", a: "Bromine", o: ["Mercury", "Bromine", "Chlorine", "Iodine"]},
+            {q: "Metals like K and Na react violently with cold water. The reaction is:", a: "Exothermic", o: ["Endothermic", "Exothermic", "Reversible", "None"]},
+            {q: "The most ductile metal known is?", a: "Gold", o: ["Silver", "Gold", "Platinum", "Copper"]},
+            {q: "Reaction of Fe2O3 with Al is used to join railway tracks. This is:", a: "Thermit Reaction", o: ["Combination", "Thermit Reaction", "Decomposition", "Double Displacement"]},
+            {q: "Which of the following pairs will give displacement reaction?", a: "AgNO3 solution and Copper metal", o: ["NaCl and Copper", "MgCl2 and Aluminium", "FeSO4 and Silver", "AgNO3 solution and Copper metal"]},
+            {q: "Amalgam is an alloy of a metal with?", a: "Mercury", o: ["Copper", "Mercury", "Silver", "Gold"]},
+            {q: "Which metal is the best conductor of heat?", a: "Silver", o: ["Silver", "Lead", "Mercury", "Iron"]},
+            {q: "Nature of metal oxides is generally:", a: "Basic", o: ["Acidic", "Basic", "Neutral", "Amphoteric"]},
+            {q: "What is added to Iron to make it 'Stainless Steel'?", a: "Ni and Cr", o: ["Zn and Cu", "Ni and Cr", "Sn and Pb", "C and Si"]},
+            {q: "The ore of Mercury is?", a: "Cinnabar", o: ["Bauxite", "Haematite", "Cinnabar", "Cuprite"]},
+            {q: "Non-metals are generally poor conductors of electricity except:", a: "Graphite", o: ["Diamond", "Graphite", "Sulphur", "Phosphorus"]},
+            {q: "Which metal is found in the Earth's crust in native state?", a: "Platinum", o: ["Sodium", "Iron", "Zinc", "Platinum"]},
+            {q: "Ionic compounds are soluble in:", a: "Water", o: ["Water", "Kerosene", "Petrol", "Benzene"]},
+            {q: "The gas evolved when Al reacts with NaOH is?", a: "Hydrogen", o: ["Oxygen", "Hydrogen", "CO2", "Nitrogen"]},
+            {q: "Sulphide ores are converted into oxides by:", a: "Roasting", o: ["Calcination", "Roasting", "Reduction", "Refining"]},
+            {q: "Which metal is used in galvanization of Iron?", a: "Zinc", o: ["Aluminium", "Zinc", "Tin", "Copper"]},
+            {q: "The bond formed by transfer of electrons is:", a: "Ionic Bond", o: ["Covalent Bond", "Ionic Bond", "Metallic Bond", "Hydrogen Bond"]},
+            {q: "Which element is used to make the filament of electric bulbs?", a: "Tungsten", o: ["Copper", "Aluminium", "Tungsten", "Iron"]}
+        ];
+
+        const containerExtreme = document.getElementById('ch3-mcq-hard');
+        mcqsCh3Hard.forEach((item, i) => {
+            const card = document.createElement('div');
+            card.className = 'e-card-ch3';
+            card.innerHTML = `
+                <span class="e-q-ch3">Q${i+51}. ${item.q}</span>
+                ${item.o.map(opt => `<span class="e-opt-ch3">${opt}</span>`).join('')}
+                <button class="e-btn-ch3" onclick="tglCh3E(this)">Show Answer</button>
+                <div class="e-ans-ch3">🎯 Master Answer: ${item.a}</div>
+            `;
+            containerExtreme.appendChild(card);
+        });
+
+        function tglCh3E(btn) {
+            const box = btn.nextElementSibling;
+            if (box.style.display === "block") {
+                box.style.display = "none";
+                btn.innerText = "Show Answer";
+                btn.style.background = "#ff4444";
+            } else {
+                box.style.display = "block";
+                btn.innerText = "Hide Answer";
+                btn.style.background = "#22c55e"; // Success Green
+            }
+        }
+    </script>
+</div>
+<style>
+    /* Balanced Font Size for Toppers */
+    .mcq-final-ch3 { width: 100%; background: #050a14; border: 3px solid #00e5ff; border-radius: 25px; padding: 25px; margin-top: 30px; box-sizing: border-box; }
+    .f-card-ch3 { background: #0d1b2a; border: 1px solid #1b263b; padding: 20px; border-radius: 20px; margin-bottom: 30px; }
+    
+    /* Perfect Font Size adjustment */
+    .f-q-ch3 { color: #ffca28; font-size: 1.15rem; font-weight: 700; display: block; margin-bottom: 12px; line-height: 1.5; }
+    .f-opt-ch3 { display: block; padding: 10px; background: #162435; margin: 6px 0; border-radius: 10px; color: #e0e1dd; border: 1px solid #334155; font-size: 1rem; }
+    
+    .f-btn-ch3 { width: 100%; padding: 12px; background: transparent; border: 2px solid #00e5ff; color: #00e5ff; border-radius: 12px; font-weight: 800; cursor: pointer; text-transform: uppercase; margin-top: 10px; font-size: 0.95rem; }
+    .f-ans-ch3 { display: none; margin-top: 15px; padding: 12px; background: rgba(0, 229, 255, 0.1); border-left: 5px solid #ffca28; color: #ffca28; font-weight: bold; font-size: 1.05rem; text-align: center; border-radius: 8px; }
+</style>
+
+<div class="mcq-final-ch3" id="ch3-mcq-final">
+    <h2 style="text-align:center; color:#00e5ff; font-size:1.6rem; margin-bottom: 35px;">🔥 CH-3: THE FINAL 25 MCQs (76-100)</h2>
+    
+    <script>
+        const mcqsCh3Final = [
+            {q: "Which metal is stored in kerosene to prevent accidental fires?", a: "Sodium", o: ["Magnesium", "Sodium", "Iron", "Gold"]},
+            {q: "Which property of metals is used for making bells?", a: "Sonority", o: ["Malleability", "Ductility", "Sonority", "Conductivity"]},
+            {q: "Name a non-metal that has high melting and boiling points.", a: "Diamond", o: ["Graphite", "Sulphur", "Diamond", "Iodine"]},
+            {q: "Which metal is least reactive among the following?", a: "Gold", o: ["Copper", "Silver", "Iron", "Gold"]},
+            {q: "Metal oxides that react with both acids and bases are called?", a: "Amphoteric", o: ["Acidic", "Basic", "Amphoteric", "Neutral"]},
+            {q: "Reaction of which metal with water is highly exothermic and catches fire?", a: "Potassium", o: ["Potassium", "Calcium", "Magnesium", "Aluminium"]},
+            {q: "Which oxide of Iron is formed on prolonged reaction with steam?", a: "Fe3O4", o: ["FeO", "Fe2O3", "Fe3O4", "Fe2O4"]},
+            {q: "The non-metal which is used to preserve food is?", a: "Nitrogen", o: ["Oxygen", "Nitrogen", "Chlorine", "Sulphur"]},
+            {q: "Which metal among the following has the lowest density?", a: "Lithium", o: ["Sodium", "Potassium", "Lithium", "Iron"]},
+            {q: "An alloy of Lead and Tin is called?", a: "Solder", o: ["Brass", "Bronze", "Solder", "Steel"]},
+            {q: "Electrical wires have a coating of an insulating material, generally:", a: "PVC", o: ["Sulphur", "Graphite", "PVC", "Lead"]},
+            {q: "Which gas is evolved when a metal reacts with a base?", a: "Hydrogen", o: ["Oxygen", "Hydrogen", "Carbon dioxide", "Nitrogen"]},
+            {q: "Bronze is an alloy of:", a: "Cu and Sn", o: ["Cu and Zn", "Cu and Sn", "Pb and Sn", "Fe and Ni"]},
+            {q: "Which among the following is the most abundant metal in the earth's crust?", a: "Aluminium", o: ["Iron", "Aluminium", "Calcium", "Sodium"]},
+            {q: "What is the nature of Non-metallic oxides?", a: "Acidic or Neutral", o: ["Basic", "Acidic or Neutral", "Amphoteric", "Only Acidic"]},
+            {q: "Silver articles become black after some time when exposed to air due to?", a: "Ag2S", o: ["AgO", "Ag2S", "Ag3N", "AgCl"]},
+            {q: "Which of the following does not react with cold or hot water but reacts with steam?", a: "Iron", o: ["Sodium", "Calcium", "Magnesium", "Iron"]},
+            {q: "The constituents of German Silver are?", a: "Cu, Zn and Ni", o: ["Cu and Sn", "Cu and Zn", "Cu, Zn and Ni", "Cu and Ag"]},
+            {q: "Copper is refined electrolytically. The cathode is made of:", a: "Pure Copper", o: ["Impure Copper", "Pure Copper", "Graphite", "Platinum"]},
+            {q: "Which non-metal is used in the vulcanization of rubber?", a: "Sulphur", o: ["Nitrogen", "Sulphur", "Phosphorus", "Carbon"]},
+            {q: "The formula of Rust is?", a: "Fe2O3.xH2O", o: ["FeO", "Fe3O4", "Fe2O3.xH2O", "Fe(OH)2"]},
+            {q: "Metals generally form ________ ions.", a: "Positive", o: ["Negative", "Positive", "Neutral", "None"]},
+            {q: "Which metal is used in making thermit for welding?", a: "Aluminium", o: ["Iron", "Aluminium", "Zinc", "Magnesium"]},
+            {q: "The property of metals by which they can be beaten into thin sheets is?", a: "Malleability", o: ["Ductility", "Malleability", "Hardness", "Lustre"]},
+            {q: "Which of the following is a poor conductor of electricity?", a: "Sulphur", o: ["Silver", "Copper", "Aluminium", "Sulphur"]}
+        ];
+
+        const containerFinal = document.getElementById('ch3-mcq-final');
+        mcqsCh3Final.forEach((item, i) => {
+            const card = document.createElement('div');
+            card.className = 'f-card-ch3';
+            card.innerHTML = `
+                <span class="f-q-ch3">Q${i+76}. ${item.q}</span>
+                ${item.o.map(opt => `<span class="f-opt-ch3">${opt}</span>`).join('')}
+                <button class="f-btn-ch3" onclick="tglFinal(this)">Show Answer</button>
+                <div class="f-ans-ch3">✨ Answer: ${item.a}</div>
+            `;
+            containerFinal.appendChild(card);
+        });
+
+        function tglFinal(btn) {
+            const box = btn.nextElementSibling;
+            if (box.style.display === "block") {
+                box.style.display = "none";
+                btn.innerText = "Show Answer";
+                btn.style.color = "#00e5ff";
+                btn.style.borderColor = "#00e5ff";
+            } else {
+                box.style.display = "block";
+                btn.innerText = "Hide Answer";
+                btn.style.color = "#ff4444";
+                btn.style.borderColor = "#ff4444";
+            }
+        }
+    </script>
+</div>
+
+<style>
+    /* Exact same style as your previous long questions */
+    .l-q-box-ch3 { width: 100%; background: #0d1b2a; border: 3px solid #ffca28; border-radius: 25px; padding: 25px; margin-top: 40px; box-shadow: 0 0 30px rgba(255, 202, 40, 0.2); box-sizing: border-box; }
+    .l-card-ch3 { background: #050a14; border: 1px solid #1b263b; padding: 25px; border-radius: 20px; margin-bottom: 40px; transition: 0.5s; }
+    .l-card-ch3:hover { border-color: #00e5ff; box-shadow: 0 0 35px rgba(0, 229, 255, 0.2); }
+    .l-title-ch3 { color: #ffca28; font-size: 1.4rem; font-weight: 900; display: block; margin-bottom: 15px; border-bottom: 1px dashed #334155; padding-bottom: 10px; }
+    .l-btn-ch3 { width: 100%; padding: 15px; background: transparent; border: 2px solid #ffca28; color: #ffca28; border-radius: 15px; font-weight: 900; cursor: pointer; text-transform: uppercase; margin-top: 15px; transition: 0.3s; }
+    .l-ans-ch3 { display: none; margin-top: 20px; padding: 20px; background: rgba(255, 202, 40, 0.05); border-left: 6px solid #ffca28; color: #e0e1dd; line-height: 1.6; border-radius: 10px; font-size: 1.1rem; }
+    .highlight-txt { color: #00e5ff; font-weight: bold; }
+</style>
+
+<div class="l-q-box-ch3" id="ch3-long-q">
+    <h2 style="text-align:center; color:#ffca28; font-size:2rem; text-shadow: 0 0 15px #ffca28; margin-bottom: 50px;">SECTION C: CH-3 LONG QUESTIONS</h2>
+
+    <div class="l-card-ch3">
+        <span class="l-title-ch3">Q1. What are Amphoteric Oxides? Give two examples with chemical equations.</span>
+        <button class="l-btn-ch3" onclick="tglCh3L(this)">Show Detailed Answer</button>
+        <div class="l-ans-ch3">
+            <span class="highlight-txt">Definition:</span> Those metal oxides which show both acidic as well as basic behaviour are called amphoteric oxides.<br><br>
+            <span class="highlight-txt">Example 1 (Aluminium Oxide):</span><br>
+            Al2O3 + 6HCl → 2AlCl3 + 3H2O (As Base)<br>
+            Al2O3 + 2NaOH → 2NaAlO2 + H2O (As Acid)<br><br>
+            <span class="highlight-txt">Example 2 (Zinc Oxide):</span><br>
+            ZnO + 2HCl → ZnCl2 + H2O<br>
+            ZnO + 2NaOH → Na2ZnO2 + H2O
+        </div>
+    </div>
+
+    <div class="l-card-ch3">
+        <span class="l-title-ch3">Q2. Differentiate between Roasting and Calcination with examples.</span>
+        <button class="l-btn-ch3" onclick="tglCh3L(this)">Show Detailed Answer</button>
+        <div class="l-ans-ch3">
+            <span class="highlight-txt">Roasting:</span> It is the process of heating <span class="highlight-txt">sulphide ores</span> strongly in the <span class="highlight-txt">presence</span> of excess air.<br>
+            Example: 2ZnS + 3O2 → 2ZnO + 2SO2<br><br>
+            <span class="highlight-txt">Calcination:</span> It is the process of heating <span class="highlight-txt">carbonate ores</span> strongly in <span class="highlight-txt">limited</span> air or absence of air.<br>
+            Example: ZnCO3 → ZnO + CO2<br><br>
+            Both processes are used to convert ores into metal oxides for easier reduction.
+        </div>
+    </div>
+
+    <div class="l-card-ch3">
+        <span class="l-title-ch3">Q3. Explain the formation of Magnesium Chloride (MgCl2) with electron dot structures.</span>
+        <button class="l-btn-ch3" onclick="tglCh3L(this)">Show Detailed Answer</button>
+        <div class="l-ans-ch3">
+            1. <span class="highlight-txt">Magnesium (Mg):</span> Atomic number 12. Electronic configuration (2, 8, 2). It loses 2 electrons to form Mg2+.<br>
+            2. <span class="highlight-txt">Chlorine (Cl):</span> Atomic number 17. Electronic configuration (2, 8, 7). It needs 1 electron to complete its octet.<br><br>
+            <span class="highlight-txt">Process:</span> One Mg atom transfers its two valence electrons to two Cl atoms (one electron to each).<br>
+            <span class="highlight-txt">Result:</span> An ionic bond is formed between Mg2+ and 2Cl- ions, resulting in MgCl2.
+        </div>
+    </div>
+
+    <div class="l-card-ch3">
+        <span class="l-title-ch3">Q4. What is the Thermit Reaction? Write its equation and one major application.</span>
+        <button class="l-btn-ch3" onclick="tglCh3L(this)">Show Detailed Answer</button>
+        <div class="l-ans-ch3">
+            <span class="highlight-txt">Definition:</span> The displacement reaction between Iron(III) oxide and Aluminium is highly exothermic. The heat produced is so high that the iron is obtained in molten state.<br><br>
+            <span class="highlight-txt">Equation:</span> Fe2O3(s) + 2Al(s) → 2Fe(l) + Al2O3(s) + Heat<br><br>
+            <span class="highlight-txt">Application:</span> This reaction is used to join cracked railway tracks and broken machine parts on-site.
+        </div>
+    </div>
+
+    <script>
+        function tglCh3L(btn) {
+            const box = btn.nextElementSibling;
+            if (box.style.display === "block") {
+                box.style.display = "none";
+                btn.innerText = "Show Detailed Answer";
+                btn.style.color = "#ffca28";
+                btn.style.borderColor = "#ffca28";
+            } else {
+                box.style.display = "block";
+                btn.innerText = "Hide Answer";
+                btn.style.color = "#ff4444";
+                btn.style.borderColor = "#ff4444";
+            }
+        }
+    </script>
+</div>
+<style>
+    /* Same style as Part 1 to maintain consistency */
+    .l-q-box-ch3-p2 { width: 100%; background: #0d1b2a; border: 3px solid #00e5ff; border-radius: 25px; padding: 25px; margin-top: 30px; box-shadow: 0 0 30px rgba(0, 229, 255, 0.3); box-sizing: border-box; }
+    .l-card-ch3-v2 { background: #050a14; border: 1px solid #1b263b; padding: 25px; border-radius: 20px; margin-bottom: 40px; transition: 0.5s; }
+    .l-card-ch3-v2:hover { border-color: #ffca28; box-shadow: 0 0 35px rgba(255, 202, 40, 0.2); }
+    .l-title-ch3-v2 { color: #00e5ff; font-size: 1.4rem; font-weight: 900; display: block; margin-bottom: 15px; border-bottom: 1px dashed #334155; padding-bottom: 10px; }
+    .l-btn-ch3-v2 { width: 100%; padding: 15px; background: transparent; border: 2px solid #00e5ff; color: #00e5ff; border-radius: 15px; font-weight: 900; cursor: pointer; text-transform: uppercase; margin-top: 15px; transition: 0.3s; }
+    .l-ans-ch3-v2 { display: none; margin-top: 20px; padding: 20px; background: rgba(0, 229, 255, 0.05); border-left: 6px solid #00e5ff; color: #e0e1dd; line-height: 1.6; border-radius: 10px; font-size: 1.1rem; }
+    .gold-txt-ch3 { color: #ffca28; font-weight: bold; }
+</style>
+
+<div class="l-q-box-ch3-p2" id="ch3-long-q-p2">
+    <div class="l-card-ch3-v2">
+        <span class="l-title-ch3-v2">Q5. Explain the process of Electrolytic Refining of Copper with a neat diagram description.</span>
+        <button class="l-btn-ch3-v2" onclick="tglCh3L2(this)">Show Detailed Answer</button>
+        <div class="l-ans-ch3-v2">
+            <span class="gold-txt-ch3">Apparatus Setup:</span><br>
+            1. <span class="gold-txt-ch3">Anode:</span> A thick block of impure copper.<br>
+            2. <span class="gold-txt-ch3">Cathode:</span> A thin strip of pure copper.<br>
+            3. <span class="gold-txt-ch3">Electrolyte:</span> Acidified copper sulphate (CuSO4) solution.<br><br>
+            <span class="gold-txt-ch3">Process:</span> When current is passed, pure copper from the anode dissolves into the electrolyte and an equivalent amount of pure copper from the electrolyte is deposited on the cathode.<br>
+            <span class="gold-txt-ch3">Anode Mud:</span> Insoluble impurities settle down below the anode.
+        </div>
+    </div>
+
+    <div class="l-card-ch3-v2">
+        <span class="l-title-ch3-v2">Q6. What are Alloys? List the constituents and uses of Brass, Bronze, and Solder.</span>
+        <button class="l-btn-ch3-v2" onclick="tglCh3L2(this)">Show Detailed Answer</button>
+        <div class="l-ans-ch3-v2">
+            <span class="gold-txt-ch3">Definition:</span> An alloy is a homogeneous mixture of two or more metals, or a metal and a non-metal.<br><br>
+            1. <span class="gold-txt-ch3">Brass:</span> Copper (Cu) + Zinc (Zn). Used for making decorative items and hardware.<br>
+            2. <span class="gold-txt-ch3">Bronze:</span> Copper (Cu) + Tin (Sn). Used for making statues, coins, and medals.<br>
+            3. <span class="gold-txt-ch3">Solder:</span> Lead (Pb) + Tin (Sn). It has a low melting point and is used for welding electrical wires together.
+        </div>
+    </div>
+
+    <div class="l-card-ch3-v2">
+        <span class="l-title-ch3-v2">Q7. Why are Ionic Compounds solids and have high melting points? Why do they conduct electricity only in molten state?</span>
+        <button class="l-btn-ch3-v2" onclick="tglCh3L2(this)">Show Detailed Answer</button>
+        <div class="l-ans-ch3-v2">
+            <span class="gold-txt-ch3">High Melting Point:</span> This is because there is a very strong force of attraction (electrostatic force) between the positive and negative ions. A considerable amount of energy is required to break this bond.<br><br>
+            <span class="gold-txt-ch3">Electrical Conductivity:</span> In solid state, ions are not free to move due to rigid structure. However, in <span class="gold-txt-ch3">molten or aqueous state</span>, the electrostatic forces are weakened by heat/water, allowing ions to move freely and conduct electricity.
+        </div>
+    </div>
+
+    <div class="l-card-ch3-v2">
+        <span class="l-title-ch3-v2">Q8. How is Copper extracted from its sulphide ore (Copper Glance)? Write the equations.</span>
+        <button class="l-btn-ch3-v2" onclick="tglCh3L2(this)">Show Detailed Answer</button>
+        <div class="l-ans-ch3-v2">
+            Copper is extracted by simply heating the ore in air.<br><br>
+            <span class="gold-txt-ch3">Step 1 (Roasting):</span> 2Cu2S + 3O2 → 2Cu2O + 2SO2<br>
+            (Copper sulphide is converted to copper oxide).<br><br>
+            <span class="gold-txt-ch3">Step 2 (Self-Reduction):</span> 2Cu2O + Cu2S → 6Cu + SO2<br>
+            (The remaining copper sulphide reacts with copper oxide to give pure copper metal).
+        </div>
+    </div>
+
+    <script>
+        function tglCh3L2(btn) {
+            const ans = btn.nextElementSibling;
+            if (ans.style.display === "block") {
+                ans.style.display = "none";
+                btn.innerText = "Show Detailed Answer";
+                btn.style.color = "#00e5ff";
+                btn.style.borderColor = "#00e5ff";
+            } else {
+                ans.style.display = "block";
+                btn.innerText = "Hide Answer";
+                btn.style.color = "#ff4444";
+                btn.style.borderColor = "#ff4444";
+            }
+        }
+    </script>
+</div>
+<style>
+    /* Balanced Font Size for Professional Look */
+    .l-q-hard-v2-ch3 { width: 100%; background: #050a14; border: 3px solid #ff4444; border-radius: 25px; padding: 25px; margin-top: 30px; box-sizing: border-box; }
+    .h-l-card-v2 { background: #0d1b2a; border: 1px solid #1b263b; padding: 22px; border-radius: 20px; margin-bottom: 40px; transition: 0.5s; }
+    
+    /* Letter Size matching your screenshot */
+    .h-l-title-v2 { color: #ff4444; font-size: 1.22rem; font-weight: 800; display: block; margin-bottom: 18px; line-height: 1.5; }
+    .h-l-btn-v2 { width: 100%; padding: 14px; background: transparent; border: 2px solid #ff4444; color: #ff4444; border-radius: 12px; font-weight: 900; cursor: pointer; text-transform: uppercase; font-size: 0.95rem; }
+    
+    .h-l-ans-v2 { display: none; margin-top: 20px; padding: 20px; background: rgba(255, 64, 64, 0.05); border-left: 6px solid #ffca28; color: #e0e1dd; line-height: 1.7; border-radius: 10px; font-size: 1.05rem; }
+    .gold-bold { color: #ffca28; font-weight: bold; }
+</style>
+
+<div class="l-q-hard-v2-ch3" id="ch3-hard-long-p2">
+    <div class="h-l-card-v2">
+        <span class="h-l-title-v2">Q9. What is Aqua Regia? Why is it able to dissolve noble metals like Gold and Platinum which even concentrated acids cannot?</span>
+        <button class="h-l-btn-v2" onclick="tglCh3H2(this)">Show Master Answer</button>
+        <div class="h-l-ans-v2">
+            <span class="gold-bold">Composition:</span> Aqua Regia (Royal Water) is a freshly prepared mixture of <span class="gold-bold">Concentrated HCl</span> and <span class="gold-bold">Concentrated HNO3</span> in the ratio of <span class="gold-bold">3:1</span>.<br><br>
+            <span class="gold-bold">Logic:</span> Neither of these acids can dissolve gold alone. However, the mixture produces <span class="gold-bold">nascent chlorine</span>, which is highly reactive. This nascent chlorine reacts with gold to form soluble gold chloride (AuCl3), thus dissolving it. It is a highly corrosive and fuming liquid.
+        </div>
+    </div>
+
+    <div class="h-l-card-v2">
+        <span class="h-l-title-v2">Q10. Explain the chemical process behind the blackening of Silver articles and the green coating on Copper vessels when exposed to air.</span>
+        <button class="h-l-btn-v2" onclick="tglCh3H2(this)">Show Master Answer</button>
+        <div class="h-l-ans-v2">
+            <span class="gold-bold">1. Silver (Blackening):</span> Silver reacts with <span class="gold-bold">Hydrogen Sulphide (H2S)</span> gas present in the air to form a layer of <span class="gold-bold">Silver Sulphide (Ag2S)</span>. This layer is black in color.<br><br>
+            <span class="gold-bold">2. Copper (Green Coating):</span> Copper reacts with moist Carbon Dioxide (CO2) in the air and slowly loses its shiny brown surface. It gains a green coat of <span class="gold-bold">Basic Copper Carbonate [CuCO3.Cu(OH)2]</span>. This is the corrosion of copper.
+        </div>
+    </div>
+
+    <div class="h-l-card-v2">
+        <span class="h-l-title-v2">Q11. Why is Zinc more reactive than Copper? How can you prove this using a displacement reaction? Give the chemical equation.</span>
+        <button class="h-l-btn-v2" onclick="tglCh3H2(this)">Show Master Answer</button>
+        <div class="h-l-ans-v2">
+            In the <span class="gold-bold">Reactivity Series</span>, Zinc is placed above Copper, meaning Zinc has a higher tendency to lose electrons and form positive ions.<br><br>
+            <span class="gold-bold">Experiment:</span> If we put a Zinc strip in a blue-colored <span class="gold-bold">Copper Sulphate (CuSO4)</span> solution, the blue color gradually fades and a reddish-brown deposit of copper is seen on the zinc strip.<br><br>
+            <span class="gold-bold">Equation:</span> Zn(s) + CuSO4(aq) → ZnSO4(aq) + Cu(s)<br>
+            This proves Zinc displaces Copper because it is more reactive.
+        </div>
+    </div>
+
+    <div class="h-l-card-v2">
+        <span class="h-l-title-v2">Q12. Why can't we reduce Sodium or Magnesium oxides using Carbon? Which method is used instead?</span>
+        <button class="h-l-btn-v2" onclick="tglCh3H2(this)">Show Master Answer</button>
+        <div class="h-l-ans-v2">
+            <span class="gold-bold">Reason:</span> Metals like Sodium, Magnesium, and Aluminium are <span class="gold-bold">highly reactive</span>. These metals have a much higher affinity for oxygen than carbon has. Therefore, carbon cannot "pull" oxygen away from these metal oxides.<br><br>
+            <span class="gold-bold">Method:</span> They are obtained by <span class="gold-bold">Electrolytic Reduction</span> of their molten chlorides. For example, in Sodium Chloride electrolysis:<br>
+            • At Cathode: Na+ + e- → Na (Metal deposited)<br>
+            • At Anode: 2Cl- → Cl2 + 2e- (Gas evolved)
+        </div>
+    </div>
+
+    <div class="h-l-card-v2">
+        <span class="h-l-title-v2">Q13. What are Alloys? How does alloying change the properties of pure metals? Explain with the example of Iron.</span>
+        <button class="h-l-btn-v2" onclick="tglCh3H2(this)">Show Master Answer</button>
+        <div class="h-l-ans-v2">
+            An <span class="gold-bold">Alloy</span> is a homogeneous mixture of two or more metals, or a metal and a non-metal. It is prepared by melting the primary metal and then dissolving other elements in it.<br><br>
+            <span class="gold-bold">Iron Example:</span> Pure iron is very soft and stretches easily when hot. But:<br>
+            1. If mixed with <span class="gold-bold">0.05% Carbon</span>, it becomes hard and strong.<br>
+            2. If mixed with <span class="gold-bold">Nickel and Chromium</span>, we get Stainless Steel, which is hard and <span class="gold-bold">does not rust</span>. <br><br>
+            Alloying improves hardness, electrical conductivity, and resistance to corrosion.
+        </div>
+    </div>
+
+    <script>
+        function tglCh3H2(btn) {
+            const ans = btn.nextElementSibling;
+            if (ans.style.display === "block") {
+                ans.style.display = "none";
+                btn.innerText = "Show Master Answer";
+                btn.style.color = "#ff4444";
+                btn.style.borderColor = "#ff4444";
+            } else {
+                ans.style.display = "block";
+                btn.innerText = "Hide Answer";
+                btn.style.color = "#22c55e"; 
+                btn.style.borderColor = "#22c55e";
+            }
+        }
+    </script>
+</div>
+<style>
+    /* Balanced Font Size - Standard for your website */
+    .l-q-final-box-ch3 { width: 100%; background: #050a14; border: 3px solid #00e5ff; border-radius: 25px; padding: 25px; margin-top: 30px; box-sizing: border-box; }
+    .f-l-card-ch3 { background: #0d1b2a; border: 1px solid #1b263b; padding: 22px; border-radius: 20px; margin-bottom: 40px; transition: 0.5s; }
+    
+    /* Letter Size matching your previous preferences */
+    .f-l-title-ch3 { color: #00e5ff; font-size: 1.22rem; font-weight: 800; display: block; margin-bottom: 18px; line-height: 1.5; }
+    .f-l-btn-ch3 { width: 100%; padding: 14px; background: transparent; border: 2px solid #00e5ff; color: #00e5ff; border-radius: 12px; font-weight: 900; cursor: pointer; text-transform: uppercase; font-size: 0.95rem; }
+    
+    .f-l-ans-ch3 { display: none; margin-top: 20px; padding: 20px; background: rgba(0, 229, 255, 0.05); border-left: 6px solid #ffca28; color: #e0e1dd; line-height: 1.7; border-radius: 10px; font-size: 1.05rem; }
+    .sky-bold { color: #00e5ff; font-weight: bold; }
+</style>
+
+<div class="l-q-final-box-ch3" id="ch3-long-final">
+    <div class="f-l-card-ch3">
+        <span class="f-l-title-ch3">Q14. What is Galvanisation? How does it protect iron even if the zinc coating is broken?</span>
+        <button class="f-l-btn-ch3" onclick="tglCh3F(this)">Show Master Answer</button>
+        <div class="f-l-ans-ch3">
+            <span class="sky-bold">Definition:</span> Galvanisation is a method of protecting steel and iron from rusting by coating them with a thin layer of <span class="sky-bold">Zinc</span>.<br><br>
+            <span class="sky-bold">The Logic:</span> Even if the zinc coating is scratched or broken, the iron underneath does not rust. This is because Zinc is more reactive than Iron. In the presence of moisture, Zinc undergoes oxidation <span class="sky-bold">preferentially</span> (sacrificial protection), saving the iron from reacting with oxygen and water.
+        </div>
+    </div>
+
+    <div class="f-l-card-ch3">
+        <span class="f-l-title-ch3">Q15. Distinguish between Calcination and Roasting. Why are these processes carried out?</span>
+        <button class="f-l-btn-ch3" onclick="tglCh3F(this)">Show Master Answer</button>
+        <div class="f-l-ans-ch3">
+            <span class="sky-bold">Roasting:</span> It is used for <span class="sky-bold">Sulphide ores</span>. The ore is heated strongly in the <span class="sky-bold">presence of excess air</span>. (Example: 2ZnS + 3O2 → 2ZnO + 2SO2)<br><br>
+            <span class="sky-bold">Calcination:</span> It is used for <span class="sky-bold">Carbonate ores</span>. The ore is heated strongly in <span class="sky-bold">limited air or absence of air</span>. (Example: ZnCO3 → ZnO + CO2)<br><br>
+            <span class="sky-bold">Purpose:</span> Both processes are carried out to convert metal ores into their <span class="sky-bold">oxides</span>, which can then be easily reduced to get the pure metal.
+        </div>
+    </div>
+
+    <div class="f-l-card-ch3">
+        <span class="f-l-title-ch3">Q16. Why does Magnesium start floating when it is reacted with hot water? Explain with the reaction.</span>
+        <button class="f-l-btn-ch3" onclick="tglCh3F(this)">Show Master Answer</button>
+        <div class="f-l-ans-ch3">
+            Magnesium does not react with cold water; it reacts only with <span class="sky-bold">hot water</span> to form magnesium hydroxide and hydrogen gas.<br><br>
+            <span class="sky-bold">Reaction:</span> Mg(s) + 2H2O(l) → Mg(OH)2(aq) + H2(g)<br><br>
+            <span class="sky-bold">Floating Reason:</span> The bubbles of <span class="sky-bold">Hydrogen gas</span> formed during the reaction stick to the surface of the magnesium metal. These gas bubbles act like balloons, making the metal light enough to float on the surface of the water.
+        </div>
+    </div>
+
+    <div class="f-l-card-ch3">
+        <span class="f-l-title-ch3">Q17. How are metals of low reactivity (like Mercury) extracted from their ores? Explain with the example of Cinnabar.</span>
+        <button class="f-l-btn-ch3" onclick="tglCh3F(this)">Show Master Answer</button>
+        <div class="f-l-ans-ch3">
+            Metals of low reactivity are very unreactive. The oxides of these metals can be reduced to metals by <span class="sky-bold">heating alone</span>.<br><br>
+            <span class="sky-bold">Cinnabar (HgS)</span> is the ore of mercury. When it is heated in air, it is first converted into mercuric oxide (HgO):<br>
+            2HgS + 3O2 → 2HgO + 2SO2<br><br>
+            Mercuric oxide is then reduced to mercury on further heating:<br>
+            2HgO → 2Hg + O2
+        </div>
+    </div>
+
+    <div class="f-l-card-ch3">
+        <span class="f-l-title-ch3">Q18. State three general properties of Ionic Compounds. Why do they conduct electricity only in molten or solution state?</span>
+        <button class="f-l-btn-ch3" onclick="tglCh3F(this)">Show Master Answer</button>
+        <div class="f-l-ans-ch3">
+            <span class="sky-bold">Properties:</span><br>
+            1. They are <span class="sky-bold">solid and hard</span> due to strong attraction between ions.<br>
+            2. They have <span class="sky-bold">high melting and boiling points</span>.<br>
+            3. They are generally <span class="sky-bold">soluble in water</span> but insoluble in petrol/kerosene.<br><br>
+            <span class="sky-bold">Electrical Conductivity:</span> In solid state, ions are held in a fixed position by strong forces and cannot move. In <span class="sky-bold">molten or solution state</span>, these forces are overcome by heat or water, allowing ions to <span class="sky-bold">move freely</span> and conduct electricity.
+        </div>
+    </div>
+
+    <script>
+        function tglCh3F(btn) {
+            const ans = btn.nextElementSibling;
+            if (ans.style.display === "block") {
+                ans.style.display = "none";
+                btn.innerText = "Show Master Answer";
+                btn.style.color = "#00e5ff";
+                btn.style.borderColor = "#00e5ff";
+            } else {
+                ans.style.display = "block";
+                btn.innerText = "Hide Answer";
+                btn.style.color = "#ff4444";
+                btn.style.borderColor = "#ff4444";
+            }
+        }
+    </script>
+</div>
+
+</body>
+</html>

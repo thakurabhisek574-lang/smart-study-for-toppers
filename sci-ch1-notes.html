@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: Smart Study For Toppers</title>
+    <style>
+        :root { 
+            --neon-blue: #00e5ff; 
+            --gold: #ffca28; 
+            --bg-dark: #0d1b2a; 
+            --card-bg: #050a14; 
+            --text-gray: #e0e1dd; 
+        }
+
+        body { background-color: var(--bg-dark); color: var(--text-gray); font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; }
+
+        /* Top Navigation Fix */
+        .top-bar {
+            background: #1b263b;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid var(--neon-blue);
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .brand-name {
+            color: var(--gold);
+            font-weight: 900;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px rgba(255, 202, 40, 0.5);
+        }
+
+        .back-btn {
+            background: transparent;
+            border: 2px solid var(--neon-blue);
+            color: var(--neon-blue);
+            padding: 8px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--neon-blue);
+            color: #000;
+            box-shadow: 0 0 20px var(--neon-blue);
+        }
+
+        .container { max-width: 900px; margin: 40px auto; padding: 20px; }
+
+        /* Glowing Concept Cards */
+        .concept-card { 
+            background: var(--card-bg); 
+            border: 1px solid #1b263b;
+            border-left: 6px solid var(--neon-blue); 
+            border-radius: 20px; 
+            padding: 35px; 
+            margin-bottom: 50px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+            transition: 0.4s; 
+        }
+
+        .concept-card:hover { 
+            transform: translateY(-8px);
+            border-color: var(--gold); 
+            box-shadow: 0 0 40px rgba(255, 202, 40, 0.2); 
+        }
+
+        h1.main-title { text-align: center; color: var(--neon-blue); font-size: 2.5rem; text-shadow: 0 0 15px var(--neon-blue); margin-bottom: 50px; }
+        h2 { color: var(--gold); font-size: 1.8rem; margin-top: 0; }
+        .highlight { color: var(--neon-blue); font-weight: bold; }
+        
+        .reaction-box { 
+            background: #162435; 
+            padding: 20px; 
+            border-radius: 15px; 
+            border: 1px dashed var(--neon-blue); 
+            color: #fff; 
+            font-family: 'Courier New', monospace; 
+            margin: 20px 0; 
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .tag { 
+            background: var(--gold); 
+            color: #000; 
+            padding: 5px 15px; 
+            border-radius: 6px; 
+            font-weight: 900; 
+            font-size: 0.8rem; 
+            margin-bottom: 15px; 
+            display: inline-block;
+        }
+
+        ul li { margin-bottom: 12px; list-style: none; font-size: 1.1rem; }
+        ul li::before { content: "🔥"; margin-right: 12px; }
+
+        .footer-note { text-align: center; padding: 50px; color: #334155; font-style: italic; }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="sci-chapters.html" class="back-btn">BACK</a>
+        <div class="brand-name">Smart Study For Toppers</div>
+        <div style="width: 70px;"></div>
+    </div>
+
+    <div class="container">
+        <h1 class="main-title">CHAPTER 1: CHEMICAL REACTIONS & EQUATIONS</h1>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 1: BASICS</span>
+            <h2>What is a Chemical Reaction?</h2>
+            <p>It is a process where <span class="highlight">Reactants</span> transform into <span class="highlight">Products</span> with entirely new properties.</p>
+            <ul>
+                <li>Breaking and making of chemical bonds.</li>
+                <li>Atoms are rearranged, not destroyed.</li>
+            </ul>
+            <div class="reaction-box">Reactants (LHS) → Products (RHS)</div>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 2: IDENTIFICATION</span>
+            <h2>Observations in a Reaction</h2>
+            <p>How do we know a reaction happened?</p>
+            <ul>
+                <li><span class="highlight">Evolution of Gas:</span> Zn + H2SO4 → ZnSO4 + H2↑</li>
+                <li><span class="highlight">Change in State:</span> Burning of wax (Solid to Gas).</li>
+                <li><span class="highlight">Change in Temperature:</span> Slaked lime formation (Exothermic).</li>
+                <li><span class="highlight">Formation of Precipitate:</span> BaCl2 + Na2SO4 → BaSO4↓</li>
+            </ul>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 3: ACTIVITY 1.1</span>
+            <h2>Burning of Magnesium Ribbon</h2>
+            <p>Magnesium burns with a <span class="highlight">Dazzling White Flame</span> to form white Magnesium Oxide powder.</p>
+            <div class="reaction-box">2Mg(s) + O2(g) → 2MgO(s)</div>
+            <p><strong>Note:</strong> Sandpaper is used to remove the layer of basic magnesium carbonate before burning.</p>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 4: MATHEMATICS</span>
+            <h2>Balanced Chemical Equations</h2>
+            <p>Must satisfy <span class="highlight">Law of Conservation of Mass</span>. Total mass of reactants = Total mass of products.</p>
+            <ul>
+                <li>Number of atoms of each element must be same on both sides.</li>
+                <li>Always use coefficients, never change the formula.</li>
+            </ul>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 5: TYPES - I</span>
+            <h2>Combination Reaction</h2>
+            <p>Single product is formed from two or more reactants.</p>
+            <div class="reaction-box">CaO(s) + H2O(l) → Ca(OH)2(aq) + Heat</div>
+            <p>Quick lime reacts with water to give <span class="highlight">Slaked Lime</span>. This is highly exothermic.</p>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 6: TYPES - II</span>
+            <h2>Decomposition Reaction</h2>
+            <p>A single reactant breaks down into multiple products. Needs energy.</p>
+            <ul>
+                <li><span class="highlight">Thermal:</span> Heat energy (Lead Nitrate brown fumes).</li>
+                <li><span class="highlight">Electrolytic:</span> Electric energy (Water electrolysis 2:1 ratio).</li>
+                <li><span class="highlight">Photolytic:</span> Light energy (Silver Chloride grey turns).</li>
+            </ul>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 7: TYPES - III</span>
+            <h2>Displacement Reactions</h2>
+            <p>More reactive element kicks out less reactive element from its salt solution.</p>
+            <div class="reaction-box">Fe(s) + CuSO4(aq) → FeSO4(aq) + Cu(s)</div>
+            <p>Iron nail turns brownish and blue Copper Sulphate turns <span class="highlight">Light Green</span>.</p>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 8: TYPES - IV</span>
+            <h2>Double Displacement</h2>
+            <p>Exchange of ions between reactants. Usually forms a <span class="highlight">Precipitate</span>.</p>
+            <div class="reaction-box">Na2SO4 + BaCl2 → BaSO4(↓) + 2NaCl</div>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 9: REDOX</span>
+            <h2>Oxidation and Reduction</h2>
+            <ul>
+                <li><span class="highlight">Oxidation:</span> Add Oxygen / Remove Hydrogen.</li>
+                <li><span class="highlight">Reduction:</span> Remove Oxygen / Add Hydrogen.</li>
+            </ul>
+            <div class="reaction-box">CuO + H2 → Cu + H2O</div>
+            <p>CuO is reduced; H2 is oxidized.</p>
+        </div>
+
+        <div class="concept-card">
+            <span class="tag">PAGE 10: APPLICATIONS</span>
+            <h2>Corrosion & Rancidity</h2>
+            <p><span class="highlight">Corrosion:</span> Damage to metals by air/moisture (Rusting, Black silver, Green copper).</p>
+            <p><span class="highlight">Rancidity:</span> Oxidation of fats/oils in food. Change in smell/taste.</p>
+            <p><strong>Prevention:</strong> Antioxidants, Nitrogen gas in chips, Airtight containers.</p>
+        </div>
+
+        <div class="footer-note">End of Chapter 1 Detailed Topper Notes</div>
+    </div>
+<style>
+    .mcq-box-ch1 { width: 100%; background: #0d1b2a; border: 3px solid #00e5ff; border-radius: 25px; padding: 25px; margin-top: 50px; box-shadow: 0 0 30px rgba(0, 229, 255, 0.4); box-sizing: border-box; }
+    .m-card { background: #050a14; border: 1px solid #1b263b; padding: 20px; border-radius: 20px; margin-bottom: 35px; transition: 0.5s; }
+    .m-card:hover { border-color: #ffca28; box-shadow: 0 0 35px rgba(255, 202, 40, 0.3); }
+    .m-q { color: #ffca28; font-size: 1.3rem; font-weight: 900; display: block; margin-bottom: 15px; }
+    .m-opt { display: block; padding: 12px; background: #162435; margin: 8px 0; border-radius: 12px; color: #e0e1dd; border: 1px solid #334155; }
+    .m-btn { width: 100%; padding: 15px; background: transparent; border: 2px solid #00e5ff; color: #00e5ff; border-radius: 15px; font-weight: 900; cursor: pointer; text-transform: uppercase; margin-top: 10px; transition: 0.3s; }
+    .m-ans { display: none; margin-top: 15px; padding: 12px; background: rgba(0, 229, 255, 0.1); border-left: 6px solid #00e5ff; color: #00e5ff; font-weight: bold; font-size: 1.1rem; text-align: center; border-radius: 10px; }
+</style>
+
+<div class="mcq-box-ch1" id="ch1-mcq-container">
+    <h2 style="text-align:center; color:#00e5ff; font-size:1.8rem; text-shadow: 0 0 15px #00e5ff; margin-bottom: 40px;">TOPPER'S QUIZ: 1-25 MCQs</h2>
+    
+    <script>
+        const mcqs = [
+            {q: "Magnesium ribbon is cleaned before burning because it has a coating of?", a: "Basic Magnesium Carbonate", o: ["Magnesium Oxide", "Basic Magnesium Carbonate", "Magnesium Chloride", "Magnesium Sulphide"]},
+            {q: "The reaction Fe2O3 + 2Al -> Al2O3 + 2Fe is an example of?", a: "Displacement Reaction", o: ["Combination", "Double Displacement", "Decomposition", "Displacement Reaction"]},
+            {q: "What happens when lead nitrate is heated?", a: "Brown fumes of NO2", o: ["White fumes of NO", "Brown fumes of NO2", "Yellow fumes of NO2", "No gas evolved"]},
+            {q: "Reaction of Quick lime with water is?", a: "Combination & Exothermic", o: ["Decomposition", "Combination & Exothermic", "Endothermic", "Displacement"]},
+            {q: "The decomposition of vegetable matter into compost is an example of?", a: "Exothermic Reaction", o: ["Endothermic", "Exothermic Reaction", "Redox", "Displacement"]},
+            {q: "Which gas is used in the storage of fat and oil containing foods?", a: "Nitrogen gas", o: ["Carbon dioxide", "Oxygen gas", "Nitrogen gas", "Neon gas"]},
+            {q: "Chemical formula of rust is?", a: "Fe2O3.xH2O", o: ["FeO", "Fe2O3.xH2O", "Fe3O4", "None"]},
+            {q: "Electrolysis of water is a decomposition reaction. H2:O2 ratio is?", a: "2:1", o: ["1:1", "2:1", "4:1", "1:2"]},
+            {q: "Silver Chloride turns ______ in sunlight.", a: "Grey", o: ["Blue", "Yellow", "Grey", "Red"]},
+            {q: "Nature of BaSO4 precipitate is?", a: "White", o: ["Blue", "Yellow", "White", "Black"]},
+            {q: "Magnesium burns with a?", a: "Dazzling white flame", o: ["Blue flame", "Dazzling white flame", "Yellow flame", "Red flame"]},
+            {q: "Condition produced by oxidation of fats is?", a: "Rancidity", o: ["Corrosion", "Rancidity", "Reduction", "Hydrogenation"]},
+            {q: "Balanced equation follows which law?", a: "Law of conservation of mass", o: ["Avogadro's law", "Law of conservation of mass", "Dalton's theory", "None"]},
+            {q: "Adding HCl to Iron filings gives?", a: "H2 and Iron Chloride", o: ["H2 and Iron Chloride", "Cl2 and Iron salt", "No reaction", "Oxygen and Iron salt"]},
+            {q: "In CuO + H2 -> Cu + H2O, which is reduced?", a: "CuO", o: ["CuO", "H2", "Cu", "H2O"]},
+            {q: "Color of NO2 gas is?", a: "Brown", o: ["White", "Brown", "Green", "Yellow"]},
+            {q: "Substance added to prevent rancidity?", a: "Antioxidant", o: ["Oxidant", "Antioxidant", "Coolant", "None"]},
+            {q: "Pb + CuCl2 -> PbCl2 + Cu is?", a: "Displacement", o: ["Combination", "Decomposition", "Displacement", "Redox"]},
+            {q: "Corrosion of Copper gives which color coating?", a: "Green", o: ["Black", "Green", "Brown", "Blue"]},
+            {q: "Respiration is which type of reaction?", a: "Exothermic", o: ["Endothermic", "Exothermic", "Redox", "None"]},
+            {q: "Burning of Natural Gas is?", a: "Exothermic", o: ["Endothermic", "Exothermic", "Redox", "None"]},
+            {q: "Fe + CuSO4 -> FeSO4 + Cu, color change is?", a: "Blue to Green", o: ["Blue to White", "Blue to Green", "Green to Blue", "No change"]},
+            {q: "Chemical formula of Lead Nitrate?", a: "Pb(NO3)2", o: ["PbNO3", "Pb(NO3)2", "Pb2NO3", "Pb3NO2"]},
+            {q: "Oxidation is ______ of Oxygen.", a: "Addition", o: ["Addition", "Removal", "Loss", "None"]},
+            {q: "Decomposition requires energy in form of?", a: "All of these", o: ["Heat", "Light", "Electricity", "All of these"]}
+        ];
+
+        const cont = document.getElementById('ch1-mcq-container');
+        mcqs.forEach((item, i) => {
+            const card = document.createElement('div');
+            card.className = 'm-card';
+            card.innerHTML = `
+                <span class="m-q">Q${i+1}. ${item.q}</span>
+                ${item.o.map(opt => `<span class="m-opt">${opt}</span>`).join('')}
+                <button class="m-btn" onclick="tglCh1(this)">Show Answer</button>
+                <div class="m-ans">✨ Answer: ${item.a}</div>
+            `;
+            cont.appendChild(card);
+        });
+
+        function tglCh1(btn) {
+            const box = btn.nextElementSibling;
+            if (box.style.display === "block") {
+                box.style.display = "none";
+                btn.innerText = "Show Answer";
+                btn.style.color = "#00e5ff";
+                btn.style.borderColor = "#00e5ff";
+            } else {
+                box.style.display = "block";
+                btn.innerText = "Hide Answer";
+                btn.style.color = "#ff4444";
+                btn.style.borderColor = "#ff4444";
+            }
+        }
+    </script>
+</div>
+<style>
+    /* Styling consistent with previous part */
+    .mcq-box-ch1-p2 { width: 100%; background: #0d1b2a; border: 3px solid #ffca28; border-radius: 25px; padding: 25px; margin-top: 30px; box-shadow: 0 0 30px rgba(255, 202, 40, 0.2); box-sizing: border-box; }
+    .m-card-v2 { background: #050a14; border: 1px solid #1b263b; padding: 20px; border-radius: 20px; margin-bottom: 35px; transition: 0.5s; }
+    .m-card-v2:hover { border-color: #00e5ff; box-shadow: 0 0 35px rgba(0, 229, 255, 0.3); }
+    .m-q-v2 { color: #ffca28; font-size: 1.3rem; font-weight: 900; display: block; margin-bottom: 15px; }
+    .m-opt-v2 { display: block; padding: 12px; background: #162435; margin: 8px 0; border-radius: 12px; color: #e0e1dd; border: 1px solid #334155; }
+    .m-btn-v2 { width: 100%; padding: 15px; background: transparent; border: 2px solid #ffca28; color: #ffca28; border-radius: 15px; font-weight: 900; cursor: pointer; text-transform: uppercase; margin-top: 10px; transition: 0.3s; }
+    .m-ans-v2 { display: none; margin-top: 15px; padding: 12px; background: rgba(255, 202, 40, 0.1); border-left: 6px solid #ffca28; color: #ffca28; font-weight: bold; font-size: 1.1rem; text-align: center; border-radius: 10px; }
+</style>
+
+<div class="mcq-box-ch1-p2" id="ch1-mcq-p2">
+    <h2 style="text-align:center; color:#ffca28; font-size:1.8rem; text-shadow: 0 0 15px #ffca28; margin-bottom: 40px;">PART B: CHAPTER 1 MCQs (26-50)</h2>
+    
+    <script>
+        const mcqsPart2 = [
+            {q: "Which of the following is an example of a combination reaction?", a: "C + O2 -> CO2", o: ["H2O -> H2 + O2", "Zn + CuSO4 -> ZnSO4 + Cu", "C + O2 -> CO2", "NaCl + AgNO3 -> AgCl + NaNO3"]},
+            {q: "The brown gas evolved on heating of Copper Nitrate is?", a: "Nitrogen Dioxide", o: ["Nitrous Oxide", "Nitrogen Dioxide", "Nitric Oxide", "Nitrogen"]},
+            {q: "Which metal is most reactive among these?", a: "Potassium", o: ["Iron", "Gold", "Potassium", "Copper"]},
+            {q: "Antioxidants are used to prevent?", a: "Rancidity", o: ["Corrosion", "Decomposition", "Rancidity", "Displacement"]},
+            {q: "In the reaction ZnO + C -> Zn + CO, Carbon acts as?", a: "Reducing agent", o: ["Oxidizing agent", "Reducing agent", "Catalyst", "Acid"]},
+            {q: "The process of rusting of iron is?", a: "Oxidation", o: ["Oxidation", "Reduction", "Decomposition", "Displacement"]},
+            {q: "What is the color of ferrous sulphate crystals?", a: "Light Green", o: ["Blue", "White", "Light Green", "Brown"]},
+            {q: "Which gas is evolved during respiration?", a: "CO2", o: ["O2", "CO2", "N2", "H2"]},
+            {q: "Fatty foods are flushed with nitrogen to prevent?", a: "Oxidation", o: ["Reduction", "Oxidation", "Hydrogenation", "Carbonation"]},
+            {q: "In 2AgBr -> 2Ag + Br2, energy is provided by?", a: "Sunlight", o: ["Heat", "Electricity", "Sunlight", "None"]},
+            {q: "Which of the following is a redox reaction?", a: "MnO2 + 4HCl -> MnCl2 + 2H2O + Cl2", o: ["CaCO3 -> CaO + CO2", "MnO2 + 4HCl -> MnCl2 + 2H2O + Cl2", "NaOH + HCl -> NaCl + H2O", "None"]},
+            {q: "The reaction in which heat is absorbed is called?", a: "Endothermic", o: ["Exothermic", "Endothermic", "Redox", "Combination"]},
+            {q: "Barium sulphate is ______ in water.", a: "Insoluble", o: ["Soluble", "Insoluble", "Highly soluble", "None"]},
+            {q: "Which of the following is a displacement reaction?", a: "Fe + CuSO4 -> FeSO4 + Cu", o: ["CaO + H2O -> Ca(OH)2", "Fe + CuSO4 -> FeSO4 + Cu", "2H2 + O2 -> 2H2O", "CaCO3 -> CaO + CO2"]},
+            {q: "A yellow precipitate is formed when KI reacts with?", a: "Pb(NO3)2", o: ["Pb(NO3)2", "AgNO3", "CuSO4", "NaCl"]},
+            {q: "Which substance is oxidized in: H2S + Cl2 -> 2HCl + S?", a: "H2S", o: ["H2S", "Cl2", "HCl", "S"]},
+            {q: "The chemical formula of marble is?", a: "CaCO3", o: ["CaO", "Ca(OH)2", "CaCO3", "CaSO4"]},
+            {q: "Decomposition of Lead Nitrate releases which gas?", a: "Oxygen & Nitrogen Dioxide", o: ["Oxygen only", "Nitrogen Dioxide only", "Oxygen & Nitrogen Dioxide", "Nitrogen only"]},
+            {q: "Color of silver metal when it gets corroded is?", a: "Black", o: ["Green", "Black", "Brown", "Yellow"]},
+            {q: "Burning of Magnesium in air is a?", a: "Chemical Change", o: ["Physical Change", "Chemical Change", "Reversible Change", "None"]},
+            {q: "The shiny finish on walls after whitewashing is due to?", a: "Calcium Carbonate", o: ["Calcium Oxide", "Calcium Hydroxide", "Calcium Carbonate", "Calcium Sulphate"]},
+            {q: "The reaction: Na + H2O -> NaOH + H2 is?", a: "Displacement", o: ["Combination", "Decomposition", "Displacement", "None"]},
+            {q: "Which of the following does not involve a chemical reaction?", a: "Melting of candle wax", o: ["Digestion of food", "Respiration", "Melting of candle wax", "Burning of LPG"]},
+            {q: "The oxidation state of an element in its free state is?", a: "Zero", o: ["+1", "-1", "Zero", "+2"]},
+            {q: "Quick lime is used for?", a: "Manufacturing of cement", o: ["Manufacturing of cement", "Making food", "Purifying water", "None"]}
+        ];
+
+        const containerP2 = document.getElementById('ch1-mcq-p2');
+        mcqsPart2.forEach((item, i) => {
+            const card = document.createElement('div');
+            card.className = 'm-card-v2';
+            card.innerHTML = `
+                <span class="m-q-v2">Q${i+26}. ${item.q}</span>
+                ${item.o.map(opt => `<span class="m-opt-v2">${opt}</span>`).join('')}
+                <button class="m-btn-v2" onclick="tglCh1P2(this)">Show Answer</button>
+                <div class="m-ans-v2">✨ Answer: ${item.a}</div>
+            `;
+            containerP2.appendChild(card);
+        });
+
+        function tglCh1P2(btn) {
+            const box = btn.nextElementSibling;
+            if (box.style.display === "block") {
+                box.style.display = "none";
+                btn.innerText = "Show Answer";
+                btn.style.color = "#ffca28";
+                btn.style.borderColor = "#ffca28";
+            } else {
+                box.style.display = "block";
+                btn.innerText = "Hide Answer";
+                btn.style.color = "#ff4444";
+                btn.style.borderColor = "#ff4444";
+            }
+        }
+    </script>
+</div>
+<style>
+    .long-q-v1 { width: 100%; background: #0d1b2a; border: 3px solid #ffca28; border-radius: 25px; padding: 25px; margin-top: 40px; box-shadow: 0 0 30px rgba(255, 202, 40, 0.2); box-sizing: border-box; }
+    .l-card-v1 { background: #050a14; border: 1px solid #1b263b; padding: 25px; border-radius: 20px; margin-bottom: 40px; transition: 0.5s; }
+    .l-card-v1:hover { border-color: #00e5ff; box-shadow: 0 0 35px rgba(0, 229, 255, 0.2); }
+    .l-title-v1 { color: #ffca28; font-size: 1.4rem; font-weight: 900; display: block; margin-bottom: 15px; border-bottom: 1px dashed #334155; padding-bottom: 10px; }
+    .l-btn-v1 { width: 100%; padding: 15px; background: transparent; border: 2px solid #ffca28; color: #ffca28; border-radius: 15px; font-weight: 900; cursor: pointer; text-transform: uppercase; margin-top: 15px; transition: 0.3s; }
+    .l-ans-v1 { display: none; margin-top: 20px; padding: 20px; background: rgba(255, 202, 40, 0.05); border-left: 6px solid #ffca28; color: #e0e1dd; line-height: 1.6; border-radius: 10px; font-size: 1.1rem; }
+    .n-txt { color: #00e5ff; font-weight: bold; }
+</style>
+
+<div class="long-q-v1" id="ch1-long-questions">
+    <h2 style="text-align:center; color:#ffca28; font-size:2rem; text-shadow: 0 0 15px #ffca28; margin-bottom: 50px;">SECTION C: CHAPTER 1 LONG QUESTIONS</h2>
+
+    <div class="l-card-v1">
+        <span class="l-title-v1">Q1. Explain the different types of Decomposition Reactions with one example each.</span>
+        <button class="l-btn-v1" onclick="tglLongV1(this)">Show Detailed Answer</button>
+        <div class="l-ans-v1">
+            <span class="n-txt">1. Thermal Decomposition:</span> Carried out by heating.<br>
+            Example: CaCO3 (s) → CaO (s) + CO2 (g)<br><br>
+            <span class="n-txt">2. Electrolytic Decomposition:</span> Carried out by electricity.<br>
+            Example: 2H2O (l) → 2H2 (g) + O2 (g)<br><br>
+            <span class="n-txt">3. Photolytic Decomposition:</span> Carried out by sunlight.<br>
+            Example: 2AgCl (s) → 2Ag (s) + Cl2 (g)
+        </div>
+    </div>
+
+    <div class="l-card-v1">
+        <span class="l-title-v1">Q2. What is a Redox Reaction? Identify the substance oxidized and reduced in: CuO + H2 → Cu + H2O.</span>
+        <button class="l-btn-v1" onclick="tglLongV1(this)">Show Detailed Answer</button>
+        <div class="l-ans-v1">
+            <span class="n-txt">Definition:</span> A reaction in which oxidation and reduction take place simultaneously is called a Redox reaction.<br><br>
+            <span class="n-txt">In the given reaction:</span><br>
+            1. <span class="n-txt">H2</span> is getting <span class="n-txt">Oxidized</span> to H2O (Addition of Oxygen).<br>
+            2. <span class="n-txt">CuO</span> is getting <span class="n-txt">Reduced</span> to Cu (Removal of Oxygen).<br><br>
+            <span class="n-txt">Oxidizing Agent:</span> CuO | <span class="n-txt">Reducing Agent:</span> H2
+        </div>
+    </div>
+
+    <div class="l-card-v1">
+        <span class="l-title-v1">Q3. Why is Respiration considered an Exothermic reaction? Explain.</span>
+        <button class="l-btn-v1" onclick="tglLongV1(this)">Show Detailed Answer</button>
+        <div class="l-ans-v1">
+            <span class="n-txt">Reason:</span> During digestion, food is broken down into glucose. This glucose combines with oxygen in the cells of our body and provides energy.<br><br>
+            <span class="n-txt">Equation:</span> C6H12O6 + 6O2 → 6CO2 + 6H2O + <span class="n-txt">Energy</span><br><br>
+            Since energy is released in this process, respiration is called an <span class="n-txt">Exothermic reaction</span>.
+        </div>
+    </div>
+
+    <div class="l-card-v1">
+        <span class="l-title-v1">Q4. Differentiate between Displacement and Double Displacement reactions with equations.</span>
+        <button class="l-btn-v1" onclick="tglLongV1(this)">Show Detailed Answer</button>
+        <div class="l-ans-v1">
+            <span class="n-txt">Displacement Reaction:</span> A more reactive element displaces a less reactive element from its salt solution.<br>
+            Equation: Fe + CuSO4 → FeSO4 + Cu<br><br>
+            <span class="n-txt">Double Displacement:</span> There is an exchange of ions between the reactants to form new compounds.<br>
+            Equation: Na2SO4 + BaCl2 → BaSO4 + 2NaCl
+        </div>
+    </div>
+
+    <script>
+        function tglLongV1(btn) {
+            const box = btn.nextElementSibling;
+            if (box.style.display === "block") {
+                box.style.display = "none";
+                btn.innerText = "Show Detailed Answer";
+                btn.style.color = "#ffca28";
+                btn.style.borderColor = "#ffca28";
+            } else {
+                box.style.display = "block";
+                btn.innerText = "Hide Answer";
+                btn.style.color = "#ff4444";
+                btn.style.borderColor = "#ff4444";
+            }
+        }
+    </script>
+</div>
+<style>
+    /* Exact same style as your previous cards */
+    .long-q-v2 { width: 100%; background: #0d1b2a; border: 3px solid #00e5ff; border-radius: 25px; padding: 25px; margin-top: 30px; box-shadow: 0 0 30px rgba(0, 229, 255, 0.3); box-sizing: border-box; }
+    .l-card-v2 { background: #050a14; border: 1px solid #1b263b; padding: 25px; border-radius: 20px; margin-bottom: 40px; transition: 0.5s; }
+    .l-card-v2:hover { border-color: #ffca28; box-shadow: 0 0 35px rgba(255, 202, 40, 0.2); }
+    .l-title-v2 { color: #00e5ff; font-size: 1.4rem; font-weight: 900; display: block; margin-bottom: 15px; border-bottom: 1px dashed #334155; padding-bottom: 10px; }
+    .l-btn-v2 { width: 100%; padding: 15px; background: transparent; border: 2px solid #00e5ff; color: #00e5ff; border-radius: 15px; font-weight: 900; cursor: pointer; text-transform: uppercase; margin-top: 15px; transition: 0.3s; }
+    .l-ans-v2 { display: none; margin-top: 20px; padding: 20px; background: rgba(0, 229, 255, 0.05); border-left: 6px solid #00e5ff; color: #e0e1dd; line-height: 1.6; border-radius: 10px; font-size: 1.1rem; }
+    .gold-txt { color: #ffca28; font-weight: bold; }
+</style>
+
+<div class="long-q-v2" id="ch1-long-questions-p2">
+    <div class="l-card-v2">
+        <span class="l-title-v2">Q5. What is the difference between Exothermic and Endothermic reactions? Give examples.</span>
+        <button class="l-btn-v2" onclick="tglLongV2(this)">Show Detailed Answer</button>
+        <div class="l-ans-v2">
+            <span class="gold-txt">Exothermic Reaction:</span> Reactions in which heat is released along with the formation of products.<br>
+            <span class="gold-txt">Example:</span> Burning of natural gas: CH4 + 2O2 → CO2 + 2H2O + <span class="gold-txt">Heat</span>.<br><br>
+            <span class="gold-txt">Endothermic Reaction:</span> Reactions which require energy in the form of heat, light, or electricity to break reactants.<br>
+            <span class="gold-txt">Example:</span> Decomposition of Calcium Carbonate: CaCO3 + <span class="gold-txt">Heat</span> → CaO + CO2.
+        </div>
+    </div>
+
+    <div class="l-card-v2">
+        <span class="l-title-v2">Q6. What is Corrosion? List three methods to prevent rusting of iron.</span>
+        <button class="l-btn-v2" onclick="tglLongV2(this)">Show Detailed Answer</button>
+        <div class="l-ans-v2">
+            <span class="gold-txt">Corrosion:</span> It is the process in which metals are eaten up gradually by the action of air, moisture, or chemicals on their surface.<br><br>
+            <span class="gold-txt">Prevention Methods:</span><br>
+            1. <span class="gold-txt">Painting:</span> Applying a coat of paint cuts off air and moisture contact.<br>
+            2. <span class="gold-txt">Galvanisation:</span> Coating iron with a thin layer of Zinc.<br>
+            3. <span class="gold-txt">Greasing/Oiling:</span> Applying grease to machinery parts to prevent contact with moisture.
+        </div>
+    </div>
+
+    <div class="l-card-v2">
+        <span class="l-title-v2">Q7. Explain Rancidity. How can it be prevented in food items?</span>
+        <button class="l-btn-v2" onclick="tglLongV2(this)">Show Detailed Answer</button>
+        <div class="l-ans-v2">
+            <span class="gold-txt">Rancidity:</span> The oxidation of fats and oils in food when kept for a long time, resulting in bad smell and taste.<br><br>
+            <span class="gold-txt">Prevention:</span><br>
+            1. Adding <span class="gold-txt">Antioxidants</span> to foods containing fats.<br>
+            2. Storing food in <span class="gold-txt">Air-tight containers</span> to slow down oxidation.<br>
+            3. Flushing food packets (like chips) with <span class="gold-txt">Nitrogen gas</span>.
+        </div>
+    </div>
+
+    <div class="l-card-v2">
+        <span class="l-title-v2">Q8. Why do we apply paint on iron articles? Why are oil and fat containing food items flushed with Nitrogen?</span>
+        <button class="l-btn-v2" onclick="tglLongV2(this)">Show Detailed Answer</button>
+        <div class="l-ans-v2">
+            <span class="gold-txt">Iron Articles:</span> Paint prevents contact with air and moisture, which stops <span class="gold-txt">rusting</span> and increases the life of the article.<br><br>
+            <span class="gold-txt">Nitrogen Flushing:</span> Nitrogen is an <span class="gold-txt">inert gas</span>. It prevents the oil and fats in food from getting <span class="gold-txt">oxidized</span>, keeping the food fresh.
+        </div>
+    </div>
+
+    <script>
+        function tglLongV2(btn) {
+            const ans = btn.nextElementSibling;
+            if (ans.style.display === "block") {
+                ans.style.display = "none";
+                btn.innerText = "Show Detailed Answer";
+                btn.style.color = "#00e5ff";
+                btn.style.borderColor = "#00e5ff";
+            } else {
+                ans.style.display = "block";
+                btn.innerText = "Hide Answer";
+                btn.style.color = "#ff4444";
+                btn.style.borderColor = "#ff4444";
+            }
+        }
+    </script>
+</div>
+
+</body>
+</html>

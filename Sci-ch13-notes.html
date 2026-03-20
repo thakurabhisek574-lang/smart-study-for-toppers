@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Chapter 13 | Ultimate Toppers Notes</title>
+    <style>
+        :root {
+            --glow-gold: #ffcc00;
+            --neon-purple: #bc13fe;
+            --bg-dark: #050505;
+            --royal-purple: #1a0033;
+            --toxic-green: #39ff14;
+            --danger-red: #ff4444;
+        }
+
+        /* FIX: Shaking rokne ke liye */
+        * { box-sizing: border-box; }
+        
+        body { 
+            background-color: var(--bg-dark); 
+            margin: 0; 
+            padding: 0; 
+            scroll-behavior: smooth;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden; /* Screen hilna band */
+            width: 100%;
+        }
+
+        /* --- STICKY HEADER (STAYS ON TOP) --- */
+        .sticky-header {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 10000;
+            background: rgba(5, 5, 5, 0.98);
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--glow-gold);
+            box-shadow: 0 10px 30px rgba(255, 204, 0, 0.4);
+            backdrop-filter: blur(15px);
+            width: 100%;
+        }
+
+        .back-btn-link { text-decoration: none; }
+
+        .back-btn {
+            border: 2px solid var(--glow-gold);
+            background: var(--glow-gold);
+            color: #000;
+            padding: 10px 30px;
+            border-radius: 8px;
+            font-weight: 900;
+            font-size: 1rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 0 15px var(--glow-gold);
+        }
+
+        .header-text {
+            text-align: right;
+            color: var(--glow-gold);
+            font-family: 'Arial Black', sans-serif;
+            font-size: 1rem;
+            line-height: 1.1;
+            text-shadow: 0 0 10px var(--glow-gold);
+        }
+
+        .main-container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: #fff;
+            text-transform: uppercase;
+            margin: 50px 0;
+            text-shadow: 0 0 20px var(--neon-purple), 0 0 40px var(--neon-purple);
+        }
+
+        /* --- PAGE STYLING (SAME AS BEFORE) --- */
+        .page-card {
+            margin-bottom: 80px;
+            border: 3px solid var(--neon-purple);
+            border-radius: 25px;
+            background: linear-gradient(160deg, #12002b 0%, #050505 100%);
+            padding: 40px;
+            position: relative;
+            box-shadow: 0 0 50px rgba(188, 19, 254, 0.2);
+            width: 100%;
+        }
+
+        .page-number {
+            position: absolute;
+            top: -20px;
+            left: 40px;
+            background: var(--neon-purple);
+            color: white;
+            padding: 8px 30px;
+            border-radius: 50px;
+            font-weight: 900;
+            font-size: 1.2rem;
+            box-shadow: 0 0 25px var(--neon-purple);
+        }
+
+        .section-title {
+            color: var(--glow-gold);
+            font-size: 2.2rem;
+            font-weight: 900;
+            margin-bottom: 30px;
+            border-left: 10px solid var(--glow-gold);
+            padding-left: 20px;
+            text-transform: uppercase;
+        }
+
+        .content-box {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(188, 19, 254, 0.3);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+        .key { color: var(--toxic-green); font-weight: 900; font-size: 1.3rem; display: block; margin-bottom: 10px; }
+        .val { color: #efefef; line-height: 1.8; font-size: 1.15rem; }
+
+        .imp-box {
+            border: 2px dashed var(--glow-gold);
+            background: rgba(255, 204, 0, 0.05);
+            padding: 20px;
+            border-radius: 12px;
+            color: var(--glow-gold);
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .action-btn {
+            background: var(--neon-purple);
+            color: #fff;
+            border: none;
+            width: 100%;
+            padding: 15px;
+            font-weight: 900;
+            font-size: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+
+        .hidden-info {
+            display: none;
+            padding: 20px;
+            background: rgba(0,0,0,0.5);
+            border: 1px solid var(--glow-gold);
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sticky-header">
+    <a href="sci-chapters.html" class="back-btn-link">
+        <button class="back-btn">BACK</button>
+    </a>
+    <div class="header-text">SMART STUDY<br><span style="color:#fff">FOR TOPPERS</span></div>
+</div>
+
+<div class="main-container">
+    <h1 class="main-title">MAGNETIC EFFECTS OF<br>ELECTRIC CURRENT</h1>
+    <p style="text-align:center; color: var(--toxic-green); font-weight: 900; font-size: 1.2rem;">ULTIMATE 20+ PAGE TOPPER NOTES SERIES</p>
+
+    <div class="page-card"><div class="page-number">PAGE 1</div><h2 class="section-title">Fundamental Magnetism</h2><div class="content-box"><span class="key">Magnetic Field (B):</span><span class="val">The area around a magnet where its influence is felt. SI Unit: Tesla (T).</span></div><div class="content-box"><span class="key">Field Lines:</span><span class="val">Closed loops (N to S outside). Never intersect!</span></div></div>
+    
+    <div class="page-card"><div class="page-number">PAGE 2</div><h2 class="section-title">Oersted's Experiment</h2><div class="content-box"><span class="val">Hans Christian Oersted proved that electricity and magnetism are linked. Current-carrying wire deflects a compass.</span></div></div>
+
+    <div class="page-card"><div class="page-number">PAGE 3</div><h2 class="section-title">Right Hand Thumb Rule</h2><div class="content-box"><span class="key">The Rule:</span><span class="val">Thumb = Direction of Current. Fingers = Direction of Magnetic Field.</span></div><button class="action-btn" onclick="toggle(this)">Show Visual Guide</button><div class="hidden-info">Current Up = Anti-clockwise Field<br>Current Down = Clockwise Field</div></div>
+
+    <div class="page-card"><div class="page-number">PAGE 4</div><h2 class="section-title">Straight Conductor</h2><div class="content-box"><span class="val">Field is in concentric circles. Strength ∝ Current and inversely ∝ distance.</span></div></div>
+
+    <div class="page-card"><div class="page-number">PAGE 5</div><h2 class="section-title">Circular Loop</h2><div class="content-box"><span class="val">At the center of the loop, field lines appear as straight lines. Center field is perpendicular to the plane of loop.</span></div></div>
+
+    <div class="page-card"><div class="page-number">PAGE 6</div><h2 class="section-title">The Solenoid</h2><div class="content-box"><span class="key">Inside Field:</span><span class="val">Magnetic field inside a solenoid is UNIFORM and strong. It behaves like a bar magnet.</span></div></div>
+
+    <div class="page-card"><div class="page-number">PAGE 7</div><h2 class="section-title">Electromagnets</h2><div class="content-box"><span class="val">A soft iron core inside a solenoid makes a powerful temporary magnet. Strength depends on turns and current.</span></div></div>
+
+    <div class="page-card"><div class="page-number">PAGE 8</div><h2 class="section-title">Force on Conductor</h2><div class="content-box"><span class="val">A current wire in a magnetic field feels a force. Max force at 90°. Discoverer: Ampere.</span></div></div>
+
+    <div class="page-card"><div class="page-number">PAGE 9</div><h2 class="section-title">Fleming's Left Hand Rule</h2><div class="content-box"><span class="key">F-B-I Rule:</span><span class="val">Thumb (Force), Forefinger (Field), Middle Finger (Current). All perpendicular.</span></div></div>
+
+    <div class="page-card"><div class="page-number">PAGE 10</div><h2 class="section-title">Electric Motor</h2><div class="content-box"><span class="key">Principle:</span><span class="val">Electrical to Mechanical energy. Uses Split Rings (Commutator) to reverse current.</span></div></div>
+
+    <div class="page-card"><div class="page-number">PAGE 11</div><h2 class="section-title">Electromagnetic Induction</h2><div class="content-box"><span class="val">Changing magnetic field produces "Induced Current". Faraday's Law.</span></div></div>
+
+    <div class="page-card"><div class="page-number">PAGE 12</div><h2 class="section-title">Galvanometer</h2><div class="content-box"><span class="val">Instrument to detect current and its direction in a circuit.</span></div></div>
+
+    <div class="page-card"><div class="page-number">PAGE 13</div><h2 class="section-title">Fleming's Right Hand Rule</h2><div class="content-box"><span class="val">Used for induced current. Thumb (Motion), Forefinger (Field), Middle (Induced Current).</span></div></div>
+
+    <div class="page-card"><div class="page-number">PAGE 14</div><h2 class="section-title">Electric Generator</h2><div class="content-box"><span class="key">Principle:</span><span class="val">Mechanical to Electrical energy. EMI Principle.</span></div></div>
+
+    <div class="page-card"><div class="page-number">PAGE 15</div><h2 class="section-title">Direct Current (DC)</h2><div class="content-box"><span class="val">Current flows in one direction only. Source: Battery.</span></div></div>
+
+    <div class="page-card"><div class="page-number">PAGE 16</div><h2 class="section-title">Alternating Current (AC)</h2><div class="content-box"><span class="val">Reverses direction periodically. 50 Hz frequency in India.</span></div></div>
+
+    <div class="page-card"><div class="page-number">PAGE 17</div><h2 class="section-title">Domestic Circuits</h2><div class="content-box"><span class="key">Wires:</span><span class="val">Live (Red - 220V), Neutral (Black - 0V), Earth (Green).</span></div></div>
+
+    <div class="page-card"><div class="page-number">PAGE 18</div><h2 class="section-title">Earthing</h2><div class="content-box"><span class="val">Safety measure. Leakage current goes to earth, protecting from shocks.</span></div></div>
+
+    <div class="page-card"><div class="page-number">PAGE 19</div><h2 class="section-title">Short Circuit & Overloading</h2><div class="content-box"><span class="val">Short Circuit: Live/Neutral touch. Overloading: Excess current draw.</span></div></div>
+
+    <div class="page-card"><div class="page-number">PAGE 20</div><h2 class="section-title">Electric Fuse</h2><div class="content-box"><span class="key">Safety:</span><span class="val">Low melting point wire. Melts during high current to break the circuit.</span></div><div class="imp-box">CHAPTER COMPLETE! REVISE ALL 20 PAGES.</div></div>
+
+</div>
+
+<script>
+    function toggle(btn) {
+        var info = btn.nextElementSibling;
+        if (info.style.display === "block") {
+            info.style.display = "none";
+            btn.innerText = "Show Visual Guide";
+            btn.style.background = "#bc13fe";
+        } else {
+            info.style.display = "block";
+            btn.innerText = "Hide Visual Guide";
+            btn.style.background = "#ff4444";
+        }
+    }
+</script>
+<div style="max-width: 900px; margin: 40px auto; font-family: 'Segoe UI', sans-serif; color: #fff;">
+    <h2 style="text-align: center; color: #ffcc00; text-transform: uppercase; font-size: 2rem; text-shadow: 0 0 15px #ffcc00;">
+        Chapter 13: Top 50 MCQs
+    </h2>
+
+    <div id="quiz-container">
+        </div>
+</div>
+
+<style>
+    .mcq-card {
+        background: linear-gradient(145deg, #1a0033, #050505);
+        border: 2px solid #bc13fe;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 25px;
+        box-shadow: 0 0 15px rgba(188, 19, 254, 0.2);
+    }
+    .q-text {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        display: block;
+        color: #fff;
+    }
+    .options-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    .opt {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid rgba(188, 19, 254, 0.3);
+        font-size: 0.9rem;
+    }
+    .ans-btn {
+        background: #bc13fe;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        font-weight: 900;
+        border-radius: 8px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    .ans-content {
+        display: none;
+        margin-top: 15px;
+        padding: 12px;
+        border: 1px dashed #39ff14;
+        color: #39ff14;
+        background: rgba(57, 255, 20, 0.05);
+        font-weight: bold;
+        border-radius: 8px;
+    }
+    @media (max-width: 600px) {
+        .options-grid { grid-template-columns: 1fr; }
+    }
+</style>
+
+<script>
+    const quizData = [
+        { q: "Magnetic effect of current was discovered by?", opts: ["Newton", "Oersted", "Faraday", "Ohm"], a: "B (Oersted)" },
+        { q: "The magnetic field lines inside a bar magnet run from:", opts: ["N to S", "S to N", "East to West", "West to East"], a: "B (South to North)" },
+        { q: "SI unit of magnetic field strength is:", opts: ["Tesla", "Watt", "Volt", "Ohm"], a: "A (Tesla)" },
+        { q: "Right Hand Thumb Rule is used to find:", opts: ["Force", "Current direction", "Magnetic field direction", "Voltage"], a: "C (Magnetic field direction)" },
+        { q: "The field lines around a straight conductor are:", opts: ["Straight", "Concentric Circles", "Ellipsical", "Zig-zag"], a: "B (Concentric Circles)" },
+        { q: "A solenoid behaves exactly like a:", opts: ["Horseshoe magnet", "Bar magnet", "Electric cell", "Switch"], a: "B (Bar magnet)" },
+        { q: "Core of an electromagnet should be made of:", opts: ["Steel", "Soft Iron", "Copper", "Aluminium"], a: "B (Soft Iron)" },
+        { q: "Fleming's Left Hand Rule is for:", opts: ["Generators", "Electric Motors", "Heaters", "Bulbs"], a: "B (Electric Motors)" },
+        { q: "In FLHR, the middle finger represents:", opts: ["Field", "Motion", "Current", "Force"], a: "C (Current)" },
+        { q: "Device that reverses current in a motor is:", opts: ["Brushes", "Commutator", "Armature", "Axle"], a: "B (Commutator/Split Rings)" },
+        { q: "Electromagnetic Induction was discovered by:", opts: ["Faraday", "Ampere", "Volta", "Edison"], a: "A (Michael Faraday)" },
+        { q: "Device used to detect even a small current:", opts: ["Ammeter", "Voltmeter", "Galvanometer", "Generator"], a: "C (Galvanometer)" },
+        { q: "AC Generator works on the principle of:", opts: ["Heating Effect", "EMI", "Chemical Effect", "Gravity"], a: "B (Electromagnetic Induction)" },
+        { q: "Frequency of AC supply in India is:", opts: ["60 Hz", "100 Hz", "50 Hz", "0 Hz"], a: "C (50 Hz)" },
+        { q: "DC current is obtained from:", opts: ["AC Generator", "Dry Cell", "Transformer", "Mains"], a: "B (Dry Cell/Battery)" },
+        { q: "Color of the Earth wire in domestic circuit is:", opts: ["Red", "Black", "Green", "Blue"], a: "C (Green)" },
+        { q: "Short circuit happens when Live and Neutral wire:", opts: ["Disconnect", "Touch directly", "Are too long", "Are too thin"], a: "B (Touch directly)" },
+        { q: "Safety device that melts during high current:", opts: ["Switch", "Fuse", "Socket", "Plug"], a: "B (Fuse)" },
+        { q: "Earth wire protects us from:", opts: ["High voltage", "Electric shock", "Short circuit", "Overloading"], a: "B (Electric shock)" },
+        { q: "Potential difference in Indian houses is:", opts: ["110 V", "440 V", "220 V", "12 V"], a: "C (220 V)" },
+        { q: "Magnetic field lines never cross each other.", opts: ["True", "False", "Only in space", "Depends on magnet"], a: "A (True)" },
+        { q: "Strength of field in solenoid increases with:", opts: ["More turns", "Less current", "Thin wire", "Plastic core"], a: "A (More turns)" },
+        { q: "A compass needle is actually a small:", opts: ["Iron nail", "Bar magnet", "Copper wire", "Steel rod"], a: "B (Bar magnet)" },
+        { q: "Field lines emerge from which pole of a magnet?", opts: ["South", "North", "Center", "None"], a: "B (North Pole)" },
+        { q: "Commutator is used in DC motor to:", opts: ["Stop motor", "Change current direction", "Increase speed", "Cool motor"], a: "B (Change direction of current)" },
+        { q: "Fleming's Right Hand Rule is used for:", opts: ["Motor", "Induced Current", "Magnetism", "Resistance"], a: "B (Induced Current direction)" },
+        { q: "In FRHR, thumb points to the direction of:", opts: ["Field", "Induced current", "Motion of conductor", "Voltage"], a: "C (Motion of conductor)" },
+        { q: "AC stands for:", opts: ["Average Current", "Alternating Current", "Auto Current", "Active Current"], a: "B (Alternating Current)" },
+        { q: "Which current flows in only one direction?", opts: ["AC", "DC", "Both", "None"], a: "B (DC)" },
+        { q: "Potential of the Neutral wire is:", opts: ["220 V", "110 V", "0 V", "5 V"], a: "C (0 V)" },
+        { q: "Overloading occurs when total power exceeds:", opts: ["1W", "Limit of circuit", "0W", "Generator capacity"], a: "B (Limit of circuit)" },
+        { q: "Magnetic field is a ______ quantity.", opts: ["Scalar", "Vector", "Dimensionless", "Unitless"], a: "B (Vector)" },
+        { q: "Strongest magnetism in a bar magnet is at:", opts: ["Center", "Poles", "Surface", "Inside"], a: "B (Poles)" },
+        { q: "Soft iron core is used to make ______ magnets.", opts: ["Permanent", "Temporary", "Natural", "Weak"], a: "B (Temporary/Electromagnets)" },
+        { q: "Commercial motors use ______ instead of permanent magnets.", opts: ["Electromagnets", "Plastic", "Wood", "Copper rods"], a: "A (Electromagnets)" },
+        { q: "Induced current is maximum when motion is ______ to field.", opts: ["Parallel", "Perpendicular", "At 45 degrees", "Zero"], a: "B (Perpendicular - 90°)" },
+        { q: "Who gave the rules of EMI?", opts: ["Faraday", "Newton", "Ohm", "Ampere"], a: "A (Faraday)" },
+        { q: "Fuse wire is made of an alloy with ______ melting point.", opts: ["High", "Low", "Infinite", "Medium"], a: "B (Low)" },
+        { q: "Galvanometer shows deflection only when there is:", opts: ["Voltage", "Resistance", "Current", "Heat"], a: "C (Current)" },
+        { q: "Parallel connection in houses ensures ______ voltage for all.", opts: ["Different", "Same", "Zero", "High"], a: "B (Same voltage)" },
+        { q: "Magnetic field lines are ______ loops.", opts: ["Open", "Closed", "Broken", "Straight"], a: "B (Closed loops)" },
+        { q: "Maxwell's Corkscrew rule is same as:", opts: ["Left hand rule", "Right hand thumb rule", "Right hand rule", "Ohm's law"], a: "B (Right hand thumb rule)" },
+        { q: "Magnetic field inside a long solenoid is ______.", opts: ["Zero", "Uniform", "Non-uniform", "Circular"], a: "B (Uniform)" },
+        { q: "Which device converts Mechanical to Electrical energy?", opts: ["Motor", "Generator", "Heater", "Iron"], a: "B (Generator)" },
+        { q: "The color of Live wire is generally ______.", opts: ["Black", "Green", "Red/Brown", "Blue"], a: "C (Red/Brown)" },
+        { q: "An electric fuse is always connected in ______.", opts: ["Series", "Parallel", "Mixed", "None"], a: "A (Series with Live wire)" },
+        { q: "Unit of Magnetic Flux is:", opts: ["Tesla", "Weber", "Ampere", "Ohm"], a: "B (Weber)" },
+        { q: "Magnetic field lines are closer where field is ______.", opts: ["Weak", "Strong", "Zero", "Uniform"], a: "B (Strong)" },
+        { q: "In India, AC changes its direction every ______ second.", opts: ["1/50", "1/100", "1/200", "1"], a: "B (1/100 second)" },
+        { q: "A permanent magnet is usually made of ______.", opts: ["Soft iron", "Steel/Alnico", "Copper", "Zinc"], a: "B (Steel/Alnico)" }
+    ];
+
+    const container = document.getElementById('quiz-container');
+
+    quizData.forEach((item, index) => {
+        const card = document.createElement('div');
+        card.className = 'mcq-card';
+        card.innerHTML = `
+            <span class="q-text">${index + 1}. ${item.q}</span>
+            <div class="options-grid">
+                ${item.opts.map(o => `<div class="opt">${o}</div>`).join('')}
+            </div>
+            <button class="ans-btn" onclick="toggleAnswer(this)">Show Answer</button>
+            <div class="ans-content">Answer: ${item.a}</div>
+        `;
+        container.appendChild(card);
+    });
+
+    function toggleAnswer(btn) {
+        const content = btn.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+            btn.innerText = "Show Answer";
+        } else {
+            content.style.display = "block";
+            btn.innerText = "Hide Answer";
+        }
+    }
+</script>
+<div style="max-width: 900px; margin: 40px auto; font-family: 'Segoe UI', sans-serif; color: #fff;">
+    <h2 style="text-align: center; color: #ff3131; text-transform: uppercase; font-size: 2rem; text-shadow: 0 0 20px #ff3131;">
+        Level: Hardcore (Questions 51-100)
+    </h2>
+
+    <div id="hard-quiz-container">
+        </div>
+</div>
+
+<style>
+    .hard-card {
+        background: linear-gradient(145deg, #2b0000, #050505);
+        border: 2px solid #ff3131;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 25px;
+        box-shadow: 0 0 15px rgba(255, 49, 49, 0.2);
+    }
+    .hard-q-text {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        display: block;
+        color: #fff;
+    }
+    .hard-options {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    .hard-opt {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 49, 49, 0.3);
+        font-size: 0.9rem;
+    }
+    .hard-ans-btn {
+        background: #ff3131;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        font-weight: 900;
+        border-radius: 8px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    .hard-ans-content {
+        display: none;
+        margin-top: 15px;
+        padding: 12px;
+        border: 1px dashed #39ff14;
+        color: #39ff14;
+        background: rgba(57, 255, 20, 0.05);
+        font-weight: bold;
+        border-radius: 8px;
+    }
+</style>
+
+<script>
+    const hardQuizData = [
+        { q: "An electron enters a magnetic field at right angles. The direction of force will be:", opts: ["To the right", "To the left", "Out of page", "Into the page"], a: "D (Into the page - Remember electron is negative)" },
+        { q: "Magnetic field at the center of a circular loop is _____ to its radius.", opts: ["Directly proportional", "Inversely proportional", "Equal", "Independent"], a: "B (Inversely proportional)" },
+        { q: "A soft iron bar is placed inside a solenoid. The magnetic field will:", opts: ["Decrease", "Increase", "Remain same", "Become zero"], a: "B (Increase - Iron concentrates field lines)" },
+        { q: "The frequency of Direct Current (DC) is:", opts: ["50 Hz", "60 Hz", "0 Hz", "100 Hz"], a: "C (0 Hz - Direction doesn't change)" },
+        { q: "Which of the following does NOT work on Magnetic Effect of current?", opts: ["Electric Bell", "Electric Fan", "Electric Toaster", "Electric Motor"], a: "C (Toaster works on Heating Effect)" },
+        { q: "A proton moves North in a field pointing East. Force direction is:", opts: ["Upward", "Downward", "South", "West"], a: "A (Upward - Use FLHR)" },
+        { q: "The potential difference between Neutral and Earth wire is:", opts: ["220 V", "110 V", "0 V", "440 V"], a: "C (0 V - Both are grounded)" },
+        { q: "In a domestic circuit, the 15A line is used for:", opts: ["Bulbs", "Fans", "Geysers/AC", "Door bells"], a: "C (High power appliances)" },
+        { q: "Assertion: Field lines never cross. Reason: At intersection, compass would show two directions.", opts: ["A & R true, R is correct", "A & R true, R is NOT correct", "A true, R false", "A false, R true"], a: "A (Standard reasoning)" },
+        { q: "AC is preferred over DC for long distance transmission because:", opts: ["It is cheaper", "Low power loss", "Safe", "Easy to generate"], a: "B (Low power loss via Transformers)" },
+        { q: "If the current in a solenoid is reversed, its poles will:", opts: ["Not change", "Get reversed", "Become North only", "Become South only"], a: "B (Direction of current decides poles)" },
+        { q: "Magnitude of induced current is MAX when angle between motion and field is:", opts: ["0°", "45°", "90°", "180°"], a: "C (90° - Perpendicular)" },
+        { q: "Current carrying conductor experiences NO force in a field when it is:", opts: ["Perpendicular", "Parallel", "At 45°", "At 60°"], a: "B (Parallel - θ = 0° or 180°)" },
+        { q: "What is the function of 'Brushes' in a motor?", opts: ["Reverse current", "Reduce friction", "Transfer current to coil", "Increase speed"], a: "C (Maintain electrical contact)" },
+        { q: "Work done by magnetic force on a moving charge is always:", opts: ["Positive", "Negative", "Zero", "Constant"], a: "C (Zero - Force is ⊥ to displacement)" },
+        { q: "Self-induction is also called:", opts: ["Electrical Inertia", "Resistance", "Conductivity", "Magnetism"], a: "A (Inertia of Electricity)" },
+        { q: "Sensitivity of a Galvanometer can be increased by:", opts: ["Decreasing turns", "Increasing area", "Weak magnet", "Thin wire"], a: "B (Area increases flux linkage)" },
+        { q: "An ideal voltmeter has _____ resistance.", opts: ["Zero", "Very low", "Very high", "Infinite"], a: "D (Infinite)" },
+        { q: "Tesla is equal to:", opts: ["Wb/m²", "Wb m²", "A/m", "V/m"], a: "A (Weber per square meter)" },
+        { q: "Magnetic force is a ______ force.", opts: ["Central", "Non-conservative", "Conservative", "Contact"], a: "B (Non-conservative)" },
+        { q: "A permanent magnet is made of:", opts: ["Soft iron", "Alnico", "Copper", "Lead"], a: "B (Alnico is an alloy for permanent magnets)" },
+        { q: "Earth's magnetic field is approximately:", opts: ["1 T", "10 T", "0.3 Gauss", "100 Gauss"], a: "C (Very weak compared to 1 Tesla)" },
+        { q: "Direction of induced EMF is given by:", opts: ["Lenz's Law", "Ohm's Law", "Ampere's Law", "Coulomb's Law"], a: "A (Lenz's Law ensures conservation of energy)" },
+        { q: "Unit of Magnetic Flux is:", opts: ["Tesla", "Weber", "Henry", "Farad"], a: "B (Weber)" },
+        { q: "Which quantity is NOT changed by a magnetic field on a charge?", opts: ["Velocity", "Speed", "Momentum", "Direction"], a: "B (Speed remains constant)" },
+        { q: "Field at the center of a long solenoid is:", opts: ["μ₀nI", "Zero", "μ₀I", "Infinite"], a: "A (μ₀nI)" },
+        { q: "Magnetic permeability unit is:", opts: ["T m/A", "T/m", "A/m", "Wb"], a: "A" },
+        { q: "Which rule determines field around a current loop?", opts: ["FLHR", "FRHR", "Thumb Rule", "Corkscrew Rule"], a: "D (Maxwell's Corkscrew/Thumb Rule)" },
+        { q: "Short circuit resistance is almost:", opts: ["Infinite", "Zero", "Same", "High"], a: "B (Zero)" },
+        { q: "Domestic appliances are connected in:", opts: ["Series", "Parallel", "Mixed", "None"], a: "B (Parallel for same voltage)" },
+        { q: "India's AC changes direction every:", opts: ["0.01 s", "0.02 s", "1 s", "50 s"], a: "A (1/100 sec for 50Hz)" },
+        { q: "Safety fuse alloy has ______ melting point.", opts: ["High", "Low", "Medium", "Variable"], a: "B (Low)" },
+        { q: "Potential of Earth wire is:", opts: ["220V", "0V", "110V", "Infinite"], a: "B (0V)" },
+        { q: "Split ring commutator used in:", opts: ["AC Gen", "DC Motor", "Transformer", "Bulb"], a: "B" },
+        { q: "Commutator is another name for:", opts: ["Slip rings", "Split rings", "Brushes", "Coil"], a: "B" },
+        { q: "Field lines exit from:", opts: ["South", "North", "Center", "Top"], a: "B" },
+        { q: "Unit of Magnetic Flux Density is:", opts: ["Weber", "Tesla", "Ohm", "Farad"], a: "B (Tesla is same as Wb/m²)" },
+        { q: "Magnetic field lines form ______ loops.", opts: ["Open", "Closed", "Zig-zag", "Linear"], a: "B" },
+        { q: "Maximum number of 100W bulbs on a 5A, 220V line?", opts: ["5", "11", "22", "50"], a: "B (Total Power = 1100W, so 11 bulbs)" },
+        { q: "Who gave Laws of EMI?", opts: ["Faraday", "Oersted", "Newton", "Ohm"], a: "A" },
+        { q: "Compass North points to Geographic:", opts: ["North", "South", "East", "West"], a: "A" },
+        { q: "Commercial motors do NOT use:", opts: ["Electromagnet", "Large turns", "Permanent magnet", "Soft iron core"], a: "C" },
+        { q: "Current in secondary coil is due to:", opts: ["Direct contact", "Changing B-field", "Heat", "Friction"], a: "B" },
+        { q: "Magnetic lines are closer where field is:", opts: ["Weak", "Strong", "Zero", "Uniform"], a: "B" },
+        { q: "Induced current direction reversal occurs in:", opts: ["DC", "AC", "Both", "None"], a: "B (AC)" },
+        { q: "Overloading happens due to:", opts: ["Low voltage", "Too many devices", "High resistance", "Thin wires"], a: "B" },
+        { q: "Galvanometer is used to:", opts: ["Generate", "Detect current", "Stop", "Store"], a: "B" },
+        { q: "Unit of magnetic field strength in CGS:", opts: ["Tesla", "Gauss", "Weber", "Maxwell"], a: "B (Gauss)" },
+        { q: "Field inside a bar magnet is:", opts: ["N to S", "S to N", "Zero", "Uniform"], a: "B" },
+        { q: "This chapter's Top 100 MCQs help in:", opts: ["Pass", "Top", "Fail", "Nothing"], a: "B (Topping the Exam! 🦾)" }
+    ];
+
+    const hardContainer = document.getElementById('hard-quiz-container');
+
+    hardQuizData.forEach((item, index) => {
+        const card = document.createElement('div');
+        card.className = 'hard-card';
+        card.innerHTML = `
+            <span class="hard-q-text">${index + 51}. ${item.q}</span>
+            <div class="hard-options">
+                ${item.opts.map(o => `<div class="hard-opt">${o}</div>`).join('')}
+            </div>
+            <button class="hard-ans-btn" onclick="toggleHardAns(this)">Show Answer</button>
+            <div class="hard-ans-content">Answer: ${item.a}</div>
+        `;
+        hardContainer.appendChild(hardContainer.appendChild(card));
+    });
+
+    function toggleHardAns(btn) {
+        const content = btn.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+            btn.innerText = "Show Answer";
+        } else {
+            content.style.display = "block";
+            btn.innerText = "Hide Answer";
+        }
+    }
+</script>
+<div class="main-wrapper">
+    <h1 class="heading">MASTER 10: LONG QUESTIONS</h1>
+
+    <div id="long-questions-list">
+        </div>
+</div>
+
+<style>
+    .main-wrapper {
+        max-width: 800px;
+        margin: 20px auto;
+        font-family: 'Arial', sans-serif;
+        color: #fff;
+        background: #000;
+        padding: 15px;
+    }
+    .heading {
+        text-align: center;
+        color: #39ff14;
+        text-shadow: 0 0 10px #39ff14;
+        border-bottom: 2px solid #39ff14;
+        padding-bottom: 10px;
+    }
+    .q-box {
+        background: #111;
+        border: 1px solid #333;
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 8px;
+    }
+    .q-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #ffcc00;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .btn-ans {
+        background: #39ff14;
+        color: #000;
+        border: none;
+        padding: 8px 15px;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .ans-div {
+        display: none;
+        margin-top: 15px;
+        padding: 10px;
+        border-top: 1px dashed #555;
+        line-height: 1.5;
+        color: #ddd;
+    }
+    ul { margin-left: 20px; color: #39ff14; }
+    li { color: #ccc; margin-bottom: 5px; }
+</style>
+
+<script>
+    const data = [
+        {
+            q: "1. Explain the working and principle of an Electric Motor with a diagram.",
+            a: "<b>Principle:</b> It works on the magnetic effect of current. When a coil is placed in a magnetic field and current passes through it, a force rotates it.<br><b>Working:</b> Current enters through brushes to the commutator (split rings). The split rings reverse the current every half rotation, keeping the motor spinning in one direction."
+        },
+        {
+            q: "2. What is a Solenoid? How can you increase its magnetic field strength?",
+            a: "<b>Solenoid:</b> A coil of many circular turns of insulated copper wire wrapped closely in the shape of a cylinder.<br><b>Ways to increase strength:</b> <ul><li>Increase the number of turns.</li><li>Increase the current flowing through it.</li><li>Use a soft iron core inside the coil.</li></ul>"
+        },
+        {
+            q: "3. Describe Electromagnetic Induction (EMI) with an example.",
+            a: "<b>EMI:</b> The production of induced current in a coil due to a relative motion between a magnet and the coil.<br><b>Example:</b> Moving a bar magnet towards a coil connected to a galvanometer causes the needle to deflect, showing current is produced."
+        },
+        {
+            q: "4. State Fleming's Left Hand Rule and Right Hand Rule.",
+            a: "<b>Left Hand Rule:</b> Used for Motors. Thumb = Force, Forefinger = Field, Middle finger = Current.<br><b>Right Hand Rule:</b> Used for Generators/Induced Current. Thumb = Motion, Forefinger = Field, Middle finger = Induced Current."
+        },
+        {
+            q: "5. What are the main features of a Domestic Electric Circuit?",
+            a: "<ul><li>Appliances are connected in <b>Parallel</b> so each gets 220V.</li><li>Three wires are used: Live (Red), Neutral (Black), and Earth (Green).</li><li>A <b>Fuse</b> is connected in series with the live wire for safety.</li></ul>"
+        },
+        {
+            q: "6. Write four properties of Magnetic Field Lines.",
+            a: "1. They travel from North to South outside the magnet.<br>2. They form closed continuous loops.<br>3. They never intersect each other.<br>4. Degree of closeness shows the strength of the magnetic field."
+        },
+        {
+            q: "7. Difference between Short Circuit and Overloading.",
+            a: "<b>Short Circuit:</b> When Live and Neutral wires touch directly due to damaged insulation.<br><b>Overloading:</b> When too many heavy appliances are connected to a single socket, drawing excessive current."
+        },
+        {
+            q: "8. Why is an Earth Wire used in electrical appliances?",
+            a: "It is a safety measure for appliances with metallic bodies. If current leaks to the body, the earth wire provides a low-resistance path to the ground, preventing a severe electric shock to the user."
+        },
+        {
+            q: "9. Compare Electromagnets and Permanent Magnets.",
+            a: "<b>Electromagnet:</b> Temporary, very strong, polarity can be reversed.<br><b>Permanent Magnet:</b> Permanent, relatively weak, polarity is fixed."
+        },
+        {
+            q: "10. Why do two magnetic field lines never cross each other?",
+            a: "If they crossed, at the point of intersection, a compass needle would point in two different directions, which is impossible. Thus, they never intersect."
+        }
+    ];
+
+    const list = document.getElementById('long-questions-list');
+
+    data.forEach((item) => {
+        const div = document.createElement('div');
+        div.className = 'q-box';
+        div.innerHTML = `
+            <span class="q-title">${item.q}</span>
+            <button class="btn-ans" onclick="showHide(this)">Show Answer</button>
+            <div class="ans-div">${item.a}</div>
+        `;
+        list.appendChild(div);
+    });
+
+    function showHide(btn) {
+        const ans = btn.nextElementSibling;
+        if (ans.style.display === "block") {
+            ans.style.display = "none";
+            btn.innerText = "Show Answer";
+        } else {
+            ans.style.display = "block";
+            btn.innerText = "Hide Answer";
+        }
+    }
+</script>
+<div class="hard-wrapper" style="max-width: 800px; margin: 40px auto; font-family: 'Arial', sans-serif; color: #fff; background: #000; padding: 15px;">
+    <h1 style="text-align: center; color: #ff3131; text-shadow: 0 0 10px #ff3131; border-bottom: 2px solid #ff3131; padding-bottom: 10px;">
+        LEVEL: EXTREME HARD (Questions 11-18)
+    </h1>
+
+    <div id="hard-long-list">
+        </div>
+</div>
+
+<style>
+    .hard-q-box {
+        background: #1a0505;
+        border: 1px solid #ff3131;
+        margin-bottom: 25px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(255, 49, 49, 0.1);
+    }
+    .hard-q-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #ff3131;
+        margin-bottom: 12px;
+        display: block;
+    }
+    .hard-btn {
+        background: #ff3131;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-weight: 1000;
+        border-radius: 5px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    .hard-ans-div {
+        display: none;
+        margin-top: 18px;
+        padding: 15px;
+        border-top: 1px dashed #ff3131;
+        line-height: 1.7;
+        color: #eee;
+        background: rgba(255, 49, 49, 0.05);
+    }
+    .logic-tag {
+        color: #39ff14;
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+    }
+</style>
+
+<script>
+    const hardData = [
+        {
+            q: "11. An electron beam enters a magnetic field moving North. The field is directed Upwards. In which direction will the beam deflect? Explain using the appropriate rule.",
+            a: "<b>Answer:</b> The beam will deflect towards the <b>East</b>.<br><b>Explanation:</b> According to Fleming's Left Hand Rule (FLHR), if the forefinger points Up (Field) and the middle finger points South (because electron is negative, current direction is opposite to its motion, i.e., South), then the thumb points East.<br><span class='logic-tag'>Logic: Always reverse the direction for negative charges like electrons!</span>"
+        },
+        {
+            q: "12. What is the role of 'Split Rings' in a DC Motor vs 'Slip Rings' in an AC Generator?",
+            a: "<b>Split Rings (DC Motor):</b> They act as a commutator to reverse the direction of current in the coil every half rotation, ensuring continuous rotation in one direction.<br><b>Slip Rings (AC Generator):</b> They maintain a continuous connection between the rotating coil and the external circuit, allowing the induced current to change direction every half-turn, producing Alternating Current."
+        },
+        {
+            q: "13. Explain how a Galvanometer can be converted into (i) an Ammeter and (ii) a Voltmeter.",
+            a: "<b>(i) Ammeter:</b> By connecting a very low resistance (called Shunt) in <b>Parallel</b> with the galvanometer.<br><b>(ii) Voltmeter:</b> By connecting a very high resistance in <b>Series</b> with the galvanometer.<br><span class='logic-tag'>Logic: Ammeter measures flow (needs low resistance), Voltmeter measures pressure (needs high resistance).</span>"
+        },
+        {
+            q: "14. A current-carrying conductor is kept in a uniform magnetic field. Derive the conditions under which the force is (a) Maximum and (b) Zero.",
+            a: "The force (F) on a conductor is given by $F = BIl \sin \theta$.<br><b>(a) Maximum Force:</b> When $\sin \theta = 1$, which means $\theta = 90^\circ$. The conductor must be perpendicular to the field.<br><b>(b) Zero Force:</b> When $\sin \theta = 0$, which means $\theta = 0^\circ$ or $180^\circ$. The conductor must be parallel to the field."
+        },
+        {
+            q: "15. Why is the Earth wire connected to the metallic body of an appliance? What happens if the Live wire touches the body?",
+            a: "The Earth wire provides a <b>low-resistance path</b> for the current. If the Live wire touches the metallic body due to a fault, the current immediately flows through the Earth wire to the ground instead of passing through a human body. This heavy flow of current also blows the fuse, cutting off the power supply."
+        },
+        {
+            q: "16. Explain the 'Lenz's Law' in the context of Electromagnetic Induction. How does it follow the Law of Conservation of Energy?",
+            a: "<b>Lenz's Law:</b> It states that the direction of induced current is always such that it opposes the change that produced it.<br><b>Conservation of Energy:</b> To move a magnet towards a coil, work must be done against the opposing magnetic force. This mechanical work is converted into the electrical energy of the induced current."
+        },
+        {
+            q: "17. Describe the magnetic field produced by a current-carrying Circular Loop at its center. How does it change with distance?",
+            a: "At the center, the field lines are <b>straight</b> and perpendicular to the plane of the loop. The strength (B) is inversely proportional to the radius ($B \propto 1/r$). As we move away from the center along the axis, the magnetic field strength decreases rapidly."
+        },
+        {
+            q: "18. Compare the 'Short Circuit' and 'Overloading' based on: (a) Cause (b) Effect on Current (c) Role of Fuse.",
+            a: "<b>Short Circuit:</b> (a) Caused by touching of Live and Neutral wires. (b) Current becomes infinite/huge. (c) Fuse melts to prevent fire.<br><b>Overloading:</b> (a) Caused by connecting too many high-power devices to one socket. (b) Current exceeds the rated capacity of wires. (c) Fuse prevents damage to the entire household wiring."
+        }
+    ];
+
+    const hardList = document.getElementById('hard-long-list');
+
+    hardData.forEach((item) => {
+        const div = document.createElement('div');
+        div.className = 'hard-q-box';
+        div.innerHTML = `
+            <span class="hard-q-title">${item.q}</span>
+            <button class="hard-btn" onclick="toggleHard(this)">Show Answer</button>
+            <div class="hard-ans-div">${item.a}</div>
+        `;
+        hardList.appendChild(div);
+    });
+
+    function toggleHard(btn) {
+        const ans = btn.nextElementSibling;
+        if (ans.style.display === "block") {
+            ans.style.display = "none";
+            btn.innerText = "Show Answer";
+        } else {
+            ans.style.display = "block";
+            btn.innerText = "Hide Answer";
+        }
+    }
+</script>
+
+</body>
+</html>

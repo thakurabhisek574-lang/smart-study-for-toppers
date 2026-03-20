@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Chapter 8 | Smart Study Toppers</title>
+    <style>
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        html, body { 
+            background-color: #0a0015; /* Deep Cosmic Black-Purple */
+            margin: 0; padding: 0; 
+            width: 100%; overflow-x: hidden;
+            font-family: 'Arial', sans-serif; color: #ffffff;
+        }
+
+        /* FIXED HEADER - Scroll karne par upar hi rahega */
+        .header-top { 
+            display: flex; justify-content: space-between; align-items: center; 
+            padding: 20px; background: #1a0033; 
+            border-bottom: 3px solid #bc13fe; /* Neon Purple */
+            position: fixed; top: 0; width: 100%; z-index: 9999;
+            box-shadow: 0 5px 25px rgba(188, 19, 254, 0.6);
+        }
+
+        .back-btn { 
+            text-decoration: none; color: #00f2ff; /* Neon Cyan */
+            font-weight: 900; font-size: 0.9rem; 
+            border: 2px solid #00f2ff; 
+            padding: 10px 20px; border-radius: 12px; 
+            box-shadow: 0 0 15px #00f2ff;
+            background: rgba(0, 242, 255, 0.1);
+        }
+
+        .smart-tag { 
+            color: #ffffff; font-weight: 900; font-size: 1rem; 
+            text-align: right; line-height: 1.2; 
+            text-shadow: 0 0 10px #bc13fe;
+        }
+        .smart-tag span { color: #bc13fe; }
+
+        /* MAIN CONTENT - Margin top for Fixed Header */
+        .main-content { margin-top: 120px; padding: 0 15px 50px 15px; }
+
+        .ch-title {
+            text-align: center; color: #bc13fe; 
+            font-size: 2.2rem; font-weight: 900; margin-bottom: 40px; 
+            text-transform: uppercase;
+            text-shadow: 0 0 20px #bc13fe, 2px 2px #000;
+        }
+
+        /* NOTES CARDS - HEAVY DESIGN */
+        .note-card { 
+            background: linear-gradient(145deg, #120024, #1a0033);
+            border-radius: 20px; padding: 25px; 
+            margin-bottom: 35px; 
+            border: 2px solid #bc13fe; 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(188, 19, 254, 0.2);
+            width: 100%;
+        }
+
+        .section-tag { 
+            background: #00f2ff; color: #000; 
+            padding: 5px 15px; border-radius: 5px; 
+            font-weight: 800; font-size: 0.75rem; 
+            display: inline-block; margin-bottom: 15px;
+            box-shadow: 0 0 10px #00f2ff;
+        }
+
+        .topic-h2 { 
+            color: #00f2ff; font-size: 1.3rem; 
+            font-weight: 900; margin-bottom: 15px; 
+            border-bottom: 1px solid rgba(0, 242, 255, 0.3);
+            padding-bottom: 8px;
+        }
+
+        .point-box {
+            background: rgba(188, 19, 254, 0.05);
+            border-left: 4px solid #bc13fe;
+            padding: 12px; margin: 10px 0;
+            border-radius: 0 10px 10px 0;
+            font-size: 0.95rem; line-height: 1.6;
+        }
+
+        b { color: #00f2ff; text-shadow: 0 0 5px rgba(0, 242, 255, 0.5); }
+        
+        .scroll-tip {
+            text-align: center; color: #888; font-size: 0.8rem;
+            margin-bottom: 20px; animation: bounce 2s infinite;
+        }
+        @keyframes bounce { 0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 40% {transform: translateY(-5px);} 60% {transform: translateY(-3px);} }
+    </style>
+</head>
+<body>
+
+    <div class="header-top">
+        <a href="sci-chapters.html" class="back-btn">BACK</a>
+        <div class="smart-tag">SMART STUDY<br><span>FOR TOPPERS</span></div>
+    </div>
+
+    <div class="main-content">
+        <h1 class="ch-title">HEREDITY</h1>
+        <p class="scroll-tip">↓↓ SCROLL FOR 10+ PAGE DEEP NOTES ↓↓</p>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 1</span>
+            <div class="topic-h2">Introduction to Heredity</div>
+            <div class="point-box">
+                <b>Heredity:</b> The transmission of characters (traits) from parents to offspring.
+            </div>
+            <div class="point-box">
+                <b>Variation:</b> The differences in the characters among the individuals of a species. Even "identical" twins have small variations.
+            </div>
+            <div class="point-box">
+                <b>Accumulation:</b> Variations during reproduction are important. In asexual reproduction, variations are very few. In sexual reproduction, variations are large and get accumulated over generations.
+            </div>
+        </div>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 2</span>
+            <div class="topic-h2">Mendel & His Experiments</div>
+            <div class="point-box">
+                <b>Gregor Johann Mendel:</b> Known as the "Father of Genetics". He used <u>Garden Pea (Pisum sativum)</u> for his experiments.
+            </div>
+            <div class="point-box">
+                <b>Why Pea Plant?</b> <br>1. Short life cycle. <br>2. Clear contrasting traits (Tall/Dwarf, Round/Wrinkled). <br>3. Easy to grow and cross-pollinate.
+            </div>
+        </div>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 3</span>
+            <div class="topic-h2">Monohybrid Cross (One Trait)</div>
+            <div class="point-box">
+                Mendel crossed a Pure Tall (TT) and a Pure Dwarf (tt) plant.
+            </div>
+            <div class="point-box">
+                <b>F1 Generation:</b> All plants were Tall (Tt). No dwarf plants.
+            </div>
+            <div class="point-box">
+                <b>F2 Generation:</b> (On self-pollinating F1) Plants were produced in <b>3:1</b> ratio (3 Tall, 1 Dwarf).
+            </div>
+            <div class="point-box">
+                <b>Ratios:</b> <br>• Phenotypic Ratio = 3:1 <br>• Genotypic Ratio = 1:2:1 (TT : Tt : tt)
+            </div>
+        </div>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 4</span>
+            <div class="topic-h2">Dihybrid Cross (Two Traits)</div>
+            <div class="point-box">
+                Crossing plants with two traits: Round Yellow seeds (RRYY) and Wrinkled Green seeds (rryy).
+            </div>
+            <div class="point-box">
+                <b>F1 Generation:</b> All were Round Yellow (RrYy).
+            </div>
+            <div class="point-box">
+                <b>F2 Generation Ratio:</b> <b>9:3:3:1</b>. This proved that traits are inherited independently.
+            </div>
+        </div>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 5</span>
+            <div class="topic-h2">Dominant & Recessive Traits</div>
+            <div class="point-box">
+                <b>Dominant Trait:</b> The trait that expresses itself in the F1 generation (e.g., Tallness 'T').
+            </div>
+            <div class="point-box">
+                <b>Recessive Trait:</b> The trait that remains hidden in F1 but appears in F2 (e.g., Dwarfness 't').
+            </div>
+        </div>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 6</span>
+            <div class="topic-h2">How Traits Get Expressed?</div>
+            <div class="point-box">
+                DNA provides information for making <b>Proteins</b>. A section of DNA that provides info for one protein is called a <b>Gene</b>.
+            </div>
+            <div class="point-box">
+                If the protein (enzyme) works efficiently, the trait is expressed fully (e.g., more growth hormone = Tall plant).
+            </div>
+        </div>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 7</span>
+            <div class="topic-h2">Mechanism of Inheritance</div>
+            <div class="point-box">
+                Each cell has two copies of each chromosome (one from each parent).
+            </div>
+            <div class="point-box">
+                Germ cells (gametes) take only one chromosome from each pair. When they combine, the full set of chromosomes is restored in the zygote.
+            </div>
+        </div>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 8</span>
+            <div class="topic-h2">Sex Determination in Humans</div>
+            <div class="point-box">
+                Humans have <b>23 pairs</b> of chromosomes. 22 pairs are Autosomes. 1 pair is the Sex Chromosome.
+            </div>
+            <div class="point-box">
+                <b>Females:</b> Have a perfect pair of <b>XX</b>. <br><b>Males:</b> Have a mismatched pair of <b>XY</b> (Y is smaller).
+            </div>
+        </div>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 9</span>
+            <div class="topic-h2">Probability of Child's Sex</div>
+            <div class="point-box">
+                All children inherit an 'X' chromosome from the mother.
+            </div>
+            <div class="point-box">
+                The sex of the child depends on what they inherit from the <b>father</b>. 
+                <br>• If Father gives X → Girl (XX).
+                <br>• If Father gives Y → Boy (XY).
+                <br><b>Note:</b> In humans, the father is responsible for the sex of the child, not the mother.
+            </div>
+        </div>
+
+        <div class="note-card">
+            <span class="section-tag">PAGE 10</span>
+            <div class="topic-h2">Acquired vs Inherited Traits</div>
+            <div class="point-box">
+                <b>Inherited Traits:</b> Passed from parents to offspring via DNA (e.g., Eye color).
+            </div>
+            <div class="point-box">
+                <b>Acquired Traits:</b> Developed during life, not passed to next generation (e.g., learning a language, weight loss due to starvation). These do not change the DNA of germ cells.
+            </div>
+        </div>
+
+    </div>
+        <div id="ch8-mcq-set1">
+            <script>
+                const heredityMCQs = [
+                    { q: "Q1. The branch of biology which deals with heredity and variation is called:", o: ["Evolution", "Genetics", "Ecology", "Paleontology"], a: "Genetics" },
+                    { q: "Q2. Mendel conducted his famous breeding experiments on:", o: ["Wild pea", "Fruit fly", "Garden pea", "Honey bee"], a: "Garden pea" },
+                    { q: "Q3. A trait in an organism is influenced by:", o: ["Maternal DNA only", "Paternal DNA only", "Both maternal and paternal DNA", "Neither"], a: "Both maternal and paternal DNA" },
+                    { q: "Q4. The genotypic ratio of a monohybrid cross (F2) is:", o: ["3:1", "1:2:1", "9:3:3:1", "1:1"], a: "1:2:1" },
+                    { q: "Q5. Which of the following is a 'recessive' trait in Mendel's pea plant?", o: ["Tall stem", "Round seed", "White flower", "Yellow seed"], a: "White flower" },
+                    { q: "Q6. The number of pairs of sex chromosomes in a human zygote is:", o: ["23", "1", "22", "2"], a: "1" },
+                    { q: "Q7. A section of DNA that provides information for one protein is called:", o: ["Nucleus", "Chromosome", "Trait", "Gene"], a: "Gene" },
+                    { q: "Q8. In human males, all the chromosomes are paired perfectly except one. This is:", o: ["Large chromosome", "Small chromosome", "Sex chromosome", "Autosome"], a: "Sex chromosome" },
+                    { q: "Q9. If a round, green seeded pea plant (RRyy) is crossed with wrinkled, yellow seeded (rrYY), the seeds produced in F1 are:", o: ["Round and yellow", "Round and green", "Wrinkled and green", "Wrinkled and yellow"], a: "Round and yellow" },
+                    { q: "Q10. Who is known as the Father of Genetics?", o: ["Charles Darwin", "Gregor Mendel", "Lamarck", "Watson"], a: "Gregor Mendel" },
+                    { q: "Q11. The phenotypic ratio in a dihybrid cross (F2) is:", o: ["1:1:1:1", "3:1", "9:3:3:1", "1:2:1"], a: "9:3:3:1" },
+                    { q: "Q12. Which sex chromosome is present only in males?", o: ["X", "Y", "Z", "W"], a: "Y" },
+                    { q: "Q13. The process where characteristics are passed from parents to offspring is:", o: ["Variation", "Heredity", "Gene pool", "Speciation"], a: "Heredity" },
+                    { q: "Q14. An example of an acquired trait is:", o: ["Eye colour", "Height", "Weight loss due to starvation", "Skin colour"], a: "Weight loss due to starvation" },
+                    { q: "Q15. What is the probability that a human baby will be a boy?", o: ["25%", "50%", "75%", "100%"], a: "50%" },
+                    { q: "Q16. Zygote which has an X chromosome inherited from the father will develop into a:", o: ["Boy", "Girl", "Both", "Either"], a: "Girl" },
+                    { q: "Q17. The two versions of a gene for a character are called:", o: ["Factors", "Alleles", "Traits", "DNA"], a: "Alleles" },
+                    { q: "Q18. Mendel's Law of Independent Assortment is based on:", o: ["Monohybrid cross", "Dihybrid cross", "Back cross", "Test cross"], a: "Dihybrid cross" },
+                    { q: "Q19. Which of the following is NOT a variation in human beings?", o: ["Eye colour", "Free ear lobes", "Attached ear lobes", "Number of limbs"], a: "Number of limbs" },
+                    { q: "Q20. When a new plant is formed as a result of sexual reproduction, it has:", o: ["Same DNA as parent", "Complete new DNA", "Mixed DNA from two parents", "No DNA"], a: "Mixed DNA from two parents" },
+                    { q: "Q21. Small differences between individuals of the same species are called:", o: ["Evolution", "Speciation", "Variation", "Adaptation"], a: "Variation" },
+                    { q: "Q22. Chromosomes are made up of:", o: ["Proteins", "DNA", "Both A and B", "RNA"], a: "Both A and B" },
+                    { q: "Q23. If 'T' is for tall and 't' is for short, a plant with 'Tt' genotype will be:", o: ["Short", "Tall", "Medium", "None"], a: "Tall" },
+                    { q: "Q24. Total number of chromosomes in a human skin cell is:", o: ["23", "46", "22", "44"], a: "46" },
+                    { q: "Q25. The hidden trait in F1 generation is called:", o: ["Dominant", "Recessive", "Genotype", "Phenotype"], a: "Recessive" }
+                ];
+
+                document.write(heredityMCQs.map((item, index) => `
+                    <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(188, 19, 254, 0.3);">
+                        <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">MCQ ${index + 1}</span>
+                        <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">${item.q}</div>
+                        <div style="display: grid; gap: 8px; margin-top: 15px;">
+                            ${item.o.map(opt => `<div style="background: rgba(188, 19, 254, 0.05); border: 1px solid #330066; padding: 12px; border-radius: 12px; color: #e0e1dd; font-size: 0.9rem;">${opt}</div>`).join('')}
+                        </div>
+                        <button onclick="toggleHeredityAns(this)" style="width: 140px; height: 44px; margin-top: 20px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                        <div style="display: none; margin-top: 15px; padding: 12px; background: rgba(0, 242, 255, 0.1); border-left: 4px solid #00f2ff; color: #00f2ff; font-weight: bold; font-size: 0.9rem;">Correct: ${item.a}</div>
+                    </div>
+                `).join(''));
+
+                function toggleHeredityAns(btn) {
+                    const ans = btn.nextElementSibling;
+                    if (ans.style.display === "block") {
+                        ans.style.display = "none";
+                        btn.innerText = "SHOW ANSWER";
+                    } else {
+                        ans.style.display = "block";
+                        btn.innerText = "HIDE ANSWER";
+                    }
+                }
+            </script>
+        </div>
+        <div id="ch8-mcq-set2">
+            <script>
+                const heredityMCQsSet2 = [
+                    { q: "Q26. If a plant has genotype 'tt', its phenotype will be:", o: ["Tall", "Dwarf", "Medium", "None"], a: "Dwarf" },
+                    { q: "Q27. The information source for making proteins in the cell is:", o: ["Mitochondria", "Enzymes", "DNA", "Cytoplasm"], a: "DNA" },
+                    { q: "Q28. In Mendel's dihybrid cross, how many new combinations of traits appeared in F2?", o: ["1", "2", "3", "4"], a: "2" },
+                    { q: "Q29. A zygote which has an 'Y' chromosome from the father will be:", o: ["Girl", "Boy", "Both", "Either"], a: "Boy" },
+                    { q: "Q30. Which of the following is an example of an inherited trait?", o: ["Body weight", "Scar on face", "Eye colour", "Learning to swim"], a: "Eye colour" },
+                    { q: "Q31. The cell which results after the fusion of male and female gametes is:", o: ["Embryo", "Zygote", "Ovum", "Fetus"], a: "Zygote" },
+                    { q: "Q32. Mendel's Law of Segregation is also known as:", o: ["Law of dominance", "Law of purity of gametes", "Law of independent assortment", "None"], a: "Law of purity of gametes" },
+                    { q: "Q33. Which of the following is NOT a contrasting trait studied by Mendel?", o: ["Seed colour", "Flower position", "Leaf size", "Stem height"], a: "Leaf size" },
+                    { q: "Q34. Human females have sex chromosomes:", o: ["XX", "XY", "YY", "XO"], a: "XX" },
+                    { q: "Q35. The physical appearance of an individual is called:", o: ["Genotype", "Phenotype", "Allele", "Factor"], a: "Phenotype" },
+                    { q: "Q36. How many chromosomes are there in a human sperm?", o: ["46", "23", "22", "44"], a: "23" },
+                    { q: "Q37. Pure tall pea plant is crossed with a pure dwarf plant. F1 plants will be:", o: ["Pure tall", "Pure dwarf", "Hybrid tall", "Hybrid dwarf"], a: "Hybrid tall" },
+                    { q: "Q38. The unit of heredity is:", o: ["Chromosome", "Gene", "Nucleus", "Cell"], a: "Gene" },
+                    { q: "Q39. If a cross is made between two Tt plants, the percentage of dwarf plants will be:", o: ["25%", "50%", "75%", "100%"], a: "25%" },
+                    { q: "Q40. Sex of a child is determined by:", o: ["Mother's DNA", "Father's DNA", "Both parents", "Environment"], a: "Father's DNA" },
+                    { q: "Q41. Dominant genes are represented by:", o: ["Small letters", "Capital letters", "Numbers", "Symbols"], a: "Capital letters" },
+                    { q: "Q42. In a human cell, 22 pairs of chromosomes are called:", o: ["Sex chromosomes", "Autosomes", "Allosomes", "Genes"], a: "Autosomes" },
+                    { q: "Q43. The science of heredity was started by:", o: ["Darwin", "Mendel", "Lamarck", "Morgan"], a: "Mendel" },
+                    { q: "Q44. Mendel's dihybrid cross ratio 9:3:3:1 represents:", o: ["Genotype", "Phenotype", "Both", "None"], a: "Phenotype" },
+                    { q: "Q45. DNA stands for:", o: ["Deoxyribonucleic acid", "Diribonucleic acid", "Deoxynucleic acid", "None"], a: "Deoxyribonucleic acid" },
+                    { q: "Q46. A trait that is expressed in both homozygous and heterozygous conditions is:", o: ["Recessive", "Dominant", "Hidden", "None"], a: "Dominant" },
+                    { q: "Q47. If a cross results in 50% tall and 50% dwarf plants, the parents must be:", o: ["TT x tt", "Tt x tt", "Tt x Tt", "TT x Tt"], a: "Tt x tt" },
+                    { q: "Q48. Variations that occur in germ cells are:", o: ["Inherited", "Not inherited", "Temporary", "Acquired"], a: "Inherited" },
+                    { q: "Q49. Smallest part of DNA that codes for a specific character is:", o: ["Chromosome", "Gene", "Allele", "Nucleus"], a: "Gene" },
+                    { q: "Q50. Mendelian factors are now known as:", o: ["Cells", "Alleles", "Genes", "Chromosomes"], a: "Genes" }
+                ];
+
+                document.write(heredityMCQsSet2.map((item, index) => `
+                    <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(188, 19, 254, 0.3);">
+                        <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">MCQ ${index + 26}</span>
+                        <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">${item.q}</div>
+                        <div style="display: grid; gap: 8px; margin-top: 15px;">
+                            ${item.o.map(opt => `<div style="background: rgba(188, 19, 254, 0.05); border: 1px solid #330066; padding: 12px; border-radius: 12px; color: #e0e1dd; font-size: 0.9rem;">${opt}</div>`).join('')}
+                        </div>
+                        <button onclick="toggleHeredityAns(this)" style="width: 140px; height: 44px; margin-top: 20px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                        <div style="display: none; margin-top: 15px; padding: 12px; background: rgba(0, 242, 255, 0.1); border-left: 4px solid #00f2ff; color: #00f2ff; font-weight: bold; font-size: 0.9rem;">Correct: ${item.a}</div>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+        <div id="ch8-mcq-set3-hardest">
+            <script>
+                const heredityHardestMCQs = [
+                    { q: "Q51. If a round, yellow seeded pea plant (RrYy) is self-pollinated, the offspring with 'rrYY' genotype will be:", o: ["Round Yellow", "Wrinkled Yellow", "Round Green", "Wrinkled Green"], a: "Wrinkled Yellow" },
+                    { q: "Q52. The term 'Genetics' was coined by:", o: ["Mendel", "Bateson", "Morgan", "Johannsen"], a: "Bateson" },
+                    { q: "Q53. Which of the following is the actual method of sex determination in birds?", o: ["XY (Male), XX (Female)", "ZZ (Male), ZW (Female)", "XX (Male), XO (Female)", "None"], a: "ZZ (Male), ZW (Female)" },
+                    { q: "Q54. A cross between a tall plant (TT) and short plant (tt) resulted in F2 progeny. What is the probability of getting a 'Tt' genotype?", o: ["25%", "50%", "75%", "100%"], a: "50%" },
+                    { q: "Q55. Exchange of genetic material takes place in:", o: ["Vegetative propagation", "Asexual reproduction", "Sexual reproduction", "Budding"], a: "Sexual reproduction" },
+                    { q: "Q56. In human beings, the statistical probability of a female child is:", o: ["1/4", "1/2", "3/4", "1"], a: "1/2" },
+                    { q: "Q57. A Mendelian experiment consisted of breeding tall pea plants bearing violet flowers with short pea plants bearing white flowers. The progeny all bore violet flowers, but almost half of them were short. The genetic make-up of the tall parent was:", o: ["TTVV", "TtVV", "TtVv", "TTVv"], a: "TtVV" },
+                    { q: "Q58. Two pink colored flowers on crossing resulted in 1 red, 2 pink and 1 white flower. The nature of this cross is:", o: ["Dominance", "Incomplete dominance", "Co-dominance", "Recessiveness"], a: "Incomplete dominance" },
+                    { q: "Q59. The frequency of certain genes in a population changes over generations. This is known as:", o: ["Genetic drift", "Speciation", "Acquisition", "Heredity"], a: "Genetic drift" },
+                    { q: "Q60. Which part of the cell is the 'Blue Print' of life?", o: ["RNA", "DNA", "Cytoplasm", "Ribosome"], a: "DNA" },
+                    { q: "Q61. If a child has O blood group and the father has A group and mother has B group, what are the genotypes of parents?", o: ["IAIA and IBIB", "IAi and IBi", "IAi and IBIB", "ii and IAIB"], a: "IAi and IBi" },
+                    { q: "Q62. Mendel's work was rediscovered in 1900 by:", o: ["Darwin", "De Vries, Correns and Tschermak", "Morgan", "Watson and Crick"], a: "De Vries, Correns and Tschermak" },
+                    { q: "Q63. What is the number of linkaged groups in a human male?", o: ["23", "24", "22", "46"], a: "24" },
+                    { q: "Q64. In a dihybrid cross, the number of genotypes formed in F2 generation is:", o: ["4", "9", "16", "12"], a: "9" },
+                    { q: "Q65. A man with blood group A marries a woman with blood group O. Their child has blood group O. What is the genotype of the man?", o: ["IAIA", "IAi", "ii", "IAIB"], a: "IAi" },
+                    { q: "Q66. The concept of 'Inheritance of Acquired Characters' was given by:", o: ["Darwin", "Lamarck", "Mendel", "Weismann"], a: "Lamarck" },
+                    { q: "Q67. Which of these is a test cross?", o: ["Tt x Tt", "TT x tt", "Tt x tt", "TT x Tt"], a: "Tt x tt" },
+                    { q: "Q68. In humans, free earlobes is dominant over attached earlobes. If a heterozygous free-lobed man marries an attached-lobed woman, ratio of children will be:", o: ["3 free : 1 attached", "1 free : 1 attached", "All free", "All attached"], a: "1 free : 1 attached" },
+                    { q: "Q69. DNA copying leads to variation because:", o: ["It is a perfect process", "Biochemical reactions are not absolutely reliable", "It occurs only in plants", "Proteins are not made"], a: "Biochemical reactions are not absolutely reliable" },
+                    { q: "Q70. The sequence of nucleotides in a gene determines the sequence of:", o: ["Fats", "Carbohydrates", "Amino acids in proteins", "Vitamins"], a: "Amino acids in proteins" },
+                    { q: "Q71. What would be the number of chromosomes in the aleurone layer of a plant with 42 chromosomes in its root tip?", o: ["21", "42", "63", "84"], a: "63" },
+                    { q: "Q72. In Mendel's experiment, the 'Factors' are carried by:", o: ["Blood", "Gametes", "Body cells", "Hormones"], a: "Gametes" },
+                    { q: "Q73. The trait which is expressed in F1 is 'Dominant' and the other is 'Recessive'. This is Mendel's:", o: ["1st Law", "2nd Law", "3rd Law", "None"], a: "1st Law" },
+                    { q: "Q74. How many types of gametes will be produced by a plant with genotype 'AaBb'?", o: ["2", "4", "8", "16"], a: "4" },
+                    { q: "Q75. The mechanism by which variations are created and inherited is the basis of:", o: ["Reproduction", "Evolution", "Respiration", "Digestion"], a: "Evolution" }
+                ];
+
+                document.write(heredityHardestMCQs.map((item, index) => `
+                    <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(188, 19, 254, 0.3);">
+                        <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD MCQ ${index + 51}</span>
+                        <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">${item.q}</div>
+                        <div style="display: grid; gap: 8px; margin-top: 15px;">
+                            ${item.o.map(opt => `<div style="background: rgba(188, 19, 254, 0.05); border: 1px solid #330066; padding: 12px; border-radius: 12px; color: #e0e1dd; font-size: 0.9rem;">${opt}</div>`).join('')}
+                        </div>
+                        <button onclick="toggleHeredityAns(this)" style="width: 140px; height: 44px; margin-top: 20px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                        <div style="display: none; margin-top: 15px; padding: 12px; background: rgba(0, 242, 255, 0.1); border-left: 4px solid #00f2ff; color: #00f2ff; font-weight: bold; font-size: 0.9rem;">Correct: ${item.a}</div>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+        <div id="ch8-mcq-set4-ultimate">
+            <script>
+                const heredityUltimateMCQs = [
+                    { q: "Q76. If the sperm of a father carrying an X chromosome fertilizes an egg, the child will be:", o: ["XY (Boy)", "XX (Girl)", "XXY (Abnormal)", "YY (Not possible)"], a: "XX (Girl)" },
+                    { q: "Q77. A Mendelian 'Factor' that is always expressed even in the presence of an alternative factor is:", o: ["Recessive", "Dominant", "Co-dominant", "Lethal"], a: "Dominant" },
+                    { q: "Q78. What is the phenotypic ratio of a dihybrid cross if the genes were linked (No independent assortment)?", o: ["9:3:3:1", "3:1", "1:2:1", "1:1:1:1"], a: "3:1" },
+                    { q: "Q79. Which of the following blood groups is considered a 'Universal Donor'?", o: ["AB", "A", "B", "O"], a: "O" },
+                    { q: "Q80. In a monohybrid cross, what is the probability of a homozygous dominant offspring in F2?", o: ["1/4", "1/2", "3/4", "1/1"], a: "1/4" },
+                    { q: "Q81. The theory of 'Natural Selection' was proposed by:", o: ["Lamarck", "Mendel", "Charles Darwin", "Weismann"], a: "Charles Darwin" },
+                    { q: "Q82. If both parents have blood group 'AB', which blood group is NOT possible in their children?", o: ["A", "B", "AB", "O"], a: "O" },
+                    { q: "Q83. A cross between a hybrid tall plant (Tt) and another hybrid tall plant (Tt) results in how many genotypes?", o: ["2", "3", "4", "1"], a: "3" },
+                    { q: "Q84. The process of DNA copying is a/an:", o: ["Physical process", "Biochemical process", "Electrical process", "Mechanical process"], a: "Biochemical process" },
+                    { q: "Q85. Which chromosome is physically smaller in size in humans?", o: ["X", "Y", "Both are equal", "Varies by person"], a: "Y" },
+                    { q: "Q86. If 100 plants are produced in F2 of a monohybrid cross, approximately how many will be pure tall?", o: ["25", "50", "75", "100"], a: "25" },
+                    { q: "Q87. In a dihybrid cross, how many individuals in F2 (out of 16) are homozygous for both traits?", o: ["1", "2", "4", "9"], a: "4" },
+                    { q: "Q88. Which of the following is NOT a basis for variation?", o: ["DNA copying error", "Sexual reproduction", "Asexual reproduction", "Mutations"], a: "Asexual reproduction" },
+                    { q: "Q89. The genetic material in most organisms is DNA, but in some viruses, it is:", o: ["Protein", "RNA", "Lipid", "Carbohydrate"], a: "RNA" },
+                    { q: "Q90. A heterozygous tall plant (Tt) is crossed with a homozygous tall plant (TT). The percentage of dwarf plants will be:", o: ["0%", "25%", "50%", "100%"], a: "0%" },
+                    { q: "Q91. Sex-linked diseases like Color Blindness are mostly carried by which chromosome?", o: ["Autosomes", "X Chromosome", "Y Chromosome", "Mitochondria"], a: "X Chromosome" },
+                    { q: "Q92. What is the diploid number of chromosomes in a human being?", o: ["23", "46", "22", "44"], a: "46" },
+                    { q: "Q93. The specific position of a gene on a chromosome is called:", o: ["Allele", "Locus", "Trait", "Factor"], a: "Locus" },
+                    { q: "Q94. If the mother has blood group 'O' and child has blood group 'O', the father cannot be:", o: ["Group A", "Group B", "Group AB", "Group O"], a: "Group AB" },
+                    { q: "Q95. The experiment to prove that 'life comes from pre-existing life' was done by:", o: ["Darwin", "Louis Pasteur", "Mendel", "Miller"], a: "Louis Pasteur" },
+                    { q: "Q96. If a sperm carrying no sex chromosome (due to error) fertilizes an egg with X, it leads to:", o: ["Turner Syndrome", "Down Syndrome", "Normal Girl", "Normal Boy"], a: "Turner Syndrome" },
+                    { q: "Q97. In a Mendelian cross, the 'F' in F1 stands for:", o: ["Final", "First", "Filial", "Factor"], a: "Filial" },
+                    { q: "Q98. How many different types of gametes can be formed by genotype 'Aabb'?", o: ["1", "2", "3", "4"], a: "2" },
+                    { q: "Q99. The transmission of traits from one generation to next is 'Heredity', while the differences are:", o: ["Evolution", "Variation", "Adaptation", "Speciation"], a: "Variation" },
+                    { q: "Q100. If Mendel had chosen traits that were on the same chromosome very close to each other, he would NOT have discovered:", o: ["Law of Dominance", "Law of Segregation", "Law of Independent Assortment", "None"], a: "Law of Independent Assortment" }
+                ];
+
+                document.write(heredityUltimateMCQs.map((item, index) => `
+                    <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(188, 19, 254, 0.3);">
+                        <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">MCQ ${index + 76}</span>
+                        <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">${item.q}</div>
+                        <div style="display: grid; gap: 8px; margin-top: 15px;">
+                            ${item.o.map(opt => `<div style="background: rgba(188, 19, 254, 0.05); border: 1px solid #330066; padding: 12px; border-radius: 12px; color: #e0e1dd; font-size: 0.9rem;">${opt}</div>`).join('')}
+                        </div>
+                        <button onclick="toggleHeredityAns(this)" style="width: 140px; height: 44px; margin-top: 20px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                        <div style="display: none; margin-top: 15px; padding: 12px; background: rgba(0, 242, 255, 0.1); border-left: 4px solid #00f2ff; color: #00f2ff; font-weight: bold; font-size: 0.9rem;">Correct: ${item.a}</div>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+        <div id="ch8-long-questions-part1">
+            
+            <h2 style="text-align: center; color: #bc13fe; font-size: 1.8rem; font-weight: 900; margin: 40px 0 25px 0; text-transform: uppercase; text-shadow: 0 0 15px #bc13fe;">
+                -- LONG QUESTIONS --
+            </h2>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(188, 19, 254, 0.3);">
+                <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q1</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">How do Mendel's experiments show that traits may be dominant or recessive?</div>
+                
+                <button onclick="toggleHeredityLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(188, 19, 254, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> Mendel crossed pure tall (TT) pea plants with pure dwarf (tt) pea plants.<br>
+                    1. In the <b>F1 generation</b>, all plants were tall. This showed that only the 'Tall' trait expressed itself, making it the <b>Dominant trait</b>.<br>
+                    2. The 'Dwarf' trait did not disappear but was hidden. <br>
+                    3. In the <b>F2 generation</b> (by selfing F1), dwarf plants reappeared in a 3:1 ratio. This proved that the 'Dwarf' trait was <b>Recessive</b> and only expresses when both alleles are 'tt'.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(188, 19, 254, 0.3);">
+                <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q2</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">How do Mendel's experiments show that traits are inherited independently?</div>
+                
+                <button onclick="toggleHeredityLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(188, 19, 254, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> This was shown by the <b>Dihybrid Cross</b> (using two traits: seed shape and color).<br>
+                    1. Mendel crossed Round-Yellow (RRYY) with Wrinkled-Green (rryy) plants.<br>
+                    2. In F1, all were Round-Yellow (RrYy).<br>
+                    3. In F2, he got four types: Round-Yellow, Round-Green, Wrinkled-Yellow, and Wrinkled-Green in the ratio <b>9:3:3:1</b>.<br>
+                    4. The appearance of <b>new combinations</b> (Round-Green and Wrinkled-Yellow) proved that seed shape and seed color are inherited independently of each other.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(188, 19, 254, 0.3);">
+                <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q3</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">Explain the mechanism of sex determination in human beings.</div>
+                
+                <button onclick="toggleHeredityLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(188, 19, 254, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> In humans, sex is determined genetically:<br>
+                    1. Females have two identical sex chromosomes: <b>XX</b>.<br>
+                    2. Males have two different sex chromosomes: <b>XY</b>.<br>
+                    3. All eggs produced by a mother carry an <b>X</b> chromosome.<br>
+                    4. Sperms produced by a father are of two types: 50% carry <b>X</b> and 50% carry <b>Y</b>.<br>
+                    5. If a sperm with X fertilizes the egg → Child is <b>Female (XX)</b>. <br>
+                    6. If a sperm with Y fertilizes the egg → Child is <b>Male (XY)</b>. <br>Thus, the father's sperm determines the sex of the baby.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(188, 19, 254, 0.3);">
+                <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q4</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">What are the different ways in which individuals with a particular trait may increase in a population?</div>
+                
+                <button onclick="toggleHeredityLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(188, 19, 254, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> Traits can increase via:<br>
+                    1. <b>Natural Selection:</b> If a trait provides a survival advantage (e.g., green color in beetles hiding from birds), it is naturally selected and increases.<br>
+                    2. <b>Genetic Drift:</b> An accidental change in gene frequency due to a random event (e.g., an elephant stepping on a bush) can increase a trait even if it has no survival advantage.<br>
+                    3. <b>Variations:</b> Small changes during DNA copying that might prove beneficial over time.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(188, 19, 254, 0.3);">
+                <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q5</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">Differentiate between Inherited and Acquired traits with examples.</div>
+                
+                <button onclick="toggleHeredityLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(188, 19, 254, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    1. <b>Inherited Traits:</b> These are passed from parents to offspring through DNA in germ cells. They can be seen in future generations. <br><i>Ex: Eye color, Height, Attached earlobes.</i><br>
+                    2. <b>Acquired Traits:</b> These are developed by an individual during their lifetime due to environment or experiences. They do not change DNA of germ cells and are NOT passed to next generation. <br><i>Ex: Learning to dance, Scar on skin, Weight loss due to starvation.</i></p>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            function toggleHeredityLong(btn) {
+                const ans = btn.nextElementSibling;
+                if (ans.style.display === "block") {
+                    ans.style.display = "none";
+                    btn.innerText = "SHOW ANSWER";
+                } else {
+                    ans.style.display = "block";
+                    btn.innerText = "HIDE ANSWER";
+                }
+            }
+        </script>
+        <div id="ch8-long-questions-part2">
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(188, 19, 254, 0.3);">
+                <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q6</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">Explain Mendel’s Law of Segregation with an example.</div>
+                
+                <button onclick="toggleHeredityLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(188, 19, 254, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> This law states that every individual possesses two alleles for any particular trait, and these alleles <b>separate (segregate)</b> during gamete formation.<br>
+                    1. <b>Example:</b> In a tall plant with genotype <b>Tt</b>, the alleles 'T' and 't' do not mix.<br>
+                    2. When this plant produces gametes, 50% gametes carry 'T' and 50% carry 't'.<br>
+                    3. This ensures that each gamete receives only one allele. This is why it is also called the <b>Law of Purity of Gametes</b>.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(188, 19, 254, 0.3);">
+                <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q7</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">"Genes and chromosomes have a similar behavior." Justify this statement.</div>
+                
+                <button onclick="toggleHeredityLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(188, 19, 254, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> Genes are segments of DNA located on chromosomes. Their behavior is similar because:<br>
+                    1. Both occur in <b>pairs</b> in normal body cells (diploid).<br>
+                    2. Both <b>segregate</b> during gamete formation so that a gamete gets only one of the pair.<br>
+                    3. The <b>independent assortment</b> of chromosomes during meiosis leads to the independent assortment of genes. Thus, chromosomes are the actual 'vehicles' of heredity.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(188, 19, 254, 0.3);">
+                <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q8</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">Explain how the cellular DNA controls the phenotype (appearance) of an organism.</div>
+                
+                <button onclick="toggleHeredityLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(188, 19, 254, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> <br>1. DNA is the information source for making <b>Proteins</b>.<br>2. A specific Gene provides instructions for a specific protein (usually an enzyme).<br>3. <b>Example:</b> Plant height depends on a growth hormone. If the gene for that hormone is efficient, more hormone is produced, and the plant becomes <b>Tall</b>.<br>4. If the gene is altered (mutation) or inefficient, less hormone is produced, resulting in a <b>Short</b> plant. Thus, DNA controls traits via proteins.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(188, 19, 254, 0.3);">
+                <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q9</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">Why did Mendel choose the pea plant for his experiments? (Give 5 reasons)</div>
+                
+                <button onclick="toggleHeredityLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(188, 19, 254, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> Mendel chose <i>Pisum sativum</i> because:<br>
+                    1. It has distinct <b>contrasting characters</b> (Tall/Short, Round/Wrinkled).<br>
+                    2. It has a <b>short life span</b>, allowing him to study many generations in a short time.<br>
+                    3. It produces a <b>large number of seeds</b> in a single generation.<br>
+                    4. It is naturally <b>self-pollinating</b> but can be easily cross-pollinated.<br>
+                    5. It is easy to grow and maintain in a garden.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 20px rgba(188, 19, 254, 0.3);">
+                <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">LONG Q10</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">What is a Punnett Square? Use it to show the F2 generation of a cross between Tt and Tt.</div>
+                
+                <button onclick="toggleHeredityLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(188, 19, 254, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> A Punnett Square is a graphical representation used to calculate the probability of all possible genotypes of offspring.<br>
+                    <b>Cross: Tt x Tt</b><br>
+                    - Gametes: T and t | T and t<br>
+                    <b>Punnett Square:</b><br>
+                    [ T ] [ t ]<br>
+                    [ T ] | TT | Tt |<br>
+                    [ t ] | Tt | tt |<br><br>
+                    <b>Results:</b><br>
+                    - Genotypes: 1 TT, 2 Tt, 1 tt (1:2:1)<br>
+                    - Phenotypes: 3 Tall, 1 Dwarf (3:1)</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="ch8-long-questions-hardest">
+            
+            <h2 style="text-align: center; color: #bc13fe; font-size: 1.8rem; font-weight: 900; margin: 40px 0 25px 0; text-transform: uppercase; text-shadow: 0 0 20px #bc13fe, 0 0 30px #00f2ff;">
+                -- HARDEST QUESTIONS --
+            </h2>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 25px rgba(188, 19, 254, 0.4);">
+                <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q11</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">Explain how Mendelian factors (genes) are physically expressed in an organism. What is the role of enzymes in this process?</div>
+                
+                <button onclick="toggleHeredityLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(188, 19, 254, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> Genes express themselves by controlling the production of proteins.<br>
+                    1. <b>DNA as Info Source:</b> Cellular DNA is the information source for making proteins.<br>
+                    2. <b>Gene to Enzyme:</b> A section of DNA (gene) provides information for a specific enzyme (protein).<br>
+                    3. <b>Enzyme Function:</b> Enzymes catalyze biochemical reactions. For example, an enzyme triggers the production of growth hormones.<br>
+                    4. <b>Trait Expression:</b> If the enzyme works efficiently, more hormone is made, resulting in a tall plant. If the gene is altered, the enzyme becomes less efficient, less hormone is made, and the plant remains short.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 25px rgba(188, 19, 254, 0.4);">
+                <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q12</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">Work out a cross to show the inheritance of two pairs of contrasting traits (Dihybrid Cross). Mention the Phenotypic ratio of F2 generation.</div>
+                
+                <button onclick="toggleHeredityLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(188, 19, 254, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> <br>
+                    <b>Parents:</b> Round Yellow (RRYY) x Wrinkled Green (rryy)<br>
+                    <b>Gametes:</b> RY and ry<br>
+                    <b>F1 Generation:</b> RrYy (All Round Yellow)<br>
+                    <b>F1 Selfing:</b> RrYy x RrYy<br>
+                    <b>F2 Generation Gametes:</b> RY, Ry, rY, ry (from both parents).<br>
+                    <b>Phenotypic Ratio:</b> 9:3:3:1<br>
+                    - 9 Round Yellow<br>
+                    - 3 Round Green<br>
+                    - 3 Wrinkled Yellow<br>
+                    - 1 Wrinkled Green<br>
+                    This confirms the Law of Independent Assortment.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 25px rgba(188, 19, 254, 0.4);">
+                <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q13</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">Why is the ratio of boys and girls in a population usually 1:1? Explain with a genetic diagram.</div>
+                
+                <button onclick="toggleHeredityLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(188, 19, 254, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> <br>
+                    1. All human females produce ova (eggs) with only <b>X</b> chromosomes.<br>
+                    2. Males produce two types of sperms in <b>equal proportions (50:50)</b>: one half carrying X and the other half carrying Y.<br>
+                    3. <b>Random Fertilization:</b> There is a 50% chance that an X-sperm will fertilize the egg (resulting in a girl, XX) and a 50% chance that a Y-sperm will fertilize it (resulting in a boy, XY).<br>
+                    4. Since the probability of X-sperm and Y-sperm meeting an egg is equal, the ratio in the population stays approximately 1:1.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 25px rgba(188, 19, 254, 0.4);">
+                <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q14</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">Only variations that confer an advantage to an individual organism will survive in a population. Do you agree? Why or why not?</div>
+                
+                <button onclick="toggleHeredityLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(188, 19, 254, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b> Not necessarily. <br>
+                    1. <b>Natural Selection:</b> If a variation provides a survival advantage (like better camouflage), it will definitely be passed on and increase in the population.<br>
+                    2. <b>Genetic Drift:</b> However, some variations do not provide any advantage but still survive due to <b>accidental</b> changes in small populations. For example, a random event might kill off all members of a species except those with a specific neutral variation.<br>
+                    3. <b>Conclusion:</b> While advantageous variations are more likely to survive, neutral variations can also persist due to chance events or genetic drift.</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="ch8-long-questions-extreme">
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 25px rgba(188, 19, 254, 0.4);">
+                <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q15</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">What is the 'Law of Independent Assortment'? Explain why this law does not hold true for genes located closely on the same chromosome.</div>
+                
+                <button onclick="toggleHeredityLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(188, 19, 254, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    1. <b>Definition:</b> It states that when two pairs of traits are combined in a hybrid, the segregation of one pair of characters is independent of the other pair.<br>
+                    2. <b>The Exception (Linkage):</b> This law works because genes for different traits are usually on different chromosomes. <br>
+                    3. <b>Why it fails:</b> If two genes are located very close to each other on the <b>same chromosome</b>, they tend to be inherited together. This phenomenon is called <b>Linkage</b>. In such cases, the traits do not assort independently, and the 9:3:3:1 ratio is not obtained.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 25px rgba(188, 19, 254, 0.4);">
+                <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q16</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">Contrast 'Genotype' and 'Phenotype'. Can two organisms have the same phenotype but different genotypes? Illustrate with Mendel’s F2 generation.</div>
+                
+                <button onclick="toggleHeredityLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(188, 19, 254, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    1. <b>Genotype:</b> The genetic constitution of an organism (e.g., TT, Tt).<br>
+                    2. <b>Phenotype:</b> The observable physical characteristics (e.g., Tall, Dwarf).<br>
+                    3. <b>Same Phenotype, Different Genotype:</b> Yes, it is possible due to Dominance. <br>
+                    4. <b>Illustration:</b> In Mendel's F2 generation, both <b>TT</b> (Homozygous Tall) and <b>Tt</b> (Heterozygous Tall) look exactly the same (Phenotype = Tall). However, their genetic makeup (Genotype) is different. This is why the phenotypic ratio is 3:1 while the genotypic ratio is 1:2:1.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 25px rgba(188, 19, 254, 0.4);">
+                <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q17</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">Explain the importance of 'Variation' in a species. How does sexual reproduction facilitate this better than asexual reproduction?</div>
+                
+                <button onclick="toggleHeredityLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(188, 19, 254, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    1. <b>Importance:</b> Variations allow species to adapt to environmental changes (like global warming or new diseases). It prevents the entire species from being wiped out.<br>
+                    2. <b>Sexual vs Asexual:</b> In asexual reproduction, DNA copying is the only source of variation, which is very slow and minimal.<br>
+                    3. <b>Sexual Advantage:</b> It involves the fusion of gametes from two different individuals. This creates a <b>new combination of DNA</b>. Additionally, during meiosis (gamete formation), "crossing over" of chromosomes occurs, which reshuffles the genetic material, leading to high diversity.</p>
+                </div>
+            </div>
+
+            <div class="mega-card" style="margin-bottom: 25px; border: 2.5px solid #bc13fe; background: #120024; border-radius: 25px; padding: 25px 20px; box-shadow: 0 0 25px rgba(188, 19, 254, 0.4);">
+                <span class="page-label" style="background: #00f2ff; color: #000; padding: 6px 18px; border-radius: 8px; font-weight: 800; font-size: 0.8rem; display: inline-block; margin-bottom: 20px;">HARD Q18</span>
+                <div class="topic-h" style="color: #ffffff; font-size: 0.95rem; font-weight: 900; margin-bottom: 15px; text-shadow: 0 0 10px #bc13fe;">Why are traits acquired during the lifetime of an individual not inherited? Explain with the example of the tail-less mice experiment.</div>
+                
+                <button onclick="toggleHeredityLong(this)" style="width: 140px; height: 44px; background: transparent; border: 2px solid #00f2ff; color: #00f2ff; border-radius: 12px; font-weight: 800; cursor: pointer; font-size: 0.75rem; box-shadow: 0 0 10px rgba(0, 242, 255, 0.5);">SHOW ANSWER</button>
+                
+                <div style="display: none; margin-top: 15px; border-top: 1px solid rgba(188, 19, 254, 0.3); padding-top: 15px;">
+                    <p style="font-size: 0.9rem; color: #e0e1dd; line-height: 1.6;"><b>Answer:</b><br>
+                    1. <b>The Principle:</b> Only changes in the DNA of <b>germ cells</b> (gametes) are passed to the next generation. Changes in somatic (body) cells do not affect the DNA of the next generation.<br>
+                    2. <b>Experiment:</b> Scientist August Weismann cut off the tails of mice for 21 generations.<br>
+                    3. <b>Observation:</b> Even after 21 generations, the offspring were born with full tails.<br>
+                    4. <b>Conclusion:</b> Cutting the tail is an acquired change in somatic cells. It does not change the genes in the sperm or egg. Therefore, acquired traits are not inherited.</p>
+                </div>
+            </div>
+
+        </div>
+
+</body>
+</html>

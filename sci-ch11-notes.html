@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 11 | Electricity Ultra Pro Notes</title>
+    <style>
+        :root {
+            --neon-red: #ff003c;
+            --neon-gold: #ffcc00;
+            --bg-dark: #0a0a0a;
+        }
+        body {
+            background-color: var(--bg-dark);
+            color: #eee;
+            font-family: 'Trebuchet MS', sans-serif;
+            margin: 0; padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* STICKY HEADER - Full Lighting Effect */
+        .header {
+            position: sticky; top: 0; z-index: 9999;
+            background: rgba(10, 10, 10, 0.95);
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 12px 20px;
+            border-bottom: 3px solid var(--neon-red);
+            box-shadow: 0 0 25px var(--neon-red);
+        }
+        .back-btn {
+            border: 2px solid var(--neon-gold);
+            color: var(--neon-gold);
+            padding: 7px 20px; border-radius: 8px;
+            text-decoration: none; font-weight: bold;
+            text-shadow: 0 0 10px var(--neon-gold);
+            box-shadow: inset 0 0 5px var(--neon-gold);
+            font-size: 0.9rem;
+        }
+        .topper-tag { text-align: right; }
+        .topper-tag b { color: #fff; display: block; font-size: 1.1rem; }
+        .topper-tag span { color: var(--neon-gold); font-size: 0.7rem; font-weight: bold; letter-spacing: 1px; }
+
+        .container { padding: 15px; }
+
+        .main-title {
+            text-align: center; color: var(--neon-red);
+            font-size: 2.2rem; margin: 30px 0;
+            text-shadow: 0 0 20px var(--neon-red), 0 0 40px #ff0000;
+            letter-spacing: 3px;
+        }
+
+        /* 15+ PAGE CARDS STYLING */
+        .mega-page {
+            border: 2px solid var(--neon-red);
+            background: linear-gradient(145deg, #1a0005, #0a0a0a);
+            border-radius: 15px; padding: 18px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 15px rgba(255, 0, 60, 0.2);
+            position: relative;
+        }
+        .page-num {
+            position: absolute; top: -15px; right: 20px;
+            background: var(--neon-red); color: white;
+            padding: 2px 12px; border-radius: 5px;
+            font-weight: bold; font-size: 0.8rem;
+            box-shadow: 0 0 10px var(--neon-red);
+        }
+        h2 { color: var(--neon-gold); font-size: 1.3rem; margin-top: 0; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        
+        .box {
+            border-left: 4px solid var(--neon-gold);
+            background: rgba(255, 204, 0, 0.05);
+            padding: 12px; margin: 15px 0;
+            font-size: 0.95rem; line-height: 1.5;
+        }
+        .formula {
+            display: block; text-align: center;
+            font-size: 1.4rem; color: #fff;
+            background: rgba(255, 0, 60, 0.1);
+            margin: 10px 0; padding: 10px;
+            border: 1px dashed var(--neon-gold);
+            border-radius: 8px;
+        }
+
+        .show-btn {
+            background: var(--neon-red); color: white;
+            border: none; padding: 10px; width: 100%;
+            border-radius: 8px; font-weight: bold; cursor: pointer;
+            margin-top: 10px; box-shadow: 0 4px 10px rgba(255, 0, 60, 0.4);
+        }
+        .ans-content { display: none; padding: 15px; background: #000; margin-top: 10px; border-radius: 8px; border: 1px solid #333; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <a href="sci-chapters.html" class="back-btn">BACK</a>
+        <div class="topper-tag">
+            <b>SMART STUDY</b>
+            <span>FOR TOPPERS</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="main-title">ELECTRICITY ⚡</h1>
+
+        <div class="mega-page">
+            <span class="page-num">PAGE 1</span>
+            <h2>Concept of Electric Charge (Q)</h2>
+            <div class="box">
+                Charge atom ki property hai. Ye do type ke hote hain: <b>Positive (+)</b> aur <b>Negative (-)</b>.
+                Same charges repel karte hain, opposite attract.
+            </div>
+            <div class="formula">Q = n × e</div>
+            <p style="font-size: 0.8rem;">(n = No. of electrons, e = 1.6 × 10⁻¹⁹ C)</p>
+        </div>
+
+        <div class="mega-page">
+            <span class="page-num">PAGE 2</span>
+            <h2>Electric Current (I)</h2>
+            <div class="box">
+                "Rate of flow of charge" ko current kehte hain. Current hamesha high potential se low potential ki taraf jata hai.
+            </div>
+            <div class="formula">I = Q / t</div>
+            <p>Unit: <b>Ampere (A)</b>. Isko measure karne ke liye <b>Ammeter</b> use hota hai.</p>
+        </div>
+
+        <div class="mega-page">
+            <span class="page-num">PAGE 3</span>
+            <h2>Potential Difference (V)</h2>
+            <div class="box">
+                Ek unit charge ko ek point se dusre point tak move karne mein jo kaam (Work) hota hai.
+            </div>
+            <div class="formula">V = W / Q</div>
+            <p>Unit: <b>Volt (V)</b>. Isko measure karne ke liye <b>Voltmeter</b> parallel mein lagate hain.</p>
+        </div>
+
+        <div class="mega-page">
+            <span class="page-num">PAGE 4</span>
+            <h2>Ohm's Law (The Heart of Chapter)</h2>
+            <div class="box">
+                Temperature constant rahe toh current (I) hamesha voltage (V) ke directly proportional hota hai.
+            </div>
+            <div class="formula">V = I × R</div>
+            <button class="show-btn" onclick="toggle(this)">SHOW CONSTANT LOGIC</button>
+            <div class="ans-content">
+                Yahan <b>R</b> Resistance hai jo har material ke liye fixed (constant) hota hai. Iska graph hamesha ek <b>Straight Line</b> hota hai.
+            </div>
+        </div>
+
+        <div class="mega-page">
+            <span class="page-num">PAGE 5</span>
+            <h2>Resistance (R) & Factors</h2>
+            <div class="box">
+                Current ke raaste mein aane wali rukawat ko Resistance kehte hain. 
+            </div>
+            <ul>
+                <li>Length (L) badhne se R badhta hai.</li>
+                <li>Area (A) badhne se R kam hota hai.</li>
+                <li>Material aur Temperature par depend karta hai.</li>
+            </ul>
+        </div>
+
+        <div class="mega-page">
+            <span class="page-num">PAGE 6</span>
+            <h2>Resistivity (ρ - Rho)</h2>
+            <div class="box">
+                Ye material ki intrinsic property hai. Ye shape ya size par depend nahi karti.
+            </div>
+            <div class="formula">R = ρ (L / A)</div>
+            <p>Unit: <b>Ωm (Ohm-meter)</b>. Alloys ki resistivity metals se zyada hoti hai.</p>
+        </div>
+
+        <div class="mega-page">
+            <span class="page-num">PAGE 7</span>
+            <h2>Series Combination</h2>
+            <div class="box">
+                Jab resistors back-to-back ek hi line mein jude hon. Isme <b>Current (I) same</b> rehta hai.
+            </div>
+            <div class="formula">Rₛ = R₁ + R₂ + R₃</div>
+            <p>Isme total resistance sabse bade resistance se bhi zyada aata hai.</p>
+        </div>
+
+        <div class="mega-page">
+            <span class="page-num">PAGE 8</span>
+            <h2>Parallel Combination</h2>
+            <div class="box">
+                Gharon mein yahi use hota hai. Isme <b>Voltage (V) same</b> rehta hai aur current divide ho jata hai.
+            </div>
+            <div class="formula">1/Rₚ = 1/R₁ + 1/R₂ + 1/R₃</div>
+            <p>Isme total resistance sabse chote resistance se bhi kam ho jata hai.</p>
+        </div>
+
+        <div class="mega-page">
+            <span class="page-num">PAGE 9</span>
+            <h2>Heating Effect of Current</h2>
+            <div class="box">
+                Jab current kisi high resistance wire se guzarta hai, toh wire garam ho jata hai.
+            </div>
+            <div class="formula">H = I²Rt</div>
+            <p>Isko <b>Joule's Law of Heating</b> bhi kehte hain.</p>
+        </div>
+
+        <div class="mega-page">
+            <span class="page-num">PAGE 10</span>
+            <h2>Applications of Heating</h2>
+            <div class="box">
+                Bulb, Heater, Iron, aur Fuse isi concept par chalte hain.
+            </div>
+            <p><b>Bulb:</b> Tungsten (High melting point: 3380°C) use hota hai.<br>
+            <b>Fuse:</b> Safety device jo over-current par pighal jata hai.</p>
+        </div>
+
+        <div class="mega-page">
+            <span class="page-num">PAGE 11-15</span>
+            <h2>Electric Power & Energy (Pro Tips)</h2>
+            <div class="box">Board exams mein yahan se numerical pakka aayega!</div>
+            <div class="formula">P = V × I = I²R = V²/R</div>
+            <p>Commercial Unit of Energy: <b>1 kWh = 3.6 × 10⁶ Joules</b> (Isko 1 unit kehte hain).</p>
+            <button class="show-btn" onclick="toggle(this)">SHOW UNIT CONVERSION</button>
+            <div class="ans-content">
+                Numerical karte waqt power ko <b>kW</b> mein aur time ko <b>Hour</b> mein convert karna mat bhulna, tabhi Bill niklega!
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function toggle(btn) {
+            const ans = btn.nextElementSibling;
+            if (ans.style.display === "block") {
+                ans.style.display = "none";
+                btn.innerText = "SHOW LOGIC";
+            } else {
+                ans.style.display = "block";
+                btn.innerText = "HIDE LOGIC";
+            }
+        }
+    </script>
+        <h1 style="text-align: center; color: #ff003c; margin: 50px 0 30px; font-size: 1.8rem; text-transform: uppercase; text-shadow: 0 0 20px #ff003c; border: 2px dashed #ffcc00; padding: 12px; background: rgba(255, 0, 60, 0.1); border-radius: 10px;">
+            ☢️ ELECTRICITY: HARDCORE MCQS (1-25) ☢️
+        </h1>
+
+        <div id="mcq-container">
+            
+            <div class="mega-page" style="border-color: #ffcc00; padding: 15px;">
+                <span class="page-num" style="background: #ffcc00; color: #000; font-size: 0.7rem;">MCQ 01</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">A wire of resistance R is cut into five equal parts. If these are connected in parallel, the new resistance is R'. The ratio R/R' is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 1/25 &nbsp; B) 1/5 &nbsp; C) 5 &nbsp; D) 25</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: D) 25</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 02</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Which of the following does NOT represent electrical power?</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) I²R &nbsp; B) IR² &nbsp; C) VI &nbsp; D) V²/R</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) IR²</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 03</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">An electric bulb is rated 220V, 100W. At 110V, the power consumed will be:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 100W &nbsp; B) 75W &nbsp; C) 50W &nbsp; D) 25W</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: D) 25W</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 04</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Ratio of heat produced in series and parallel for two identical wires:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 1:2 &nbsp; B) 2:1 &nbsp; C) 1:4 &nbsp; D) 4:1</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) 1:4</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 05</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">The SI unit of resistivity ($\rho$) is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $\Omega$ &nbsp; B) $\Omega \cdot m$ &nbsp; C) $\Omega/m$ &nbsp; D) $m/\Omega$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) $\Omega \cdot m$</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 06</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Work done to move 2C charge across 12V potential difference:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 6J &nbsp; B) 24J &nbsp; C) 12J &nbsp; D) 48J</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) 24J</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 07</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">1 kWh is equivalent to how many Joules?</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $3.6 \times 10^6$ &nbsp; B) $3.6 \times 10^5$ &nbsp; C) $36 \times 10^6$ &nbsp; D) $3.6 \times 10^4$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) $3.6 \times 10^6$ J</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 08</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">In parallel combination, equivalent resistance is always:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Sum of all &nbsp; B) Less than smallest &nbsp; C) More than largest &nbsp; D) Average</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Less than smallest</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 09</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">If a material has resistivity $10^{12} \Omega \cdot m$, it is an:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Conductor &nbsp; B) Semiconductor &nbsp; C) Insulator &nbsp; D) Superconductor</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) Insulator</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 10</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Instrument used to measure Potential Difference:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Ammeter &nbsp; B) Voltmeter &nbsp; C) Rheostat &nbsp; D) Galvanometer</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Voltmeter</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 11</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Wire length doubled, Area halved. New resistance becomes:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 2 times &nbsp; B) 4 times &nbsp; C) Same &nbsp; D) 8 times</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) 4 times</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 12</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Which has higher resistivity at room temperature?</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Copper &nbsp; B) Iron &nbsp; C) Nichrome &nbsp; D) Silver</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) Nichrome</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 13</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Fuse wire is made of an alloy with:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) High MP &nbsp; B) Low MP &nbsp; C) Zero resistance &nbsp; D) High ductility</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Low MP (Melting Point)</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 14</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Charge on an electron is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $1.6 \times 10^{-19}$ C &nbsp; B) $1.6 \times 10^{19}$ C &nbsp; C) $6.25 \times 10^{18}$ C &nbsp; D) 1 C</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) $1.6 \times 10^{-19}$ C</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 15</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Relationship between V, I and R is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) V = I/R &nbsp; B) R = V/I &nbsp; C) I = V.R &nbsp; D) V = R/I</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) R = V/I</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 16</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">No. of electrons in 1 Coulomb charge:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $1.6 \times 10^{-19}$ &nbsp; B) $6.25 \times 10^{18}$ &nbsp; C) $10^{18}$ &nbsp; D) $1.6 \times 10^{18}$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) $6.25 \times 10^{18}$</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 17</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Resistivity of a wire depends on:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Length &nbsp; B) Area &nbsp; C) Shape &nbsp; D) Material</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: D) Material</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 18</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Three 2$\Omega$ resistors in parallel. Net resistance:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 6$\Omega$ &nbsp; B) 1.5$\Omega$ &nbsp; C) 0.67$\Omega$ &nbsp; D) 2$\Omega$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) 0.67$\Omega$ (2/3)</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 19</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Device to change resistance without changing voltage:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Ammeter &nbsp; B) Rheostat &nbsp; C) Voltmeter &nbsp; D) Fuse</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Rheostat</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 20</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Power of 100W bulb at 220V. Resistance is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 484$\Omega$ &nbsp; B) 100$\Omega$ &nbsp; C) 220$\Omega$ &nbsp; D) 48.4$\Omega$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) 484$\Omega$ ($V^2/P$)</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 21</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Ammeter is always connected in:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Parallel &nbsp; B) Series &nbsp; C) Mix &nbsp; D) Ground</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Series</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 22</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Brightness of a bulb depends on:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Current &nbsp; B) Resistance &nbsp; C) Power consumed &nbsp; D) Voltage only</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) Power consumed</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 23</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Electric potential is a ______ quantity.</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Vector &nbsp; B) Scalar &nbsp; C) Dimensionless &nbsp; D) Variable</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Scalar</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 24</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Rate at which energy is delivered:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Current &nbsp; B) Potential &nbsp; C) Power &nbsp; D) Work</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) Power</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 25</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Area under I-V graph represents:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Resistance &nbsp; B) Power &nbsp; C) Conductance &nbsp; D) Nothing useful</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: D) Nothing useful (Slope represents conductance)</div>
+            </div>
+
+        </div>
+
+    <script>
+        function toggle(btn) {
+            const ans = btn.nextElementSibling;
+            if (ans.style.display === "block") {
+                ans.style.display = "none";
+                btn.innerText = "SHOW ANSWER";
+            } else {
+                ans.style.display = "block";
+                btn.innerText = "HIDE ANSWER";
+            }
+        }
+    </script>
+            <div class="mega-page" style="border-color: #ffcc00; padding: 15px;">
+                <span class="page-num" style="background: #ffcc00; color: #000; font-size: 0.7rem;">MCQ 26</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">If the current through a resistor is increased by 100% (temperature remains constant), the increase in power dissipated will be:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 100% &nbsp; B) 200% &nbsp; C) 300% &nbsp; D) 400%</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) 300%<br><span style="font-weight:normal; color:#bbb;">Logic: $P = I^2R$. If I becomes 2I, P becomes 4P. Increase = 4P - P = 3P (300%).</span></div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 27</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">A cylindrical conductor of length L and uniform area of cross-section A has resistance R. Another conductor of length 2L and resistance R of the same material has area:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) A/2 &nbsp; B) 3A/2 &nbsp; C) 2A &nbsp; D) 3A</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) 2A</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 28</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">The resistivity does not change if:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Material is changed &nbsp; B) Temperature is changed &nbsp; C) Shape of resistor is changed &nbsp; D) Both material & temp changed</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) Shape of resistor is changed</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 29</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">In an electrical circuit, two resistors of 2$\Omega$ and 4$\Omega$ are connected in series to a 6V battery. The heat dissipated by 4$\Omega$ resistor in 5s will be:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 5J &nbsp; B) 10J &nbsp; C) 20J &nbsp; D) 30J</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) 20J<br><span style="font-weight:normal; color:#bbb;">Logic: $I = V/R = 6/6 = 1A$. $H = I^2Rt = 1^2 \times 4 \times 5 = 20J$.</span></div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 30</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">An electric kettle consumes 1kW of electric power when operated at 220V. A fuse wire of what rating must be used?</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 1A &nbsp; B) 2A &nbsp; C) 4A &nbsp; D) 5A</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: D) 5A<br><span style="font-weight:normal; color:#bbb;">Logic: $I = P/V = 1000/220 = 4.54A$. Next higher rating is 5A.</span></div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 31</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Two bulbs have powers 100W and 40W connected in series. Which bulb will glow brighter?</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 100W bulb &nbsp; B) 40W bulb &nbsp; C) Both same &nbsp; D) Depends on voltage</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) 40W bulb (In series, higher resistance bulb glows brighter).</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 32</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">If the radius of a wire is reduced to half, its resistance will become:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 2 times &nbsp; B) 4 times &nbsp; C) 8 times &nbsp; D) 16 times</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: D) 16 times<br><span style="font-weight:normal; color:#bbb;">Logic: $R \propto 1/r^4$ when volume is constant or $1/r^2$ if only radius changes. Standard case: 16x.</span></div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 33</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">The slope of V-I graph represents:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Resistance &nbsp; B) Conductance &nbsp; C) Charge &nbsp; D) Power</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) Resistance</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 34</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Unit of Electric Potential is Volt, which is also:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Joule/Coulomb &nbsp; B) Joule $\cdot$ Coulomb &nbsp; C) Coulomb/Joule &nbsp; D) Ampere/Ohm</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) Joule/Coulomb</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 35</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Which material is used for making standard resistors?</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Manganin &nbsp; B) Copper &nbsp; C) Aluminum &nbsp; D) Silver</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) Manganin (Low temperature coefficient).</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 36</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Current flowing through a conductor is 2A. Charge passing in 1 min is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 2C &nbsp; B) 120C &nbsp; C) 60C &nbsp; D) 30C</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) 120C ($Q = I \times t = 2 \times 60$)</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 37</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">How many Joules are there in 1 Watt-hour?</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 3.6J &nbsp; B) 360J &nbsp; C) 3600J &nbsp; D) $3.6 \times 10^6$ J</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) 3600J</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 38</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">The device used for maintaining a potential difference across a conductor:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Ammeter &nbsp; B) Voltmeter &nbsp; C) Battery/Cell &nbsp; D) Resistor</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) Battery/Cell</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 39</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">If two resistors of R and 2R are in parallel, their equivalent resistance is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 3R &nbsp; B) 2R/3 &nbsp; C) R/2 &nbsp; D) R/3</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) 2R/3</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 40</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">An electric bulb is connected to a 220V generator. The current is 0.5A. What is the power?</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 110W &nbsp; B) 440W &nbsp; C) 100W &nbsp; D) 220W</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) 110W ($P = V \times I$)</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 41</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Resistance of an ideal voltmeter is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Zero &nbsp; B) Low &nbsp; C) High &nbsp; D) Infinite</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: D) Infinite</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 42</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Why is Tungsten used in bulbs?</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) High MP &nbsp; B) High Resistivity &nbsp; C) Low Resistance &nbsp; D) Both A & B</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: D) Both A & B</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 43</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Domestic electrical supply in India is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 220V, 50Hz &nbsp; B) 110V, 60Hz &nbsp; C) 220V, 60Hz &nbsp; D) 440V, 50Hz</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) 220V, 50Hz</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 44</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">If three identical resistors are in series, net R is 9$\Omega$. If in parallel, net R is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 1$\Omega$ &nbsp; B) 3$\Omega$ &nbsp; C) 9$\Omega$ &nbsp; D) 27$\Omega$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) 1$\Omega$ (Each is 3$\Omega$; 3/3 = 1)</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 45</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Unit of Charge is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Ampere &nbsp; B) Volt &nbsp; C) Coulomb &nbsp; D) Watt</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) Coulomb</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 46</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">When n resistors each of r resistance are in parallel, net R is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) nr &nbsp; B) n/r &nbsp; C) r/n &nbsp; D) $r^n$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) r/n</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 47</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Relation between Work, Charge and Potential is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) V = W/Q &nbsp; B) W = V/Q &nbsp; C) Q = W.V &nbsp; D) V = Q/W</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) V = W/Q</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 48</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Filament of bulb glows while connecting wires don't because:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Higher R in filament &nbsp; B) Lower R in filament &nbsp; C) Higher I in filament &nbsp; D) None</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) Higher R in filament</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 49</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">A student carries out an experiment and plots V-I graph. The slope is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Power &nbsp; B) Resistivity &nbsp; C) Resistance &nbsp; D) Energy</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) Resistance</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 50</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">The resistance of a conductor is independent of its:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Length &nbsp; B) Area &nbsp; C) Temperature &nbsp; D) Current</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: D) Current</div>
+            </div>
+            <div class="mega-page" style="border-color: #ffcc00; padding: 15px;">
+                <span class="page-num" style="background: #ffcc00; color: #000; font-size: 0.7rem;">MCQ 51</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">A wire of resistance $R$ is stretched to double its length. Its new resistance will be:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $2R$ &nbsp; B) $4R$ &nbsp; C) $R/2$ &nbsp; D) $R/4$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) $4R$<br><span style="font-weight:normal; color:#bbb;">Logic: Stretching means Volume is constant. If $L$ doubles, $A$ becomes half. $R' = \rho(2L)/(A/2) = 4R$.</span></div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 52</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Which of the following is used to regulate current without much loss of heat?</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Resistor &nbsp; B) Rheostat &nbsp; C) Thermostat &nbsp; D) Galvanometer</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Rheostat</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 53</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Two resistors $10\Omega$ and $20\Omega$ are connected in series. The ratio of current $I_1/I_2$ is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 1:2 &nbsp; B) 2:1 &nbsp; C) 1:1 &nbsp; D) 1:4</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) 1:1 (In series, current remains same).</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 54</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">In parallel, the ratio of currents $I_1/I_2$ through $10\Omega$ and $20\Omega$ resistors is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 1:2 &nbsp; B) 2:1 &nbsp; C) 1:1 &nbsp; D) 4:1</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) 2:1 (Current is inversely proportional to Resistance in parallel).</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 55</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Which of the following has the least resistivity?</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Glass &nbsp; B) Ebonite &nbsp; C) Silver &nbsp; D) Mercury</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) Silver (Best conductor).</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 56</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">What happens to the resistance of a semiconductor on heating?</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Increases &nbsp; B) Decreases &nbsp; C) Same &nbsp; D) First increases then decreases</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Decreases</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 57</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">$1$ Volt is equal to:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $1\text{ J/s}$ &nbsp; B) $1\text{ J/C}$ &nbsp; C) $1\text{ C/J}$ &nbsp; D) $1\text{ A/}\Omega$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) $1\text{ J/C}$</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 58</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">A student plots V on Y-axis and I on X-axis. The slope is $0.5$. Resistance is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $0.5\Omega$ &nbsp; B) $2\Omega$ &nbsp; C) $1\Omega$ &nbsp; D) $4\Omega$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) $0.5\Omega$</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 59</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">If 'n' resistors each of resistance 'r' are in series, the net resistance is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $r/n$ &nbsp; B) $n/r$ &nbsp; C) $nr$ &nbsp; D) $n^2r$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) $nr$</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 60</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Power rating of an appliance is $P$ at $V$ volts. At $V/2$ volts, power is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $P/2$ &nbsp; B) $P/4$ &nbsp; C) $2P$ &nbsp; D) $4P$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) $P/4$ (Since $P \propto V^2$).</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 61</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Ohm's law is not applicable to:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) DC circuits &nbsp; B) High currents &nbsp; C) Semiconductors &nbsp; D) Small resistors</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) Semiconductors</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 62</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Which has more resistance: $100\text{ W}$ bulb or $60\text{ W}$ bulb (same voltage)?</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $100\text{ W}$ &nbsp; B) $60\text{ W}$ &nbsp; C) Both same &nbsp; D) Can't say</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) $60\text{ W}$ ($R = V^2/P$; less Power means more Resistance).</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 63</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">To get $2\Omega$ from $6\Omega$ resistors, you need to connect three of them in:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Series &nbsp; B) Parallel &nbsp; C) Two series, one parallel &nbsp; D) None</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Parallel ($6/3 = 2$).</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 64</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Energy dissipated in $R$ when current $I$ flows for time $t$:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $IRt$ &nbsp; B) $I^2Rt$ &nbsp; C) $VIt^2$ &nbsp; D) $I^2R/t$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) $I^2Rt$</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 65</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">The resistance of a human body (dry) is around:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $10\Omega$ &nbsp; B) $100\Omega$ &nbsp; C) $100,000\Omega$ &nbsp; D) $1,000,000\Omega$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) $100,000\Omega$</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 66</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Work done to move $Q$ charge through $V$ potential:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $V/Q$ &nbsp; B) $Q/V$ &nbsp; C) $V \times Q$ &nbsp; D) $V^2Q$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) $V \times Q$</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 67</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Unit of resistivity in terms of Base SI units is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $kg \cdot m^3 \cdot s^{-3} \cdot A^{-2}$ &nbsp; B) $kg \cdot m^2 \cdot s^{-3} \cdot A^{-2}$ &nbsp; C) $\Omega \cdot m$ &nbsp; D) Both A & C</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: D) Both A & C</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 68</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">$1\text{ mA}$ is equal to:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $10^{-3}\text{ A}$ &nbsp; B) $10^{-6}\text{ A}$ &nbsp; C) $10^3\text{ A}$ &nbsp; D) $10^6\text{ A}$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) $10^{-3}\text{ A}$</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 69</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Resistance of a wire is $L$. If its radius is doubled, $R$ becomes:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $R/2$ &nbsp; B) $R/4$ &nbsp; C) $2R$ &nbsp; D) $4R$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) $R/4$ ($R \propto 1/\text{Radius}^2$).</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 70</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Which law states $H = I^2Rt$?</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Ohm's Law &nbsp; B) Joule's Law &nbsp; C) Faraday's Law &nbsp; D) Newton's Law</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Joule's Law</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 71</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">The potential difference between Live and Neutral wire in India is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $0\text{ V}$ &nbsp; B) $110\text{ V}$ &nbsp; C) $220\text{ V}$ &nbsp; D) $440\text{ V}$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) $220\text{ V}$</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 72</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">The effective resistance of two resistors in parallel is $12/7 \Omega$. If one is $4\Omega$, other is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $2\Omega$ &nbsp; B) $3\Omega$ &nbsp; C) $4\Omega$ &nbsp; D) $6\Omega$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) $3\Omega$</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 73</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Current is a ______ quantity.</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Scalar &nbsp; B) Vector &nbsp; C) Both &nbsp; D) None</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) Scalar (It doesn't follow vector addition).</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 74</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">The filament of a bulb is made of:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Copper &nbsp; B) Nichrome &nbsp; C) Graphite &nbsp; D) Tungsten</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: D) Tungsten</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 75</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">$P = V^2/R$. If $V$ is constant and $R$ is tripled, $P$ becomes:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $3P$ &nbsp; B) $9P$ &nbsp; C) $P/3$ &nbsp; D) $P/9$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) $P/3$</div>
+            </div>
+            <div class="mega-page" style="border-color: #ffcc00; padding: 15px;">
+                <span class="page-num" style="background: #ffcc00; color: #000; font-size: 0.7rem;">MCQ 76</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Two wires of same material have lengths in ratio 1:2 and radii 2:1. Ratio of their resistances is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) 1:2 &nbsp; B) 1:4 &nbsp; C) 1:8 &nbsp; D) 8:1</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) 1:8<br><span style="font-weight:normal; color:#bbb;">Logic: $R \propto L/r^2$. Ratio = $(1/2) \times (1/2)^2 = 1/8$.</span></div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 77</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">The device used for protecting electrical circuits from short-circuiting is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Earth wire &nbsp; B) Fuse &nbsp; C) Ammeter &nbsp; D) Voltmeter</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Fuse</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 78</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Which of the following is correct for two resistors in series?</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $V = V_1 + V_2$ &nbsp; B) $I = I_1 + I_2$ &nbsp; C) $R = 1/R_1 + 1/R_2$ &nbsp; D) $V$ is same</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) $V = V_1 + V_2$</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 79</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">If 'n' identical resistors are first connected in series and then in parallel, the ratio $R_s/R_p$ is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $n$ &nbsp; B) $1/n$ &nbsp; C) $n^2$ &nbsp; D) $1/n^2$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) $n^2$</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 80</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">The amount of heat produced in a conductor is directly proportional to:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Square of current &nbsp; B) Resistance &nbsp; C) Time &nbsp; D) All of these</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: D) All of these ($H = I^2Rt$)</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 81</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">What is the work done in moving a unit positive charge from one point to another in an electric field?</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Electric Current &nbsp; B) Resistance &nbsp; C) Potential Difference &nbsp; D) Power</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) Potential Difference</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 82</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">The commercial unit of energy kWh can be written as:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $V \cdot A \cdot s$ &nbsp; B) $W \cdot s$ &nbsp; C) $W \cdot h$ &nbsp; D) $J/s$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) $W \cdot h$ (scaled up)</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 83</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Assertion: A fuse wire is always connected in parallel. Reason: It has high resistance.</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Both True &nbsp; B) Both False &nbsp; C) A-True, R-False &nbsp; D) A-False, R-True</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Both False (Connected in series; Low MP).</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 84</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Three resistors of $1\Omega, 2\Omega, 3\Omega$ are in parallel. Net resistance is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Less than $1\Omega$ &nbsp; B) $6\Omega$ &nbsp; C) $2\Omega$ &nbsp; D) More than $3\Omega$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) Less than $1\Omega$</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 85</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">The resistivity of insulators is in the order of:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $10^{-8} \Omega m$ &nbsp; B) $10^6 \Omega m$ &nbsp; C) $10^{12}$ to $10^{17} \Omega m$ &nbsp; D) Zero</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) $10^{12}$ to $10^{17} \Omega m$</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 86</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Electric current is the flow of:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Protons &nbsp; B) Electrons &nbsp; C) Neutrons &nbsp; D) Atoms</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Electrons</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 87</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">One Horse Power (HP) is equal to:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $746\text{ W}$ &nbsp; B) $1000\text{ W}$ &nbsp; C) $500\text{ W}$ &nbsp; D) $746\text{ kW}$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) $746\text{ W}$</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 88</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Which has higher resistance: An Ammeter or a Voltmeter?</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Ammeter &nbsp; B) Voltmeter &nbsp; C) Both same &nbsp; D) No resistance</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Voltmeter</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 89</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Symbol for Rheostat is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Zig-zag line &nbsp; B) Arrow over resistor &nbsp; C) Circle with A &nbsp; D) Parallel lines</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Arrow over resistor</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 90</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Formula for power in terms of $V$ and $R$:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $V^2R$ &nbsp; B) $V/R^2$ &nbsp; C) $V^2/R$ &nbsp; D) $VR^2$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) $V^2/R$</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 91</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Alloys are used in heaters because they:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Have low MP &nbsp; B) Don't oxidize at high temp &nbsp; C) Are cheap &nbsp; D) Conduct better</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Don't oxidize at high temp</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 92</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Conductance is the reciprocal of:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Resistance &nbsp; B) Current &nbsp; C) Potential &nbsp; D) Power</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) Resistance</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 93</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">SI unit of Power is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Joule &nbsp; B) Watt &nbsp; C) Newton &nbsp; D) Pascal</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Watt</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 94</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">When n resistors are in parallel, net current $I$ is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $I_1 + I_2 + \dots$ &nbsp; B) $I_1 = I_2 = \dots$ &nbsp; C) Zero &nbsp; D) Infinite</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: A) $I_1 + I_2 + \dots$</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 95</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Electromotive force (EMF) is most similar to:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Power &nbsp; B) Potential Difference &nbsp; C) Resistance &nbsp; D) Charge</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Potential Difference</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 96</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">A wire of $10\Omega$ is bent into a circle. Resistance across diameter is:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) $10\Omega$ &nbsp; B) $5\Omega$ &nbsp; C) $2.5\Omega$ &nbsp; D) $20\Omega$</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) $2.5\Omega$<br><span style="font-weight:normal; color:#bbb;">Logic: Two $5\Omega$ arcs in parallel ($5/2 = 2.5$).</span></div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 97</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Kilowatt-hour is a unit of:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Power &nbsp; B) Force &nbsp; C) Energy &nbsp; D) Time</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) Energy</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 98</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Resistance of a conductor increases with increase in:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Length &nbsp; B) Temperature &nbsp; C) Both A & B &nbsp; D) Area</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) Both A & B</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 99</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Materials having very high resistance are called:</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Conductors &nbsp; B) Insulators &nbsp; C) Semiconductors &nbsp; D) Alloys</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: B) Insulators</div>
+            </div>
+
+            <div class="mega-page" style="padding: 15px;">
+                <span class="page-num" style="font-size: 0.7rem;">MCQ 100</span>
+                <h2 style="font-size: 1.1rem; color: #ffcc00;">Which color wire is used for Earthing?</h2>
+                <p style="font-size: 0.85rem; color: #fff;">A) Red &nbsp; B) Black &nbsp; C) Green &nbsp; D) White</p>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-size: 0.8rem; padding: 8px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="color: #ffcc00; font-weight: bold; font-size: 0.9rem;">Correct Answer: C) Green</div>
+            </div>
+        <h1 style="text-align: center; color: #ffcc00; margin: 60px 0 30px; font-size: 1.8rem; text-transform: uppercase; text-shadow: 0 0 15px #ffcc00; border: 2px solid #ff003c; padding: 15px; background: rgba(255, 204, 0, 0.1); border-radius: 15px;">
+            ⚡ TOP 10 LONG QUESTIONS (DETAILED) ⚡
+        </h1>
+
+        <div id="long-q-container">
+            
+            <div class="mega-page" style="border-left: 5px solid #ff003c; padding: 20px; margin-bottom: 25px; background: rgba(20, 20, 20, 0.8);">
+                <span style="color: #ff003c; font-weight: bold; letter-spacing: 2px;">QUESTION 01</span>
+                <h2 style="font-size: 1.2rem; color: #ffcc00; margin-top: 10px;">State Ohm’s Law. How can it be verified experimentally? Draw the circuit diagram.</h2>
+                <button class="show-btn" style="background: #ffcc00; color: #000; font-weight: bold; margin-top: 15px; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="display: none; color: #eee; line-height: 1.6; margin-top: 20px; border-top: 1px solid #444; padding-top: 15px;">
+                    <h3 style="color: #ff003c;">1. Statement:</h3>
+                    <p>Ohm's law states that the current (I) flowing through a conductor is directly proportional to the potential difference (V) across its ends, provided temperature and other physical conditions remain constant. ($V = IR$)</p>
+                    <h3 style="color: #ff003c;">2. Experimental Verification:</h3>
+                    <ul>
+                        <li>Connect a battery, an ammeter, a voltmeter, a rheostat, and a resistor in a circuit.</li>
+                        <li>Change the current using the rheostat and note the corresponding readings of V and I.</li>
+                        <li>The ratio $V/I$ will always be constant, giving a straight-line graph.</li>
+                    </ul>
+                    <h3 style="color: #ff003c;">3. Circuit Diagram:</h3>
+                    <p>[Battery] -- [Ammeter] -- [Resistor (Voltmeter in Parallel)] -- [Rheostat] -- [Switch]</p>
+                </div>
+            </div>
+
+            <div class="mega-page" style="border-left: 5px solid #ff003c; padding: 20px; margin-bottom: 25px; background: rgba(20, 20, 20, 0.8);">
+                <span style="color: #ff003c; font-weight: bold; letter-spacing: 2px;">QUESTION 02</span>
+                <h2 style="font-size: 1.2rem; color: #ffcc00; margin-top: 10px;">Derive the formula for equivalent resistance when three resistors are connected in Series.</h2>
+                <button class="show-btn" style="background: #ffcc00; color: #000; font-weight: bold; margin-top: 15px; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="display: none; color: #eee; line-height: 1.6; margin-top: 20px; border-top: 1px solid #444; padding-top: 15px;">
+                    <h3 style="color: #ff003c;">1. Assumption:</h3>
+                    <p>Let three resistors $R_1, R_2, R_3$ be connected in series with a battery of voltage $V$.</p>
+                    <h3 style="color: #ff003c;">2. Key Points:</h3>
+                    <p>Current (I) is the same through all resistors. Total Voltage $V = V_1 + V_2 + V_3$.</p>
+                    <h3 style="color: #ff003c;">3. Derivation:</h3>
+                    <p>From Ohm's Law: $V_1 = IR_1, V_2 = IR_2, V_3 = IR_3$.<br>
+                    Substitute in total voltage: $V = IR_1 + IR_2 + IR_3$<br>
+                    $IR_s = I(R_1 + R_2 + R_3)$<br>
+                    <b>$R_s = R_1 + R_2 + R_3$</b></p>
+                </div>
+            </div>
+
+            <div class="mega-page" style="border-left: 5px solid #ff003c; padding: 20px; margin-bottom: 25px; background: rgba(20, 20, 20, 0.8);">
+                <span style="color: #ff003c; font-weight: bold; letter-spacing: 2px;">QUESTION 03</span>
+                <h2 style="font-size: 1.2rem; color: #ffcc00; margin-top: 10px;">Derive the formula for equivalent resistance when three resistors are connected in Parallel.</h2>
+                <button class="show-btn" style="background: #ffcc00; color: #000; font-weight: bold; margin-top: 15px; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="display: none; color: #eee; line-height: 1.6; margin-top: 20px; border-top: 1px solid #444; padding-top: 15px;">
+                    <h3 style="color: #ff003c;">1. Key Points:</h3>
+                    <p>Voltage (V) is the same across all resistors. Total Current $I = I_1 + I_2 + I_3$.</p>
+                    <h3 style="color: #ff003c;">2. Derivation:</h3>
+                    <p>From Ohm's Law: $I_1 = V/R_1, I_2 = V/R_2, I_3 = V/R_3$.<br>
+                    Total Current $I = V/R_1 + V/R_2 + V/R_3$<br>
+                    $V/R_p = V(1/R_1 + 1/R_2 + 1/R_3)$<br>
+                    <b>$1/R_p = 1/R_1 + 1/R_2 + 1/R_3$</b></p>
+                </div>
+            </div>
+
+            <div class="mega-page" style="border-left: 5px solid #ff003c; padding: 20px; margin-bottom: 25px; background: rgba(20, 20, 20, 0.8);">
+                <span style="color: #ff003c; font-weight: bold; letter-spacing: 2px;">QUESTION 04</span>
+                <h2 style="font-size: 1.2rem; color: #ffcc00; margin-top: 10px;">What is Joule’s Heating Effect? State the laws and list three practical applications.</h2>
+                <button class="show-btn" style="background: #ffcc00; color: #000; font-weight: bold; margin-top: 15px; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="display: none; color: #eee; line-height: 1.6; margin-top: 20px; border-top: 1px solid #444; padding-top: 15px;">
+                    <h3 style="color: #ff003c;">1. Definition:</h3>
+                    <p>When current passes through a high-resistance wire, electrical energy is converted into heat energy. This is Joule's heating effect.</p>
+                    <h3 style="color: #ff003c;">2. Mathematical Laws:</h3>
+                    <p>$H = I^2Rt$. Heat is directly proportional to:<br>
+                    (a) Square of current ($I^2$)<br>
+                    (b) Resistance ($R$)<br>
+                    (c) Time ($t$)</p>
+                    <h3 style="color: #ff003c;">3. Applications:</h3>
+                    <ul>
+                        <li>Electric Iron/Heater (Heating element)</li>
+                        <li>Electric Bulb (Tungsten filament)</li>
+                        <li>Electric Fuse (Safety device)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mega-page" style="border-left: 5px solid #ff003c; padding: 20px; margin-bottom: 25px; background: rgba(20, 20, 20, 0.8);">
+                <span style="color: #ff003c; font-weight: bold; letter-spacing: 2px;">QUESTION 05</span>
+                <h2 style="font-size: 1.2rem; color: #ffcc00; margin-top: 10px;">Explain the factors on which the resistance of a conductor depends. Define Resistivity.</h2>
+                <button class="show-btn" style="background: #ffcc00; color: #000; font-weight: bold; margin-top: 15px; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="display: none; color: #eee; line-height: 1.6; margin-top: 20px; border-top: 1px solid #444; padding-top: 15px;">
+                    <h3 style="color: #ff003c;">1. Factors:</h3>
+                    <ul>
+                        <li><b>Length (L):</b> $R \propto L$</li>
+                        <li><b>Area of Cross-section (A):</b> $R \propto 1/A$</li>
+                        <li><b>Nature of Material:</b> Different for different substances.</li>
+                        <li><b>Temperature:</b> Increases with temperature for metals.</li>
+                    </ul>
+                    <h3 style="color: #ff003c;">2. Resistivity ($\rho$):</h3>
+                    <p>It is the resistance of a conductor of unit length and unit area of cross-section. SI Unit: $\Omega \cdot m$. It only depends on material and temperature, not on dimensions.</p>
+                </div>
+            </div>
+
+            <div class="mega-page" style="border-left: 5px solid #ff003c; padding: 20px; margin-bottom: 25px; background: rgba(20, 20, 20, 0.8);">
+                <span style="color: #ff003c; font-weight: bold; letter-spacing: 2px;">QUESTION 06</span>
+                <h2 style="font-size: 1.2rem; color: #ffcc00; margin-top: 10px;">Why is a parallel arrangement used in domestic wiring instead of series? (List 4 reasons)</h2>
+                <button class="show-btn" style="background: #ffcc00; color: #000; font-weight: bold; margin-top: 15px; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="display: none; color: #eee; line-height: 1.6; margin-top: 20px; border-top: 1px solid #444; padding-top: 15px;">
+                    <ol>
+                        <li><b>Independent Switches:</b> Each appliance can be turned ON/OFF separately.</li>
+                        <li><b>Same Voltage:</b> Every appliance gets the full 220V supply.</li>
+                        <li><b>Reliability:</b> If one appliance fails, others keep working.</li>
+                        <li><b>Low Net Resistance:</b> Overall resistance is low, allowing enough current flow.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="mega-page" style="border-left: 5px solid #ff003c; padding: 20px; margin-bottom: 25px; background: rgba(20, 20, 20, 0.8);">
+                <span style="color: #ff003c; font-weight: bold; letter-spacing: 2px;">QUESTION 07</span>
+                <h2 style="font-size: 1.2rem; color: #ffcc00; margin-top: 10px;">Define Electric Power. Derive its three different formulas ($VI, I^2R, V^2/R$).</h2>
+                <button class="show-btn" style="background: #ffcc00; color: #000; font-weight: bold; margin-top: 15px; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="display: none; color: #eee; line-height: 1.6; margin-top: 20px; border-top: 1px solid #444; padding-top: 15px;">
+                    <p><b>Power (P)</b> is the rate at which electrical energy is consumed.</p>
+                    <ul>
+                        <li>$P = W/t = VQ/t = VI$ (Since $I = Q/t$)</li>
+                        <li>Substitute $V = IR$: $P = (IR) \times I = I^2R$</li>
+                        <li>Substitute $I = V/R$: $P = V \times (V/R) = V^2/R$</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mega-page" style="border-left: 5px solid #ff003c; padding: 20px; margin-bottom: 25px; background: rgba(20, 20, 20, 0.8);">
+                <span style="color: #ff003c; font-weight: bold; letter-spacing: 2px;">QUESTION 08</span>
+                <h2 style="font-size: 1.2rem; color: #ffcc00; margin-top: 10px;">How does an Electric Fuse work? Why is its rating important?</h2>
+                <button class="show-btn" style="background: #ffcc00; color: #000; font-weight: bold; margin-top: 15px; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="display: none; color: #eee; line-height: 1.6; margin-top: 20px; border-top: 1px solid #444; padding-top: 15px;">
+                    <h3 style="color: #ff003c;">Working:</h3>
+                    <p>A fuse is a safety device made of a metal/alloy with a low melting point. When current exceeds a safe limit, the fuse wire melts due to Joule's heating, breaking the circuit.</p>
+                    <h3 style="color: #ff003c;">Rating:</h3>
+                    <p>Fuse rating (e.g., 5A) must be slightly higher than the appliance's normal current but lower than the wire's limit to prevent fire.</p>
+                </div>
+            </div>
+
+            <div class="mega-page" style="border-left: 5px solid #ff003c; padding: 20px; margin-bottom: 25px; background: rgba(20, 20, 20, 0.8);">
+                <span style="color: #ff003c; font-weight: bold; letter-spacing: 2px;">QUESTION 09</span>
+                <h2 style="font-size: 1.2rem; color: #ffcc00; margin-top: 10px;">A 100W bulb and a 60W bulb are connected in parallel to 220V. Find the total current drawn.</h2>
+                <button class="show-btn" style="background: #ffcc00; color: #000; font-weight: bold; margin-top: 15px; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="display: none; color: #eee; line-height: 1.6; margin-top: 20px; border-top: 1px solid #444; padding-top: 15px;">
+                    <p><b>Step 1:</b> Current in Bulb 1 ($I_1$) = $P_1/V = 100/220 = 0.45A$</p>
+                    <p><b>Step 2:</b> Current in Bulb 2 ($I_2$) = $P_2/V = 60/220 = 0.27A$</p>
+                    <p><b>Step 3:</b> Total Current ($I$) = $I_1 + I_2 = 0.45 + 0.27 = 0.72A$</p>
+                </div>
+            </div>
+
+            <div class="mega-page" style="border-left: 5px solid #ff003c; padding: 20px; margin-bottom: 25px; background: rgba(20, 20, 20, 0.8);">
+                <span style="color: #ff003c; font-weight: bold; letter-spacing: 2px;">QUESTION 10</span>
+                <h2 style="font-size: 1.2rem; color: #ffcc00; margin-top: 10px;">Why does the cord of an electric heater not glow while the heating element does?</h2>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-weight: bold; margin-top: 15px; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;" onclick="toggle(this)">SHOW ANSWER</button>
+                <div class="ans-content" style="display: none; color: #eee; line-height: 1.6; margin-top: 20px; border-top: 1px solid #444; padding-top: 15px;">
+                    <p>The cord is made of copper (low resistance), so very little heat is produced. The heating element is made of Nichrome (high resistance), which produces intense heat ($H \propto R$), causing it to become red hot and glow.</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function toggle(btn) {
+                const ans = btn.nextElementSibling;
+                if (ans.style.display === "block") {
+                    ans.style.display = "none";
+                    btn.innerText = "SHOW ANSWER";
+                    btn.style.background = "#ffcc00";
+                } else {
+                    ans.style.display = "block";
+                    btn.innerText = "HIDE ANSWER";
+                    btn.style.background = "#ff003c";
+                    btn.style.color = "#fff";
+                }
+            }
+        </script>
+            <div class="mega-page" style="border-left: 5px solid #ffcc00; padding: 20px; margin-bottom: 25px; background: rgba(30, 0, 0, 0.9);">
+                <span style="color: #ff003c; font-weight: bold;">HARDCORE QUESTION 11</span>
+                <h2 style="font-size: 1.2rem; color: #ffcc00; margin-top: 10px;">A wire of resistance $R$ is cut into five equal parts. These parts are then connected in parallel. If the equivalent resistance of this combination is $R'$, find the ratio $R/R'$.</h2>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-weight: bold; margin-top: 15px; border: none; padding: 10px 20px; cursor: pointer;" onclick="toggle(this)">SHOW SOLUTION</button>
+                <div class="ans-content" style="display: none; color: #eee; line-height: 1.6; margin-top: 20px; border-top: 1px solid #ffcc00; padding-top: 15px;">
+                    <p><b>Step 1:</b> Resistance of each part = $R/5$.</p>
+                    <p><b>Step 2:</b> In parallel: $1/R' = 1/(R/5) + 1/(R/5) + 1/(R/5) + 1/(R/5) + 1/(R/5)$</p>
+                    <p><b>Step 3:</b> $1/R' = 5/R + 5/R + 5/R + 5/R + 5/R = 25/R$</p>
+                    <p><b>Step 4:</b> $R' = R/25 \implies R/R' = 25$.</p>
+                    <p style="color: #ffcc00;"><b>Final Answer: 25</b></p>
+                </div>
+            </div>
+
+            <div class="mega-page" style="border-left: 5px solid #ffcc00; padding: 20px; margin-bottom: 25px; background: rgba(30, 0, 0, 0.9);">
+                <span style="color: #ff003c; font-weight: bold;">HARDCORE QUESTION 12</span>
+                <h2 style="font-size: 1.2rem; color: #ffcc00; margin-top: 10px;">Two lamps, one rated 100W at 220V, and the other 60W at 220V, are connected in parallel to electric mains supply. What current is drawn from the line if the supply voltage is 220V?</h2>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-weight: bold; margin-top: 15px; border: none; padding: 10px 20px; cursor: pointer;" onclick="toggle(this)">SHOW SOLUTION</button>
+                <div class="ans-content" style="display: none; color: #eee; line-height: 1.6; margin-top: 20px; border-top: 1px solid #ffcc00; padding-top: 15px;">
+                    <p><b>Current in 100W Lamp:</b> $I_1 = P_1/V = 100/220 = 5/11 A$</p>
+                    <p><b>Current in 60W Lamp:</b> $I_2 = P_2/V = 60/220 = 3/11 A$</p>
+                    <p><b>Total Current:</b> $I = I_1 + I_2 = 5/11 + 3/11 = 8/11 A \approx 0.727 A$.</p>
+                </div>
+            </div>
+
+            <div class="mega-page" style="border-left: 5px solid #ffcc00; padding: 20px; margin-bottom: 25px; background: rgba(30, 0, 0, 0.9);">
+                <span style="color: #ff003c; font-weight: bold;">HARDCORE QUESTION 13</span>
+                <h2 style="font-size: 1.2rem; color: #ffcc00; margin-top: 10px;">Compare the power used in the 2$\Omega$ resistor in each of the following circuits: (i) a 6V battery in series with 1$\Omega$ and 2$\Omega$ resistors, and (ii) a 4V battery in parallel with 12$\Omega$ and 2$\Omega$ resistors.</h2>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-weight: bold; margin-top: 15px; border: none; padding: 10px 20px; cursor: pointer;" onclick="toggle(this)">SHOW SOLUTION</button>
+                <div class="ans-content" style="display: none; color: #eee; line-height: 1.6; margin-top: 20px; border-top: 1px solid #ffcc00; padding-top: 15px;">
+                    <p><b>Case (i):</b> Series. $R_{total} = 1 + 2 = 3\Omega$. $I = 6/3 = 2A$. Power in 2$\Omega = I^2R = 2^2 \times 2 = 8W$.</p>
+                    <p><b>Case (ii):</b> Parallel. Voltage across 2$\Omega$ is 4V. Power in 2$\Omega = V^2/R = 4^2 / 2 = 16/2 = 8W$.</p>
+                    <p style="color: #ffcc00;"><b>Both cases use 8W of power. Ratio is 1:1.</b></p>
+                </div>
+            </div>
+
+            <div class="mega-page" style="border-left: 5px solid #ffcc00; padding: 20px; margin-bottom: 25px; background: rgba(30, 0, 0, 0.9);">
+                <span style="color: #ff003c; font-weight: bold;">HARDCORE QUESTION 14</span>
+                <h2 style="font-size: 1.2rem; color: #ffcc00; margin-top: 10px;">A current of 1A flows in a series circuit containing an electric lamp and a conductor of 5$\Omega$ when connected to a 10V battery. Calculate the resistance of the electric lamp. Now if a resistance of 10$\Omega$ is connected in parallel with this series combination, what change (if any) in current flowing through 5$\Omega$ conductor and potential difference across the lamp will take place? Give reason.</h2>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-weight: bold; margin-top: 15px; border: none; padding: 10px 20px; cursor: pointer;" onclick="toggle(this)">SHOW SOLUTION</button>
+                <div class="ans-content" style="display: none; color: #eee; line-height: 1.6; margin-top: 20px; border-top: 1px solid #ffcc00; padding-top: 15px;">
+                    <p><b>Part 1:</b> $V=10V, I=1A$. Total $R = V/I = 10/1 = 10\Omega$. Lamp resistance $R_L = 10 - 5 = 5\Omega$.</p>
+                    <p><b>Part 2:</b> If 10$\Omega$ is connected in parallel to the whole 10V battery branch, the original branch (Lamp + 5$\Omega$ resistor) still sees 10V. <b>Therefore, NO CHANGE</b> in current (1A) or P.D. (5V) across the lamp because parallel branches are independent.</p>
+                </div>
+            </div>
+
+            <div class="mega-page" style="border-left: 5px solid #ffcc00; padding: 20px; margin-bottom: 25px; background: rgba(30, 0, 0, 0.9);">
+                <span style="color: #ff003c; font-weight: bold;">HARDCORE QUESTION 15</span>
+                <h2 style="font-size: 1.2rem; color: #ffcc00; margin-top: 10px;">Three resistors of 2$\Omega$, 3$\Omega$, and 6$\Omega$ are given. How will you connect them to get a total resistance of (a) 4$\Omega$ and (b) 1$\Omega$?</h2>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-weight: bold; margin-top: 15px; border: none; padding: 10px 20px; cursor: pointer;" onclick="toggle(this)">SHOW SOLUTION</button>
+                <div class="ans-content" style="display: none; color: #eee; line-height: 1.6; margin-top: 20px; border-top: 1px solid #ffcc00; padding-top: 15px;">
+                    <p><b>(a) For 4$\Omega$:</b> Connect 3$\Omega$ and 6$\Omega$ in parallel, then this set in series with 2$\Omega$.<br>
+                    Parallel of 3 & 6 = $(3 \times 6)/(3 + 6) = 2\Omega$. Total = $2 + 2 = 4\Omega$.</p>
+                    <p><b>(b) For 1$\Omega$:</b> Connect all three in parallel.<br>
+                    $1/R_p = 1/2 + 1/3 + 1/6 = (3 + 2 + 1)/6 = 6/6 = 1\Omega$.</p>
+                </div>
+            </div>
+
+            <div class="mega-page" style="border-left: 5px solid #ffcc00; padding: 20px; margin-bottom: 25px; background: rgba(30, 0, 0, 0.9);">
+                <span style="color: #ff003c; font-weight: bold;">HARDCORE QUESTION 16</span>
+                <h2 style="font-size: 1.2rem; color: #ffcc00; margin-top: 10px;">Two wires of equal length, one of copper and the other of manganin (an alloy), have the same thickness. Which one can be used for (i) electrical transmission lines and (ii) heating elements? Why?</h2>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-weight: bold; margin-top: 15px; border: none; padding: 10px 20px; cursor: pointer;" onclick="toggle(this)">SHOW SOLUTION</button>
+                <div class="ans-content" style="display: none; color: #eee; line-height: 1.6; margin-top: 20px; border-top: 1px solid #ffcc00; padding-top: 15px;">
+                    <p><b>(i) Transmission:</b> Copper. It has very low resistivity, so energy loss as heat is minimal.</p>
+                    <p><b>(ii) Heating Element:</b> Manganin. It has high resistivity and does not oxidize (burn) easily even at high temperatures.</p>
+                </div>
+            </div>
+
+            <div class="mega-page" style="border-left: 5px solid #ffcc00; padding: 20px; margin-bottom: 25px; background: rgba(30, 0, 0, 0.9);">
+                <span style="color: #ff003c; font-weight: bold;">HARDCORE QUESTION 17</span>
+                <h2 style="font-size: 1.2rem; color: #ffcc00; margin-top: 10px;">An electric heater of resistance 8$\Omega$ draws 15A from the service mains for 2 hours. Calculate the rate at which heat is developed in the heater.</h2>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-weight: bold; margin-top: 15px; border: none; padding: 10px 20px; cursor: pointer;" onclick="toggle(this)">SHOW SOLUTION</button>
+                <div class="ans-content" style="display: none; color: #eee; line-height: 1.6; margin-top: 20px; border-top: 1px solid #ffcc00; padding-top: 15px;">
+                    <p><b>Warning:</b> "Rate of heat developed" means <b>Power (P)</b>, not total heat energy (H).</p>
+                    <p><b>Calculation:</b> $P = I^2R$</p>
+                    <p>$P = (15)^2 \times 8 = 225 \times 8 = 1800 W$ (or J/s).</p>
+                    <p style="color: #ffcc00;"><b>Final Answer: 1800 J/s</b></p>
+                </div>
+            </div>
+
+            <div class="mega-page" style="border-left: 5px solid #ffcc00; padding: 20px; margin-bottom: 25px; background: rgba(30, 0, 0, 0.9);">
+                <span style="color: #ff003c; font-weight: bold;">HARDCORE QUESTION 18</span>
+                <h2 style="font-size: 1.2rem; color: #ffcc00; margin-top: 10px;">Why does the resistance of a conductor increase with an increase in temperature? (Molecular View)</h2>
+                <button class="show-btn" style="background: #ff003c; color: #fff; font-weight: bold; margin-top: 15px; border: none; padding: 10px 20px; cursor: pointer;" onclick="toggle(this)">SHOW SOLUTION</button>
+                <div class="ans-content" style="display: none; color: #eee; line-height: 1.6; margin-top: 20px; border-top: 1px solid #ffcc00; padding-top: 15px;">
+                    <p>When temperature increases, the positive ions (kernels) in the conductor vibrate more vigorously. This leads to more frequent collisions between the flowing electrons and the vibrating ions. These collisions obstruct the flow of electrons, hence <b>Resistance increases</b>.</p>
+                </div>
+            </div>
+
+</body>
+</html>
